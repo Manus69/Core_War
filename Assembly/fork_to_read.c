@@ -14,13 +14,26 @@ int dizasm(char *str)
 {
 	char *input;
 	int i;
+	char *itoa;
 
 	input = NULL;
+	itoa = NULL;
 	i = -1;
 	read_my_binary(str, &input);
 	while (++i < 3185)
 	{
-		ft_printf("%#x ", (char *)input[i]);
+		itoa = ft_itoa_base((unsigned char)input[i], 16);
+		if (itoa[0] == '0')
+			ft_printf("00 ");
+		else
+		{
+			if (ft_strlen(itoa) == 1)
+				ft_putchar('0');
+			ft_printf("%s ", itoa);
+		}
+		free(itoa);
+		if ((i % 64) == 63)
+			ft_putchar('\n');
 	}
 	return (SUCCESS);
 }
