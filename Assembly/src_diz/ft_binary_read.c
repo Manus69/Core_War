@@ -84,6 +84,9 @@ char				*ft_binary_read(int fd, size_t *len)
 
 	list = NULL;
 	list_len = 0;
+	str = NULL;
+	if ((read(fd, &buf, 0)) < 0)
+		return (NULL);
 	while ((read(fd, &buf, 1)))
 	{
 		ft_push_back(&list, buf);
