@@ -4,6 +4,8 @@
 
 #ifndef ASSEMBLY_ASM_H
 # define ASSEMBLY_ASM_H
+
+# include "../../Resources/op.h"
 # include "ft_printf.h"
 # include "diz_asm.h"
 # include <fcntl.h>
