@@ -12,6 +12,15 @@ int asm_s(char *str)
 
 int dizasm(char *str)
 {
-	ft_printf("to asm\n");
+	char *input;
+	int i;
+
+	input = NULL;
+	i = -1;
+	read_my_binary(str, &input);
+	while (++i < 3185)
+	{
+		ft_printf("%#x ", (char *)input[i]);
+	}
 	return (SUCCESS);
 }

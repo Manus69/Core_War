@@ -19,5 +19,6 @@
 int     take_name(int ac, char **av);
 int asm_s(char *str);
 int dizasm(char *str);
+int     err_out(char *str);
 
 #endif
