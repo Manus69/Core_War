@@ -6,5 +6,6 @@
 # define ASSEMBLY_DIZ_ASM_H
 
 int     read_my_binary(char *str, char **buf);
+char				*ft_binary_read(int fd, size_t *len);
 
 #endif //ASSEMBLY_DIZ_ASM_H

@@ -15,12 +15,13 @@ int dizasm(char *str)
 	char *input;
 	int i;
 	char *itoa;
+	int file_len;
 
 	input = NULL;
 	itoa = NULL;
 	i = -1;
-	read_my_binary(str, &input);
-	while (++i < 3185)
+	file_len = read_my_binary(str, &input);
+	while (++i < file_len)
 	{
 		itoa = ft_itoa_base((unsigned char)input[i], 16);
 		if (itoa[0] == '0')
