@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/includes/libft/ft_atoi.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi.c.o"
+  "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/includes/libft/ft_atoi_size_t.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o"
   "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/includes/libft/ft_bzero.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_bzero.c.o"
   "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/includes/libft/ft_char_in_string.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o"
   "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/includes/libft/ft_countwords.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_countwords.c.o"
@@ -103,6 +104,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/srcs/work_with_x_big.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/ft_lftprintf/srcs/work_with_x_big.c.o"
   "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/check_input.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/srcs/corewar/check_input.c.o"
   "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/corewar.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/srcs/corewar/corewar.c.o"
+  "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/error_list.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/srcs/corewar/error_list.c.o"
+  "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/free_resourse.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.o"
+  "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/init_resourse.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.o"
+  "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/print_some.c" "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir/srcs/corewar/print_some.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

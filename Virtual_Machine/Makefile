@@ -27,6 +27,8 @@ HEADERS_DIRECTORY = ./includes/
 COREWAR_HEADERS_LIST = \
 	op.h\
 	corewar.h\
+	error.h\
+
 COREWAR_HEADERS = $(addprefix $(HEADERS_DIRECTORY), $(COREWAR_HEADERS_LIST))
 
 # Sources
@@ -35,6 +37,12 @@ COREWAR_SOURCES_DIRECTORY = ./srcs/corewar/
 
 COREWAR_SOURCES_LIST =	corewar.c		\
 						check_input.c	\
+						calculate.c		\
+						get_champion.c	\
+						print_some.c	\
+						init_resourse.c	\
+						free_resourse.c	\
+						error_list.c	\
 
 COREWAR_SOURCES = $(addprefix $(COREWAR_SOURCES_DIRECTORY), $(COREWAR_SOURCES_LIST))
 

@@ -9,6 +9,7 @@ include_directories(includes)
 
 add_executable(my_war
         ft_lftprintf/includes/libft/ft_atoi.c
+        ft_lftprintf/includes/libft/ft_atoi_size_t.c
         ft_lftprintf/includes/libft/ft_bzero.c
         ft_lftprintf/includes/libft/ft_char_in_string.c
         ft_lftprintf/includes/libft/ft_countwords.c
@@ -108,6 +109,11 @@ add_executable(my_war
         ft_lftprintf/srcs/work_with_uxo_part_two.c
         ft_lftprintf/srcs/work_with_x_big.c
         includes/corewar.h
+        includes/error.h
         includes/op.h
         srcs/corewar/check_input.c
-        srcs/corewar/corewar.c)
+        srcs/corewar/corewar.c
+        srcs/corewar/error_list.c
+        srcs/corewar/free_resourse.c
+        srcs/corewar/init_resourse.c
+        srcs/corewar/print_some.c)

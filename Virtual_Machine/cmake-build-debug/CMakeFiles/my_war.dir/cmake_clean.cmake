@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi.c.o"
+  "CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o"
   "CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_bzero.c.o"
   "CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o"
   "CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_countwords.c.o"
@@ -98,6 +99,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_war.dir/ft_lftprintf/srcs/work_with_x_big.c.o"
   "CMakeFiles/my_war.dir/srcs/corewar/check_input.c.o"
   "CMakeFiles/my_war.dir/srcs/corewar/corewar.c.o"
+  "CMakeFiles/my_war.dir/srcs/corewar/error_list.c.o"
+  "CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.o"
+  "CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.o"
+  "CMakeFiles/my_war.dir/srcs/corewar/print_some.c.o"
   "my_war"
   "my_war.pdb"
 )

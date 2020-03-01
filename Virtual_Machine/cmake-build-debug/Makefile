@@ -150,6 +150,33 @@ ft_lftprintf/includes/libft/ft_atoi.c.s:
 	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi.c.s
 .PHONY : ft_lftprintf/includes/libft/ft_atoi.c.s
 
+ft_lftprintf/includes/libft/ft_atoi_size_t.o: ft_lftprintf/includes/libft/ft_atoi_size_t.c.o
+
+.PHONY : ft_lftprintf/includes/libft/ft_atoi_size_t.o
+
+# target to build an object file
+ft_lftprintf/includes/libft/ft_atoi_size_t.c.o:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o
+.PHONY : ft_lftprintf/includes/libft/ft_atoi_size_t.c.o
+
+ft_lftprintf/includes/libft/ft_atoi_size_t.i: ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
+
+.PHONY : ft_lftprintf/includes/libft/ft_atoi_size_t.i
+
+# target to preprocess a source file
+ft_lftprintf/includes/libft/ft_atoi_size_t.c.i:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
+.PHONY : ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
+
+ft_lftprintf/includes/libft/ft_atoi_size_t.s: ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
+
+.PHONY : ft_lftprintf/includes/libft/ft_atoi_size_t.s
+
+# target to generate assembly for a file
+ft_lftprintf/includes/libft/ft_atoi_size_t.c.s:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
+.PHONY : ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
+
 ft_lftprintf/includes/libft/ft_bzero.o: ft_lftprintf/includes/libft/ft_bzero.c.o
 
 .PHONY : ft_lftprintf/includes/libft/ft_bzero.o
@@ -2796,6 +2823,114 @@ srcs/corewar/corewar.c.s:
 	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/corewar.c.s
 .PHONY : srcs/corewar/corewar.c.s
 
+srcs/corewar/error_list.o: srcs/corewar/error_list.c.o
+
+.PHONY : srcs/corewar/error_list.o
+
+# target to build an object file
+srcs/corewar/error_list.c.o:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/error_list.c.o
+.PHONY : srcs/corewar/error_list.c.o
+
+srcs/corewar/error_list.i: srcs/corewar/error_list.c.i
+
+.PHONY : srcs/corewar/error_list.i
+
+# target to preprocess a source file
+srcs/corewar/error_list.c.i:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/error_list.c.i
+.PHONY : srcs/corewar/error_list.c.i
+
+srcs/corewar/error_list.s: srcs/corewar/error_list.c.s
+
+.PHONY : srcs/corewar/error_list.s
+
+# target to generate assembly for a file
+srcs/corewar/error_list.c.s:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/error_list.c.s
+.PHONY : srcs/corewar/error_list.c.s
+
+srcs/corewar/free_resourse.o: srcs/corewar/free_resourse.c.o
+
+.PHONY : srcs/corewar/free_resourse.o
+
+# target to build an object file
+srcs/corewar/free_resourse.c.o:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.o
+.PHONY : srcs/corewar/free_resourse.c.o
+
+srcs/corewar/free_resourse.i: srcs/corewar/free_resourse.c.i
+
+.PHONY : srcs/corewar/free_resourse.i
+
+# target to preprocess a source file
+srcs/corewar/free_resourse.c.i:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.i
+.PHONY : srcs/corewar/free_resourse.c.i
+
+srcs/corewar/free_resourse.s: srcs/corewar/free_resourse.c.s
+
+.PHONY : srcs/corewar/free_resourse.s
+
+# target to generate assembly for a file
+srcs/corewar/free_resourse.c.s:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.s
+.PHONY : srcs/corewar/free_resourse.c.s
+
+srcs/corewar/init_resourse.o: srcs/corewar/init_resourse.c.o
+
+.PHONY : srcs/corewar/init_resourse.o
+
+# target to build an object file
+srcs/corewar/init_resourse.c.o:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.o
+.PHONY : srcs/corewar/init_resourse.c.o
+
+srcs/corewar/init_resourse.i: srcs/corewar/init_resourse.c.i
+
+.PHONY : srcs/corewar/init_resourse.i
+
+# target to preprocess a source file
+srcs/corewar/init_resourse.c.i:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.i
+.PHONY : srcs/corewar/init_resourse.c.i
+
+srcs/corewar/init_resourse.s: srcs/corewar/init_resourse.c.s
+
+.PHONY : srcs/corewar/init_resourse.s
+
+# target to generate assembly for a file
+srcs/corewar/init_resourse.c.s:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.s
+.PHONY : srcs/corewar/init_resourse.c.s
+
+srcs/corewar/print_some.o: srcs/corewar/print_some.c.o
+
+.PHONY : srcs/corewar/print_some.o
+
+# target to build an object file
+srcs/corewar/print_some.c.o:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/print_some.c.o
+.PHONY : srcs/corewar/print_some.c.o
+
+srcs/corewar/print_some.i: srcs/corewar/print_some.c.i
+
+.PHONY : srcs/corewar/print_some.i
+
+# target to preprocess a source file
+srcs/corewar/print_some.c.i:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/print_some.c.i
+.PHONY : srcs/corewar/print_some.c.i
+
+srcs/corewar/print_some.s: srcs/corewar/print_some.c.s
+
+.PHONY : srcs/corewar/print_some.s
+
+# target to generate assembly for a file
+srcs/corewar/print_some.c.s:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/print_some.c.s
+.PHONY : srcs/corewar/print_some.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2808,6 +2943,9 @@ help:
 	@echo "... ft_lftprintf/includes/libft/ft_atoi.o"
 	@echo "... ft_lftprintf/includes/libft/ft_atoi.i"
 	@echo "... ft_lftprintf/includes/libft/ft_atoi.s"
+	@echo "... ft_lftprintf/includes/libft/ft_atoi_size_t.o"
+	@echo "... ft_lftprintf/includes/libft/ft_atoi_size_t.i"
+	@echo "... ft_lftprintf/includes/libft/ft_atoi_size_t.s"
 	@echo "... ft_lftprintf/includes/libft/ft_bzero.o"
 	@echo "... ft_lftprintf/includes/libft/ft_bzero.i"
 	@echo "... ft_lftprintf/includes/libft/ft_bzero.s"
@@ -3102,6 +3240,18 @@ help:
 	@echo "... srcs/corewar/corewar.o"
 	@echo "... srcs/corewar/corewar.i"
 	@echo "... srcs/corewar/corewar.s"
+	@echo "... srcs/corewar/error_list.o"
+	@echo "... srcs/corewar/error_list.i"
+	@echo "... srcs/corewar/error_list.s"
+	@echo "... srcs/corewar/free_resourse.o"
+	@echo "... srcs/corewar/free_resourse.i"
+	@echo "... srcs/corewar/free_resourse.s"
+	@echo "... srcs/corewar/init_resourse.o"
+	@echo "... srcs/corewar/init_resourse.i"
+	@echo "... srcs/corewar/init_resourse.s"
+	@echo "... srcs/corewar/print_some.o"
+	@echo "... srcs/corewar/print_some.i"
+	@echo "... srcs/corewar/print_some.s"
 .PHONY : help
 
 

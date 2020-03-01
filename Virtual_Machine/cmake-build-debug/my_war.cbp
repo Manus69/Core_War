@@ -89,6 +89,9 @@
 		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/includes/libft/ft_atoi.c">
 			<Option target="my_war"/>
 		</Unit>
+		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/includes/libft/ft_atoi_size_t.c">
+			<Option target="my_war"/>
+		</Unit>
 		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/includes/libft/ft_bzero.c">
 			<Option target="my_war"/>
 		</Unit>
@@ -386,6 +389,9 @@
 		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/includes/corewar.h">
 			<Option target="my_war"/>
 		</Unit>
+		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/includes/error.h">
+			<Option target="my_war"/>
+		</Unit>
 		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/includes/op.h">
 			<Option target="my_war"/>
 		</Unit>
@@ -393,6 +399,18 @@
 			<Option target="my_war"/>
 		</Unit>
 		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/corewar.c">
+			<Option target="my_war"/>
+		</Unit>
+		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/error_list.c">
+			<Option target="my_war"/>
+		</Unit>
+		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/free_resourse.c">
+			<Option target="my_war"/>
+		</Unit>
+		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/init_resourse.c">
+			<Option target="my_war"/>
+		</Unit>
+		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/srcs/corewar/print_some.c">
 			<Option target="my_war"/>
 		</Unit>
 		<Unit filename="/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/CMakeLists.txt">

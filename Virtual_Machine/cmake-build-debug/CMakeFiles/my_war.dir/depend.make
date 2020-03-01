@@ -4,6 +4,9 @@
 CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi.c.o: ../ft_lftprintf/includes/libft/ft_atoi.c
 CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi.c.o: ../ft_lftprintf/includes/libft/libft.h
 
+CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o: ../ft_lftprintf/includes/libft/ft_atoi_size_t.c
+CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o: ../ft_lftprintf/includes/libft/libft.h
+
 CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_bzero.c.o: ../ft_lftprintf/includes/libft/ft_bzero.c
 CMakeFiles/my_war.dir/ft_lftprintf/includes/libft/ft_bzero.c.o: ../ft_lftprintf/includes/libft/libft.h
 
@@ -315,12 +318,42 @@ CMakeFiles/my_war.dir/ft_lftprintf/srcs/work_with_x_big.c.o: ../ft_lftprintf/src
 CMakeFiles/my_war.dir/srcs/corewar/check_input.c.o: ../ft_lftprintf/includes/libft/libft.h
 CMakeFiles/my_war.dir/srcs/corewar/check_input.c.o: ../ft_lftprintf/includes/printf.h
 CMakeFiles/my_war.dir/srcs/corewar/check_input.c.o: ../includes/corewar.h
+CMakeFiles/my_war.dir/srcs/corewar/check_input.c.o: ../includes/error.h
 CMakeFiles/my_war.dir/srcs/corewar/check_input.c.o: ../includes/op.h
 CMakeFiles/my_war.dir/srcs/corewar/check_input.c.o: ../srcs/corewar/check_input.c
 
 CMakeFiles/my_war.dir/srcs/corewar/corewar.c.o: ../ft_lftprintf/includes/libft/libft.h
 CMakeFiles/my_war.dir/srcs/corewar/corewar.c.o: ../ft_lftprintf/includes/printf.h
 CMakeFiles/my_war.dir/srcs/corewar/corewar.c.o: ../includes/corewar.h
+CMakeFiles/my_war.dir/srcs/corewar/corewar.c.o: ../includes/error.h
 CMakeFiles/my_war.dir/srcs/corewar/corewar.c.o: ../includes/op.h
 CMakeFiles/my_war.dir/srcs/corewar/corewar.c.o: ../srcs/corewar/corewar.c
+
+CMakeFiles/my_war.dir/srcs/corewar/error_list.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/my_war.dir/srcs/corewar/error_list.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/my_war.dir/srcs/corewar/error_list.c.o: ../includes/corewar.h
+CMakeFiles/my_war.dir/srcs/corewar/error_list.c.o: ../includes/error.h
+CMakeFiles/my_war.dir/srcs/corewar/error_list.c.o: ../includes/op.h
+CMakeFiles/my_war.dir/srcs/corewar/error_list.c.o: ../srcs/corewar/error_list.c
+
+CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.o: ../includes/corewar.h
+CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.o: ../includes/error.h
+CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.o: ../includes/op.h
+CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.o: ../srcs/corewar/free_resourse.c
+
+CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.o: ../includes/corewar.h
+CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.o: ../includes/error.h
+CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.o: ../includes/op.h
+CMakeFiles/my_war.dir/srcs/corewar/init_resourse.c.o: ../srcs/corewar/init_resourse.c
+
+CMakeFiles/my_war.dir/srcs/corewar/print_some.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/my_war.dir/srcs/corewar/print_some.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/my_war.dir/srcs/corewar/print_some.c.o: ../includes/corewar.h
+CMakeFiles/my_war.dir/srcs/corewar/print_some.c.o: ../includes/error.h
+CMakeFiles/my_war.dir/srcs/corewar/print_some.c.o: ../includes/op.h
+CMakeFiles/my_war.dir/srcs/corewar/print_some.c.o: ../srcs/corewar/print_some.c
 
