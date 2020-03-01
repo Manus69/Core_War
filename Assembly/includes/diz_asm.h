@@ -4,6 +4,7 @@
 
 #ifndef ASSEMBLY_DIZ_ASM_H
 # define ASSEMBLY_DIZ_ASM_H
+# include <stdlib.h>
 
 typedef struct  s_dsm
 {

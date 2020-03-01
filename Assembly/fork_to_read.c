@@ -3,6 +3,7 @@
 //
 
 #include "asm.h"
+#include "diz_asm.h"
 
 int asm_s(char *str)
 {
