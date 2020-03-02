@@ -14,7 +14,7 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include "libft/libft.h"
+# include "libft.h"
 # include <stdint.h>
 
 # define BUFF 17000
