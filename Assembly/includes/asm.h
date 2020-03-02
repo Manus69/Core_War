@@ -17,6 +17,7 @@
 # define TO_TRANSLATE 1
 # define TO_DIZASM 2
 # define ERR_USAGE 3
+# define FAIL 0
 
 int     take_name(int ac, char **av);
 int asm_s(char *str);

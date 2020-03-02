@@ -11,18 +11,47 @@ int     err_validate(t_dsm *src_code)
 	return (0);
 }
 
-int     validate_binary(t_dsm *src_code)
+int     taste_magic(unsigned char *input)
 {
-	int chanse;
+	int *value;
+	int i;
+	int val;
 
-	if (src_code->file_len < 4)
-		return (err_validate(src_code));
-	chanse = ((int)src_code->input);
-	if (((unsigned int)src_code->input) != COREWAR_EXEC_MAGIC)
-		return (err_validate(src_code));
+	value = (int *)malloc(4);
+	i = -1;
+	val = 3;
+	*value = COREWAR_EXEC_MAGIC;
+	while (++i < 4)
+	{
+		if (input[i] != ((unsigned char*)value)[val])
+		{
+			free(value);
+			return (FAIL);
+		}
+		val--;
+	}
+	free(value);
+	return (SUCCESS);
 }
 
-int     read_my_binary(char *str, char **buf)
+int     validate_binary(t_dsm *src_code)
+{
+	if (src_code->file_len < 4 || !taste_magic(src_code->input))
+		return (err_validate(src_code));
+	src_code->current_position = 4;
+	if (!fill_name(src_code))
+		return (err_validate(src_code));
+	if (!fill_code_size(src_code))
+		return (err_validate(src_code));
+	if (!fill_comment(src_code))
+		return (err_validate(src_code));
+	if (!fill_diff_code_size(src_code))
+		return (err_validate(src_code));
+	free(src_code->input);
+	return (SUCCESS);
+}
+
+int     read_my_binary(char *str, unsigned char **buf)
 {
 	int fd;
 	size_t file_len;
