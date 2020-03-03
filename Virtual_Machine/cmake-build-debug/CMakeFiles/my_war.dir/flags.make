@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/includes -I/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/ft_lftprintf/includes/libft -I/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/includes 
+C_INCLUDES = -I/Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/ft_lftprintf/includes -I/Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/ft_lftprintf/includes/libft -I/Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/includes 
 

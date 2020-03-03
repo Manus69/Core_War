@@ -106,5 +106,7 @@ t_arena 	*check_input(char **argv, int argc, t_arena *vm) //проверка и 
 		usage(0);
 		print_error(ARGS_ERROR, vm);
 	}
+	else
+		vm = set_player_id(vm); // назначает id игрокам, у которых не проставлен номер флагом -n
 	return (vm);
 }

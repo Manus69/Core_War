@@ -1,5 +1,27 @@
 #include "corewar.h"
 
+t_arena		*set_player_id(t_arena *vm)
+{
+	int 	count;
+	t_champion	*head;
+
+	head = vm->champion;
+	count = vm->players;
+	while (count && head)
+	{
+		vm->read_num = count;
+		if (head->number == 0 && check_player_id(vm, 0))
+		{
+			head->number = count;
+			head = head->next;
+		}
+		else if (head->number != 0)
+			head = head->next;
+		count--;
+	}
+	return (vm);
+}
+
 t_champion	*init_player(int id, t_arena *vm)
 {
 	t_champion	*new;

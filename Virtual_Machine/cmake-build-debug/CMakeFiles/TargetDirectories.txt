@@ -1,3 +1,3 @@
-/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/my_war.dir
+/Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/my_war.dir

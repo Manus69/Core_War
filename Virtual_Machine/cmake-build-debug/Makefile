@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Volumes/d_499Gb/programming/21/in_work/corwar/my_war
+CMAKE_SOURCE_DIR = /Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug
+CMAKE_BINARY_DIR = /Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles /Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles /Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2769,6 +2769,33 @@ ft_lftprintf/srcs/work_with_x_big.c.s:
 	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/ft_lftprintf/srcs/work_with_x_big.c.s
 .PHONY : ft_lftprintf/srcs/work_with_x_big.c.s
 
+srcs/corewar/calculate.o: srcs/corewar/calculate.c.o
+
+.PHONY : srcs/corewar/calculate.o
+
+# target to build an object file
+srcs/corewar/calculate.c.o:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/calculate.c.o
+.PHONY : srcs/corewar/calculate.c.o
+
+srcs/corewar/calculate.i: srcs/corewar/calculate.c.i
+
+.PHONY : srcs/corewar/calculate.i
+
+# target to preprocess a source file
+srcs/corewar/calculate.c.i:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/calculate.c.i
+.PHONY : srcs/corewar/calculate.c.i
+
+srcs/corewar/calculate.s: srcs/corewar/calculate.c.s
+
+.PHONY : srcs/corewar/calculate.s
+
+# target to generate assembly for a file
+srcs/corewar/calculate.c.s:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/calculate.c.s
+.PHONY : srcs/corewar/calculate.c.s
+
 srcs/corewar/check_input.o: srcs/corewar/check_input.c.o
 
 .PHONY : srcs/corewar/check_input.o
@@ -2876,6 +2903,33 @@ srcs/corewar/free_resourse.s: srcs/corewar/free_resourse.c.s
 srcs/corewar/free_resourse.c.s:
 	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/free_resourse.c.s
 .PHONY : srcs/corewar/free_resourse.c.s
+
+srcs/corewar/get_champion.o: srcs/corewar/get_champion.c.o
+
+.PHONY : srcs/corewar/get_champion.o
+
+# target to build an object file
+srcs/corewar/get_champion.c.o:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/get_champion.c.o
+.PHONY : srcs/corewar/get_champion.c.o
+
+srcs/corewar/get_champion.i: srcs/corewar/get_champion.c.i
+
+.PHONY : srcs/corewar/get_champion.i
+
+# target to preprocess a source file
+srcs/corewar/get_champion.c.i:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/get_champion.c.i
+.PHONY : srcs/corewar/get_champion.c.i
+
+srcs/corewar/get_champion.s: srcs/corewar/get_champion.c.s
+
+.PHONY : srcs/corewar/get_champion.s
+
+# target to generate assembly for a file
+srcs/corewar/get_champion.c.s:
+	$(MAKE) -f CMakeFiles/my_war.dir/build.make CMakeFiles/my_war.dir/srcs/corewar/get_champion.c.s
+.PHONY : srcs/corewar/get_champion.c.s
 
 srcs/corewar/init_resourse.o: srcs/corewar/init_resourse.c.o
 
@@ -3234,6 +3288,9 @@ help:
 	@echo "... ft_lftprintf/srcs/work_with_x_big.o"
 	@echo "... ft_lftprintf/srcs/work_with_x_big.i"
 	@echo "... ft_lftprintf/srcs/work_with_x_big.s"
+	@echo "... srcs/corewar/calculate.o"
+	@echo "... srcs/corewar/calculate.i"
+	@echo "... srcs/corewar/calculate.s"
 	@echo "... srcs/corewar/check_input.o"
 	@echo "... srcs/corewar/check_input.i"
 	@echo "... srcs/corewar/check_input.s"
@@ -3246,6 +3303,9 @@ help:
 	@echo "... srcs/corewar/free_resourse.o"
 	@echo "... srcs/corewar/free_resourse.i"
 	@echo "... srcs/corewar/free_resourse.s"
+	@echo "... srcs/corewar/get_champion.o"
+	@echo "... srcs/corewar/get_champion.i"
+	@echo "... srcs/corewar/get_champion.s"
 	@echo "... srcs/corewar/init_resourse.o"
 	@echo "... srcs/corewar/init_resourse.i"
 	@echo "... srcs/corewar/init_resourse.s"

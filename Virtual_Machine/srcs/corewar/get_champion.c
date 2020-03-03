@@ -1,16 +1,18 @@
 #include "corewar.h"
 
-int 		check_player_id(t_arena *vm) //проверяем уникальность номера игрока
+int 		check_player_id(t_arena *vm, int type) //проверяем уникальность номера игрока
 {
 	t_champion	*buf;
-	if (vm->players == 0 || vm->read_num == 0)
+	if ((vm->players == 0 || vm->read_num == 0) && type)
 		return (1);
 	else if ((buf = vm->champion) != NULL && vm->read_num > 0)
 	{
-		while (buf)
+		while (buf != NULL)
 		{
-			if (vm->read_num == buf->number)
+			if (vm->read_num == buf->number && type)
 				print_error(DUPLICATE_ID_ERROR, vm);
+			else if (vm->read_num == buf->number)
+				return (0);
 			buf = buf->next;
 		}
 	}
@@ -47,11 +49,15 @@ uint8_t		*read_code(int fd, size_t len, t_arena *vm) //читаем код
 {
 	size_t	size;
 	uint8_t	*code;
+	char last;
 
 	if (!(code = (unsigned char *)malloc(sizeof(unsigned char) * len)))
 		print_error(MALLOC_ERROR, vm);
 	size = read(fd, code, len); //читаем код
-	if (size < len) //если размер кода больше, чем описано значит ошибка
+	read(fd, &last, 1);
+	if (last != 0) //проверяем что считан весь файл
+		print_error(CODE_SIZE_ERROR, vm);
+	if (size != len ) //если размер кода больше, чем описано значит ошибка
 		print_error(CODE_SIZE_ERROR, vm);
 	return (code);
 }
@@ -60,7 +66,7 @@ t_arena		*get_champion(char 	*argv, t_arena *vm) //открываем файл. 
 {
 	int			fd;
 
-	check_player_id(vm);//проверяем не дублируется ли введеный номер игрока
+	check_player_id(vm, 1);//проверяем не дублируется ли введеный номер игрока
 	if ((fd = open(argv, O_RDONLY)) < 0)//открываем
 		print_error(READ_ERROR, vm);
 	if (get_magic(fd, vm) != COREWAR_EXEC_MAGIC)//проверяем, что файл бинарный

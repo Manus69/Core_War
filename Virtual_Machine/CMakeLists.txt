@@ -111,9 +111,11 @@ add_executable(my_war
         includes/corewar.h
         includes/error.h
         includes/op.h
+        srcs/corewar/calculate.c
         srcs/corewar/check_input.c
         srcs/corewar/corewar.c
         srcs/corewar/error_list.c
         srcs/corewar/free_resourse.c
+        srcs/corewar/get_champion.c
         srcs/corewar/init_resourse.c
         srcs/corewar/print_some.c)

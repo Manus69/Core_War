@@ -1,4 +1,4 @@
-# Install script for directory: /Volumes/d_499Gb/programming/21/in_work/corwar/my_war
+# Install script for directory: /Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Volumes/d_499Gb/programming/21/in_work/corwar/my_war/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Volumes/d_499Gb/programming/21/in_work/corwar/command/Core_War/Virtual_Machine/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
