@@ -29,4 +29,8 @@ int				count_generic_list_objects(t_generic_list *generic_list);
 int				is_on_the_list(t_generic_list *generic_list, void *stuff);
 void			destroy_generic_list(t_generic_list **generic_list);
 
+t_generic_list	*get_last_element(t_generic_list *list);
+t_generic_list	*concatenate_lists(t_generic_list *base_list,
+t_generic_list *augmenting_list, t_generic_list *last_element);
+
 #endif
