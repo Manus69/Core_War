@@ -39,7 +39,8 @@ int     fill_code_size(t_dsm *src_code)
 	if ((src_code->current_position + 4) > src_code->file_len)
 		return (FAIL);
 	src_code->fill_file.champ_size = 0;
-	value = (unsigned int *)malloc(4);
+	if (!(value = (unsigned int *)malloc(4)))
+		return (FAIL);
 	i = -1;
 	val = 3;
 	while (++i < 4)

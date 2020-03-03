@@ -8,7 +8,7 @@ int     err_validate(t_dsm *src_code)
 {
 	free(src_code->input);
 	ft_putstr_fd("ERROR : *.cor ARE BAD\n", 2);
-	return (0);
+	return (FAIL);
 }
 
 int     taste_magic(unsigned char *input)
@@ -17,7 +17,8 @@ int     taste_magic(unsigned char *input)
 	int i;
 	int val;
 
-	value = (int *)malloc(4);
+	if (!(value = (int *)malloc(4)))
+		return (FAIL);
 	i = -1;
 	val = 3;
 	*value = COREWAR_EXEC_MAGIC;
@@ -47,6 +48,11 @@ int     validate_binary(t_dsm *src_code)
 		return (err_validate(src_code));
 	if (!fill_diff_code_size(src_code))
 		return (err_validate(src_code));
+	if (!(collect_pre_print(src_code)))
+		return (FAIL);
+	walk_throw(src_code);
+//	ft_putstr(&src_code->output[0]);
+	//print_binary_stdout(src_code);
 	free(src_code->input);
 	return (SUCCESS);
 }
