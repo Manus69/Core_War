@@ -6,7 +6,8 @@
 #include "function_prototypes.h"
 #include <fcntl.h>
 
-char g_separators[] = {' ', '\t', SEPARATOR_CHAR, 0}; //null byte to terminate the array;
+char g_separators[] = {'"', COMMENT_CHAR, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
+char g_spaces[] = {' ', '\t', 0};
 
 t_token *new_token(char *string, enum e_token_type type)
 {
@@ -29,12 +30,18 @@ t_token *get_next_token(int *n, char *line)
     char test;
 
     token = NULL;
-    while (is_a_member(g_separators, line[*n])) //what about the degenerate cases?
+    //
+    test = line[*n];
+    //
+    if (is_a_member(g_separators, line[*n]))
     {
+        substring = ft_strsub(line, *n, 1);
+        token = new_token(substring, 0);
         *n = *n + 1;
+        return (token);
     }
     m = *n;
-    while (line[m] != '\0' && (!is_a_member(g_separators, line[m])))
+    while (line[m] != '\0' && !is_a_member(g_separators, line[m]) && !is_a_member(g_spaces, line[m]))
     {
         test = line[m];
         m = m + 1;
@@ -59,16 +66,32 @@ t_generic_list *line_to_tokens(char *line)
     token_list = NULL;
     while (line[n] != '\0')
     {
-        while (is_a_member(SPACES, line[n]))
+        while (is_a_member(g_spaces, line[n]))
             n = n + 1;
         token = get_next_token(&n, line);
         //
-        display_token(token);
+        // display_token(token);
         //
         token_list = add_to_list(token_list, token);
-        //n = n + 1;
     }
     return (token_list);
+}
+
+void classify_token(t_token *current_token, t_token *previous_token)
+{
+    if (!current_token)
+        return ;
+    if (previous_token == NULL)
+    {
+        if (is_label(current_token, previous_token))
+            current_token->type = label;
+        else if (is_hashtag(current_token, previous_token))
+            current_token->type = comment;
+        else if (is_operation(current_token, previous_token))
+            current_token->type = operation;
+        else
+            display_classification_error_message(current_token, 0);
+    }
 }
 
 int main()
@@ -91,10 +114,25 @@ int main()
     {
         // ft_printf("%s\n", current_line);
         line_tokens = line_to_tokens(current_line);
-        tokens = concatenate_lists(tokens, line_tokens, last_element);
-        last_element = get_last_element(line_tokens);
+        if (line_tokens)
+        {
+            tokens = concatenate_lists(tokens, line_tokens, last_element);
+            last_element = get_last_element(line_tokens);
+            last_element = add_to_list(last_element, new_token("\n", new_line));
+            last_element = last_element->next;
+        }
+        else if (!line_tokens && !tokens)
+        {
+            tokens = new_generic_list(new_token("\n", new_line));
+            last_element = tokens;
+        }
+        else if (!line_tokens)
+        {
+            tokens = concatenate_lists(tokens, new_generic_list(new_token("\n", new_line)), last_element);
+            last_element = last_element->next;
+        }
         free(current_line);
-        // destroy_generic_list(&line_tokens);
     }
+    display_all_tokens(tokens);
     return (0);
 }
