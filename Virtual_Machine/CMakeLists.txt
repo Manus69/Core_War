@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(my_war C)
+project(Virtual_Machine C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -7,7 +7,7 @@ include_directories(ft_lftprintf/includes)
 include_directories(ft_lftprintf/includes/libft)
 include_directories(includes)
 
-add_executable(my_war
+add_executable(Virtual_Machine
         ft_lftprintf/includes/libft/ft_atoi.c
         ft_lftprintf/includes/libft/ft_atoi_size_t.c
         ft_lftprintf/includes/libft/ft_bzero.c

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../ft_lftprintf/includes/libft/libft.h
+unistd.h
+-
+fcntl.h
+-
+stdlib.h
+-
+string.h
+-
+
+../ft_lftprintf/includes/printf.h
+stdio.h
+-
+unistd.h
+-
+stdarg.h
+-
+libft/libft.h
+../ft_lftprintf/includes/libft/libft.h
+
+../includes/corewar.h
+printf.h
+../includes/printf.h
+op.h
+../includes/op.h
+error.h
+../includes/error.h
+
+../includes/error.h
+
+../includes/op.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/init_resourse.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+

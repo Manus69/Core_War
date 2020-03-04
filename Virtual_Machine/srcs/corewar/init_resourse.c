@@ -15,10 +15,14 @@ t_arena		*set_player_id(t_arena *vm)
 			head->number = count;
 			head = head->next;
 		}
-		else if (head->number != 0)
+		else if (head->number != 0 )
+		{
 			head = head->next;
+			continue;
+		}
 		count--;
 	}
+	vm->last_alive = vm->champion;
 	return (vm);
 }
 

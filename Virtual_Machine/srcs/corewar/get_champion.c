@@ -49,14 +49,10 @@ uint8_t		*read_code(int fd, size_t len, t_arena *vm) //читаем код
 {
 	size_t	size;
 	uint8_t	*code;
-	char last;
 
 	if (!(code = (unsigned char *)malloc(sizeof(unsigned char) * len)))
 		print_error(MALLOC_ERROR, vm);
 	size = read(fd, code, len); //читаем код
-	read(fd, &last, 1);
-	if (last != 0) //проверяем что считан весь файл
-		print_error(CODE_SIZE_ERROR, vm);
 	if (size != len ) //если размер кода больше, чем описано значит ошибка
 		print_error(CODE_SIZE_ERROR, vm);
 	return (code);
