@@ -37,6 +37,13 @@ int     is_hashtag(t_token *current_token, t_token *previous_token)
     return (0);
 }
 
+int     is_new_line(t_token *current_token, t_token *previous_token)
+{
+    if (ft_strlen(current_token->string) == 1 && current_token->string[0] == '\n')
+        return (1);
+    return (0);
+}
+
 int     is_operation(t_token *current_token, t_token *previous_token)
 {
     int n;

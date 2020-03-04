@@ -15,3 +15,5 @@ int     is_quotation_mark(t_token *current_token, t_token *previous_token);
 int     is_label(t_token *current_token, t_token *previous_token);
 int     is_hashtag(t_token *current_token, t_token *previous_token);
 int     is_operation(t_token *current_token, t_token *previous_token);
+int     is_new_line(t_token *current_token, t_token *previous_token);
+int     is_command(t_token *current_token, t_token *previous_token);

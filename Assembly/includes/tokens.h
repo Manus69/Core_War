@@ -6,7 +6,7 @@
 typedef struct s_line_token t_line_token;
 typedef struct s_token t_token;
 
-# define GENERIC_ERROR_MESSAGE "Error!"
+# define GENERIC_ERROR_MESSAGE "Error!\n"
 # define FILE_ERROR_MESSAGE "Could not open the file;\n"
 # define CLASSIFICATION_ERROR_MESSAGE "Could not classify token:\n"
 # define SPACES " \t"
