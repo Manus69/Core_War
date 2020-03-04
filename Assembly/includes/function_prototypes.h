@@ -11,9 +11,13 @@ void display_token(t_token *token);
 void display_all_tokens(t_generic_list *tokens);
 void display_classification_error_message(t_token *token, int verbose);
 
-int     is_quotation_mark(t_token *current_token, t_token *previous_token);
-int     is_label(t_token *current_token, t_token *previous_token);
-int     is_hashtag(t_token *current_token, t_token *previous_token);
-int     is_operation(t_token *current_token, t_token *previous_token);
-int     is_new_line(t_token *current_token, t_token *previous_token);
-int     is_command(t_token *current_token, t_token *previous_token);
+int     is_quotation_mark(char *string);
+int     is_label(char *string);
+int     is_hashtag(char *string);
+int     is_operation(char *string);
+int     is_new_line(char *string);
+int     is_command(char *string);
+
+int     is_registry(char *string);
+int     is_direct(char *string);
+int     is_indirect(char *string);

@@ -19,6 +19,7 @@ t_token *new_token(char *string, enum e_token_type type)
         token->type = unknown;
     else
         token->type = type;
+    token->argument_type = not_applicable;
     return (token);
 }
 
@@ -83,81 +84,83 @@ void classify_token(t_token *current_token, t_token *previous_token)
         return ;
     if (previous_token == NULL)
     {
-        if (is_command(current_token, previous_token))
+        if (is_command(current_token->string))
             current_token->type = command;
-        else if (is_new_line(current_token, previous_token))
+        else if (is_new_line(current_token->string))
             current_token->type = new_line;
+        else if (is_hashtag(current_token->string))
+            current_token->type = hashtag;
         else
             display_classification_error_message(current_token, 0);
     }
     else if (previous_token->type == new_line)
     {
-        if (is_label(current_token, previous_token))
+        if (is_label(current_token->string))
             current_token->type = label;
-        else if (is_hashtag(current_token, previous_token))
-            current_token->type = comment;
-        else if (is_operation(current_token, previous_token))
+        else if (is_hashtag(current_token->string))
+            current_token->type = hashtag;
+        else if (is_operation(current_token->string))
             current_token->type = operation;
         else
             display_classification_error_message(current_token, 0);
     }
     else if (previous_token->type == label)
     {
-        if (is_new_line(current_token, previous_token))
+        if (is_new_line(current_token->string))
             current_token->type = new_line;
-        else if (is_operation(current_token, previous_token))
+        else if (is_operation(current_token->string))
             current_token->type = operation;
-        else if (is_hashtag(current_token, previous_token))
+        else if (is_hashtag(current_token->string))
             current_token->type = hashtag;
         else
             display_classification_error_message(current_token, 0);
     }
     else if (previous_token->type == operation)
     {
-        if (is_hashtag(current_token, previous_token))
+        if (is_hashtag(current_token->string))
             current_token->type = hashtag;
-        else if (is_argument(current_token, previous_token))
+        else if (is_argument(current_token->string))
             current_token->type = argument;
-        else if (is_new_line(current_token, previous_token)) //is this legal?
+        else if (is_new_line(current_token->string)) //is this legal?
             current_token->type = new_line;
         else
             display_classification_error_message(current_token, 0);
     }
     else if (previous_token->type == argument)
     {
-        if (is_hashtag(current_token, previous_token))
+        if (is_hashtag(current_token->string))
             current_token->type = hashtag;
-        else if (is_argument(current_token, previous_token))
+        else if (is_argument(current_token->string))
             current_token->type = argument;
-        else if (is_new_line(current_token, previous_token))
+        else if (is_new_line(current_token->string))
             current_token->type = new_line;
         else
             display_classification_error_message(current_token, 0);
     }
     else if (previous_token->type == hashtag)
     {
-        if (is_new_line(current_token, previous_token))
+        if (is_new_line(current_token->string))
             current_token->type = new_line;
         else
             current_token->type = comment;
     }
     else if (previous_token->type == comment)
     {
-        if (is_new_line(current_token, previous_token))
+        if (is_new_line(current_token->string))
             current_token->type = new_line;
         else
             current_token->type = comment;
     }
     else if (previous_token->type == quotation_mark)
     {
-        if (is_quotation_mark(current_token, previous_token))
+        if (is_quotation_mark(current_token->string))
             current_token->type = quotation_mark;
         else
             current_token->type = string;
     }
     else if (previous_token->type == string)
     {
-        if (is_quotation_mark(current_token, previous_token))
+        if (is_quotation_mark(current_token->string))
             current_token->type = quotation_mark;
         else
             current_token->type = string;

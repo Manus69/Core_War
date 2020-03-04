@@ -10,6 +10,7 @@ typedef struct s_token t_token;
 # define FILE_ERROR_MESSAGE "Could not open the file;\n"
 # define CLASSIFICATION_ERROR_MESSAGE "Could not classify token:\n"
 # define SPACES " \t"
+# define DIGITS "0123456789"
 
 char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "end",
 "or", "xor", "zjump", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};
@@ -29,6 +30,14 @@ enum e_token_type
     new_line
 };
 
+enum e_argument_type
+{
+    not_applicable,
+    registry,
+    direct,
+    indirect
+};
+
 struct s_line_token
 {
     int index;
@@ -41,6 +50,7 @@ struct s_token
 {
     char *string;
     enum e_token_type type;
+    enum e_argument_type argument_type;
 };
 
 #endif

@@ -4,6 +4,7 @@
 void display_token(t_token *token)
 {
     char *type;
+    char *argumnet_type;
 
     if (!token)
     {
@@ -26,8 +27,24 @@ void display_token(t_token *token)
         type = "comment";
     else if (token->type == new_line)
         type = "new_line";
+    else if (token->type == quotation_mark)
+        type = "quotation_mark";
+    else if (token->type == hashtag)
+        type = "hashtag";
     ft_printf("Token at %p\nString: %s\n", token, token->string);
     ft_printf("type: %s\n", type);
+    if (token->type == argument)
+    {
+        if (token->argument_type == registry)
+            argumnet_type = "registry";
+        else if (token->argument_type == direct)
+            argumnet_type = "direct";
+        else if (token->argument_type == indirect)
+            argumnet_type = "indirect";
+        else
+            argumnet_type = "not_applicable";
+        ft_printf("argument_type: %s\n", argumnet_type);
+    }
     ft_printf("---------------\n");
 }
 

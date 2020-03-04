@@ -1,79 +1,161 @@
 #include "function_prototypes.h"
 #include "tokens.h"
 
-int     is_label(t_token *current_token, t_token *previous_token)
+int     generic_token_string_check(char *string, char character, int start)
 {
-    int n;
     int length;
 
-    if (previous_token && (previous_token->type != new_line)) //make all the functions uniform;
-        return (0);
-    length = ft_strlen(current_token->string);
+    length = ft_strlen(string);
     if (length < 2)
         return (0);
-    if (current_token->string[length - 1] != LABEL_CHAR)
+    if (start && (string[0] != character))
         return (0);
-    n = 0;
-    while (n < length - 1)
+    if (!start && (string[length - 1] != character))
+        return (0);
+    return (1);
+}
+
+int     check_substring_characters(char *string, int start_index, int end_index, char *set)
+{
+    int n;
+
+    if (end_index < start_index)
+        return (0);
+    if (end_index == start_index)
+        return (1);
+    n = start_index;
+    while (n != end_index)
     {
-        if (!is_a_member(LABEL_CHARS, current_token->string[n]))
+        if (!is_a_member(set, string[n]))
             return (0);
         n = n + 1;
     }
     return (1);
 }
 
-int     is_quotation_mark(t_token *current_token, t_token *previous_token)
+int     is_label(char *string)
 {
-    if (ft_strlen(current_token->string) == 1 && current_token->string[0] == '"')
+    int n;
+
+    if (!generic_token_string_check(string, LABEL_CHAR, 0))
+        return (0);
+    n = 0;
+    while (string[n] != LABEL_CHAR)
+    {
+        if (!is_a_member(LABEL_CHARS, string[n]))
+            return (0);
+        n = n + 1;
+    }
+    return (1);
+}
+
+int     check_symbol(char *string, char symbol)
+{
+    if (ft_strlen(string) == 1 && string[0] == symbol)
         return (1);
     return (0);
 }
 
-int     is_hashtag(t_token *current_token, t_token *previous_token)
+int     is_quotation_mark(char *string)
 {
-    if (ft_strlen(current_token->string) == 1 && current_token->string[0] == '#')
-        return (1);
-    return (0);
+    return (check_symbol(string, '"'));
 }
 
-int     is_new_line(t_token *current_token, t_token *previous_token)
+int     is_hashtag(char *string)
 {
-    if (ft_strlen(current_token->string) == 1 && current_token->string[0] == '\n')
-        return (1);
-    return (0);
+    return (check_symbol(string, '#'));
 }
 
-int     is_operation(t_token *current_token, t_token *previous_token)
+int     is_new_line(char *string)
+{
+    return (check_symbol(string, '\n'));
+}
+
+int     is_string_in_array(char *string, char **string_array)
 {
     int n;
     char *current_string;
 
     n = 0;
-    current_string = g_operation_names[n];
+    current_string = string_array[0];
     while (current_string)
     {
-        if (ft_strcmp(current_string, current_token->string) == 0)
+        if (ft_strcmp(current_string, string) == 0)
             return (1);
         n = n + 1;
-        current_string = g_operation_names[n];
+        current_string = string_array[n];
     }
     return (0);
 }
 
-int     is_command(t_token *current_token, t_token *previous_token)
+int     is_operation(char *string)
+{
+   return (is_string_in_array(string, g_operation_names));
+}
+
+int     is_command(char *string)
+{
+    return (is_string_in_array(string, g_command_names));
+}
+
+//argument classification
+
+int     is_registry(char *string)
 {
     int n;
-    char *current_string;
-
-    n = 0;
-    current_string = g_command_names[n];
-    while (current_string)
+    
+    if (!generic_token_string_check(string, 'r', 1))
+        return (0);
+    n = 1;
+    while (string[n] != '\0')
     {
-        if (ft_strcmp(current_string, current_token->string) == 0)
-            return (1);
+        if (!is_a_member(DIGITS, string[n]))
+            return (0);
         n = n + 1;
-        current_string = g_command_names[n];
+    }
+    return (1);
+}
+
+int     is_direct(char *string)
+{
+    int n;
+    int length;
+    
+    if (!generic_token_string_check(string, DIRECT_CHAR, 1))
+        return (0);
+    n = 1;
+    length = ft_strlen(string);
+    if (string[n] == LABEL_CHAR && (length > 2))
+    {
+        if (check_substring_characters(string, 2, length - 1, LABEL_CHARS))
+            return (1);
+    }
+    else if (is_a_member(DIGITS, string[n]))
+    {
+        if (check_substring_characters(string, 2, length - 1, DIGITS))
+            return (1);
     }
     return (0);
 }
+
+int     is_indirect(char *string)
+{
+    int n;
+    int length;
+
+    n = 0;
+    length = ft_strlen(string);
+    if (string[n] == LABEL_CHAR && (length > 1))
+    {
+        if (check_substring_characters(string, 1, length - 1, LABEL_CHARS))
+            return (1);
+    }
+    else if (is_a_member(DIGITS, string[n]))
+    {
+        if (check_substring_characters(string, 0, length - 1, DIGITS))
+            return (1);
+    }
+    return (0);
+}
+
+//
