@@ -31,7 +31,9 @@ void display_token(t_token *token)
         type = "quotation_mark";
     else if (token->type == hashtag)
         type = "hashtag";
-    ft_printf("Token at %p\nString: %s\n", token, token->string);
+    else if (token->type == comma)
+        type = "comma";
+    ft_printf("Token at %p\nString: %s\n", token, token->type == new_line ? "\\n" : token->string);
     ft_printf("type: %s\n", type);
     if (token->type == argument)
     {

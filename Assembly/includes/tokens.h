@@ -3,18 +3,20 @@
 
 # include "op.h"
 
-typedef struct s_line_token t_line_token;
-typedef struct s_token t_token;
-
 # define GENERIC_ERROR_MESSAGE "Error!\n"
 # define FILE_ERROR_MESSAGE "Could not open the file;\n"
 # define CLASSIFICATION_ERROR_MESSAGE "Could not classify token:\n"
 # define SPACES " \t"
 # define DIGITS "0123456789"
 
-char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "end",
-"or", "xor", "zjump", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};
-char *g_command_names[] = {".name", ".comment", 0};
+static char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "end",
+"or", "xor", "zjmp", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};
+static char *g_command_names[] = {".name", ".comment", 0};
+static char g_separators[] = {'"', COMMENT_CHAR, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
+static char g_spaces[] = {' ', '\t', 0};
+
+typedef struct s_line_token t_line_token;
+typedef struct s_token t_token;
 
 enum e_token_type
 {
@@ -25,6 +27,7 @@ enum e_token_type
     label,
     operation,
     argument,
+    comma,
     hashtag,
     comment,
     new_line

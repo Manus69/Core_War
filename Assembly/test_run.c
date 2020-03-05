@@ -6,9 +6,6 @@
 #include "function_prototypes.h"
 #include <fcntl.h>
 
-char g_separators[] = {'"', COMMENT_CHAR, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
-char g_spaces[] = {' ', '\t', 0};
-
 t_token *new_token(char *string, enum e_token_type type)
 {
     t_token *token;
@@ -78,7 +75,7 @@ t_generic_list *line_to_tokens(char *line)
     return (token_list);
 }
 
-void classify_token(t_token *current_token, t_token *previous_token)
+void classify_token(t_token *current_token, t_token *previous_token, int verbose)
 {
     if (!current_token)
         return ;
@@ -88,21 +85,32 @@ void classify_token(t_token *current_token, t_token *previous_token)
             current_token->type = command;
         else if (is_new_line(current_token->string))
             current_token->type = new_line;
-        else if (is_hashtag(current_token->string))
+        else if (is_comment_character(current_token->string))
             current_token->type = hashtag;
         else
-            display_classification_error_message(current_token, 0);
+            display_classification_error_message(current_token, verbose);
     }
     else if (previous_token->type == new_line)
     {
-        if (is_label(current_token->string))
+        if (is_new_line(current_token->string))
+            current_token->type = new_line;
+        else if (is_label(current_token->string))
             current_token->type = label;
-        else if (is_hashtag(current_token->string))
+        else if (is_comment_character(current_token->string))
             current_token->type = hashtag;
         else if (is_operation(current_token->string))
             current_token->type = operation;
+        else if (is_command(current_token->string))
+            current_token->type = command;
         else
-            display_classification_error_message(current_token, 0);
+            display_classification_error_message(current_token, verbose);
+    }
+    else if (previous_token->type == command)
+    {
+        if (is_quotation_mark(current_token->string))
+            current_token->type = quotation_mark;
+        else
+            display_classification_error_message(current_token, verbose);
     }
     else if (previous_token->type == label)
     {
@@ -110,32 +118,41 @@ void classify_token(t_token *current_token, t_token *previous_token)
             current_token->type = new_line;
         else if (is_operation(current_token->string))
             current_token->type = operation;
-        else if (is_hashtag(current_token->string))
+        else if (is_comment_character(current_token->string))
             current_token->type = hashtag;
         else
-            display_classification_error_message(current_token, 0);
+            display_classification_error_message(current_token, verbose);
     }
     else if (previous_token->type == operation)
     {
-        if (is_hashtag(current_token->string))
+        if (is_comment_character(current_token->string))
             current_token->type = hashtag;
-        else if (is_argument(current_token->string))
-            current_token->type = argument;
+        else if (check_argument_token(current_token))
+            ;
         else if (is_new_line(current_token->string)) //is this legal?
             current_token->type = new_line;
         else
-            display_classification_error_message(current_token, 0);
+            display_classification_error_message(current_token, verbose);
     }
     else if (previous_token->type == argument)
     {
-        if (is_hashtag(current_token->string))
+        if (is_comment_character(current_token->string))
             current_token->type = hashtag;
-        else if (is_argument(current_token->string))
-            current_token->type = argument;
+        else if (is_argument_separator(current_token->string))
+            current_token->type = comma;
         else if (is_new_line(current_token->string))
             current_token->type = new_line;
         else
-            display_classification_error_message(current_token, 0);
+            display_classification_error_message(current_token, verbose);
+    }
+    else if (previous_token->type == comma)
+    {
+        if (is_comment_character(current_token->string))
+            current_token->type = hashtag;
+        else if (check_argument_token(current_token))
+            ;
+        else
+            display_classification_error_message(current_token, verbose);
     }
     else if (previous_token->type == hashtag)
     {
@@ -155,6 +172,8 @@ void classify_token(t_token *current_token, t_token *previous_token)
     {
         if (is_quotation_mark(current_token->string))
             current_token->type = quotation_mark;
+        if (is_new_line(current_token->string))
+            current_token->type = new_line;
         else
             current_token->type = string;
     }
@@ -167,6 +186,23 @@ void classify_token(t_token *current_token, t_token *previous_token)
     }
 }
 
+void classify_all_tokens(t_generic_list *tokens, int verbose)
+{
+    t_token *current_token;
+    t_token *previous_token;
+    t_generic_list *current_item;
+
+    previous_token = NULL;
+    current_item = tokens;
+    while (current_item)
+    {
+        current_token = current_item->stuff;
+        classify_token(current_token, previous_token, verbose);
+        current_item = current_item->next;
+        previous_token = current_token;
+    }
+}
+
 int main()
 {
     char *current_line;
@@ -175,7 +211,7 @@ int main()
     t_generic_list *line_tokens;
     t_generic_list *last_element;
 
-    file = open("/home/anus/projects/core_war/Assembly/test_champ.s", O_RDONLY);
+    file = open("/home/anus/projects/core_war/Assembly/test_file.s", O_RDONLY);
     if (file < 0)
     {
         ft_printf("%s", FILE_ERROR_MESSAGE);
@@ -183,9 +219,8 @@ int main()
     }
     tokens = NULL;
     last_element = NULL;
-    while (get_next_line(file, &current_line) > 0)
+    while (get_next_line(file, &current_line) > 0) //careful about the trailing \n; the thing is fucked up;
     {
-        // ft_printf("%s\n", current_line);
         line_tokens = line_to_tokens(current_line);
         if (line_tokens)
         {
@@ -206,6 +241,7 @@ int main()
         }
         free(current_line);
     }
+    classify_all_tokens(tokens, 1);
     display_all_tokens(tokens);
     return (0);
 }

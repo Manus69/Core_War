@@ -21,10 +21,8 @@ int     check_substring_characters(char *string, int start_index, int end_index,
 
     if (end_index < start_index)
         return (0);
-    if (end_index == start_index)
-        return (1);
     n = start_index;
-    while (n != end_index)
+    while (n <= end_index)
     {
         if (!is_a_member(set, string[n]))
             return (0);
@@ -61,14 +59,19 @@ int     is_quotation_mark(char *string)
     return (check_symbol(string, '"'));
 }
 
-int     is_hashtag(char *string)
+int     is_comment_character(char *string)
 {
-    return (check_symbol(string, '#'));
+    return (check_symbol(string, COMMENT_CHAR));
 }
 
 int     is_new_line(char *string)
 {
     return (check_symbol(string, '\n'));
+}
+
+int     is_argument_separator(char *string)
+{
+    return (check_symbol(string, SEPARATOR_CHAR));
 }
 
 int     is_string_in_array(char *string, char **string_array)
@@ -132,7 +135,7 @@ int     is_direct(char *string)
     }
     else if (is_a_member(DIGITS, string[n]))
     {
-        if (check_substring_characters(string, 2, length - 1, DIGITS))
+        if (check_substring_characters(string, 1, length - 1, DIGITS))
             return (1);
     }
     return (0);
@@ -159,3 +162,26 @@ int     is_indirect(char *string)
 }
 
 //
+
+int     check_argument_token(t_token *token)
+{
+    if (is_registry(token->string))
+    {
+        token->type = argument;
+        token->argument_type = registry;
+        return (1);
+    }
+    else if (is_direct(token->string))
+    {
+        token->type = argument;
+        token->argument_type = direct;
+        return (1);
+    }
+    else if (is_indirect(token->string))
+    {
+        token->type = argument;
+        token->argument_type = indirect;
+        return (1);
+    }
+    return (0);
+}
