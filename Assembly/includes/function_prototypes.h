@@ -12,6 +12,7 @@ int is_a_member(char *set, char c);
 void display_token(t_token *token);
 void display_all_tokens(t_generic_list *tokens);
 void display_classification_error_message(t_token *token, int verbose);
+void display_byte_strings(t_generic_list *tokens);
 
 int     is_quotation_mark(char *string);
 int     is_label(char *string);
@@ -26,5 +27,9 @@ int     is_direct(char *string);
 int     is_indirect(char *string);
 
 int     check_argument_token(t_token *token);
+
+t_generic_list *encode_string(t_token *token, int *bytes_encoded);
+t_generic_list *get_null_padding(int number_of_bytes);
+t_generic_list *encode_string_tokens(t_generic_list *tokens, int *bytes_encoded);
 
 #endif

@@ -75,3 +75,15 @@ void display_classification_error_message(t_token *token, int verbose)
     }
     exit(1);
 }
+
+void display_byte_strings(t_generic_list *tokens)
+{
+    t_generic_list *current;
+
+    current = tokens;
+    while (current)
+    {
+        ft_printf("%s ", current->stuff);
+        current = current->next;
+    }
+}

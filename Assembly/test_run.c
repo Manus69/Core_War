@@ -211,7 +211,7 @@ int main()
     t_generic_list *line_tokens;
     t_generic_list *last_element;
 
-    file = open("/home/anus/projects/core_war/Assembly/test_file.s", O_RDONLY);
+    file = open("/home/anus/projects/core_war/Assembly/test_champ.s", O_RDONLY);
     if (file < 0)
     {
         ft_printf("%s", FILE_ERROR_MESSAGE);
@@ -242,6 +242,20 @@ int main()
         free(current_line);
     }
     classify_all_tokens(tokens, 1);
-    display_all_tokens(tokens);
+    // display_all_tokens(tokens);
+
+    //TESTING AREA
+    t_generic_list *encoding;
+    int bytes_encoded = 0;
+    t_generic_list *current_token = tokens;
+    while (((t_token *)current_token->stuff)->type != string)
+        current_token = current_token->next;
+    current_token = current_token->next;
+    while (((t_token *)current_token->stuff)->type != string)
+        current_token = current_token->next;
+    encoding = encode_string_tokens(current_token, &bytes_encoded);
+    display_byte_strings(encoding);
+    //
+
     return (0);
 }
