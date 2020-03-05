@@ -27,12 +27,12 @@ typedef struct  s_dsm
 typedef struct      s_op
 {
 	char            *op_name;
-	int             arg_type_code;
+	int             arg_count;
 	int             arg_type[3];
 	int             op_code;
 	int             cycle_before_use;
 	char             *op_descript;
-	int             carry_flag;
+	int             arg_code_flag;
 	int             size_t_dir;
 }                   t_op;
 
@@ -83,5 +83,8 @@ int     fill_diff_code_size(t_dsm *src_code);
 int     collect_pre_print(t_dsm *src_code);
 int    put_name_comment(t_dsm *src_code);
 int     walk_throw(t_dsm *src_code);
+int     fill_complex_instruction(t_dsm *src_code, t_argum *args);
+int     write_instruction(t_dsm *src_code, int op_code);
+int     fill_simple_instruction(t_dsm *src_code);
 
 #endif //ASSEMBLY_DIZ_ASM_H

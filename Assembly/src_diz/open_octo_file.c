@@ -17,7 +17,7 @@ int     taste_magic(unsigned char *input)
 	int i;
 	int val;
 
-	if (!(value = (int *)malloc(4)))
+	if (!(value = (int *)malloc(sizeof(int))))
 		return (FAIL);
 	i = -1;
 	val = 3;
@@ -51,9 +51,10 @@ int     validate_binary(t_dsm *src_code)
 	if (!(collect_pre_print(src_code)))
 		return (FAIL);
 	walk_throw(src_code);
-//	ft_putstr(&src_code->output[0]);
+	ft_putstr(&src_code->output[0]);
 	//print_binary_stdout(src_code);
 	free(src_code->input);
+	free(src_code->output);
 	return (SUCCESS);
 }
 
