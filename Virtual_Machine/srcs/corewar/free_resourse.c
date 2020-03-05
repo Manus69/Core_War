@@ -1,10 +1,11 @@
 #include "corewar.h"
 //очистка памяти
-void	free_champions(t_champion *player)
+void	free_champions(t_champion *player, int count)
 {
 	t_champion	*head;
 
-	while (player)
+	head = 0;
+	while (player && count--)
 	{
 		if (player->name)
 			ft_strdel(&(player->name));
@@ -15,7 +16,8 @@ void	free_champions(t_champion *player)
 			free(player->code);
 			player->code = NULL;
 		}
-		head = player->next;
+		if (player->next)
+			head = player->next;
 		free(player);
 		player = head;
 	}
@@ -24,10 +26,8 @@ void	free_champions(t_champion *player)
 
 void	free_arena(t_arena **arena)
 {
-	if ((*arena)->last_alive)
-		free((*arena)->last_alive);
 	if ((*arena)->champion)
-		free_champions((*arena)->champion);
+		free_champions((*arena)->champion, (*arena)->players);
 	if (*arena)
 		free(*arena);
 	*arena = NULL;

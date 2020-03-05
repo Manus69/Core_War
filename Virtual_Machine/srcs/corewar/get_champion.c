@@ -49,12 +49,27 @@ uint8_t		*read_code(int fd, size_t len, t_arena *vm) //читаем код
 {
 	size_t	size;
 	uint8_t	*code;
+	uint8_t end;
 
 	if (!(code = (unsigned char *)malloc(sizeof(unsigned char) * len)))
 		print_error(MALLOC_ERROR, vm);
 	size = read(fd, code, len); //читаем код
 	if (size != len ) //если размер кода больше, чем описано значит ошибка
 		print_error(CODE_SIZE_ERROR, vm);
+	read(fd, &end, len);
+	if (end != 0 ) //если размер кода больше, чем описано значит ошибка
+		print_error(CODE_SIZE_ERROR, vm);
+	/*int i = 1;
+	while (i <= (int)len)
+	{
+		ft_printf("%02x", *code);
+		if (i % 2 == 0)
+			ft_printf(" ");
+		code++;
+		i++;
+	}
+	ft_printf("\n");
+	exit(1);*/
 	return (code);
 }
 
@@ -78,6 +93,8 @@ t_arena		*get_champion(char 	*argv, t_arena *vm) //открываем файл. 
 		|| vm->champion->pl_size > CHAMP_MAX_SIZE)
 		print_error(SIZE_ERROR, vm);
 	vm->champion->comment = read_str(fd, COMMENT_LENGTH, vm); //читаем комментарий игрока и записываем в строку
+	if (get_magic(fd, vm) != 0) //проверяем на месте ли нулевой разделитель
+		print_error(NO_NULL_ERROR, vm);
 	vm->champion->code = read_code(fd, (size_t)(vm->champion->pl_size), vm); //читаем и записыаваем испоняемый код игрока
 	close(fd); //закрываем
 	vm->read_arg = 0; // чистим флаги

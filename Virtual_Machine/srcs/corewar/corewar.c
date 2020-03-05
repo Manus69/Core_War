@@ -1,32 +1,28 @@
 #include "corewar.h"
 
-void	inroduction(t_arena *vm)
+void	inroduction(t_champion *head, int count)
 {
-	int 		count;
-	t_champion	*head;
-
-	count = vm->players;
-	head = vm->champion;
-	ft_printf("{green}Introducing contestants...{eoc}\n");
-	while (count && head)
+	if (count == 0)
 	{
-		if (count == 1)
-			ft_printf("{red}* :smile_8  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
-		else if (count == 2)
-			ft_printf("{red}* :smile_7  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
-		else if (count == 3)
-			ft_printf("{red}* :smile_5  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
-		else if (count == 4)
-			ft_printf("{red}* :smile_1  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
-		ft_printf("\"%s\" (\"%s\")!{eoc}\n", head->name, head->comment);
-		head = head->next;
-		count--;
+		ft_printf("{green}Introducing contestants...{eoc}\n");
+		return;
 	}
+	else
+		inroduction(head->next, count - 1);
+	if (count == 1)
+		ft_printf("{red}* :smile_1  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
+	else if (count == 2)
+		ft_printf("{red}* :smile_7  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
+	else if (count == 3)
+		ft_printf("{red}* :smile_5  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
+	else if (count == 4)
+		ft_printf("{red}* :smile_8  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
+	ft_printf("\"%s\" (\"%s\")!{eoc}\n", head->name, head->comment);
 }
 
 void	ready_to_start(t_arena *vm)
 {
-	inroduction(vm);
+	inroduction(vm->champion, vm->players);
 }
 
 int main(int argc, char **argv)
