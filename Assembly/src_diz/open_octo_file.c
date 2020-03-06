@@ -50,8 +50,11 @@ int     validate_binary(t_dsm *src_code)
 		return (err_validate(src_code));
 	if (!(collect_pre_print(src_code)))
 		return (FAIL);
-	walk_throw(src_code);
+	if(!(walk_throw(src_code)))
+		return (FAIL);
 	ft_putstr(&src_code->output[0]);
+	if(!(fill_new_file(src_code)))
+		return (FAIL);
 	//print_binary_stdout(src_code);
 	free(src_code->input);
 	free(src_code->output);

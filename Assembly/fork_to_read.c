@@ -17,6 +17,8 @@ int dizasm(char *str)
 	src_code.input = NULL;
 	src_code.current_position = 0;
 	if (!(src_code.file_len = read_my_binary(str, &src_code.input)))
-		return (0);
+		return (FAIL);
+	if (!take_new_name(&src_code, str))
+		return (FAIL);
 	return (validate_binary(&src_code));
 }

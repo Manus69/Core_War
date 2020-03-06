@@ -16,6 +16,7 @@ typedef struct s_byte
 
 typedef struct  s_dsm
 {
+	char            *file_name;
 	unsigned char        *input;
 	size_t          file_len;
 	size_t         current_position;
@@ -86,5 +87,9 @@ int     walk_throw(t_dsm *src_code);
 int     fill_complex_instruction(t_dsm *src_code, t_argum *args);
 int     write_instruction(t_dsm *src_code, int op_code);
 int     fill_simple_instruction(t_dsm *src_code);
+char  *take_short_dir(t_dsm *src_code);
+char   *take_simple_dir(t_dsm *src_code);
+int         fill_new_file(t_dsm *src_code);
+int         take_new_name(t_dsm *src_code, char *old_name);
 
 #endif //ASSEMBLY_DIZ_ASM_H
