@@ -1,10 +1,26 @@
 #include "corewar.h"
 //очистка памяти
+
+void	free_slider(t_slider *slider, int count)
+{
+	t_slider *head;
+
+	head = NULL;
+	while (slider && count--)
+	{
+		if (slider->next)
+			head = slider->next;
+		free(slider);
+		slider = head;
+	}
+	slider = NULL;
+}
+
 void	free_champions(t_champion *player, int count)
 {
 	t_champion	*head;
 
-	head = 0;
+	head = NULL;
 	while (player && count--)
 	{
 		if (player->name)
@@ -28,6 +44,8 @@ void	free_arena(t_arena **arena)
 {
 	if ((*arena)->champion)
 		free_champions((*arena)->champion, (*arena)->players);
+	if ((*arena)->slider)
+		free_slider((*arena)->slider, (*arena)->players);
 	if (*arena)
 		free(*arena);
 	*arena = NULL;

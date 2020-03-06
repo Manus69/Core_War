@@ -1,26 +1,28 @@
 #include "corewar.h"
 
-void	inroduction(t_champion *head, int count)
+void	inroduction(t_arena *head, int count)
 {
-	if (count == 0)
+	int		i;
+
+	i = 0;
+	ft_printf("{green}Introducing contestants...{eoc}\n");
+	while (i < count)
 	{
-		ft_printf("{green}Introducing contestants...{eoc}\n");
-		return;
+		if (i + 1 == 1)
+			ft_printf("{red}* :smile_1  ");
+		else if (i + 1 == 2)
+			ft_printf("{red}* :smile_7  ");
+		else if (i + 1 == 3)
+			ft_printf("{red}* :smile_5  ");
+		else if (i + 1 == 4)
+			ft_printf("{red}* :smile_8  ");
+		ft_printf("Player %d: {blue}weighing %d bytes, ", head->ch[i]->number, head->ch[i]->pl_size);
+		ft_printf("\"%s\" (\"%s\")!{eoc}\n", head->ch[i]->name, head->ch[i]->comment);
+		i++;
 	}
-	else
-		inroduction(head->next, count - 1);
-	if (count == 1)
-		ft_printf("{red}* :smile_1  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
-	else if (count == 2)
-		ft_printf("{red}* :smile_7  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
-	else if (count == 3)
-		ft_printf("{red}* :smile_5  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
-	else if (count == 4)
-		ft_printf("{red}* :smile_8  Player %d: {blue}weighing %d bytes, ", head->number, head->pl_size);
-	ft_printf("\"%s\" (\"%s\")!{eoc}\n", head->name, head->comment);
 }
 
-t_arena 	*fill_arena(t_arena *vm, t_champion *ch, int players)
+t_arena 	*fill_arena(t_arena *vm, int players, int x)
 {
 	int 	count;
 	int 	a;
@@ -33,25 +35,61 @@ t_arena 	*fill_arena(t_arena *vm, t_champion *ch, int players)
 	{
 		a = index;
 		i = 0;
-		while (i < ch->pl_size)
+		while (i < vm->ch[x]->pl_size)
 		{
-			vm->map[a] = ch->code[i];
+			vm->map[a] = vm->ch[x]->code[i];
 			i++;
 			a++;
 		}
 		count++;
 		index += MEM_SIZE / players;
-		ch = ch->next;
+		x++;
+	}
+	return (vm);
+}
+
+t_arena		*get_slider(t_arena *vm)
+{
+	int 	i;
+	int 	place;
+	t_slider	*sl;
+	t_slider	*buf;
+
+	i = 0;
+	place = 0;
+	buf = NULL;
+	while (i < vm->players)
+	{
+		if (i != 0)
+			buf = sl;
+		sl = init_slider(vm, i, place);
+		vm->slider = sl;
+		vm->slider->next = buf;
+		vm->num_slider += 1;
+		place += MEM_SIZE / vm->players;
+		i++;
 	}
 	return (vm);
 }
 
 void	ready_to_start(t_arena *vm)
 {
-	if (vm->print_type == 0)
-		vm->print_type = 1; //устанавливаем для печати размер строки по умолчанию, если не было флага
-	inroduction(vm->champion, vm->players); //представляем участников
-	vm = fill_arena(vm, vm->champion, vm->players); //записываем код в арену
+	int 	i;
+	t_champion	*last;
+
+	if (vm->print_type == 0) //устанавливаем для печати размер строки по умолчанию, если не было флага
+		vm->print_type = 1;
+	last = vm->champion;
+	i = 0;
+	while (i < vm->players)
+	{
+		vm->ch[last->number - 1] = last;
+		last = last->next;
+		i++;
+	}
+	inroduction(vm, vm->players); //представляем участников
+	vm = fill_arena(vm, vm->players, 0); //записываем код в арену
+	vm = get_slider(vm);
 	print_mem_status(vm); //печать состояния памяти
 }
 

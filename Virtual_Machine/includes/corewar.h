@@ -20,6 +20,25 @@ typedef struct 				s_champion
 }							t_champion;
 
 /*
+ *  Структура для всей инфы о каретке, вставляется внутрь арены
+ */
+
+typedef struct				s_slider
+{
+	int 					id; //номер чеспиона от которого произошла каретка
+	int 					carry; //значение carry для прыжка
+	uint8_t 				code; //байт кода
+	ssize_t 				last_live; //последний раз выполненная операция live
+	int 					circles_to_exec; //циклов до выхода
+	uint8_t					type_of_args[3]; //типы агрументов
+	int32_t					pc; // положение каретки
+	uint32_t				step; //шаг
+	int32_t					r[REG_NUMBER]; //регистры
+	t_champion				*player; // чемпион
+	struct s_slider			*next;
+}							t_slider;
+
+/*
  *  Структура для основной игры и создания арены, можно добавлять нужные переменные
  */
 
@@ -28,7 +47,11 @@ typedef struct 				s_arena
 	int 					read_arg;		// был ли считан аргумент который надо записать в файл чемпиона
 	int 					players;		// number of players. always: players <= MAX_PLAYERS !
 	int 					read_num;		// for flag n;
-	int 					cycles;			// count of cycles
+	ssize_t 				cycles;			// count of cycles
+	t_slider				*slider; 		// каретки
+	int 					num_slider;		// число кареток
+	ssize_t 				lives;			// число выполненных операций live
+	ssize_t 				c_after_check;	// циклов после проверки
 	size_t 					d_dump;			// for flag -d or -dump
 	size_t 					show;			//for -s
 	int 					aff_print;		// true(1) or false(0) for flag -a
@@ -37,7 +60,8 @@ typedef struct 				s_arena
 	int 					death_coming;	// CYCLES_TO_DEATH, countdown to death *evil_smile*
 	t_champion				*last_alive;	// last alive player, may be winner.. or not?
 	t_champion				*champion;		// link to players list, Pl-3 in the head of the list
-	uint8_t 					map[MEM_SIZE];	// memory for arena
+	t_champion				*ch[MAX_PLAYERS]; // игроки по порядку
+	uint8_t 				map[MEM_SIZE];	// memory for arena
 }							t_arena;
 
 /*
@@ -62,6 +86,7 @@ void						credits();												//about us
 t_arena						*init_arena(void);										//get new empty arena
 int32_t						get_magic(int fd, t_arena *vm);							//read 8-bytes and convert it to 32
 t_champion					*init_player(int id, t_arena *vm);						//init new empty champion
+t_slider					*init_slider(t_arena *vm, int	id, int place);
 int 						check_player_id(t_arena *vm, int type);					//проверяет уникальность номера игрока, работает по-разному в зависимости от флага type 1) при type == 1: если номер (player id) повторяется, ф-ция выводит ошибку и заканчивает работу программы 2) если type == 0: при совпадении id выдает false, т/е возвращет 0, но продолжает работу.
 t_arena						*set_player_id(t_arena *vm);							//устанавливает уникальные id тем игрокам, у которых id не заданы флагом -n
 
