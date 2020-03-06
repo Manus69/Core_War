@@ -8,6 +8,7 @@
 # define CLASSIFICATION_ERROR_MESSAGE "Could not classify token:\n"
 # define SPACES " \t"
 # define DIGITS "0123456789"
+# define NUMBER_SYSTEM_BASE 16
 
 static char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "end",
 "or", "xor", "zjmp", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};
@@ -22,7 +23,8 @@ enum e_token_type
 {
     unknown,
     command,
-    quotation_mark,
+    opening_quotation_mark,
+    closing_quotation_mark,
     string,
     label,
     operation,

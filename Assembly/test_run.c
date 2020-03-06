@@ -108,7 +108,7 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
     else if (previous_token->type == command)
     {
         if (is_quotation_mark(current_token->string))
-            current_token->type = quotation_mark;
+            current_token->type = opening_quotation_mark;
         else
             display_classification_error_message(current_token, verbose);
     }
@@ -168,19 +168,27 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else
             current_token->type = comment;
     }
-    else if (previous_token->type == quotation_mark)
+    else if (previous_token->type == opening_quotation_mark)
     {
         if (is_quotation_mark(current_token->string))
-            current_token->type = quotation_mark;
-        if (is_new_line(current_token->string))
-            current_token->type = new_line;
+            current_token->type = closing_quotation_mark;
         else
             current_token->type = string;
+    }
+    else if (previous_token->type == closing_quotation_mark)
+    {
+        if (is_quotation_mark(current_token->string))
+            current_token->type = opening_quotation_mark;
+        else if (is_new_line(current_token->string))
+            current_token->type = new_line;
+        else
+            display_classification_error_message(current_token, verbose);
+        
     }
     else if (previous_token->type == string)
     {
         if (is_quotation_mark(current_token->string))
-            current_token->type = quotation_mark;
+            current_token->type = closing_quotation_mark;
         else
             current_token->type = string;
     }
@@ -202,6 +210,9 @@ void classify_all_tokens(t_generic_list *tokens, int verbose)
         previous_token = current_token;
     }
 }
+
+//string separators are lost during tokenization;
+//is it necessary to check for large (more than two bytes) numbers?
 
 int main()
 {
@@ -242,19 +253,14 @@ int main()
         free(current_line);
     }
     classify_all_tokens(tokens, 1);
-    // display_all_tokens(tokens);
+    display_all_tokens(tokens);
 
     //TESTING AREA
     t_generic_list *encoding;
     int bytes_encoded = 0;
     t_generic_list *current_token = tokens;
-    while (((t_token *)current_token->stuff)->type != string)
-        current_token = current_token->next;
-    current_token = current_token->next;
-    while (((t_token *)current_token->stuff)->type != string)
-        current_token = current_token->next;
-    encoding = encode_string_tokens(current_token, &bytes_encoded);
-    display_byte_strings(encoding);
+    ft_printf("%s", int_to_hex(-19, 2));
+    // display_byte_strings(encoding);
     //
 
     return (0);

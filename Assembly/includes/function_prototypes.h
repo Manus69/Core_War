@@ -8,6 +8,10 @@
 void	*mallokill(size_t size);
 
 int is_a_member(char *set, char c);
+char *get_binary_complement(char *binary_number, int number_of_bytes);
+void carry_propagate(char *number, int index, int bytes_left); //make it static later;
+int binary_to_decimal(char *binary_number);
+char *int_to_hex(int n, int number_of_bytes);
 
 void display_token(t_token *token);
 void display_all_tokens(t_generic_list *tokens);

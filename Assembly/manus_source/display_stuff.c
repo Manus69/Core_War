@@ -27,8 +27,10 @@ void display_token(t_token *token)
         type = "comment";
     else if (token->type == new_line)
         type = "new_line";
-    else if (token->type == quotation_mark)
-        type = "quotation_mark";
+    else if (token->type == opening_quotation_mark)
+        type = "opening_quotation_mark";
+    else if (token->type == closing_quotation_mark)
+        type = "closing_quotation_mark";
     else if (token->type == hashtag)
         type = "hashtag";
     else if (token->type == comma)
