@@ -1,5 +1,32 @@
 #include "corewar.h"
 
+void	print_mem_status(t_arena *vm)
+{
+	int i;
+	int line;
+	int space;
+	int format;
+
+	i = 0;
+	space = 1;
+	line = 1;
+	format = vm->print_type == 1 ? 64 : 32;
+	while (i < MEM_SIZE)
+	{
+		ft_printf("%02x", vm->map[i]);
+		if (space % 2 == 0 && line != 64)
+			ft_printf(" ");
+		if (line == format)
+		{
+			ft_printf("\n");
+			line = 0;
+		}
+		space++;
+		line++;
+		i++;
+	}
+}
+
 void	credits()
 {
 	ft_printf("*   *   *   *   *   *   *   *   *   *   *   *   *   *    *\n");

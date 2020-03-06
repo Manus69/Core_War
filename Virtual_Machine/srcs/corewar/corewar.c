@@ -20,9 +20,39 @@ void	inroduction(t_champion *head, int count)
 	ft_printf("\"%s\" (\"%s\")!{eoc}\n", head->name, head->comment);
 }
 
+t_arena 	*fill_arena(t_arena *vm, t_champion *ch, int players)
+{
+	int 	count;
+	int 	a;
+	int 	i;
+	int 	index;
+
+	count = 1;
+	index = 0;
+	while (count <= players)
+	{
+		a = index;
+		i = 0;
+		while (i < ch->pl_size)
+		{
+			vm->map[a] = ch->code[i];
+			i++;
+			a++;
+		}
+		count++;
+		index += MEM_SIZE / players;
+		ch = ch->next;
+	}
+	return (vm);
+}
+
 void	ready_to_start(t_arena *vm)
 {
-	inroduction(vm->champion, vm->players);
+	if (vm->print_type == 0)
+		vm->print_type = 1; //устанавливаем для печати размер строки по умолчанию, если не было флага
+	inroduction(vm->champion, vm->players); //представляем участников
+	vm = fill_arena(vm, vm->champion, vm->players); //записываем код в арену
+	print_mem_status(vm); //печать состояния памяти
 }
 
 int main(int argc, char **argv)
@@ -37,6 +67,7 @@ int main(int argc, char **argv)
 	}
 	else
 		usage(0); //как использовать если передать в функцию число 1 - запустит титульник
+	ft_printf(":smile_14 {red}Contesant %d,{Lblue} %s,{green} has won!{eoc} \n", vm->last_alive->number, vm->last_alive->name); //печать победителя
 	free_arena(&vm); //очистка памяти
 	return (0);
 }

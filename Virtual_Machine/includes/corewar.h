@@ -37,7 +37,7 @@ typedef struct 				s_arena
 	int 					death_coming;	// CYCLES_TO_DEATH, countdown to death *evil_smile*
 	t_champion				*last_alive;	// last alive player, may be winner.. or not?
 	t_champion				*champion;		// link to players list, Pl-3 in the head of the list
-	int8_t 					*map[MEM_SIZE];	// memory for arena
+	uint8_t 					map[MEM_SIZE];	// memory for arena
 }							t_arena;
 
 /*
@@ -71,5 +71,6 @@ t_arena						*set_player_id(t_arena *vm);							//устанавливает у�
 
 void						free_arena(t_arena **arena);							//free all structures
 void						print_error(char	*error, t_arena *vm);				//different errors and free memory
+void						print_mem_status(t_arena *vm);
 
 #endif
