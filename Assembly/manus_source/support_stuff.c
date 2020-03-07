@@ -78,15 +78,47 @@ int binary_to_decimal(char *binary_number)
     return (result);
 }
 
-char *int_to_hex(int n, int number_of_bytes)
+char *get_hex_with_padding(int decimal, int number_of_bytes)
+{
+    int m;
+    int initial_length;
+    char *resulting_string;
+    int resulting_string_length;
+    char *hex_number;
+    
+    hex_number = ft_itoa_base(decimal, 16);
+    initial_length = ft_strlen(hex_number);
+    resulting_string_length = number_of_bytes * 2;
+    if (resulting_string_length < initial_length)
+        resulting_string_length = initial_length;
+    resulting_string = ft_strnew(resulting_string_length);
+    m = 0;
+    while (m < resulting_string_length)
+    {
+        resulting_string[m] = '0';
+        m = m + 1;
+    }
+    m = 0;
+    while (m < initial_length)
+    {
+        resulting_string[resulting_string_length - 1 - m] = hex_number[initial_length - 1 - m];
+        m = m + 1;
+    }
+    free(hex_number);
+    return (resulting_string);
+}
+
+char *decimal_to_hex(int n, int number_of_bytes)
 {
     int decimal;
     char *binary_complement;
 
     if (n >= 0)
-        return (ft_itoa_base(n, 16));
+    {
+        return (get_hex_with_padding(n, number_of_bytes));
+    }
     n = -n;
     binary_complement = get_binary_complement(ft_itoa_base(n, 2), number_of_bytes); //leak;
     decimal = binary_to_decimal(binary_complement);
-    return (ft_itoa_base(decimal, 16));
+    return (get_hex_with_padding(decimal, number_of_bytes));
 }

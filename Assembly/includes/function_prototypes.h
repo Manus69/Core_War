@@ -11,7 +11,7 @@ int is_a_member(char *set, char c);
 char *get_binary_complement(char *binary_number, int number_of_bytes);
 void carry_propagate(char *number, int index, int bytes_left); //make it static later;
 int binary_to_decimal(char *binary_number);
-char *int_to_hex(int n, int number_of_bytes);
+char *decimal_to_hex(int n, int number_of_bytes);
 
 void display_token(t_token *token);
 void display_all_tokens(t_generic_list *tokens);
@@ -35,5 +35,9 @@ int     check_argument_token(t_token *token);
 t_generic_list *encode_string(t_token *token, int *bytes_encoded);
 t_generic_list *get_null_padding(int number_of_bytes);
 t_generic_list *encode_string_tokens(t_generic_list *tokens, int *bytes_encoded);
+t_generic_list *encode_operation(t_token *token, int *bytes_encoded);
+
+char *get_type_encoding(int number_of_arguments, ...);
+t_generic_list *get_type_encoding_mk2(t_generic_list *token, int *bytes_encoded);
 
 #endif

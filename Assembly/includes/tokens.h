@@ -9,6 +9,7 @@
 # define SPACES " \t"
 # define DIGITS "0123456789"
 # define NUMBER_SYSTEM_BASE 16
+# define ARG_ENCODING_SIZE 1 //is there a constant in the header already? 
 
 static char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "end",
 "or", "xor", "zjmp", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};

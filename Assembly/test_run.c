@@ -3,6 +3,7 @@
 #include "op.h"
 #include "generic_list.h"
 #include "tokens.h"
+#include "operation_table.h"
 #include "function_prototypes.h"
 #include <fcntl.h>
 
@@ -259,7 +260,23 @@ int main()
     t_generic_list *encoding;
     int bytes_encoded = 0;
     t_generic_list *current_token = tokens;
-    ft_printf("%s", int_to_hex(-19, 2));
+    
+    t_token *test_token1 = new_token("r1", argument);
+    test_token1->argument_type = registry;
+    t_token *test_token2 = new_token("?", argument);
+    test_token2->argument_type = direct;
+    t_token *test_token3 = new_token("?", argument);
+    test_token3->argument_type = direct;
+    char *argument_encoding = get_type_encoding(3, test_token1, test_token2, test_token3);
+
+    t_token *op_token = new_token("sti", operation);
+    t_generic_list *argument_test = new_generic_list(op_token);
+    argument_test = add_to_list(argument_test, test_token1);
+    argument_test = add_to_list(argument_test, test_token2);
+    argument_test = add_to_list(argument_test, test_token3);
+    t_generic_list *encoding_test = get_type_encoding_mk2(argument_test, &bytes_encoded);
+    display_byte_strings(encoding_test);
+
     // display_byte_strings(encoding);
     //
 
