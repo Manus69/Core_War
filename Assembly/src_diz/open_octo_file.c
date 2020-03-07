@@ -1,17 +1,34 @@
-//
-// Created by Grass Emerald on 29/02/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   open_octo_file.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/07 13:32:18 by gemerald          #+#    #+#             */
+/*   Updated: 2020/03/07 13:33:10 by gemerald         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "asm.h"
 
-int     err_validate(t_dsm *src_code)
+int		err_validate(t_dsm *src_code)
 {
 	free(src_code->input);
 	ft_putstr_fd("ERROR : *.cor ARE BAD\n", 2);
 	return (FAIL);
 }
 
-int     taste_magic(unsigned char *input)
+int		err_output(t_dsm *src_code)
+{
+	free(src_code->input);
+	if (src_code->output)
+		free(src_code->output);
+	ft_putstr_fd("ERROR : CAN'T WRITE OUTPUT\n", 2);
+	return (FAIL);
+}
+
+int		taste_magic(unsigned char *input)
 {
 	int *value;
 	int i;
@@ -35,7 +52,7 @@ int     taste_magic(unsigned char *input)
 	return (SUCCESS);
 }
 
-int     validate_binary(t_dsm *src_code)
+int		validate_binary(t_dsm *src_code)
 {
 	if (src_code->file_len < 4 || !taste_magic(src_code->input))
 		return (err_validate(src_code));
@@ -49,22 +66,20 @@ int     validate_binary(t_dsm *src_code)
 	if (!fill_diff_code_size(src_code))
 		return (err_validate(src_code));
 	if (!(collect_pre_print(src_code)))
-		return (FAIL);
-	if(!(walk_throw(src_code)))
-		return (FAIL);
-	ft_putstr(&src_code->output[0]);
-	if(!(fill_new_file(src_code)))
-		return (FAIL);
-	//print_binary_stdout(src_code);
+		return (err_output(src_code));
+	if (!(walk_throw(src_code)))
+		return (err_output(src_code));
+	if (!(fill_new_file(src_code)))
+		return (err_output(src_code));
 	free(src_code->input);
 	free(src_code->output);
 	return (SUCCESS);
 }
 
-int     read_my_binary(char *str, unsigned char **buf)
+int		read_my_binary(char *str, unsigned char **buf)
 {
-	int fd;
-	size_t file_len;
+	int		fd;
+	size_t	file_len;
 
 	file_len = 0;
 	if ((fd = open(str, O_RDONLY)) < 0)

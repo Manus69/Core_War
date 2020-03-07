@@ -1,16 +1,25 @@
-//
-// Created by Grass Emerald on 29/02/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   fork_to_read.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/07 13:22:20 by gemerald          #+#    #+#             */
+/*   Updated: 2020/03/07 13:22:40 by gemerald         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "asm.h"
 
-int asm_s(char *str)
+int		asm_s(char *str)
 {
-	ft_printf("to translate\n");
+	if (str)
+		ft_printf("to translate\n");
 	return (SUCCESS);
 }
 
-int dizasm(char *str)
+int		dizasm(char *str)
 {
 	t_dsm src_code;
 

@@ -1,17 +1,25 @@
-//
-// Created by Grass Emerald on 29/02/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   asm_main.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/07 13:21:32 by gemerald          #+#    #+#             */
+/*   Updated: 2020/03/07 13:22:10 by gemerald         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "asm.h"
 
-int     err_out(char *str)
+int		err_out(char *str)
 {
 	ft_putstr_fd(str, 2);
 	ft_putstr_fd("\n", 2);
 	return (0);
 }
 
-int    err_usage(char *str)
+int		err_usage(char *str)
 {
 	if (str)
 		ft_putstr_fd("ERROR : INCORRECT FILE_NAME\n", 2);
@@ -20,7 +28,7 @@ int    err_usage(char *str)
 	return (0);
 }
 
-void     init_functions(int (*actions[])(char *))
+void	init_functions(int (*actions[])(char *))
 {
 	actions[0] = &err_out;
 	actions[1] = &asm_s;
@@ -28,9 +36,10 @@ void     init_functions(int (*actions[])(char *))
 	actions[3] = &err_usage;
 }
 
-int     main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	int (*actions[4])(char *);
+
 	init_functions(actions);
 	actions[take_name(ac, av)](av[1]);
 	return (0);

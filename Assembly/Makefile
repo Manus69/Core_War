@@ -1,39 +1,41 @@
 #Compiler Options
-C_FLAGS =  -Wall -Wextra -Werror
+C_FLAGS = -Wall -Wextra -Werror
 #Filenames
-NAME_P := push_swap
-P_DIR := push_swap_sr
-NAME_C := checker
-C_DIR := pw_checker
-SRCS_P := main_pusher.c stk_utils.c instructions0.c instructions01.c \
-		instructions02.c validation.c init_stack.c chunkee.c another_algo.c \
-		revolver.c arger_validator.c another_algo_1.c another_algo_2.c revolver_1.c find_devian.c
+NAME := asm
+P_DIR := src_diz
+SRCS_P := ft_binary_read.c open_octo_file.c\
+   		validate_dizasm_init.c print_binary.c collect_pre_print_code.c put_name_comment.c\
+		walk_throw_byte.c complex_instructions.c simple_instrutions.c create_file.c
+SRC := asm_main.c fork_to_read.c take_name.c
 SSRCS_P := $(addprefix $(P_DIR)/, $(SRCS_P))
 OBJECTS_P := $(SSRCS_P:.c=.o)
-SRCS_C := arger_validator.c cmp_for_input.c init_stack.c instructions0.c instructions01.c\
-	            instructions02.c main_checker.c stk_utils.c validation.c find_devian.c
-SSRCS_C := $(addprefix $(C_DIR)/, $(SRCS_C))
-OBJECTS_C := $(SSRCS_C:.c=.o)
-INCLUDES := ./headers
-HEADER := $(INCLUDES)/push_swap.h
+OBJECTS_ROOT := $(SRC:.c=.o)
+INCLUDES := ./includes
+HEADER := $(INCLUDES)/*.h
+PRINTF := libftprintf.a
+LIB_PRINT := $(addprefix $(PRINTF_DIR)/, $(PRINTF))
+PRINTF_DIR := ft_printf
 
-all: $(NAME_P) $(NAME_C)
+all: $(LIB_PRINT)  $(NAME)
 
-$(NAME_P): $(OBJECTS_P)	
-	gcc -o $(NAME_P) $(OBJECTS_P) -L$(INCLUDES) -lft
+$(NAME): $(OBJECTS_P) $(OBJECTS_ROOT)	
+	gcc -o $(NAME) $(OBJECTS_P) $(OBJECTS_ROOT) -L$(PRINTF_DIR) -lftprintf
 $(OBJECTS_P): %.o: %.c $(HEADER)
 	gcc $(C_FLAGS) -I $(INCLUDES) -o $@ -c $<
+$(OBJECTS_ROOT): %.o: %.c $(HEADER)
+	gcc $(C_FLAGS) -I $(INCLUDES) -o $@ -c $<
 
-$(NAME_C): $(OBJECTS_C)
-	gcc -o $(NAME_C) $(OBJECTS_C) -L$(INCLUDES) -lft
-$(OBJECTS_C): %.o: %.c $(HEADER)
-	gcc $(C_FLAGS) -I$(INCLUDES)  -o $@ -c $<
+.FORCE:
+
+$(LIB_PRINT): .FORCE
+	make -C $(PRINTF_DIR)
 
 clean:
 	/bin/rm -f $(OBJECTS_P)
-	/bin/rm -f $(OBJECTS_C)
+	/bin/rm -f $(OBJECTS_ROOT)
+	make fclean -C $(PRINTF_DIR)
 fclean: clean
-	/bin/rm -f $(NAME_P)
-	/bin/rm -f $(NAME_C)
+	/bin/rm -f $(NAME)
+	make fclean -C $(PRINTF_DIR)
 re: fclean all
 

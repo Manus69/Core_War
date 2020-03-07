@@ -1,5 +1,5 @@
 #Compiler Options
-C_FLAGS =  -Wall -Wextra  -I.
+C_FLAGS =  -Wall -Wextra -Werror  -I.
 #Filenames
 LIBFT_DIR := libft/
 LIB := libft/libft.a

@@ -1,13 +1,21 @@
-//
-// Created by Grass Emerald on 05/03/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   simple_instrutions.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/07 13:36:20 by gemerald          #+#    #+#             */
+/*   Updated: 2020/03/07 13:36:46 by gemerald         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "asm.h"
 
-int    write_dir_without_arg_type(t_dsm *src_code, int size_t_dir)
+int		write_dir_without_arg_type(t_dsm *src_code, int size_t_dir)
 {
-	char *number;
-	int i;
+	char	*number;
+	int		i;
 
 	if (size_t_dir == 2)
 	{
@@ -30,7 +38,7 @@ int    write_dir_without_arg_type(t_dsm *src_code, int size_t_dir)
 	return (SUCCESS);
 }
 
-int     fill_simple_instruction(t_dsm *src_code)
+int		fill_simple_instruction(t_dsm *src_code)
 {
 	int op_code;
 	int size_t_dir;
