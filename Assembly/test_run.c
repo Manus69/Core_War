@@ -275,8 +275,9 @@ int main()
     argument_test = add_to_list(argument_test, test_token2);
     argument_test = add_to_list(argument_test, test_token3);
     t_generic_list *encoding_test = get_type_encoding_mk2(argument_test, &bytes_encoded);
-    display_byte_strings(encoding_test);
+    // display_byte_strings(encoding_test);
 
+    ft_printf(get_direct_number_encoding(new_token("%2", argument)));
     // display_byte_strings(encoding);
     //
 

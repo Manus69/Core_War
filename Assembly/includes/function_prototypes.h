@@ -37,6 +37,9 @@ t_generic_list *get_null_padding(int number_of_bytes);
 t_generic_list *encode_string_tokens(t_generic_list *tokens, int *bytes_encoded);
 t_generic_list *encode_operation(t_token *token, int *bytes_encoded);
 
+char *get_registry_encoding(t_token *token);
+char *get_direct_number_encoding(t_token *token);
+
 char *get_type_encoding(int number_of_arguments, ...);
 t_generic_list *get_type_encoding_mk2(t_generic_list *token, int *bytes_encoded);
 
