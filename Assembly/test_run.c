@@ -230,6 +230,8 @@ t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
     t_token *current_token_cast;
     int bytes_encoded;
 
+    char *debug_string;
+
     translation = NULL;
     last_element = NULL;
     bytes_encoded = 0;
@@ -248,11 +250,17 @@ t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
         else if (current_token_cast->type == operation)
         {
             current_token_translation = encode_operation(current_token_cast, &bytes_encoded);
+
+            debug_string = current_token_translation->stuff;
+
             translation = concatenate_lists(translation, current_token_translation, last_element);
             last_element = current_token_translation;
             if (op_tab[get_operation_name(current_token_cast)].arg_code_flag)
             {
                 current_token_translation = encode_type(current_token, &bytes_encoded);
+
+                debug_string = current_token_translation->stuff;
+
                 translation = concatenate_lists(translation, current_token_translation, last_element);
                 last_element = current_token_translation;
             }
@@ -260,6 +268,9 @@ t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
         else if (current_token_cast->type == argument)
         {
             current_token_translation = encode_argument(current_token, tokens, labels, &bytes_encoded);
+
+            debug_string = current_token_translation->stuff;
+
             translation = concatenate_lists(translation, current_token_translation, last_element);
             last_element = current_token_translation;
         }

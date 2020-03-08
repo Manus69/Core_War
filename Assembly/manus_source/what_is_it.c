@@ -204,10 +204,10 @@ void set_token_size(t_token *token)
     else if (token->type == argument)
     {
         if (token->argument_type == registry)
-            token->size = REG_SIZE;
+            token->size = REG_ARG_SIZE;
         else if (token->argument_type == direct)
-            token->size = DIR_SIZE;
+            token->size = DIR_ARG_SIZE;
         else if (token->argument_type == indirect)
-            token->size = IND_SIZE;
+            token->size = IND_ARG_SIZE;
     }
 }

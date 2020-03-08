@@ -90,6 +90,8 @@ t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
     char *saved_pointer;
     int n;
 
+    t_token *debug_item;
+
     n = 0;
     operation = get_operation_name((t_token *)token->stuff);
     argument_count = op_tab[operation].arg_count;
@@ -97,6 +99,11 @@ t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
     byte_string = ft_strdup("");
     while (n < argument_count)
     {
+        if (!token)
+            invoke_error("encode type is broken");
+
+        debug_item = ((t_token *)token->stuff);
+
         if (((t_token *)token->stuff)->argument_type == registry)
             byte = ft_strdup("01");
         else if (((t_token *)token->stuff)->argument_type == direct)
@@ -104,7 +111,10 @@ t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
         else if (((t_token *)token->stuff)->argument_type == indirect)
             byte = ft_strdup("11");
         else
-            byte = ft_strdup("??");
+        {
+            token = token->next;
+            continue ;
+        }
         saved_pointer = byte_string;
         byte_string = ft_strjoin(byte_string, byte);
         free(saved_pointer);
