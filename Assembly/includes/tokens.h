@@ -6,6 +6,7 @@
 # define GENERIC_ERROR_MESSAGE "Error!\n"
 # define FILE_ERROR_MESSAGE "Could not open the file;\n"
 # define CLASSIFICATION_ERROR_MESSAGE "Could not classify token:\n"
+# define ARGUMENT_ERROR_MESSAGE "Argument error;\n"
 # define SPACES " \t"
 # define DIGITS "0123456789"
 # define NUMBER_SYSTEM_BASE 16
@@ -57,6 +58,8 @@ struct s_token
     char *string;
     enum e_token_type type;
     enum e_argument_type argument_type;
+    int size;
+    int distance;
 };
 
 #endif

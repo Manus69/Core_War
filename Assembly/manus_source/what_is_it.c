@@ -1,5 +1,6 @@
 #include "function_prototypes.h"
 #include "tokens.h"
+#include "operation_table.h"
 
 int     generic_token_string_check(char *string, char character, int start)
 {
@@ -184,4 +185,29 @@ int     check_argument_token(t_token *token)
         return (1);
     }
     return (0);
+}
+
+void set_token_size(t_token *token)
+{
+    enum e_token_type operation_type;
+
+    if (token->type == string)
+        token->size = ft_strlen(token->string);
+    else if (token->type == operation)
+    {
+        operation_type = get_operation_name(token);
+        if (op_tab[operation_type].arg_code_flag == 1)
+            token->size = 2;
+        else
+            token->size = 1;
+    }
+    else if (token->type == argument)
+    {
+        if (token->argument_type == registry)
+            token->size = REG_SIZE;
+        else if (token->argument_type == direct)
+            token->size = DIR_SIZE;
+        else if (token->argument_type == indirect)
+            token->size = IND_SIZE;
+    }
 }

@@ -17,6 +17,7 @@ void display_token(t_token *token);
 void display_all_tokens(t_generic_list *tokens);
 void display_classification_error_message(t_token *token, int verbose);
 void display_byte_strings(t_generic_list *tokens);
+void invoke_error(char *error_message);
 
 int     is_quotation_mark(char *string);
 int     is_label(char *string);
@@ -30,6 +31,8 @@ int     is_registry(char *string);
 int     is_direct(char *string);
 int     is_indirect(char *string);
 
+void    set_token_size(t_token *token);
+
 int     check_argument_token(t_token *token);
 
 t_generic_list *encode_string(t_token *token, int *bytes_encoded);
@@ -39,8 +42,14 @@ t_generic_list *encode_operation(t_token *token, int *bytes_encoded);
 
 char *get_registry_encoding(t_token *token);
 char *get_direct_number_encoding(t_token *token);
+t_generic_list *encode_argument(t_generic_list *token,
+t_generic_list *tokens, t_generic_list *labels, int *bytes_encoded);
 
 char *get_type_encoding(int number_of_arguments, ...);
-t_generic_list *get_type_encoding_mk2(t_generic_list *token, int *bytes_encoded);
+t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded);
+enum e_operation_name get_operation_name(t_token *token);
+
+int get_distance_to_the_label(t_generic_list *token, char *label_name,
+t_generic_list *tokens, t_generic_list *labels);
 
 #endif

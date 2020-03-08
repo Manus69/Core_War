@@ -31,10 +31,7 @@ char *get_type_encoding(int number_of_arguments, ...)
     int n;
 
     if (number_of_arguments > MAX_ARGS_NUMBER)
-    {
-        ft_printf(GENERIC_ERROR_MESSAGE);
-        exit(1);
-    }
+        invoke_error(GENERIC_ERROR_MESSAGE);
     n = 0;
     byte_string = ft_strdup("");
     va_start(arg_list, number_of_arguments);
@@ -83,7 +80,7 @@ enum e_operation_name get_operation_name(t_token *token)
     return (dummy_operation); //should never be executed;
 }
 
-t_generic_list *get_type_encoding_mk2(t_generic_list *token, int *bytes_encoded)
+t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
 {
     // t_generic_list *encoding;
     int argument_count;

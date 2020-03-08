@@ -49,6 +49,8 @@ void display_token(t_token *token)
             argumnet_type = "not_applicable";
         ft_printf("argument_type: %s\n", argumnet_type);
     }
+    ft_printf("size: %d\n", token->size);
+    ft_printf("distance: %d\n", token->distance);
     ft_printf("---------------\n");
 }
 
@@ -75,6 +77,12 @@ void display_classification_error_message(t_token *token, int verbose)
     {
         ft_printf(GENERIC_ERROR_MESSAGE);
     }
+    exit(1);
+}
+
+void invoke_error(char *error_message)
+{
+    ft_printf(error_message);
     exit(1);
 }
 

@@ -18,6 +18,8 @@ t_token *new_token(char *string, enum e_token_type type)
     else
         token->type = type;
     token->argument_type = not_applicable;
+    token->size = 0;
+    token->distance = -1;
     return (token);
 }
 
@@ -193,23 +195,77 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else
             current_token->type = string;
     }
+    set_token_size(current_token);
 }
 
-void classify_all_tokens(t_generic_list *tokens, int verbose)
+void classify_all_tokens_measure_distance(t_generic_list *tokens, t_generic_list **labels, int verbose)
 {
     t_token *current_token;
     t_token *previous_token;
     t_generic_list *current_item;
+    int distance;
 
     previous_token = NULL;
     current_item = tokens;
+    distance = 0;
     while (current_item)
     {
         current_token = current_item->stuff;
         classify_token(current_token, previous_token, verbose);
+        current_token->distance = distance;
+        if (current_token->type == label)
+            *labels = add_to_list(*labels, current_token);
+        distance = distance + current_token->size;
         current_item = current_item->next;
         previous_token = current_token;
     }
+}
+
+t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
+{
+    t_generic_list *translation;
+    t_generic_list *current_token;
+    t_generic_list *current_token_translation;
+    t_generic_list *last_element;
+    t_token *current_token_cast;
+    int bytes_encoded;
+
+    translation = NULL;
+    last_element = NULL;
+    bytes_encoded = 0;
+    current_token = tokens;
+    if (!current_token)
+        invoke_error("empty token list");
+    while (current_token)
+    {
+        current_token_cast = (t_token *)current_token->stuff;
+        if (current_token_cast->type == string)
+        {
+            current_token_translation = encode_string(current_token_cast, &bytes_encoded);
+            translation = concatenate_lists(translation, current_token_translation, last_element);
+            last_element = current_token_translation;
+        }
+        else if (current_token_cast->type == operation)
+        {
+            current_token_translation = encode_operation(current_token_cast, &bytes_encoded);
+            translation = concatenate_lists(translation, current_token_translation, last_element);
+            last_element = current_token_translation;
+            if (op_tab[get_operation_name(current_token_cast)].arg_code_flag)
+            {
+                current_token_translation = encode_type(current_token, &bytes_encoded);
+                translation = concatenate_lists(translation, current_token_translation, last_element);
+                last_element = current_token_translation;
+            }
+        }
+        else if (current_token_cast->type == argument)
+        {
+            current_token_translation = encode_argument(current_token, tokens, labels, &bytes_encoded);
+            translation = concatenate_lists(translation, current_token_translation, last_element);
+            last_element = current_token_translation;
+        }
+        current_token = current_token->next;
+    }
+    return (translation);
 }
 
 //string separators are lost during tokenization;
@@ -222,6 +278,7 @@ int main()
     t_generic_list *tokens;
     t_generic_list *line_tokens;
     t_generic_list *last_element;
+    t_generic_list *labels;
 
     file = open("/home/anus/projects/core_war/Assembly/test_champ.s", O_RDONLY);
     if (file < 0)
@@ -253,8 +310,13 @@ int main()
         }
         free(current_line);
     }
-    classify_all_tokens(tokens, 1);
+    labels = NULL;
+    classify_all_tokens_measure_distance(tokens, &labels, 1);
     display_all_tokens(tokens);
+    // display_all_tokens(labels);
+
+    t_generic_list *translation = translate_tokens(tokens, labels);
+    display_byte_strings(translation);
 
     //TESTING AREA
     t_generic_list *encoding;
@@ -274,10 +336,10 @@ int main()
     argument_test = add_to_list(argument_test, test_token1);
     argument_test = add_to_list(argument_test, test_token2);
     argument_test = add_to_list(argument_test, test_token3);
-    t_generic_list *encoding_test = get_type_encoding_mk2(argument_test, &bytes_encoded);
+    t_generic_list *encoding_test = encode_type(argument_test, &bytes_encoded);
     // display_byte_strings(encoding_test);
 
-    ft_printf(get_direct_number_encoding(new_token("%2", argument)));
+    // ft_printf(get_direct_number_encoding(new_token("%2", argument)));
     // display_byte_strings(encoding);
     //
 
