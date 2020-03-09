@@ -195,27 +195,23 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else
             current_token->type = string;
     }
-    set_token_size(current_token);
+    // set_token_size(current_token);
 }
 
-void classify_all_tokens_measure_distance(t_generic_list *tokens, t_generic_list **labels, int verbose)
+void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int verbose)
 {
     t_token *current_token;
     t_token *previous_token;
     t_generic_list *current_item;
-    int distance;
 
     previous_token = NULL;
     current_item = tokens;
-    distance = 0;
     while (current_item)
     {
         current_token = current_item->stuff;
         classify_token(current_token, previous_token, verbose);
-        current_token->distance = distance;
         if (current_token->type == label)
             *labels = add_to_list(*labels, current_token);
-        distance = distance + current_token->size;
         current_item = current_item->next;
         previous_token = current_token;
     }
@@ -281,6 +277,7 @@ t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
 
 //string separators are lost during tokenization;
 //is it necessary to check for large (more than two bytes) numbers?
+//the size constants are all fucked up!
 
 int main()
 {
@@ -322,7 +319,9 @@ int main()
         free(current_line);
     }
     labels = NULL;
-    classify_all_tokens_measure_distance(tokens, &labels, 1);
+    classify_all_tokens(tokens, &labels, 1);
+    measure_token_size(tokens);
+    set_global_distance(tokens);
     display_all_tokens(tokens);
     // display_all_tokens(labels);
 

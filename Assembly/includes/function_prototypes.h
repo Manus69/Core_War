@@ -32,6 +32,7 @@ int     is_direct(char *string);
 int     is_indirect(char *string);
 
 void    set_token_size(t_token *token);
+void    measure_token_size(t_generic_list *tokens);
 
 int     check_argument_token(t_token *token);
 
@@ -51,5 +52,7 @@ enum e_operation_name get_operation_name(t_token *token);
 
 int get_distance_to_the_label(t_generic_list *token, char *label_name,
 t_generic_list *tokens, t_generic_list *labels);
+void set_global_distance(t_generic_list *tokens);
+int get_distance_to_the_previous_operation(t_token *token, t_generic_list *token_list);
 
 #endif

@@ -10,11 +10,20 @@
 # define SPACES " \t"
 # define DIGITS "0123456789"
 # define NUMBER_SYSTEM_BASE 16
-# define ARG_ENCODING_SIZE 1 //is there a constant in the header already?
 
+//depreciated; 
+# define ARG_ENCODING_SIZE 1 //is there a constant in the header already?
 # define REG_ARG_SIZE 1
 # define DIR_ARG_SIZE 2
 # define IND_ARG_SIZE 2 //how much is it really?
+//
+
+# define REGISTRY_NAME_SIZE T_REG
+# define REGISTRY_SIZE REG_SIZE
+# define DIRECT_VALUE_SIZE REGISTRY_SIZE
+# define DIRECT_ADDRESS_SIZE IND_SIZE
+# define INDIRECT_VALUE_SIZE IND_SIZE
+
 
 static char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "end",
 "or", "xor", "zjmp", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};

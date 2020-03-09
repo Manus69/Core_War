@@ -37,6 +37,20 @@ t_generic_list *tokens, t_generic_list *labels)
     return (label_encoding);
 }
 
+char *get_indirect_address_encoding(t_token *token, t_generic_list *tokens)
+{
+    char *value_encoding;
+    int address_value;
+    int distance_to_operation;
+    int actual_distance;
+
+    distance_to_operation = get_distance_to_the_previous_operation(token, tokens);
+    if (distance_to_operation < 0)
+        invoke_error("indirect addressing is broken");
+    address_value = ft_atoi_base(token->string, 16);
+    
+}
+
 t_generic_list *encode_argument(t_generic_list *token,
 t_generic_list *tokens, t_generic_list *labels, int *bytes_encoded)
 {

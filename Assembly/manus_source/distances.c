@@ -15,8 +15,8 @@ int get_absolute_distance_to_the_label(t_token *token, char *label_name, t_gener
 
         debug_token = (t_token *)current_token->stuff;
 
-        substring = ft_strsub(label_name, 0, ft_strlen(label_name) - 1);
-        if (ft_strcmp(((t_token *)current_token->stuff)->string, substring) == 0)
+        substring = ft_strsub(debug_token->string, 0, ft_strlen(debug_token->string) - 1);
+        if (ft_strcmp(substring, label_name) == 0)
             return (((t_token *)current_token->stuff)->distance - token->distance);
         free(substring);
         current_token = current_token->next;
@@ -66,7 +66,8 @@ int get_distance_to_the_next_operation(t_generic_list *token)
     return (distance);
 }
 
-int get_distance_to_the_label(t_generic_list *token, char *label_name, t_generic_list *tokens, t_generic_list *labels)
+int get_distance_to_the_label(t_generic_list *token, char *label_name,
+t_generic_list *tokens, t_generic_list *labels)
 {
     int absolute_distance;
     int distance_to_the_previous_operation;
@@ -75,22 +76,23 @@ int get_distance_to_the_label(t_generic_list *token, char *label_name, t_generic
 
     current_token = ((t_token *)token->stuff);
     absolute_distance = get_absolute_distance_to_the_label(current_token, label_name, labels);
-    if (absolute_distance < 0)
+    distance_to_the_previous_operation = get_distance_to_the_previous_operation(current_token, tokens);
+    if (distance_to_the_previous_operation < 0)
+        invoke_error("this is broken!");
+    return (absolute_distance + distance_to_the_previous_operation);
+}
+
+void set_global_distance(t_generic_list *tokens)
+{
+    int distance;
+    t_generic_list *current_token;
+
+    current_token = tokens;
+    distance = 0;
+    while (current_token)
     {
-        distance_to_the_previous_operation = get_distance_to_the_previous_operation(current_token, tokens);
-        if (distance_to_the_previous_operation < 0)
-            invoke_error("this is broken!");
-        return (absolute_distance + distance_to_the_previous_operation);
-    }
-    else
-    {
-        // distance_to_the_next_operation = get_distance_to_the_next_operation(token);
-        
-        // if (distance_to_the_next_operation < 0)
-        //     invoke_error("does not work!");
-        distance_to_the_previous_operation = get_distance_to_the_previous_operation(current_token, tokens);
-        if (distance_to_the_previous_operation < 0)
-            invoke_error("this is broken!");
-        return (absolute_distance - distance_to_the_previous_operation);
+        ((t_token *)current_token->stuff)->distance = distance;
+        distance = distance + ((t_token *)current_token->stuff)->size;
+        current_token = current_token->next;
     }
 }
