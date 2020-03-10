@@ -1,20 +1,24 @@
 #include "corewar.h"
 
-t_slider	*init_slider(t_arena *vm, int	id, int place)
+t_slider	*init_slider(t_arena *vm, int	id, int place, int flag)
 {
 	t_slider	*new;
+	static uint32_t	cursor_id;
 
 	if (!(new = (t_slider *)ft_memalloc(sizeof(t_slider))))
-		print_error(MALLOC_ERROR, vm);
-	new->id = id + 1; //номер чеспиона от которого произошла каретка
+		print_error(MALLOC_ERROR, vm);; //номер чеспиона от которого произошла каретка
+	new->id = ++cursor_id;
 	new->carry = 0; //значение carry для прыжка
 	new->code = 0; //байт кода
 	new->last_live = 0; //последний раз выполненная операция live
-	new->circles_to_exec = 0; //циклов до выхода
-	new->pc = place; // положение каретки
+	new->cool_down = 0; //циклов до выхода
+	new->place = place; // положение каретки
 	new->step = 0; //шаг
-	new->r[0] = -(vm->ch[id]->number); //регистры
-	new->player = vm->ch[id]; // чемпион
+	if (flag)
+	{
+		new->r[0] = -(vm->ch[id]->number); //регистры
+		new->player = vm->ch[id]; // чемпион
+	}
 	return (new);
 }
 

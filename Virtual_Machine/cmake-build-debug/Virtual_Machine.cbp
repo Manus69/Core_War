@@ -395,6 +395,9 @@
 		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/includes/op.h">
 			<Option target="Virtual_Machine"/>
 		</Unit>
+		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/additional.c">
+			<Option target="Virtual_Machine"/>
+		</Unit>
 		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/calculate.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
@@ -416,7 +419,28 @@
 		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/init_resourse.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
+		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_13_16.c">
+			<Option target="Virtual_Machine"/>
+		</Unit>
+		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_1_4.c">
+			<Option target="Virtual_Machine"/>
+		</Unit>
+		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_5_8.c">
+			<Option target="Virtual_Machine"/>
+		</Unit>
+		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_9_12.c">
+			<Option target="Virtual_Machine"/>
+		</Unit>
 		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/print_some.c">
+			<Option target="Virtual_Machine"/>
+		</Unit>
+		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_code.c">
+			<Option target="Virtual_Machine"/>
+		</Unit>
+		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_memory.c">
+			<Option target="Virtual_Machine"/>
+		</Unit>
+		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/start_war.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
 		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/CMakeLists.txt">

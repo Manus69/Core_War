@@ -42,6 +42,14 @@ void	free_champions(t_champion *player, int count)
 
 void	free_arena(t_arena **arena)
 {
+	int i;
+
+	i = 0;
+	while (i < 4)
+	{
+		(*arena)->ch[i] = NULL;
+		i++;
+	}
 	if ((*arena)->champion)
 		free_champions((*arena)->champion, (*arena)->players);
 	if ((*arena)->slider)

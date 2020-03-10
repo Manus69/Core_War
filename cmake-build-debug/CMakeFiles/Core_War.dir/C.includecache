@@ -1,0 +1,514 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+unistd.h
+-
+fcntl.h
+-
+stdlib.h
+-
+string.h
+-
+
+../Virtual_Machine/ft_lftprintf/includes/printf.h
+stdio.h
+-
+unistd.h
+-
+stdarg.h
+-
+libft/libft.h
+../Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+../Virtual_Machine/includes/corewar.h
+printf.h
+../Virtual_Machine/includes/printf.h
+op.h
+../Virtual_Machine/includes/op.h
+error.h
+../Virtual_Machine/includes/error.h
+
+../Virtual_Machine/includes/error.h
+
+../Virtual_Machine/includes/op.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Resources/op.c
+op.h
+/Volumes/d_60Gb/Новая папка/Core_War/Resources/op.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Resources/op.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c
+libft.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+unistd.h
+-
+fcntl.h
+-
+stdlib.h
+-
+string.h
+-
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+fcntl.h
+-
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/color_option.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/format_checker.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c
+printf.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/printf.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/additional.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/calculate.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/check_input.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/error_list.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/free_resourse.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/get_champion.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/init_resourse.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_13_16.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_1_4.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_5_8.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_9_12.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/print_some.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_code.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_memory.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/start_war.c
+corewar.h
+/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.h
+

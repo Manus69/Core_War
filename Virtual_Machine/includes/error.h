@@ -4,6 +4,7 @@
 // Here we will add some error messages
 
 # define MALLOC_ERROR				"\n\033[0;31mMalloc error. Can`t get memory!\033[0m\n"
+# define CODE_SIZE_ERROR			"\n\033[0;31mIncorrect size of champion file!\033[0m\n"
 # define FLAG_ERROR					"\n\033[0;31mUnknown argument or duplicate flag!\033[0m\n"
 # define ARGS_ERROR					"\n\033[0;31mWrong N number or player`s file doesn`t exist!\033[0m\n"
 # define PLAYER_ID_ERROR			"\n\033[0;31mWrong or duplicating player id!\033[0m\n"

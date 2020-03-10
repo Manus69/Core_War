@@ -62,7 +62,7 @@ t_arena		*get_slider(t_arena *vm)
 	{
 		if (i != 0)
 			buf = sl;
-		sl = init_slider(vm, i, place);
+		sl = init_slider(vm, i, place, 1);
 		vm->slider = sl;
 		vm->slider->next = buf;
 		vm->num_slider += 1;
@@ -72,14 +72,14 @@ t_arena		*get_slider(t_arena *vm)
 	return (vm);
 }
 
-void	ready_to_start(t_arena *vm)
+t_arena		*ready_to_start(t_arena *vm)
 {
 	int 	i;
 	t_champion	*last;
 
 	if (vm->print_type == 0) //устанавливаем для печати размер строки по умолчанию, если не было флага
 		vm->print_type = 1;
-	last = vm->champion;
+	last = vm->champion; // нужен для заполнения массива
 	i = 0;
 	while (i < vm->players)
 	{
@@ -90,7 +90,7 @@ void	ready_to_start(t_arena *vm)
 	inroduction(vm, vm->players); //представляем участников
 	vm = fill_arena(vm, vm->players, 0); //записываем код в арену
 	vm = get_slider(vm);
-	print_mem_status(vm); //печать состояния памяти
+	return (vm);
 }
 
 int main(int argc, char **argv)
@@ -101,11 +101,11 @@ int main(int argc, char **argv)
 	if (argc >= 2)
 	{
 		vm = check_input(argv, argc, vm); //проверяет валидность, заполняет структуру вм и чемпионов(лежат в вм) из файла
-		ready_to_start(vm);
+		vm = ready_to_start(vm);
+		start_war(vm);
 	}
 	else
 		usage(0); //как использовать если передать в функцию число 1 - запустит титульник
-	ft_printf(":smile_14 {red}Contesant %d,{Lblue} %s,{green} has won!{eoc} \n", vm->last_alive->number, vm->last_alive->name); //печать победителя
 	free_arena(&vm); //очистка памяти
 	return (0);
 }

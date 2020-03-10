@@ -315,6 +315,13 @@ CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.o: ../ft_lftp
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.o: ../ft_lftprintf/includes/printf.h
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.o: ../ft_lftprintf/srcs/work_with_x_big.c
 
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o: ../includes/corewar.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o: ../includes/error.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o: ../includes/op.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o: ../srcs/corewar/additional.c
+
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o: ../ft_lftprintf/includes/libft/libft.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o: ../ft_lftprintf/includes/printf.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o: ../includes/corewar.h
@@ -364,10 +371,59 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o: ../includes/error
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o: ../includes/op.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o: ../srcs/corewar/init_resourse.c
 
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o: ../includes/corewar.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o: ../includes/error.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o: ../includes/op.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o: ../srcs/corewar/op_13_16.c
+
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o: ../includes/corewar.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o: ../includes/error.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o: ../includes/op.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o: ../srcs/corewar/op_1_4.c
+
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o: ../includes/corewar.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o: ../includes/error.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o: ../includes/op.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o: ../srcs/corewar/op_5_8.c
+
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o: ../includes/corewar.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o: ../includes/error.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o: ../includes/op.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o: ../srcs/corewar/op_9_12.c
+
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: ../ft_lftprintf/includes/libft/libft.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: ../ft_lftprintf/includes/printf.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: ../includes/corewar.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: ../includes/error.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: ../includes/op.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: ../srcs/corewar/print_some.c
+
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: ../includes/corewar.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: ../includes/error.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: ../includes/op.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: ../srcs/corewar/read_code.c
+
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o: ../includes/corewar.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o: ../includes/error.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o: ../includes/op.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o: ../srcs/corewar/read_memory.c
+
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o: ../ft_lftprintf/includes/libft/libft.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o: ../ft_lftprintf/includes/printf.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o: ../includes/corewar.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o: ../includes/error.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o: ../includes/op.h
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o: ../srcs/corewar/start_war.c
 

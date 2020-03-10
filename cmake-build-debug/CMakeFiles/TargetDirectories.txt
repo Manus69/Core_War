@@ -1,0 +1,3 @@
+/Volumes/d_60Gb/Новая папка/Core_War/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Volumes/d_60Gb/Новая папка/Core_War/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/d_60Gb/Новая папка/Core_War/cmake-build-debug/CMakeFiles/Core_War.dir

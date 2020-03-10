@@ -2769,6 +2769,33 @@ ft_lftprintf/srcs/work_with_x_big.c.s:
 	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.s
 .PHONY : ft_lftprintf/srcs/work_with_x_big.c.s
 
+srcs/corewar/additional.o: srcs/corewar/additional.c.o
+
+.PHONY : srcs/corewar/additional.o
+
+# target to build an object file
+srcs/corewar/additional.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o
+.PHONY : srcs/corewar/additional.c.o
+
+srcs/corewar/additional.i: srcs/corewar/additional.c.i
+
+.PHONY : srcs/corewar/additional.i
+
+# target to preprocess a source file
+srcs/corewar/additional.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.i
+.PHONY : srcs/corewar/additional.c.i
+
+srcs/corewar/additional.s: srcs/corewar/additional.c.s
+
+.PHONY : srcs/corewar/additional.s
+
+# target to generate assembly for a file
+srcs/corewar/additional.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.s
+.PHONY : srcs/corewar/additional.c.s
+
 srcs/corewar/calculate.o: srcs/corewar/calculate.c.o
 
 .PHONY : srcs/corewar/calculate.o
@@ -2958,6 +2985,114 @@ srcs/corewar/init_resourse.c.s:
 	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.s
 .PHONY : srcs/corewar/init_resourse.c.s
 
+srcs/corewar/op_13_16.o: srcs/corewar/op_13_16.c.o
+
+.PHONY : srcs/corewar/op_13_16.o
+
+# target to build an object file
+srcs/corewar/op_13_16.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o
+.PHONY : srcs/corewar/op_13_16.c.o
+
+srcs/corewar/op_13_16.i: srcs/corewar/op_13_16.c.i
+
+.PHONY : srcs/corewar/op_13_16.i
+
+# target to preprocess a source file
+srcs/corewar/op_13_16.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.i
+.PHONY : srcs/corewar/op_13_16.c.i
+
+srcs/corewar/op_13_16.s: srcs/corewar/op_13_16.c.s
+
+.PHONY : srcs/corewar/op_13_16.s
+
+# target to generate assembly for a file
+srcs/corewar/op_13_16.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.s
+.PHONY : srcs/corewar/op_13_16.c.s
+
+srcs/corewar/op_1_4.o: srcs/corewar/op_1_4.c.o
+
+.PHONY : srcs/corewar/op_1_4.o
+
+# target to build an object file
+srcs/corewar/op_1_4.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o
+.PHONY : srcs/corewar/op_1_4.c.o
+
+srcs/corewar/op_1_4.i: srcs/corewar/op_1_4.c.i
+
+.PHONY : srcs/corewar/op_1_4.i
+
+# target to preprocess a source file
+srcs/corewar/op_1_4.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.i
+.PHONY : srcs/corewar/op_1_4.c.i
+
+srcs/corewar/op_1_4.s: srcs/corewar/op_1_4.c.s
+
+.PHONY : srcs/corewar/op_1_4.s
+
+# target to generate assembly for a file
+srcs/corewar/op_1_4.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.s
+.PHONY : srcs/corewar/op_1_4.c.s
+
+srcs/corewar/op_5_8.o: srcs/corewar/op_5_8.c.o
+
+.PHONY : srcs/corewar/op_5_8.o
+
+# target to build an object file
+srcs/corewar/op_5_8.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o
+.PHONY : srcs/corewar/op_5_8.c.o
+
+srcs/corewar/op_5_8.i: srcs/corewar/op_5_8.c.i
+
+.PHONY : srcs/corewar/op_5_8.i
+
+# target to preprocess a source file
+srcs/corewar/op_5_8.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.i
+.PHONY : srcs/corewar/op_5_8.c.i
+
+srcs/corewar/op_5_8.s: srcs/corewar/op_5_8.c.s
+
+.PHONY : srcs/corewar/op_5_8.s
+
+# target to generate assembly for a file
+srcs/corewar/op_5_8.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.s
+.PHONY : srcs/corewar/op_5_8.c.s
+
+srcs/corewar/op_9_12.o: srcs/corewar/op_9_12.c.o
+
+.PHONY : srcs/corewar/op_9_12.o
+
+# target to build an object file
+srcs/corewar/op_9_12.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o
+.PHONY : srcs/corewar/op_9_12.c.o
+
+srcs/corewar/op_9_12.i: srcs/corewar/op_9_12.c.i
+
+.PHONY : srcs/corewar/op_9_12.i
+
+# target to preprocess a source file
+srcs/corewar/op_9_12.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.i
+.PHONY : srcs/corewar/op_9_12.c.i
+
+srcs/corewar/op_9_12.s: srcs/corewar/op_9_12.c.s
+
+.PHONY : srcs/corewar/op_9_12.s
+
+# target to generate assembly for a file
+srcs/corewar/op_9_12.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.s
+.PHONY : srcs/corewar/op_9_12.c.s
+
 srcs/corewar/print_some.o: srcs/corewar/print_some.c.o
 
 .PHONY : srcs/corewar/print_some.o
@@ -2984,6 +3119,87 @@ srcs/corewar/print_some.s: srcs/corewar/print_some.c.s
 srcs/corewar/print_some.c.s:
 	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.s
 .PHONY : srcs/corewar/print_some.c.s
+
+srcs/corewar/read_code.o: srcs/corewar/read_code.c.o
+
+.PHONY : srcs/corewar/read_code.o
+
+# target to build an object file
+srcs/corewar/read_code.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o
+.PHONY : srcs/corewar/read_code.c.o
+
+srcs/corewar/read_code.i: srcs/corewar/read_code.c.i
+
+.PHONY : srcs/corewar/read_code.i
+
+# target to preprocess a source file
+srcs/corewar/read_code.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.i
+.PHONY : srcs/corewar/read_code.c.i
+
+srcs/corewar/read_code.s: srcs/corewar/read_code.c.s
+
+.PHONY : srcs/corewar/read_code.s
+
+# target to generate assembly for a file
+srcs/corewar/read_code.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.s
+.PHONY : srcs/corewar/read_code.c.s
+
+srcs/corewar/read_memory.o: srcs/corewar/read_memory.c.o
+
+.PHONY : srcs/corewar/read_memory.o
+
+# target to build an object file
+srcs/corewar/read_memory.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o
+.PHONY : srcs/corewar/read_memory.c.o
+
+srcs/corewar/read_memory.i: srcs/corewar/read_memory.c.i
+
+.PHONY : srcs/corewar/read_memory.i
+
+# target to preprocess a source file
+srcs/corewar/read_memory.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.i
+.PHONY : srcs/corewar/read_memory.c.i
+
+srcs/corewar/read_memory.s: srcs/corewar/read_memory.c.s
+
+.PHONY : srcs/corewar/read_memory.s
+
+# target to generate assembly for a file
+srcs/corewar/read_memory.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.s
+.PHONY : srcs/corewar/read_memory.c.s
+
+srcs/corewar/start_war.o: srcs/corewar/start_war.c.o
+
+.PHONY : srcs/corewar/start_war.o
+
+# target to build an object file
+srcs/corewar/start_war.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o
+.PHONY : srcs/corewar/start_war.c.o
+
+srcs/corewar/start_war.i: srcs/corewar/start_war.c.i
+
+.PHONY : srcs/corewar/start_war.i
+
+# target to preprocess a source file
+srcs/corewar/start_war.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.i
+.PHONY : srcs/corewar/start_war.c.i
+
+srcs/corewar/start_war.s: srcs/corewar/start_war.c.s
+
+.PHONY : srcs/corewar/start_war.s
+
+# target to generate assembly for a file
+srcs/corewar/start_war.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.s
+.PHONY : srcs/corewar/start_war.c.s
 
 # Help Target
 help:
@@ -3288,6 +3504,9 @@ help:
 	@echo "... ft_lftprintf/srcs/work_with_x_big.o"
 	@echo "... ft_lftprintf/srcs/work_with_x_big.i"
 	@echo "... ft_lftprintf/srcs/work_with_x_big.s"
+	@echo "... srcs/corewar/additional.o"
+	@echo "... srcs/corewar/additional.i"
+	@echo "... srcs/corewar/additional.s"
 	@echo "... srcs/corewar/calculate.o"
 	@echo "... srcs/corewar/calculate.i"
 	@echo "... srcs/corewar/calculate.s"
@@ -3309,9 +3528,30 @@ help:
 	@echo "... srcs/corewar/init_resourse.o"
 	@echo "... srcs/corewar/init_resourse.i"
 	@echo "... srcs/corewar/init_resourse.s"
+	@echo "... srcs/corewar/op_13_16.o"
+	@echo "... srcs/corewar/op_13_16.i"
+	@echo "... srcs/corewar/op_13_16.s"
+	@echo "... srcs/corewar/op_1_4.o"
+	@echo "... srcs/corewar/op_1_4.i"
+	@echo "... srcs/corewar/op_1_4.s"
+	@echo "... srcs/corewar/op_5_8.o"
+	@echo "... srcs/corewar/op_5_8.i"
+	@echo "... srcs/corewar/op_5_8.s"
+	@echo "... srcs/corewar/op_9_12.o"
+	@echo "... srcs/corewar/op_9_12.i"
+	@echo "... srcs/corewar/op_9_12.s"
 	@echo "... srcs/corewar/print_some.o"
 	@echo "... srcs/corewar/print_some.i"
 	@echo "... srcs/corewar/print_some.s"
+	@echo "... srcs/corewar/read_code.o"
+	@echo "... srcs/corewar/read_code.i"
+	@echo "... srcs/corewar/read_code.s"
+	@echo "... srcs/corewar/read_memory.o"
+	@echo "... srcs/corewar/read_memory.i"
+	@echo "... srcs/corewar/read_memory.s"
+	@echo "... srcs/corewar/start_war.o"
+	@echo "... srcs/corewar/start_war.i"
+	@echo "... srcs/corewar/start_war.s"
 .PHONY : help
 
 

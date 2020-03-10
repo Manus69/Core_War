@@ -35,14 +35,23 @@ COREWAR_HEADERS = $(addprefix $(HEADERS_DIRECTORY), $(COREWAR_HEADERS_LIST))
 
 COREWAR_SOURCES_DIRECTORY = ./srcs/corewar/
 
-COREWAR_SOURCES_LIST =	corewar.c		\
-						check_input.c	\
-						calculate.c		\
-						get_champion.c	\
-						print_some.c	\
-						init_resourse.c	\
-						free_resourse.c	\
-						error_list.c	\
+COREWAR_SOURCES_LIST =	corewar.c			\
+						check_input.c		\
+						calculate.c			\
+						get_champion.c		\
+						print_some.c		\
+						init_resourse.c		\
+						free_resourse.c		\
+						error_list.c		\
+						start_war.c			\
+						additional.c		\
+						read_code.c			\
+						read_memory.c		\
+						cycles_to_death.c	\
+						op_1_4.c			\
+						op_5_8.c			\
+						op_9_12.c			\
+						op_13_16.c			\
 
 COREWAR_SOURCES = $(addprefix $(COREWAR_SOURCES_DIRECTORY), $(COREWAR_SOURCES_LIST))
 

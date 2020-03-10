@@ -102,6 +102,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.o"
+  "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/additional.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/calculate.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/check_input.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o"
@@ -109,7 +110,14 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/free_resourse.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/get_champion.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/init_resourse.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o"
+  "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_13_16.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o"
+  "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_1_4.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o"
+  "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_5_8.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o"
+  "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_9_12.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/print_some.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o"
+  "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_code.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o"
+  "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_memory.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o"
+  "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/start_war.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
