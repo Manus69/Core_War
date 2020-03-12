@@ -29,15 +29,14 @@ int32_t		bytes_to_magic(const uint8_t *magic, int32_t place, size_t size)
 	int		i;
 
 	result = 0;
-	sign = (magic[0] & 0x80);
+	sign = (magic[find_place(place)] & 0x80);
 	i = 0;
 	while (size)
 	{
-		if (place)
-			result += sign ? ((magic[find_place(place + size) - 1] ^ 0xFF) << (i++ * 8))
-					: magic[find_place(place + size) - 1] << (i++ * 8);
+		if (sign)
+			result += ((magic[find_place(place + size - 1)] ^ 0xFF) << (i++ * 8));
 		else
-			result += sign ? ((magic[size - 1] ^ 0xFF) << (i++ * 8)) : magic[size - 1] << (i++ * 8);
+			result += magic[find_place(place + size - 1)] << (i++ * 8);
 		size--;
 	}
 	if (sign)

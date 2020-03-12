@@ -44,7 +44,7 @@ void		fork_op(t_arena *vm, t_slider *sl)
 	t_slider	*new;
 
 	addr = read_mem(vm, sl, 1, &operation_list[sl->code - 1]);
-	if ((new = copy_slider(vm, sl, addr)))
+	if ((new = copy_slider(vm, sl, addr % IDX_MOD)))
 		new->next = vm->slider;
 	vm->slider = new;
 	vm->num_slider++;

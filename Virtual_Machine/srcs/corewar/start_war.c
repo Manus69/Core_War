@@ -2,7 +2,7 @@
 
 void	read_next_byte(t_arena *vm, t_slider *move, int32_t place)
 {
-	int8_t read;
+	uint8_t read;
 
 	read = vm->map[place];
 	move->code = read;
@@ -28,9 +28,9 @@ void	rw_memory(t_arena *vm, t_slider *sl, int sliders, t_operation *op)
 {
 	int i;
 
-	while (sliders--) 														// работаем со всеми каретками по очереди
+	while (sl && sliders--) 														// работаем со всеми каретками по очереди
 	{
-		if (vm->cycles == 1401 && sl->id == 1)
+		if (vm->cycles == 10520 && sl->id == 1)
 			ft_printf("");
 		if (sl->cool_down == 0) 											// если оперция выполнена или мы только начинаем
 			read_next_byte(vm, sl, sl->place);								//считываем байт
@@ -53,10 +53,7 @@ void	rw_memory(t_arena *vm, t_slider *sl, int sliders, t_operation *op)
 			while (i < 3)
 				sl->type_of_args[i++] = 0;
 		}
-		if(sl->next)
-			sl = sl->next;
-		else
-			break;
+		sl = sl->next;
 	}
 }
 
@@ -72,7 +69,7 @@ void	start_war(t_arena  *vm)
 		if (vm->show > 0 && vm->cycles % vm->show == 0) //если есть флаг -s
 			show_mem(vm);
 		vm->cycles += 1; //увеличиваем количество циклов на 1, пошел первый цикл
-		if (vm->cycles == 1401)
+		if (vm->cycles == 10520)
 			ft_printf("");
 		vm->c_after_check += 1; //увеличиваем количество циклов после проверки на 1
 		rw_memory(vm, vm->slider, vm->num_slider, op); // читает команду коретки и если приходит время операции выполняет код

@@ -343,6 +343,13 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o
  ../includes/error.h
  ../includes/op.h
  /Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.c
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o
+ ../ft_lftprintf/includes/libft/libft.h
+ ../ft_lftprintf/includes/printf.h
+ ../includes/corewar.h
+ ../includes/error.h
+ ../includes/op.h
+ /Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o
  ../ft_lftprintf/includes/libft/libft.h
  ../ft_lftprintf/includes/printf.h

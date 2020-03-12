@@ -45,7 +45,7 @@ void		st(t_arena *vm, t_slider *sl)
 	sl->step += REG_NAME_SIZE;
 	if (sl->type_of_args[1] == 3)
 	{
-		sl->r[read_byte(vm, sl->place, sl->step) - 1] = r_value;
+		sl->r[(read_byte(vm, sl->place, sl->step)) - 1] = r_value;
 		sl->step += REG_NAME_SIZE;
 	}
 	else

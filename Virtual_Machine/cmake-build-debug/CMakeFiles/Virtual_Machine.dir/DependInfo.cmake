@@ -106,6 +106,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/calculate.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/check_input.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o"
+  "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/error_list.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/free_resourse.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o"
   "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/get_champion.c" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o"

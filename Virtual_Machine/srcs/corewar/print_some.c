@@ -13,9 +13,10 @@ void	print_mem_status(t_arena *vm)
 	format = vm->print_type == 1 ? 64 : 32;
 	while (i < MEM_SIZE)
 	{
-		ft_printf("%02x", vm->map[i]);
-		if (space % 2 == 0 && line != 64)
-			ft_printf(" ");
+		if (vm->map[i] > 0)
+			ft_printf("{red}%02x{eoc} ", vm->map[i]);
+		else
+			ft_printf("%02x ", vm->map[i]);
 		if (line == format)
 		{
 			ft_printf("\n");

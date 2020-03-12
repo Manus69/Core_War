@@ -215,7 +215,7 @@ static t_operation			operation_list[16] = {
 			.change_carry = 1,
 			.read_args = 1,
 			.size_t_dir = 4,
-			.cool_down = 5,
+			.cool_down = 10,
 			.operation = &add,
 		},
 		{

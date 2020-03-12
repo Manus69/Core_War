@@ -35,7 +35,6 @@ void		lfork(t_arena *vm, t_slider *sl)
 	if ((new = copy_slider(vm, sl, addr)))
 		new->next = vm->slider;
 	vm->slider = new;
-	vm->slider++;
 	vm->num_slider++;
 }
 

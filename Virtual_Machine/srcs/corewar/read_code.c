@@ -110,7 +110,7 @@ void	read_args_size(t_arena *vm, t_slider *s, t_operation *op)
 	uint8_t byte; //int8_t
 
 	byte = 0;
-	if (op->read_args)
+	if (op->read_args != 0)
 		byte = read_byte(vm, s->place, 1); // считываем размер args
 		s = write_args_types(s, op, byte); // если байты в порядке и мы записали агрументы, тогда s->write == 1
 		if (s->write && is_args_valid(s, vm, op))

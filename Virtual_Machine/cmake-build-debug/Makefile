@@ -2877,6 +2877,33 @@ srcs/corewar/corewar.c.s:
 	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.s
 .PHONY : srcs/corewar/corewar.c.s
 
+srcs/corewar/cycles_to_death.o: srcs/corewar/cycles_to_death.c.o
+
+.PHONY : srcs/corewar/cycles_to_death.o
+
+# target to build an object file
+srcs/corewar/cycles_to_death.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o
+.PHONY : srcs/corewar/cycles_to_death.c.o
+
+srcs/corewar/cycles_to_death.i: srcs/corewar/cycles_to_death.c.i
+
+.PHONY : srcs/corewar/cycles_to_death.i
+
+# target to preprocess a source file
+srcs/corewar/cycles_to_death.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.i
+.PHONY : srcs/corewar/cycles_to_death.c.i
+
+srcs/corewar/cycles_to_death.s: srcs/corewar/cycles_to_death.c.s
+
+.PHONY : srcs/corewar/cycles_to_death.s
+
+# target to generate assembly for a file
+srcs/corewar/cycles_to_death.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.s
+.PHONY : srcs/corewar/cycles_to_death.c.s
+
 srcs/corewar/error_list.o: srcs/corewar/error_list.c.o
 
 .PHONY : srcs/corewar/error_list.o
@@ -3516,6 +3543,9 @@ help:
 	@echo "... srcs/corewar/corewar.o"
 	@echo "... srcs/corewar/corewar.i"
 	@echo "... srcs/corewar/corewar.s"
+	@echo "... srcs/corewar/cycles_to_death.o"
+	@echo "... srcs/corewar/cycles_to_death.i"
+	@echo "... srcs/corewar/cycles_to_death.s"
 	@echo "... srcs/corewar/error_list.o"
 	@echo "... srcs/corewar/error_list.i"
 	@echo "... srcs/corewar/error_list.s"
