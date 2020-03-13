@@ -1,5 +1,5 @@
 #Compiler Options
-C_FLAGS = -Wall -Wextra -Werror
+C_FLAGS = 
 #Filenames
 NAME := asm
 P_DIR := src_diz
