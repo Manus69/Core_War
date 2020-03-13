@@ -208,6 +208,9 @@ void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int ve
     current_item = tokens;
     while (current_item)
     {
+        if (!current_item->stuff)
+            invoke_error("a token is bricked!");
+            // break ;
         current_token = current_item->stuff;
         classify_token(current_token, previous_token, verbose);
         if (current_token->type == label)
@@ -279,6 +282,9 @@ t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
 //is it necessary to check for large (more than two bytes) numbers?
 //the size constants are all fucked up!
 
+//make sure that all addressing is done mod mem_size;
+//apply modulus for indirect arguments;
+
 int main()
 {
     char *current_line;
@@ -288,7 +294,9 @@ int main()
     t_generic_list *last_element;
     t_generic_list *labels;
 
-    file = open("/home/anus/projects/core_war/Assembly/test_champ.s", O_RDONLY);
+    // file = open("/home/anus/projects/core_war/Assembly/test_champ.s", O_RDONLY);
+    file = open("/home/anus/projects/core_war/Assembly/test_file.s", O_RDONLY);
+    // file = open("/home/anus/projects/core_war/Resources/champs/42.s", O_RDONLY);
     if (file < 0)
     {
         ft_printf("%s", FILE_ERROR_MESSAGE);
@@ -329,6 +337,10 @@ int main()
     display_byte_strings(translation);
 
     //TESTING AREA
+
+    char *byte_string = grab_n_bytes_from_address(tokens, 0, 10);
+    ft_printf("\n%s\n", byte_string);
+
     t_generic_list *encoding;
     int bytes_encoded = 0;
     t_generic_list *current_token = tokens;

@@ -37,6 +37,37 @@ t_generic_list *tokens, t_generic_list *labels)
     return (label_encoding);
 }
 
+//
+//this works the same way for both direct and indirect values as its implemented right now;
+//
+char *get_number_encoding(t_token *token)
+{
+    char *number_encoding;
+    char *value_substring;
+
+    value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
+    number_encoding = decimal_to_hex(ft_atoi(value_substring), token->size);
+    return (number_encoding);
+}
+
+char *get_label_encoding(t_generic_list *token,
+t_generic_list *tokens, t_generic_list *labels)
+{
+    int distance;
+    char *label_name;
+    t_token *current_token;
+    char *label_encoding;
+    
+    current_token = ((t_token *)token->stuff);
+    label_name = ft_strsub(current_token->string, 2, ft_strlen(current_token->string) - 1);
+    distance = get_distance_to_the_label(token, label_name, tokens, labels);
+    label_encoding = decimal_to_hex(distance, current_token->size);
+    return (label_encoding);
+}
+//
+//
+//
+
 char *get_indirect_address_encoding(t_token *token, t_generic_list *tokens)
 {
     char *value_encoding;
@@ -48,7 +79,7 @@ char *get_indirect_address_encoding(t_token *token, t_generic_list *tokens)
     if (distance_to_operation < 0)
         invoke_error("indirect addressing is broken");
     address_value = ft_atoi_base(token->string, 16);
-    
+    actual_distance = distance_to_operation + address_value;
 }
 
 t_generic_list *encode_argument(t_generic_list *token,
@@ -64,14 +95,19 @@ t_generic_list *tokens, t_generic_list *labels, int *bytes_encoded)
     else if (current_token->argument_type == direct)
     {
         if (current_token->string[1] == LABEL_CHAR)
-            encoding_string = get_direct_label_encoding(token, tokens, labels);
+            // encoding_string = get_direct_label_encoding(token, tokens, labels);
+            encoding_string = get_label_encoding(token, tokens, labels);
         else
-            encoding_string = get_direct_number_encoding(current_token);
+            // encoding_string = get_direct_number_encoding(current_token);
+            encoding_string = get_number_encoding(current_token);
     }
-    else if (current_token->argument_type == indirect)
-        encoding_string = ft_strdup("working on it");
-    else
-        encoding_string = ft_strdup("this is broken");
+    else if (current_token->argument_type == indirect) //this might be wrong;
+    {
+        if (current_token->string[1] == LABEL_CHAR)
+            encoding_string = get_label_encoding(token, tokens, labels);
+        else
+            encoding_string = get_number_encoding(current_token);
+    }
     encoding = new_generic_list(encoding_string);
     *bytes_encoded = *bytes_encoded + current_token->size;
     return (encoding);

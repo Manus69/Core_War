@@ -46,6 +46,8 @@ char *get_direct_number_encoding(t_token *token);
 t_generic_list *encode_argument(t_generic_list *token,
 t_generic_list *tokens, t_generic_list *labels, int *bytes_encoded);
 
+char *grab_n_bytes_from_address(t_generic_list *tokens, int address, int number_of_bytes);
+
 char *get_type_encoding(int number_of_arguments, ...);
 t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded);
 enum e_operation_name get_operation_name(t_token *token);

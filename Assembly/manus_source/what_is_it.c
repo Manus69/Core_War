@@ -139,6 +139,11 @@ int     is_direct(char *string)
         if (check_substring_characters(string, 1, length - 1, DIGITS))
             return (1);
     }
+    else if (string[n] == '-' && length > 2)
+    {
+        if (check_substring_characters(string, 2, length - 1, DIGITS))
+            return (1);
+    }
     return (0);
 }
 
@@ -246,4 +251,34 @@ void measure_token_size(t_generic_list *tokens)
         }
         current_token = current_token->next;
     }
+}
+
+char *grab_n_bytes_from_address(t_generic_list *tokens, int address, int number_of_bytes)
+{
+    t_generic_list *current_token;
+    int byte_counter;
+    char *byte_string;
+    char *stored_pointer;
+    t_token *debug_token;
+
+    address = address % MEM_SIZE;
+    current_token = tokens;
+    byte_counter = 0;
+    byte_string = ft_strdup("");
+    stored_pointer = byte_string;
+    while (byte_counter < number_of_bytes)
+    {
+        debug_token = ((t_token *)current_token->stuff);
+        
+        if (((t_token *)current_token->stuff)->size + byte_counter > number_of_bytes)
+            break ;
+        if (((t_token *)current_token->stuff)->size)
+        {
+            byte_string = ft_strjoin(byte_string, ((t_token *)current_token->stuff)->string);
+            byte_counter = byte_counter + ((t_token *)current_token->stuff)->size;
+            free(stored_pointer);
+        }
+        current_token = current_token->next;
+    }
+    return (byte_string);
 }
