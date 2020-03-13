@@ -22,7 +22,7 @@ int		take_start(char *old_name)
 	while (old_name[++i])
 	{
 		if (old_name[i] == '/')
-			start = i;
+			start = i + 1;
 	}
 	return (start);
 }
@@ -32,7 +32,7 @@ int		take_new_name(t_dsm *src_code, char *old_name)
 	int i;
 	int start_name;
 
-	start_name = take_start(old_name) + 1;
+	start_name = take_start(old_name);
 	if (!((src_code->file_name) =\
 				(char *)malloc((ft_strlen(old_name) - start_name) + 1)))
 		return (FAIL);
