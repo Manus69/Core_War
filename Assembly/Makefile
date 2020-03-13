@@ -9,5 +9,5 @@ all: test
 %.o : %.c $(headers)
 	gcc $(flags) -c $< -I ./includes -o $@
 
-test: $(objects) $(headers)
+test: $(objects)
 	gcc $(flags) $^ -I ./includes -L ./ft_printf -lftprintf -o run

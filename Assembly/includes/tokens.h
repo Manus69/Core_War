@@ -25,7 +25,7 @@
 # define INDIRECT_VALUE_SIZE IND_SIZE
 
 
-static char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "end",
+static char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "and",
 "or", "xor", "zjmp", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};
 static char *g_command_names[] = {".name", ".comment", 0};
 static char g_separators[] = {'"', COMMENT_CHAR, SEPARATOR_CHAR, 0}; //null byte to terminate the array;

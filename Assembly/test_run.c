@@ -278,9 +278,13 @@ t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
     return (translation);
 }
 
+
+
 //string separators are lost during tokenization;
 //is it necessary to check for large (more than two bytes) numbers?
 //the size constants are all fucked up!
+
+//printf and libft makefiles are fucked up? 
 
 //make sure that all addressing is done mod mem_size;
 //apply modulus for indirect arguments;
@@ -294,8 +298,12 @@ int main()
     t_generic_list *last_element;
     t_generic_list *labels;
 
+    char *file_name = "test_file.s";
+
+    file = open(file_name, O_RDONLY);
+
     // file = open("/home/anus/projects/core_war/Assembly/test_champ.s", O_RDONLY);
-    file = open("/home/anus/projects/core_war/Assembly/test_file.s", O_RDONLY);
+    // file = open("/home/anus/projects/core_war/Assembly/test_file.s", O_RDONLY);
     // file = open("/home/anus/projects/core_war/Resources/champs/42.s", O_RDONLY);
     if (file < 0)
     {
@@ -339,7 +347,7 @@ int main()
     //TESTING AREA
 
     char *byte_string = grab_n_bytes_from_address(tokens, 0, 10);
-    ft_printf("\n%s\n", byte_string);
+    // ft_printf("\n%s\n", byte_string);
 
     t_generic_list *encoding;
     int bytes_encoded = 0;

@@ -194,7 +194,7 @@ int     check_argument_token(t_token *token)
 
 void set_token_size(t_token *token) //this will not work, since arg size varies depending on the operation ffs
 {
-    enum e_token_type operation_type;
+    enum e_operation_name operation_type;
 
     if (token->type == string)
         token->size = ft_strlen(token->string);
@@ -219,7 +219,7 @@ void set_token_size(t_token *token) //this will not work, since arg size varies 
 
 void measure_token_size(t_generic_list *tokens)
 {
-    enum e_token_type operation_type;
+    enum e_operation_name operation_type;
     t_generic_list *current_token;
     // t_token *current_operation;
     t_token *debug_token;

@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lcaesar <lcaesar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 18:32:55 by gemerald          #+#    #+#             */
-/*   Updated: 2019/11/11 21:46:39 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/03/13 13:29:21 by lcaesar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-// # include <unistd.h>
+# include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
 
