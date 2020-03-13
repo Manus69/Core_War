@@ -278,8 +278,6 @@ t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
     return (translation);
 }
 
-
-
 //string separators are lost during tokenization;
 //is it necessary to check for large (more than two bytes) numbers?
 //the size constants are all fucked up!
@@ -298,7 +296,8 @@ int main()
     t_generic_list *last_element;
     t_generic_list *labels;
 
-    char *file_name = "test_file.s";
+    char *file_name = "test_champ.s";
+    // char *file_name = "test_file.s";
 
     file = open(file_name, O_RDONLY);
 
@@ -342,6 +341,7 @@ int main()
     // display_all_tokens(labels);
 
     t_generic_list *translation = translate_tokens(tokens, labels);
+    ft_printf("%#x", COREWAR_EXEC_MAGIC);
     display_byte_strings(translation);
 
     //TESTING AREA
