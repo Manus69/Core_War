@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stdin.c                                         :+:      :+:    :+:   */
+/*   ft_binary_read.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/11 22:59:34 by gemerald          #+#    #+#             */
-/*   Updated: 2019/09/23 20:45:34 by gemerald         ###   ########.fr       */
+/*   Created: 2020/03/07 13:30:45 by gemerald          #+#    #+#             */
+/*   Updated: 2020/03/07 13:32:09 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static t_char		*ft_create_elem(char c)
+static t_char			*ft_create_elem(char c)
 {
 	t_char *tmp;
 
@@ -23,7 +23,7 @@ static t_char		*ft_create_elem(char c)
 	return (tmp);
 }
 
-static void			ft_list_del(t_char **begin_list)
+static void				ft_list_del(t_char **begin_list)
 {
 	t_char *link;
 	t_char *f_link;
@@ -37,7 +37,7 @@ static void			ft_list_del(t_char **begin_list)
 	}
 }
 
-static void			ft_push_back(t_char **begin_list, char c)
+static void				ft_push_back(t_char **begin_list, unsigned char c)
 {
 	t_char *list;
 
@@ -56,15 +56,15 @@ static void			ft_push_back(t_char **begin_list, char c)
 	}
 }
 
-static char			*ft_concat(t_char **begin_list, int list_len)
+static unsigned char	*ft_concat(t_char **begin_list, int list_len)
 {
-	int			index;
-	char		*str;
-	t_char		*list;
+	int					index;
+	unsigned char		*str;
+	t_char				*list;
 
 	list = *begin_list;
 	index = 0;
-	if (!(str = (char *)malloc(sizeof(char) * list_len)))
+	if (!(str = (unsigned char *)malloc(sizeof(char) * list_len)))
 		return (NULL);
 	while (index < list_len)
 	{
@@ -75,12 +75,12 @@ static char			*ft_concat(t_char **begin_list, int list_len)
 	return (str);
 }
 
-char				*ft_binary_read(int fd, size_t *len)
+unsigned char			*ft_binary_read(int fd, size_t *len)
 {
-	char		buf;
-	char		*str;
-	int			list_len;
-	t_char		*list;
+	unsigned char		buf;
+	unsigned char		*str;
+	int					list_len;
+	t_char				*list;
 
 	list = NULL;
 	list_len = 0;

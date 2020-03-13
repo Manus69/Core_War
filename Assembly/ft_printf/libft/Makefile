@@ -1,5 +1,5 @@
 #Compiler Options
-C_FLAGS =  -Wall -Wextra -I.
+C_FLAGS =  -Wall -Wextra -Werror -I
 
 #Filenames
 NAME := libft.a
@@ -14,8 +14,7 @@ $(NAME): $(OBJECTS)
 	ranlib $(NAME)
 
 $(OBJECTS):	%.o: %.c $(HEADER)
-	gcc $(C_FLAGS) -o $@ -c $<
-	#gcc $(C_FLAGS) $(HEADER) -o $@ -c $<
+	gcc $(C_FLAGS) $(HEADER) -o $@ -c $<
 
 clean:
 	/bin/rm -f $(OBJECTS)
