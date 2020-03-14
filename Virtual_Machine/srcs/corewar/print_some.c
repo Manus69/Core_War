@@ -1,30 +1,53 @@
 #include "corewar.h"
 
+void	color_output(int color, uint8_t value)
+{
+	if (color == 0)
+		ft_printf("{Lblue}%.2x{eoc} ", value);
+	else if (color == 1)
+		ft_printf("{cyan}%.2x{eoc} ", value);
+	else if (color == 2)
+		ft_printf("{yellow}%.2x{eoc} ", value);
+	else if (color == 3)
+		ft_printf("{purple}%.2x{eoc} ", value);
+	else if (color == 4)
+		ft_printf("{red}%.2x{eoc} ", value);
+}
+
+void		put_color(int *color, int32_t place, t_slider *sl, int32_t s)
+{
+	int8_t i;
+	int32_t addr;
+
+	i = 0;
+	while (s)
+	{
+		addr = find_place(place + s - 1);
+		color[addr] = sl->player->number;
+		i += 8;
+		s--;
+	}
+}
+
 void	print_mem_status(t_arena *vm)
 {
 	int i;
 	int line;
-	int space;
 	int format;
 
 	i = 0;
-	space = 1;
 	line = 1;
 	format = vm->print_type == 1 ? 64 : 32;
 	while (i < MEM_SIZE)
 	{
-		if (vm->map[i] > 0 && i != 2627)
-			ft_printf("{red}%02x{eoc} ", vm->map[i]);
-		else if (i != 2627)
-			ft_printf("%02x ", vm->map[i]);
-		else
-			ft_printf("{green}%02x{eoc} ", vm->map[i]);
+		if (line == 0 || line == 1)
+			ft_printf("{Lgray}%.4p :{eoc} ", i);
+		color_output(vm->color[i], vm->map[i]);
 		if (line == format)
 		{
 			ft_printf("\n");
 			line = 0;
 		}
-		space++;
 		line++;
 		i++;
 	}

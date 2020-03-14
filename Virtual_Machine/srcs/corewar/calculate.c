@@ -1,6 +1,6 @@
 #include "corewar.h"
 
-uint32_t	move(t_slider *cursor, t_operation *op)
+uint32_t	step(t_slider *cursor, t_operation *op)
 {
 	unsigned int		i;
 	uint32_t			step;

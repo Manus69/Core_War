@@ -8,45 +8,45 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug"/>
+				<Option working_dir="/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug"/>
+				<Option working_dir="/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug"/>
+				<Option working_dir="/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Virtual_Machine">
-				<Option output="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/Virtual_Machine" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug"/>
+				<Option output="/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Virtual_Machine" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes"/>
-					<Add directory="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft"/>
-					<Add directory="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/includes"/>
+					<Add directory="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes"/>
+					<Add directory="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft"/>
+					<Add directory="/Users/user/Downloads/Core_War-selly/Virtual_Machine/includes"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -55,22 +55,22 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 Virtual_Machine"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 Virtual_Machine"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Virtual_Machine/fast">
-				<Option output="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/Virtual_Machine" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug"/>
+				<Option output="/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Virtual_Machine" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes"/>
-					<Add directory="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft"/>
-					<Add directory="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/includes"/>
+					<Add directory="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes"/>
+					<Add directory="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft"/>
+					<Add directory="/Users/user/Downloads/Core_War-selly/Virtual_Machine/includes"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -79,371 +79,371 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 Virtual_Machine/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Volumes/d_60Gb/Новая\ папка/Core_War/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 Virtual_Machine/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/libft.h">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/libft.h">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/printf.h">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/printf.h">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/color_option.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/color_option.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/format_checker.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/format_checker.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/includes/corewar.h">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/includes/corewar.h">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/includes/error.h">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/includes/error.h">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/includes/op.h">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/includes/op.h">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/additional.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/additional.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/calculate.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/calculate.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/check_input.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/check_input.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/corewar.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/cycles_to_death.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/free_resourse.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/free_resourse.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/get_champion.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/get_champion.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/init_resourse.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/init_resourse.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_13_16.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_13_16.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_1_4.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_1_4.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_5_8.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_5_8.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_9_12.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_9_12.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/print_some.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/print_some.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_code.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/read_code.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_memory.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/read_memory.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/start_war.c">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/start_war.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/CMakeLists.txt">
+		<Unit filename="/Users/user/Downloads/Core_War-selly/Virtual_Machine/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

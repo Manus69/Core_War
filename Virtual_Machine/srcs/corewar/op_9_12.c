@@ -38,6 +38,7 @@ void		sti(t_arena *vm, t_slider *sl)
 	addr_1 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);
 	addr_2 = read_mem(vm, sl, 3, &operation_list[sl->code - 1]);
 	magic_to_byte(vm->map,(sl->place + ((addr_1 + addr_2) % IDX_MOD)), value, DIR_SIZE);
+	put_color(vm->color,(sl->place + ((addr_1 + addr_2) % IDX_MOD)), sl, DIR_SIZE);
 }
 
 void		fork_op(t_arena *vm, t_slider *sl)

@@ -73,6 +73,7 @@ typedef struct 				s_arena
 	t_champion				*last_alive;		// last alive player, may be winner.. or not?
 	t_champion				*champion;			// link to players list, Pl-3 in the head of the list
 	t_champion				*ch[MAX_PLAYERS];	// игроки по порядку
+	int 					color[MEM_SIZE];
 	uint8_t 				map[MEM_SIZE];		// memory for arena
 }							t_arena;
 
@@ -134,12 +135,13 @@ void						print_mem_status(t_arena *vm);							//печатает арену
 void						start_war(t_arena  *vm);
 int 						is_op(int8_t byte);
 int8_t 						read_byte(t_arena *vm, int32_t	place, int32_t step);
-uint32_t					move(t_slider *cursor, t_operation *op);
+uint32_t					step(t_slider *cursor, t_operation *op);
 t_slider					*write_args_types(t_slider *s, t_operation *op, int8_t code);
 void						read_args_size(t_arena *vm, t_slider *s, t_operation *op);
 int32_t						read_mem(t_arena *vm, t_slider *s, uint8_t i, t_operation *op);
 int32_t						bytes_to_magic(const uint8_t *magic, int32_t place,size_t size);
 void						magic_to_byte(uint8_t *map, int32_t place, int32_t value, int32_t s);
+void						put_color(int *color, int32_t place, t_slider *sl, int32_t s);
 int32_t						find_place(int32_t place);
 t_slider					*copy_slider(t_arena *vm, t_slider *sl, int32_t addr);
 uint32_t					next_step(uint8_t arg_type, t_operation *op);

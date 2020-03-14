@@ -38,6 +38,7 @@ t_arena 	*fill_arena(t_arena *vm, int players, int x)
 		while (i < vm->ch[x]->pl_size)
 		{
 			vm->map[a] = vm->ch[x]->code[i];
+			vm->color[a] = vm->ch[x]->number;
 			i++;
 			a++;
 		}

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine"
+CMAKE_SOURCE_DIR = /Users/user/Downloads/Core_War-selly/Virtual_Machine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Virtual_Machine.dir/depend.make
@@ -59,1485 +59,1485 @@ include CMakeFiles/Virtual_Machine.dir/flags.make
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.o: ../ft_lftprintf/includes/libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o: ../ft_lftprintf/includes/libft/ft_atoi_size_t.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.o: ../ft_lftprintf/includes/libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_bzero.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o: ../ft_lftprintf/includes/libft/ft_char_in_string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.o: ../ft_lftprintf/includes/libft/ft_countwords.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_countwords.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o: ../ft_lftprintf/includes/libft/ft_cut_space.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cut_space.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o: ../ft_lftprintf/includes/libft/ft_cutstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_cutstr.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o: ../ft_lftprintf/includes/libft/ft_get_integer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_get_integer.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o: ../ft_lftprintf/includes/libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalnum.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o: ../ft_lftprintf/includes/libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isalpha.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.o: ../ft_lftprintf/includes/libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isascii.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o: ../ft_lftprintf/includes/libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isdigit.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.o: ../ft_lftprintf/includes/libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isprint.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.o: ../ft_lftprintf/includes/libft/ft_isspace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_isspace.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.o: ../ft_lftprintf/includes/libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o: ../ft_lftprintf/includes/libft/ft_itoa_long.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o: ../ft_lftprintf/includes/libft/ft_itoa_mod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.o: ../ft_lftprintf/includes/libft/ft_length.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_length.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o: ../ft_lftprintf/includes/libft/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstadd.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o: ../ft_lftprintf/includes/libft/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdel.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o: ../ft_lftprintf/includes/libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o: ../ft_lftprintf/includes/libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstiter.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o: ../ft_lftprintf/includes/libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstmap.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o: ../ft_lftprintf/includes/libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_lstnew.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o: ../ft_lftprintf/includes/libft/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memalloc.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o: ../ft_lftprintf/includes/libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memccpy.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.o: ../ft_lftprintf/includes/libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memchr.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o: ../ft_lftprintf/includes/libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcmp.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o: ../ft_lftprintf/includes/libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memcpy.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.o: ../ft_lftprintf/includes/libft/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memdel.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.o: ../ft_lftprintf/includes/libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memmove.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.o: ../ft_lftprintf/includes/libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_memset.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o: ../ft_lftprintf/includes/libft/ft_new_integer_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.o: ../ft_lftprintf/includes/libft/ft_numzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_numzero.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.o: ../ft_lftprintf/includes/libft/ft_pow.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_pow.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o: ../ft_lftprintf/includes/libft/ft_print_symbol.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.o: ../ft_lftprintf/includes/libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o: ../ft_lftprintf/includes/libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o: ../ft_lftprintf/includes/libft/ft_putchar_mod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.o: ../ft_lftprintf/includes/libft/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o: ../ft_lftprintf/includes/libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o: ../ft_lftprintf/includes/libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o: ../ft_lftprintf/includes/libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o: ../ft_lftprintf/includes/libft/ft_putnbr_mod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.o: ../ft_lftprintf/includes/libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o: ../ft_lftprintf/includes/libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o: ../ft_lftprintf/includes/libft/ft_putstr_mod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.o: ../ft_lftprintf/includes/libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcat.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.o: ../ft_lftprintf/includes/libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strchr.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.o: ../ft_lftprintf/includes/libft/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strclr.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o: ../ft_lftprintf/includes/libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcmp.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o: ../ft_lftprintf/includes/libft/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpy.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o: ../ft_lftprintf/includes/libft/ft_strcpymap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.o: ../ft_lftprintf/includes/libft/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdel.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.o: ../ft_lftprintf/includes/libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strdup.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.o: ../ft_lftprintf/includes/libft/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strequ.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.o: ../ft_lftprintf/includes/libft/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striter.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.o: ../ft_lftprintf/includes/libft/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_striteri.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o: ../ft_lftprintf/includes/libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strjoin.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o: ../ft_lftprintf/includes/libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlcat.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.o: ../ft_lftprintf/includes/libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o: ../ft_lftprintf/includes/libft/ft_strlen_mod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.o: ../ft_lftprintf/includes/libft/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmap.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o: ../ft_lftprintf/includes/libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strmapi.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.o: ../ft_lftprintf/includes/libft/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncat.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o: ../ft_lftprintf/includes/libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncmp.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o: ../ft_lftprintf/includes/libft/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strncpy.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o: ../ft_lftprintf/includes/libft/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnequ.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.o: ../ft_lftprintf/includes/libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnew.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o: ../ft_lftprintf/includes/libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strnstr.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o: ../ft_lftprintf/includes/libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strrchr.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o: ../ft_lftprintf/includes/libft/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsplit.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.o: ../ft_lftprintf/includes/libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strstr.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.o: ../ft_lftprintf/includes/libft/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strsub.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o: ../ft_lftprintf/includes/libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_strtrim.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o: ../ft_lftprintf/includes/libft/ft_thebigest_word.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.o: ../ft_lftprintf/includes/libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_tolower.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.o: ../ft_lftprintf/includes/libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/includes/libft/ft_toupper.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.o: ../ft_lftprintf/srcs/base_n_p.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/base_n_p.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.o: ../ft_lftprintf/srcs/bonus_color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_color.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.o: ../ft_lftprintf/srcs/bonus_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_fd.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.o: ../ft_lftprintf/srcs/bonus_smile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/bonus_smile.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.o: ../ft_lftprintf/srcs/color_option.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/color_option.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/color_option.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/color_option.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/color_option.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/color_option.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/color_option.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/color_option.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.o: ../ft_lftprintf/srcs/format_checker.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/format_checker.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/format_checker.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/format_checker.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/format_checker.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/format_checker.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/format_checker.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/format_checker.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.o: ../ft_lftprintf/srcs/ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/ft_printf.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o: ../ft_lftprintf/srcs/print_some_wight_aruc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.o: ../ft_lftprintf/srcs/work_with_errors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_errors.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.o: ../ft_lftprintf/srcs/work_with_flags.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_flags.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.o: ../ft_lftprintf/srcs/work_with_floats.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_floats.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.o: ../ft_lftprintf/srcs/work_with_form_x.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_form_x.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o: ../ft_lftprintf/srcs/work_with_format_char_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_format_char_str.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.o: ../ft_lftprintf/srcs/work_with_int.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_int.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.o: ../ft_lftprintf/srcs/work_with_o.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_o.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.o: ../ft_lftprintf/srcs/work_with_p.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_p.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.o: ../ft_lftprintf/srcs/work_with_u.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_u.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o: ../ft_lftprintf/srcs/work_with_uxo_part_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o: ../ft_lftprintf/srcs/work_with_uxo_part_two.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.o: ../ft_lftprintf/srcs/work_with_x_big.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c" > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c > CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.i
 
 CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c" -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c -o CMakeFiles/Virtual_Machine.dir/ft_lftprintf/srcs/work_with_x_big.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o: ../srcs/corewar/additional.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/additional.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/additional.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/additional.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/additional.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/additional.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/additional.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/additional.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o: ../srcs/corewar/calculate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/calculate.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/calculate.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/calculate.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/calculate.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/calculate.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/calculate.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o: ../srcs/corewar/check_input.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/check_input.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/check_input.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/check_input.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/check_input.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/check_input.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/check_input.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o: ../srcs/corewar/corewar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/corewar.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/corewar.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/corewar.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o: ../srcs/corewar/cycles_to_death.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/cycles_to_death.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/cycles_to_death.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/cycles_to_death.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o: ../srcs/corewar/free_resourse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/free_resourse.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/free_resourse.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/free_resourse.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/free_resourse.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/free_resourse.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/free_resourse.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o: ../srcs/corewar/get_champion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/get_champion.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/get_champion.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/get_champion.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/get_champion.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/get_champion.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/get_champion.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o: ../srcs/corewar/init_resourse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/init_resourse.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/init_resourse.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/init_resourse.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/init_resourse.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/init_resourse.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/init_resourse.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o: ../srcs/corewar/op_13_16.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_13_16.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_13_16.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_13_16.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_13_16.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_13_16.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_13_16.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o: ../srcs/corewar/op_1_4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_1_4.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_1_4.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_1_4.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_1_4.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_1_4.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_1_4.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o: ../srcs/corewar/op_5_8.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_5_8.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_5_8.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_5_8.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_5_8.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_5_8.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_5_8.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o: ../srcs/corewar/op_9_12.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_9_12.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_9_12.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_9_12.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_9_12.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_9_12.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/op_9_12.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: ../srcs/corewar/print_some.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/print_some.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/print_some.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/print_some.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/print_some.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/print_some.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/print_some.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: ../srcs/corewar/read_code.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_code.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/read_code.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_code.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/read_code.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_code.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/read_code.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o: ../srcs/corewar/read_memory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_memory.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/read_memory.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_memory.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/read_memory.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_memory.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/read_memory.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o: ../srcs/corewar/start_war.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/start_war.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o   -c /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/start_war.c
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/start_war.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/start_war.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.i
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/start_war.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Downloads/Core_War-selly/Virtual_Machine/srcs/corewar/start_war.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.s
 
 # Object files for target Virtual_Machine
 Virtual_Machine_OBJECTS = \
@@ -1775,7 +1775,7 @@ Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/build.make
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_115) "Linking C executable Virtual_Machine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Linking C executable Virtual_Machine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Virtual_Machine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1788,6 +1788,6 @@ CMakeFiles/Virtual_Machine.dir/clean:
 .PHONY : CMakeFiles/Virtual_Machine.dir/clean
 
 CMakeFiles/Virtual_Machine.dir/depend:
-	cd "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/user/Downloads/Core_War-selly/Virtual_Machine /Users/user/Downloads/Core_War-selly/Virtual_Machine /Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug /Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug /Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Virtual_Machine.dir/depend
 

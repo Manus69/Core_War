@@ -56,6 +56,7 @@ void		st(t_arena *vm, t_slider *sl)
 							   sl->place + sl->step, IND_SIZE);
 		magic_to_byte(vm->map, sl->place + (place % IDX_MOD),
 					  r_value, DIR_SIZE);
+		put_color(vm->color, sl->place + (place % IDX_MOD), sl, DIR_SIZE);
 		sl->step += IND_SIZE;
 	}
 }

@@ -65,5 +65,5 @@ void	read_args_size(t_arena *vm, t_slider *s, t_operation *op)
 			s->write = 0;
 		}
 		else
-			s->step += move(s, op);
+			s->step += step(s, op);
 }
