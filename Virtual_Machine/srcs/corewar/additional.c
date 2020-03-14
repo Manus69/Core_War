@@ -1,60 +1,30 @@
 # include "corewar.h"
 
-int 	args_type_2(int8_t code)
-{
-	if (code == (int8_t)0x54)
-		return (333);
-	if (code == (int8_t)0xa4)
-		return (113);
-	if (code == (int8_t)0xb4)
-		return (123);
-	if (code == (int8_t)0x94)
-		return (133);
-	if (code == (int8_t)0xe4)
-		return (213);
-	if (code == (int8_t)0xf4)
-		return (223);
-	if (code == (int8_t)0xd4)
-		return (233);
-	if (code == (int8_t)0x64)
-		return (313);
-	if (code == (int8_t)0x68)
-		return (311);
-	if (code == (int8_t)0x78)
-		return (321);
-	if (code == (int8_t)0x58)
-		return (311);
-	return (0);
-}
-
-int 	args_type_1(int8_t code, unsigned int num)
-{
-	if (num == 1)
-	{
-		if (code == (int8_t)0x80)
-			return (1);
-		if (code == (int8_t)0x40)
-			return (3);
-	}
-	else if (num == 2)
-	{
-		if (code == (int8_t)0x90)
-			return (13);
-		if (code == (int8_t)0xd0)
-			return (23);
-		if (code == (int8_t)0x50)
-			return (33);
-		if (code == (int8_t)0x70)
-			return (32);
-	}
-	else if (num == 3)
-		return (args_type_2(code));
-	return (0);
-}
-
 int 	is_op(int8_t byte)
 {
 	return (byte >= 0x01 && byte <= 0x10);
+}
+
+void	find_op(int8_t arg_type, int8_t index, t_slider *sl)
+{
+	sl->type_of_args[index - 1] = g_arg_code[arg_type - 1];
+}
+
+t_slider	*write_args_types(t_slider *s, t_operation *op, int8_t code)
+{
+
+	if (op->read_args)
+	{
+		if (op->args_num >= 1)
+			find_op((int8_t)((code & 0xC0) >> 6), 1, s);
+		if (op->args_num >= 2)
+			find_op((int8_t)((code & 0x30) >> 4), 2, s);
+		if (op->args_num >= 3)
+			find_op((int8_t)((code & 0xC) >> 2), 3, s);
+	}
+	else
+		s->type_of_args[0] = op->args_type[0];
+	return (s);
 }
 
 int8_t 		read_byte(t_arena *vm, int32_t	place, int32_t step)

@@ -47,12 +47,13 @@ void	free_arena(t_arena **arena)
 	i = 0;
 	while (i < 4)
 	{
-		(*arena)->ch[i] = NULL;
+		if ((*arena) && (*arena)->ch[i])
+			(*arena)->ch[i] = NULL;
 		i++;
 	}
-	if ((*arena)->champion)
+	if ((*arena) && (*arena)->champion)
 		free_champions((*arena)->champion, (*arena)->players);
-	if ((*arena)->slider)
+	if ((*arena) && (*arena)->slider)
 		free_slider((*arena)->slider, (*arena)->players);
 	if (*arena)
 		free(*arena);

@@ -7,6 +7,7 @@ void		sub(t_arena *vm, t_slider *sl)
 	int32_t	reg3;
 	int32_t	value;
 
+	sl->step += 1;
 	reg1 = read_byte(vm, sl->place, sl->step);
 	sl->step += REG_NAME_SIZE;
 	reg2 = read_byte(vm, sl->place, sl->step);
@@ -25,6 +26,7 @@ void		and(t_arena *vm, t_slider *sl)
 	int32_t	value;
 	int32_t	r_id;
 
+	sl->step += 1;
 	value_1 = read_mem(vm, sl, 1, &operation_list[sl->code - 1]);
 	value_2 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);
 	value = value_1 & value_2;
@@ -41,6 +43,7 @@ void		or(t_arena *vm, t_slider *sl)
 	int32_t	value;
 	int32_t	r_id;
 
+	sl->step += 1;
 	value_1 = read_mem(vm, sl, 1, &operation_list[sl->code - 1]);
 	value_2 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);
 	value = value_1 | value_2;
@@ -57,6 +60,7 @@ void		xor(t_arena *vm, t_slider *sl)
 	int32_t	value;
 	int32_t	r_id;
 
+	sl->step += 1;
 	value_1 = read_mem(vm, sl, 1, &operation_list[sl->code - 1]);
 	value_2 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);
 	value = value_1 ^ value_2;

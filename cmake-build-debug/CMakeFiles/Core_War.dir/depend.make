@@ -346,12 +346,12 @@ CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.o: ../Virtual_Mac
 CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.o: ../Virtual_Machine/includes/op.h
 CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.o: ../Virtual_Machine/srcs/corewar/corewar.c
 
-CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o: ../Virtual_Machine/ft_lftprintf/includes/libft/libft.h
-CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o: ../Virtual_Machine/ft_lftprintf/includes/printf.h
-CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o: ../Virtual_Machine/includes/corewar.h
-CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o: ../Virtual_Machine/includes/error.h
-CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o: ../Virtual_Machine/includes/op.h
-CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o: ../Virtual_Machine/srcs/corewar/error_list.c
+CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o: ../Virtual_Machine/ft_lftprintf/includes/libft/libft.h
+CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o: ../Virtual_Machine/ft_lftprintf/includes/printf.h
+CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o: ../Virtual_Machine/includes/corewar.h
+CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o: ../Virtual_Machine/includes/error.h
+CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o: ../Virtual_Machine/includes/op.h
+CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o: ../Virtual_Machine/srcs/corewar/cycles_to_death.c
 
 CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/free_resourse.c.o: ../Virtual_Machine/ft_lftprintf/includes/libft/libft.h
 CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/free_resourse.c.o: ../Virtual_Machine/ft_lftprintf/includes/printf.h

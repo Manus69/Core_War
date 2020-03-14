@@ -26,6 +26,7 @@ void		ld(t_arena *vm, t_slider *sl)
 	t_operation		*op;
 	int 			ind;
 
+	sl->step += 1;
 	op = &operation_list[sl->code - 1];
 	value = read_mem(vm, sl, 1, op);
 	sl->carry = value == 0 ? 1 : 0;
@@ -40,6 +41,7 @@ void		st(t_arena *vm, t_slider *sl)
 	int32_t	r_value;
 	int32_t	place;
 
+	sl->step += 1;
 	reg = read_byte(vm, sl->place, sl->step);
 	r_value = sl->r[reg - 1];
 	sl->step += REG_NAME_SIZE;
@@ -65,6 +67,7 @@ void		add(t_arena *vm, t_slider *sl)
 	int32_t	reg3;
 	int32_t	value;
 
+	sl->step += 1;
 	reg1 = read_byte(vm, sl->place, sl->step);
 	sl->step += REG_NAME_SIZE;
 	reg2 = read_byte(vm, sl->place, sl->step);

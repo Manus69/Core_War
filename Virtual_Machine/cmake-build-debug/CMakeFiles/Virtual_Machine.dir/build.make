@@ -1396,22 +1396,9 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.s
 
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o: ../srcs/corewar/error_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/error_list.c"
-
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/error_list.c" > CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.i
-
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/error_list.c" -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.s
-
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o: ../srcs/corewar/free_resourse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/free_resourse.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.i: cmake_force
@@ -1424,7 +1411,7 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.s: cmake_force
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o: ../srcs/corewar/get_champion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/get_champion.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.i: cmake_force
@@ -1437,7 +1424,7 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.s: cmake_force
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o: ../srcs/corewar/init_resourse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/init_resourse.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.i: cmake_force
@@ -1450,7 +1437,7 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.s: cmake_force
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o: ../srcs/corewar/op_13_16.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_13_16.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.i: cmake_force
@@ -1463,7 +1450,7 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.s: cmake_force
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o: ../srcs/corewar/op_1_4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_1_4.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.i: cmake_force
@@ -1476,7 +1463,7 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.s: cmake_force
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o: ../srcs/corewar/op_5_8.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_5_8.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.i: cmake_force
@@ -1489,7 +1476,7 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.s: cmake_force
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o: ../srcs/corewar/op_9_12.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/op_9_12.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.i: cmake_force
@@ -1502,7 +1489,7 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.s: cmake_force
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: ../srcs/corewar/print_some.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/print_some.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.i: cmake_force
@@ -1515,7 +1502,7 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.s: cmake_force
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: ../srcs/corewar/read_code.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_code.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.i: cmake_force
@@ -1528,7 +1515,7 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.s: cmake_force
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o: ../srcs/corewar/read_memory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/read_memory.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.i: cmake_force
@@ -1541,7 +1528,7 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.s: cmake_force
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o: ../srcs/corewar/start_war.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/start_war.c"
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.i: cmake_force
@@ -1657,7 +1644,6 @@ Virtual_Machine_OBJECTS = \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o" \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o" \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o" \
-"CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o" \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o" \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o" \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o" \
@@ -1776,7 +1762,6 @@ Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/calculate.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o
-Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o
@@ -1790,7 +1775,7 @@ Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/build.make
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_116) "Linking C executable Virtual_Machine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_115) "Linking C executable Virtual_Machine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Virtual_Machine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

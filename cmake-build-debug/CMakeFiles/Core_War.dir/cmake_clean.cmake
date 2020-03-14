@@ -102,7 +102,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/calculate.c.o"
   "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/check_input.c.o"
   "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.o"
-  "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o"
+  "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o"
   "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/free_resourse.c.o"
   "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/get_champion.c.o"
   "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/init_resourse.c.o"

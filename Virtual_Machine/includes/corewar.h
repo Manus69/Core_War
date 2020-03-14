@@ -10,6 +10,12 @@
  *  Структура для всей инфы о чемпионе, вставляется внутрь арены
  */
 
+static uint8_t			g_arg_code[3] = {
+		T_REG,
+		T_DIR,
+		T_IND
+};
+
 typedef struct 				s_champion
 {
 	int 					number;				// uniq player number, for example Player 1 or Player 2
@@ -128,7 +134,8 @@ void						print_mem_status(t_arena *vm);							//печатает арену
 void						start_war(t_arena  *vm);
 int 						is_op(int8_t byte);
 int8_t 						read_byte(t_arena *vm, int32_t	place, int32_t step);
-int 						args_type_1(int8_t code, unsigned int num);
+uint32_t					move(t_slider *cursor, t_operation *op);
+t_slider					*write_args_types(t_slider *s, t_operation *op, int8_t code);
 void						read_args_size(t_arena *vm, t_slider *s, t_operation *op);
 int32_t						read_mem(t_arena *vm, t_slider *s, uint8_t i, t_operation *op);
 int32_t						bytes_to_magic(const uint8_t *magic, int32_t place,size_t size);
@@ -171,7 +178,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 1,
 			.vars = 1,
 			.args_code = {0x80, 0, 0, 0, 0, 0, 0, 0, 0},
-			.args_type = {1, 0, 0},
+			.args_type = {T_DIR, 0, 0},
 			.change_carry = 0,
 			.read_args = 0,
 			.size_t_dir = 4,
@@ -185,7 +192,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 2,
 			.vars = 2,
 			.args_code = {0x90, 0xd0, 0, 0, 0, 0, 0, 0, 0},
-			.args_type = {1 | 2, 3, 0},
+			.args_type = {T_DIR | T_IND, T_REG, 0},
 			.change_carry = 1,
 			.read_args = 1,
 			.size_t_dir = 4,
@@ -198,7 +205,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 2,
 			.vars = 2,
 			.args_code = {0x50, 0x70, 0, 0, 0, 0, 0, 0, 0},
-			.args_type = {3, 3 | 2, 0},
+			.args_type = {T_REG, T_REG | T_IND, 0},
 			.change_carry = 0,
 			.read_args = 1,
 			.size_t_dir = 4,
@@ -211,7 +218,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 3,
 			.vars = 1,
 			.args_code = {0x54, 0, 0, 0, 0, 0, 0, 0, 0},
-			.args_type = {3, 3, 3},
+			.args_type = {T_REG, T_REG, T_REG},
 			.change_carry = 1,
 			.read_args = 1,
 			.size_t_dir = 4,
@@ -224,7 +231,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 3,
 			.vars = 1,
 			.args_code = {0x54, 0, 0, 0, 0, 0, 0, 0, 0},
-			.args_type = {3, 3, 3},
+			.args_type = {T_REG, T_REG, T_REG},
 			.change_carry = 1,
 			.read_args = 1,
 			.size_t_dir = 4,
@@ -238,7 +245,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 3,
 			.vars = 6,
 			.args_code = {0xa4, 0xb4, 0x94, 0xe4, 0xf4, 0xd4, 0x64, 0x74, 0x54},
-			.args_type = {1 | 2 | 3, 1 | 2 | 3, 3},
+			.args_type = {T_REG | T_DIR | T_IND, T_REG | T_DIR | T_IND, T_REG},
 			.change_carry = 1,
 			.read_args = 1,
 			.size_t_dir = 4,
@@ -252,7 +259,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 3,
 			.vars = 6,
 			.args_code = {0xa4, 0xb4, 0x94, 0xe4, 0xf4, 0xd4, 0x64, 0x74, 0x54},
-			.args_type = {1 | 2 | 3, 1 | 2 | 3, 3},
+			.args_type = {T_REG | T_DIR | T_IND, T_REG | T_DIR | T_IND, T_REG},
 			.change_carry = 1,
 			.read_args = 1,
 			.size_t_dir = 4,
@@ -266,7 +273,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 3,
 			.vars = 6,
 			.args_code = {0xa4, 0xb4, 0x94, 0xe4, 0xf4, 0xd4, 0x64, 0x74, 0x54},
-			.args_type = {1 | 2 | 3, 1 | 2 | 3, 3},
+			.args_type = {T_REG | T_DIR | T_IND, T_REG | T_DIR | T_IND, T_REG},
 			.change_carry = 1,
 			.read_args = 1,
 			.size_t_dir = 4,
@@ -280,7 +287,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 1,
 			.vars = 1,
 			.args_code = {0x80, 0, 0, 0, 0, 0, 0, 0, 0},
-			.args_type = {1, 0, 0},
+			.args_type = {T_DIR, 0, 0},
 			.change_carry = 0,
 			.read_args = 0,
 			.size_t_dir = 2,
@@ -294,7 +301,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 3,
 			.vars = 6,
 			.args_code = {0xa4, 0x94, 0xe4, 0xd4, 0x64, 0x54, 0, 0, 0},
-			.args_type = {1 | 2 | 3, 1 | 3, 3},
+			.args_type = {T_REG | T_DIR | T_IND, T_REG | T_DIR, T_REG},
 			.change_carry = 0,
 			.read_args = 1,
 			.size_t_dir = 2,
@@ -308,7 +315,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 3,
 			.vars = 6,
 			.args_code = {0x68, 0x64, 0x78, 0x74, 0x58, 0x54, 0, 0, 0},
-			.args_type = {3, 1 | 2 | 3, 1 | 3},
+			.args_type = {T_REG, T_REG | T_DIR | T_IND, T_REG | T_DIR},
 			.change_carry = 0,
 			.read_args = 1,
 			.size_t_dir = 2,
@@ -322,7 +329,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 1,
 			.vars = 1,
 			.args_code = {0x80, 0, 0, 0, 0, 0, 0, 0, 0},
-			.args_type = {1, 0, 0},
+			.args_type = {T_DIR, 0, 0},
 			.change_carry = 0,
 			.read_args = 0,
 			.size_t_dir = 2,
@@ -336,7 +343,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 2,
 			.vars = 2,
 			.args_code = {0x90, 0xd0, 0, 0, 0, 0, 0, 0, 0},
-			.args_type = {1 | 2, 3, 0},
+			.args_type = {T_DIR | T_IND, T_REG, 0},
 			.change_carry = 1,
 			.read_args = 1,
 			.size_t_dir = 4,
@@ -350,7 +357,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 3,
 			.vars = 6,
 			.args_code = {0xa4, 0x94, 0xe4, 0xd4, 0x64, 0x54, 0, 0, 0},
-			.args_type = {1 | 2 | 3, 1 | 3, 0},
+			.args_type = {T_REG | T_DIR | T_IND, T_REG | T_DIR, T_REG},
 			.change_carry = 1,
 			.read_args = 1,
 			.size_t_dir = 2,
@@ -364,7 +371,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 1,
 			.vars = 1,
 			.args_code = {0x80, 0, 0, 0, 0, 0, 0, 0, 0},
-			.args_type = {1, 0, 0},
+			.args_type = {T_DIR, 0, 0},
 			.change_carry = 0,
 			.read_args = 0,
 			.size_t_dir = 2,
@@ -377,7 +384,7 @@ static t_operation			operation_list[16] = {
 			.args_num = 1,
 			.vars = 1,
 			.args_code = {0x40, 0, 0, 0, 0, 0, 0, 0, 0},
-			.args_type = {3, 0, 0},
+			.args_type = {T_REG, 0, 0},
 			.change_carry = 0,
 			.read_args = 1,
 			.size_t_dir = 4,

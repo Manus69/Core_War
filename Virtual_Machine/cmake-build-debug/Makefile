@@ -2904,33 +2904,6 @@ srcs/corewar/cycles_to_death.c.s:
 	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.s
 .PHONY : srcs/corewar/cycles_to_death.c.s
 
-srcs/corewar/error_list.o: srcs/corewar/error_list.c.o
-
-.PHONY : srcs/corewar/error_list.o
-
-# target to build an object file
-srcs/corewar/error_list.c.o:
-	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o
-.PHONY : srcs/corewar/error_list.c.o
-
-srcs/corewar/error_list.i: srcs/corewar/error_list.c.i
-
-.PHONY : srcs/corewar/error_list.i
-
-# target to preprocess a source file
-srcs/corewar/error_list.c.i:
-	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.i
-.PHONY : srcs/corewar/error_list.c.i
-
-srcs/corewar/error_list.s: srcs/corewar/error_list.c.s
-
-.PHONY : srcs/corewar/error_list.s
-
-# target to generate assembly for a file
-srcs/corewar/error_list.c.s:
-	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.s
-.PHONY : srcs/corewar/error_list.c.s
-
 srcs/corewar/free_resourse.o: srcs/corewar/free_resourse.c.o
 
 .PHONY : srcs/corewar/free_resourse.o
@@ -3546,9 +3519,6 @@ help:
 	@echo "... srcs/corewar/cycles_to_death.o"
 	@echo "... srcs/corewar/cycles_to_death.i"
 	@echo "... srcs/corewar/cycles_to_death.s"
-	@echo "... srcs/corewar/error_list.o"
-	@echo "... srcs/corewar/error_list.i"
-	@echo "... srcs/corewar/error_list.s"
 	@echo "... srcs/corewar/free_resourse.o"
 	@echo "... srcs/corewar/free_resourse.i"
 	@echo "... srcs/corewar/free_resourse.s"

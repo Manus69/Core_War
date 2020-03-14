@@ -18,6 +18,7 @@ void		ldi(t_arena *vm, t_slider *sl)
 	int32_t	addr2;
 	int32_t	reg;
 
+	sl->step += 1;
 	addr1 = read_mem(vm, sl, 1, &operation_list[sl->code - 1]);
 	addr2 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);
 	reg = read_byte(vm, sl->place, sl->step);
@@ -31,6 +32,7 @@ void		sti(t_arena *vm, t_slider *sl)
 	int32_t	addr_1;
 	int32_t	addr_2;
 
+	sl->step += 1;
 	value = sl->r[read_byte(vm, sl->place, sl->step) - 1];
 	sl->step += REG_NAME_SIZE;
 	addr_1 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);

@@ -42,7 +42,6 @@ COREWAR_SOURCES_LIST =	corewar.c			\
 						print_some.c		\
 						init_resourse.c		\
 						free_resourse.c		\
-						error_list.c		\
 						start_war.c			\
 						additional.c		\
 						read_code.c			\

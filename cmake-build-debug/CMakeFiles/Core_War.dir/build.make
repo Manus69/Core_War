@@ -1396,18 +1396,18 @@ CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.c" -o CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.s
 
-CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o: CMakeFiles/Core_War.dir/flags.make
-CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o: ../Virtual_Machine/srcs/corewar/error_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/error_list.c"
+CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o: CMakeFiles/Core_War.dir/flags.make
+CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o: ../Virtual_Machine/srcs/corewar/cycles_to_death.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/d_60Gb/Новая папка/Core_War/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o   -c "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c"
 
-CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/error_list.c" > CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.i
+CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c" > CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.i
 
-CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/error_list.c" -o CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.s
+CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c" -o CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.s
 
 CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/free_resourse.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/free_resourse.c.o: ../Virtual_Machine/srcs/corewar/free_resourse.c
@@ -1657,7 +1657,7 @@ Core_War_OBJECTS = \
 "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/calculate.c.o" \
 "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/check_input.c.o" \
 "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.o" \
-"CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o" \
+"CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o" \
 "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/free_resourse.c.o" \
 "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/get_champion.c.o" \
 "CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/init_resourse.c.o" \
@@ -1776,7 +1776,7 @@ Core_War: CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/additional.c.o
 Core_War: CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/calculate.c.o
 Core_War: CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/check_input.c.o
 Core_War: CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.o
-Core_War: CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/error_list.c.o
+Core_War: CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o
 Core_War: CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/free_resourse.c.o
 Core_War: CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/get_champion.c.o
 Core_War: CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/init_resourse.c.o

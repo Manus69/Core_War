@@ -118,7 +118,7 @@ add_executable(Core_War
         Virtual_Machine/srcs/corewar/calculate.c
         Virtual_Machine/srcs/corewar/check_input.c
         Virtual_Machine/srcs/corewar/corewar.c
-        Virtual_Machine/srcs/corewar/error_list.c
+        Virtual_Machine/srcs/corewar/cycles_to_death.c
         Virtual_Machine/srcs/corewar/free_resourse.c
         Virtual_Machine/srcs/corewar/get_champion.c
         Virtual_Machine/srcs/corewar/init_resourse.c

@@ -350,13 +350,6 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o: ../includes/err
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o: ../includes/op.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o: ../srcs/corewar/cycles_to_death.c
 
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o: ../ft_lftprintf/includes/libft/libft.h
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o: ../ft_lftprintf/includes/printf.h
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o: ../includes/corewar.h
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o: ../includes/error.h
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o: ../includes/op.h
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o: ../srcs/corewar/error_list.c
-
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o: ../ft_lftprintf/includes/libft/libft.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o: ../ft_lftprintf/includes/printf.h
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o: ../includes/corewar.h

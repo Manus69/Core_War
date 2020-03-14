@@ -410,9 +410,6 @@
 		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/error_list.c">
-			<Option target="Virtual_Machine"/>
-		</Unit>
 		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/free_resourse.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>

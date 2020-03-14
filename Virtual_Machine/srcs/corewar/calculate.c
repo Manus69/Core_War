@@ -1,5 +1,21 @@
 #include "corewar.h"
 
+uint32_t	move(t_slider *cursor, t_operation *op)
+{
+	unsigned int		i;
+	uint32_t			step;
+
+	i = 0;
+	step = 0;
+	step += 1 + (op->read_args ? 1 : 0); // перепрыгиваем код операции и аргумент если есть
+	while (i < operation_list[cursor->code - 1].args_num)
+	{
+		step += next_step(cursor->type_of_args[i], op);
+		i++;
+	}
+	return (step);
+}
+
 int32_t		find_place(int32_t place)
 {
 	place %= MEM_SIZE;

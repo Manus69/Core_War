@@ -415,7 +415,7 @@
 		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/corewar.c">
 			<Option target="Core_War"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/error_list.c">
+		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/cycles_to_death.c">
 			<Option target="Core_War"/>
 		</Unit>
 		<Unit filename="/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/srcs/corewar/free_resourse.c">

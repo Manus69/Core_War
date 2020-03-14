@@ -102,7 +102,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/check_input.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/corewar.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/cycles_to_death.c.o"
-  "CMakeFiles/Virtual_Machine.dir/srcs/corewar/error_list.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/free_resourse.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/get_champion.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/init_resourse.c.o"

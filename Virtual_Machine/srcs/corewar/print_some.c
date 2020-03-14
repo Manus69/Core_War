@@ -13,10 +13,12 @@ void	print_mem_status(t_arena *vm)
 	format = vm->print_type == 1 ? 64 : 32;
 	while (i < MEM_SIZE)
 	{
-		if (vm->map[i] > 0)
+		if (vm->map[i] > 0 && i != 2627)
 			ft_printf("{red}%02x{eoc} ", vm->map[i]);
-		else
+		else if (i != 2627)
 			ft_printf("%02x ", vm->map[i]);
+		else
+			ft_printf("{green}%02x{eoc} ", vm->map[i]);
 		if (line == format)
 		{
 			ft_printf("\n");
@@ -51,6 +53,7 @@ void	credits()
 	ft_printf("*  {cyan}<<<<<<****   CREATE YOUR CHAMPION!    ****>>>>>>>>{eoc}    *\n");
 	ft_printf("*   *   *   *   *   *   *   *   *   *   *   *   *   *    *\n\n");
 }
+
 void	usage(int	type)
 {
 	ft_printf("\n|||\nvvv\n{blue}usage: ./corewar [-a] [-d N | -dump N] [-v] <champion1.cor> <...>{eoc} \n");
