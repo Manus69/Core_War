@@ -8,7 +8,7 @@ SRCS_P := ft_binary_read.c open_octo_file.c\
 		walk_throw_byte.c complex_instructions.c simple_instrutions.c create_file.c
 SRC := asm_main.c fork_to_read.c take_name.c
 ASM_DIR := manus_source
-SRCS_ASM := display_stuff.c distances.c encode_arguments.c encode_operations.c encode_strings.c generic_list.c mallokill.c support_stuff.c what_is_it.c
+SRCS_ASM := test_run.c display_stuff.c distances.c encode_arguments.c encode_operations.c encode_strings.c generic_list.c mallokill.c support_stuff.c what_is_it.c
 SSRCS_ASM :=$(addprefix $(ASM_DIR)/, $(SRCS_ASM))
 SSRCS_P := $(addprefix $(P_DIR)/, $(SRCS_P))
 OBJECTS_P := $(SSRCS_P:.c=.o)

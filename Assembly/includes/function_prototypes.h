@@ -57,4 +57,6 @@ t_generic_list *tokens, t_generic_list *labels);
 void set_global_distance(t_generic_list *tokens);
 int get_distance_to_the_previous_operation(t_token *token, t_generic_list *token_list);
 
+void here_we_go(char *str);
+
 #endif

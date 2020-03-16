@@ -12,11 +12,13 @@
 
 #include "asm.h"
 #include "diz_asm.h"
+#include "function_prototypes.h"
 
 int		asm_s(char *str)
 {
 	if (str)
-		ft_printf("to translate\n");
+		// ft_printf("to translate\n");
+		here_we_go(str);
 	return (SUCCESS);
 }
 
