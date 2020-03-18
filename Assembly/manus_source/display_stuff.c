@@ -13,8 +13,10 @@ void display_token(t_token *token)
         return ;
     }
     type = "unknown";
-    if (token->type == command)
-        type = "command";
+    if (token->type == command_name)
+        type = "command_name";
+    else if (token->type == command_comment)
+        type = "command_comment";
     else if (token->type == string)
         type = "string";
     else if (token->type == label)

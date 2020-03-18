@@ -84,8 +84,8 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         return ;
     if (previous_token == NULL)
     {
-        if (is_command(current_token->string))
-            current_token->type = command;
+        if (is_command_name(current_token->string))
+            current_token->type = command_name;
         else if (is_new_line(current_token->string))
             current_token->type = new_line;
         else if (is_comment_character(current_token->string))
@@ -103,12 +103,21 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
             current_token->type = hashtag;
         else if (is_operation(current_token->string))
             current_token->type = operation;
-        else if (is_command(current_token->string))
-            current_token->type = command;
+        else if (is_command_name(current_token->string))
+            current_token->type = command_name;
+        else if (is_command_comment(current_token->string))
+            current_token->type = command_comment;
         else
             display_classification_error_message(current_token, verbose);
     }
-    else if (previous_token->type == command)
+    else if (previous_token->type == command_name)
+    {
+        if (is_quotation_mark(current_token->string))
+            current_token->type = opening_quotation_mark;
+        else
+            display_classification_error_message(current_token, verbose);
+    }
+    else if (previous_token->type == command_comment)
     {
         if (is_quotation_mark(current_token->string))
             current_token->type = opening_quotation_mark;
@@ -228,6 +237,8 @@ t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
     t_generic_list *last_element;
     t_token *current_token_cast;
     int bytes_encoded;
+    
+    int string_translation_flag; //set it on initially, put it down after reaching " or something?
 
     char *debug_string;
 
@@ -296,14 +307,7 @@ void here_we_go(char *file_name)
     t_generic_list *last_element;
     t_generic_list *labels;
 
-    // char *file_name = "test_champ.s";
-    // char *file_name = "test_file.s";
-
     file = open(file_name, O_RDONLY);
-
-    // file = open("/home/anus/projects/core_war/Assembly/test_champ.s", O_RDONLY);
-    // file = open("/home/anus/projects/core_war/Assembly/test_file.s", O_RDONLY);
-    // file = open("/home/anus/projects/core_war/Resources/champs/42.s", O_RDONLY);
     if (file < 0)
     {
         ft_printf("%s", FILE_ERROR_MESSAGE);
@@ -337,7 +341,7 @@ void here_we_go(char *file_name)
     classify_all_tokens(tokens, &labels, 1);
     measure_token_size(tokens);
     set_global_distance(tokens);
-    // display_all_tokens(tokens);
+    display_all_tokens(tokens);
 
     t_generic_list *translation = translate_tokens(tokens, labels);
     ft_printf("%#x", COREWAR_EXEC_MAGIC);

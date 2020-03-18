@@ -102,6 +102,20 @@ int     is_command(char *string)
     return (is_string_in_array(string, g_command_names));
 }
 
+int     is_command_name(char *string) //this is shit design;
+{
+    if (ft_strcmp(string, g_command_names[0]) == 0)
+        return (1);
+    return (0);
+}
+
+int     is_command_comment(char *string)
+{
+    if (ft_strcmp(string, g_command_names[1]) == 0)
+        return (1);
+    return (0);
+}
+
 //argument classification
 
 int     is_registry(char *string)

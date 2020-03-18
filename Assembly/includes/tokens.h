@@ -37,10 +37,13 @@ typedef struct s_token t_token;
 enum e_token_type
 {
     unknown,
-    command,
+    command_name,
+    command_comment,
     opening_quotation_mark,
     closing_quotation_mark,
     string,
+    champ_name,
+    champ_comment,
     label,
     operation,
     argument,

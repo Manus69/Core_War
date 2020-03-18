@@ -25,6 +25,10 @@ int     is_comment_character(char *string);
 int     is_operation(char *string);
 int     is_new_line(char *string);
 int     is_command(char *string);
+
+int     is_command_name(char *string);
+int     is_command_comment(char *string);
+
 int     is_argument_separator(char *string);
 
 int     is_registry(char *string);
