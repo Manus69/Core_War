@@ -10,6 +10,7 @@
 # define SPACES " \t"
 # define DIGITS "0123456789"
 # define NUMBER_SYSTEM_BASE 16
+# define PADDING_SIZE 4
 
 //depreciated; 
 # define ARG_ENCODING_SIZE 1 //is there a constant in the header already?
@@ -33,6 +34,7 @@ static char g_spaces[] = {' ', '\t', 0};
 
 typedef struct s_line_token t_line_token;
 typedef struct s_token t_token;
+typedef struct s_transcription_parameters t_transcription_parameters;
 
 enum e_token_type
 {
@@ -76,6 +78,13 @@ struct s_token
     enum e_argument_type argument_type;
     int size;
     int distance;
+};
+
+struct s_transcription_parameters
+{
+    int name_size;
+    int comment_size;
+    int exec_code_size;
 };
 
 #endif

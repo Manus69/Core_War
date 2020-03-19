@@ -95,7 +95,7 @@ void display_byte_strings(t_generic_list *tokens)
     current = tokens;
     while (current)
     {
-        ft_printf("%s ", current->stuff);
+        ft_printf("%s", current->stuff);
         current = current->next;
     }
 }

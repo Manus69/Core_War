@@ -229,7 +229,10 @@ void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int ve
     }
 }
 
-t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
+//.name "..." .name "..." ... is considered valid now?
+
+t_generic_list *translate_tokens(t_generic_list *tokens,
+t_generic_list *labels, t_transcription_parameters *transcription_aprameters)
 {
     t_generic_list *translation;
     t_generic_list *current_token;
@@ -238,24 +241,90 @@ t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
     t_token *current_token_cast;
     int bytes_encoded;
     
-    int string_translation_flag; //set it on initially, put it down after reaching " or something?
+    int string_translation_mode; //1 for name, 2 for comment? THIS APPROACH IS FUCKED UP;
 
     char *debug_string;
 
+    string_translation_mode = 0;
     translation = NULL;
     last_element = NULL;
     bytes_encoded = 0;
     current_token = tokens;
     if (!current_token)
-        invoke_error("empty token list");
+        invoke_error("empty token list"); //message?
     while (current_token)
     {
         current_token_cast = (t_token *)current_token->stuff;
-        if (current_token_cast->type == string)
+        if (current_token_cast->type == command_name)
+        {
+            string_translation_mode = 1;
+        }
+        else if (current_token_cast->type == command_comment)
+        {
+            string_translation_mode = 2;
+        }
+        else if (current_token_cast->type == string)
         {
             current_token_translation = encode_string(current_token_cast, &bytes_encoded);
+            //
+            // display_byte_strings(current_token_translation);
+            //
             translation = concatenate_lists(translation, current_token_translation, last_element);
-            last_element = current_token_translation;
+            //
+            // display_byte_strings(translation);
+            //
+            last_element = get_last_element(current_token_translation);
+        }
+        else if (current_token_cast->type == closing_quotation_mark && string_translation_mode == 1)
+        {
+            //REMAINING BYTES
+            if (bytes_encoded > PROG_NAME_LENGTH)
+                invoke_error("champ name is too long;");
+            current_token_translation = get_null_padding(PROG_NAME_LENGTH - bytes_encoded);
+            translation = concatenate_lists(translation, current_token_translation, last_element);
+            //
+            // display_byte_strings(translation);
+            //
+            last_element = get_last_element(current_token_translation);
+
+            //PADDING
+            current_token_translation = get_null_padding(PADDING_SIZE);
+            //
+            // display_byte_strings(current_token_translation);
+            //
+            translation = concatenate_lists(translation, current_token_translation, last_element);
+            //
+            // display_byte_strings(translation);
+            //
+            last_element = get_last_element(current_token_translation);
+
+            //EXEC CODE SIZE
+            current_token_translation = new_generic_list(decimal_to_hex(transcription_aprameters->exec_code_size, 4));
+            translation = concatenate_lists(translation, current_token_translation, last_element);
+            last_element = get_last_element(current_token_translation);
+        }
+        else if (current_token_cast->type == closing_quotation_mark && string_translation_mode == 2)
+        {
+            //REMAINING BYTES
+            if (bytes_encoded > CHAMP_MAX_SIZE)
+                invoke_error("champ comment is too long;");
+            current_token_translation = get_null_padding(CHAMP_MAX_SIZE - bytes_encoded);
+            translation = concatenate_lists(translation, current_token_translation, last_element);
+            //
+            // display_byte_strings(translation);
+            //
+            last_element = get_last_element(current_token_translation);
+
+            //PADDING
+            current_token_translation = get_null_padding(PADDING_SIZE);
+            //
+            // display_byte_strings(current_token_translation);
+            //
+            translation = concatenate_lists(translation, current_token_translation, last_element);
+            //
+            // display_byte_strings(translation);
+            //
+            last_element = get_last_element(current_token_translation);
         }
         else if (current_token_cast->type == operation)
         {
@@ -289,19 +358,18 @@ t_generic_list *translate_tokens(t_generic_list *tokens, t_generic_list *labels)
     return (translation);
 }
 
+
 //string separators are lost during tokenization;
 //is it necessary to check for large (more than two bytes) numbers?
 //the size constants are all fucked up!
 
-//printf and libft makefiles are fucked up? 
-
-//make sure that all addressing is done mod mem_size;
-//apply modulus for indirect arguments;
+//spaces are LOST in string transcribtion;
 
 void here_we_go(char *file_name)
 {
     char *current_line;
     int file;
+    t_transcription_parameters *transcription_parameters;
     t_generic_list *tokens;
     t_generic_list *line_tokens;
     t_generic_list *last_element;
@@ -341,40 +409,20 @@ void here_we_go(char *file_name)
     classify_all_tokens(tokens, &labels, 1);
     measure_token_size(tokens);
     set_global_distance(tokens);
-    display_all_tokens(tokens);
+    // display_all_tokens(tokens);
+    transcription_parameters = get_transcription_parameters(tokens);
 
-    t_generic_list *translation = translate_tokens(tokens, labels);
+    t_generic_list *translation = translate_tokens(tokens, labels, transcription_parameters);
     ft_printf("%#x", COREWAR_EXEC_MAGIC);
     display_byte_strings(translation);
 
     //TESTING AREA
 
-    char *byte_string = grab_n_bytes_from_address(tokens, 0, 10);
-    // ft_printf("\n%s\n", byte_string);
-
-    t_generic_list *encoding;
-    int bytes_encoded = 0;
-    t_generic_list *current_token = tokens;
-    
-    t_token *test_token1 = new_token("r1", argument);
-    test_token1->argument_type = registry;
-    t_token *test_token2 = new_token("?", argument);
-    test_token2->argument_type = direct;
-    t_token *test_token3 = new_token("?", argument);
-    test_token3->argument_type = direct;
-    char *argument_encoding = get_type_encoding(3, test_token1, test_token2, test_token3);
-
-    t_token *op_token = new_token("sti", operation);
-    t_generic_list *argument_test = new_generic_list(op_token);
-    argument_test = add_to_list(argument_test, test_token1);
-    argument_test = add_to_list(argument_test, test_token2);
-    argument_test = add_to_list(argument_test, test_token3);
-    t_generic_list *encoding_test = encode_type(argument_test, &bytes_encoded);
-    // display_byte_strings(encoding_test);
-
-    // ft_printf(get_direct_number_encoding(new_token("%2", argument)));
-    // display_byte_strings(encoding);
-    //
+    // t_generic_list *test_token = get_next_typed_token(tokens, string);
+    // display_token(test_token->stuff);
+    // test_token = test_token->next;
+    // test_token = get_next_typed_token(test_token, string);
+    // display_token(test_token->stuff);
 }
 
 // int main()

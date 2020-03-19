@@ -61,6 +61,9 @@ t_generic_list *tokens, t_generic_list *labels);
 void set_global_distance(t_generic_list *tokens);
 int get_distance_to_the_previous_operation(t_token *token, t_generic_list *token_list);
 
+t_generic_list *get_next_typed_token(t_generic_list *tokens, enum e_token_type type);
+t_transcription_parameters *get_transcription_parameters(t_generic_list *tokens);
+
 void here_we_go(char *str);
 
 #endif
