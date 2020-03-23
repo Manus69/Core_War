@@ -113,6 +113,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o"
+  "CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_data.c.o"
+  "CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_draw.c.o"
+  "CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_init.c.o"
+  "CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_keys.c.o"
+  "CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_put.c.o"
+  "CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_start.c.o"
   "Virtual_Machine"
   "Virtual_Machine.pdb"
 )

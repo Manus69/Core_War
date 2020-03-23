@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/user/Downloads/Core_War-selly/Virtual_Machine
+CMAKE_SOURCE_DIR = "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug
+CMAKE_BINARY_DIR = "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles /Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Downloads/Core_War-selly/Virtual_Machine/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -3201,6 +3201,168 @@ srcs/corewar/start_war.c.s:
 	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.s
 .PHONY : srcs/corewar/start_war.c.s
 
+srcs/corewar/vis_data.o: srcs/corewar/vis_data.c.o
+
+.PHONY : srcs/corewar/vis_data.o
+
+# target to build an object file
+srcs/corewar/vis_data.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_data.c.o
+.PHONY : srcs/corewar/vis_data.c.o
+
+srcs/corewar/vis_data.i: srcs/corewar/vis_data.c.i
+
+.PHONY : srcs/corewar/vis_data.i
+
+# target to preprocess a source file
+srcs/corewar/vis_data.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_data.c.i
+.PHONY : srcs/corewar/vis_data.c.i
+
+srcs/corewar/vis_data.s: srcs/corewar/vis_data.c.s
+
+.PHONY : srcs/corewar/vis_data.s
+
+# target to generate assembly for a file
+srcs/corewar/vis_data.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_data.c.s
+.PHONY : srcs/corewar/vis_data.c.s
+
+srcs/corewar/vis_draw.o: srcs/corewar/vis_draw.c.o
+
+.PHONY : srcs/corewar/vis_draw.o
+
+# target to build an object file
+srcs/corewar/vis_draw.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_draw.c.o
+.PHONY : srcs/corewar/vis_draw.c.o
+
+srcs/corewar/vis_draw.i: srcs/corewar/vis_draw.c.i
+
+.PHONY : srcs/corewar/vis_draw.i
+
+# target to preprocess a source file
+srcs/corewar/vis_draw.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_draw.c.i
+.PHONY : srcs/corewar/vis_draw.c.i
+
+srcs/corewar/vis_draw.s: srcs/corewar/vis_draw.c.s
+
+.PHONY : srcs/corewar/vis_draw.s
+
+# target to generate assembly for a file
+srcs/corewar/vis_draw.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_draw.c.s
+.PHONY : srcs/corewar/vis_draw.c.s
+
+srcs/corewar/vis_init.o: srcs/corewar/vis_init.c.o
+
+.PHONY : srcs/corewar/vis_init.o
+
+# target to build an object file
+srcs/corewar/vis_init.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_init.c.o
+.PHONY : srcs/corewar/vis_init.c.o
+
+srcs/corewar/vis_init.i: srcs/corewar/vis_init.c.i
+
+.PHONY : srcs/corewar/vis_init.i
+
+# target to preprocess a source file
+srcs/corewar/vis_init.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_init.c.i
+.PHONY : srcs/corewar/vis_init.c.i
+
+srcs/corewar/vis_init.s: srcs/corewar/vis_init.c.s
+
+.PHONY : srcs/corewar/vis_init.s
+
+# target to generate assembly for a file
+srcs/corewar/vis_init.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_init.c.s
+.PHONY : srcs/corewar/vis_init.c.s
+
+srcs/corewar/vis_keys.o: srcs/corewar/vis_keys.c.o
+
+.PHONY : srcs/corewar/vis_keys.o
+
+# target to build an object file
+srcs/corewar/vis_keys.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_keys.c.o
+.PHONY : srcs/corewar/vis_keys.c.o
+
+srcs/corewar/vis_keys.i: srcs/corewar/vis_keys.c.i
+
+.PHONY : srcs/corewar/vis_keys.i
+
+# target to preprocess a source file
+srcs/corewar/vis_keys.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_keys.c.i
+.PHONY : srcs/corewar/vis_keys.c.i
+
+srcs/corewar/vis_keys.s: srcs/corewar/vis_keys.c.s
+
+.PHONY : srcs/corewar/vis_keys.s
+
+# target to generate assembly for a file
+srcs/corewar/vis_keys.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_keys.c.s
+.PHONY : srcs/corewar/vis_keys.c.s
+
+srcs/corewar/vis_put.o: srcs/corewar/vis_put.c.o
+
+.PHONY : srcs/corewar/vis_put.o
+
+# target to build an object file
+srcs/corewar/vis_put.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_put.c.o
+.PHONY : srcs/corewar/vis_put.c.o
+
+srcs/corewar/vis_put.i: srcs/corewar/vis_put.c.i
+
+.PHONY : srcs/corewar/vis_put.i
+
+# target to preprocess a source file
+srcs/corewar/vis_put.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_put.c.i
+.PHONY : srcs/corewar/vis_put.c.i
+
+srcs/corewar/vis_put.s: srcs/corewar/vis_put.c.s
+
+.PHONY : srcs/corewar/vis_put.s
+
+# target to generate assembly for a file
+srcs/corewar/vis_put.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_put.c.s
+.PHONY : srcs/corewar/vis_put.c.s
+
+srcs/corewar/vis_start.o: srcs/corewar/vis_start.c.o
+
+.PHONY : srcs/corewar/vis_start.o
+
+# target to build an object file
+srcs/corewar/vis_start.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_start.c.o
+.PHONY : srcs/corewar/vis_start.c.o
+
+srcs/corewar/vis_start.i: srcs/corewar/vis_start.c.i
+
+.PHONY : srcs/corewar/vis_start.i
+
+# target to preprocess a source file
+srcs/corewar/vis_start.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_start.c.i
+.PHONY : srcs/corewar/vis_start.c.i
+
+srcs/corewar/vis_start.s: srcs/corewar/vis_start.c.s
+
+.PHONY : srcs/corewar/vis_start.s
+
+# target to generate assembly for a file
+srcs/corewar/vis_start.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/vis_start.c.s
+.PHONY : srcs/corewar/vis_start.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3552,6 +3714,24 @@ help:
 	@echo "... srcs/corewar/start_war.o"
 	@echo "... srcs/corewar/start_war.i"
 	@echo "... srcs/corewar/start_war.s"
+	@echo "... srcs/corewar/vis_data.o"
+	@echo "... srcs/corewar/vis_data.i"
+	@echo "... srcs/corewar/vis_data.s"
+	@echo "... srcs/corewar/vis_draw.o"
+	@echo "... srcs/corewar/vis_draw.i"
+	@echo "... srcs/corewar/vis_draw.s"
+	@echo "... srcs/corewar/vis_init.o"
+	@echo "... srcs/corewar/vis_init.i"
+	@echo "... srcs/corewar/vis_init.s"
+	@echo "... srcs/corewar/vis_keys.o"
+	@echo "... srcs/corewar/vis_keys.i"
+	@echo "... srcs/corewar/vis_keys.s"
+	@echo "... srcs/corewar/vis_put.o"
+	@echo "... srcs/corewar/vis_put.i"
+	@echo "... srcs/corewar/vis_put.s"
+	@echo "... srcs/corewar/vis_start.o"
+	@echo "... srcs/corewar/vis_start.i"
+	@echo "... srcs/corewar/vis_start.s"
 .PHONY : help
 
 

@@ -1,5 +1,28 @@
 #include "corewar.h"
 
+void		bin_op(t_arena *vm, t_slider *sl, int op)
+{
+	int32_t	value_1;
+	int32_t	value_2;
+	int32_t	value;
+	int32_t	r_id;
+
+	sl->step += 1;
+	value_1 = read_mem(vm, sl, 1, &operation_list[sl->code - 1]);
+	value_2 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);
+	value = 0;
+	if (op == 1)
+		value = value_1 & value_2;
+	else if (op == 2)
+		value = value_1 | value_2;
+	else if (op == 3)
+		value = value_1 ^ value_2;
+	sl->carry = value == 0 ? 1 : 0;
+	r_id = read_byte(vm, sl->place, sl->step);
+	sl->r[r_id - 1] = value;
+	sl->step += REG_NAME_SIZE;
+}
+
 void		sub(t_arena *vm, t_slider *sl)
 {
 	int32_t	reg1;
@@ -21,51 +44,15 @@ void		sub(t_arena *vm, t_slider *sl)
 
 void		and(t_arena *vm, t_slider *sl)
 {
-	int32_t	value_1;
-	int32_t	value_2;
-	int32_t	value;
-	int32_t	r_id;
-
-	sl->step += 1;
-	value_1 = read_mem(vm, sl, 1, &operation_list[sl->code - 1]);
-	value_2 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);
-	value = value_1 & value_2;
-	sl->carry = value == 0 ? 1 : 0;
-	r_id = read_byte(vm, sl->place, sl->step);
-	sl->r[r_id - 1] = value;
-	sl->step += REG_NAME_SIZE;
+	bin_op(vm, sl, 1);
 }
 
 void		or(t_arena *vm, t_slider *sl)
 {
-	int32_t	value_1;
-	int32_t	value_2;
-	int32_t	value;
-	int32_t	r_id;
-
-	sl->step += 1;
-	value_1 = read_mem(vm, sl, 1, &operation_list[sl->code - 1]);
-	value_2 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);
-	value = value_1 | value_2;
-	sl->carry = value == 0 ? 1 : 0;
-	r_id = read_byte(vm, sl->place, sl->step);
-	sl->r[r_id - 1] = value;
-	sl->step += REG_NAME_SIZE;
+	bin_op(vm, sl, 2);
 }
 
 void		xor(t_arena *vm, t_slider *sl)
 {
-	int32_t	value_1;
-	int32_t	value_2;
-	int32_t	value;
-	int32_t	r_id;
-
-	sl->step += 1;
-	value_1 = read_mem(vm, sl, 1, &operation_list[sl->code - 1]);
-	value_2 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);
-	value = value_1 ^ value_2;
-	sl->carry = value == 0 ? 1 : 0;
-	r_id = read_byte(vm, sl->place, sl->step);
-	sl->r[r_id - 1] = value;
-	sl->step += REG_NAME_SIZE;
+	bin_op(vm, sl, 3);
 }

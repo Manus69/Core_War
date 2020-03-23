@@ -4,6 +4,7 @@
 # include "printf.h"
 # include "op.h"
 # include "error.h"
+# include "visual.h"
 
 # define REG_NAME_SIZE 			1
 /*
@@ -35,7 +36,7 @@ typedef struct 				s_champion
 
 typedef struct				s_slider
 {
-	int 					id;					// номер чеспиона от которого произошла каретка
+	int 					id;					// номер каретки
 	uint32_t 				carry;				// значение carry для прыжка
 	uint8_t 				code; 				// байт кода
 	ssize_t 				last_live; 			// последний раз выполненная операция live
@@ -52,6 +53,35 @@ typedef struct				s_slider
 /*
  *  Структура для основной игры и создания арены, можно добавлять нужные переменные
  */
+
+typedef struct		s_data
+{
+	int32_t			i;
+	ssize_t			wait_store;
+	ssize_t			wait_live;
+	t_champion		*live;
+}					t_data;
+
+typedef struct		s_viz
+{
+	WINDOW			*win;
+	WINDOW			*w_info;
+	WINDOW			*w_help;
+	int 			x;
+	int 			y;
+	int 			i;
+	int 			k;
+	int				key;
+	int				go;
+	int				speed;
+	int				place;
+	clock_t			time;
+	t_data			map[MEM_SIZE];
+	char			aff;
+	t_champion		*aff_champ;
+	int				sound;
+	int				help;
+}					t_viz;
 
 typedef struct 				s_arena
 {
@@ -73,6 +103,7 @@ typedef struct 				s_arena
 	t_champion				*last_alive;		// last alive player, may be winner.. or not?
 	t_champion				*champion;			// link to players list, Pl-3 in the head of the list
 	t_champion				*ch[MAX_PLAYERS];	// игроки по порядку
+	t_viz					*viz;				//для визуала
 	int 					color[MEM_SIZE];
 	uint8_t 				map[MEM_SIZE];		// memory for arena
 }							t_arena;
@@ -82,7 +113,6 @@ typedef struct			s_operation
 	char 				*name;									// название операции
 	int 				mod;									// деление по модулю
 	uint8_t 			code;									// код функции
-	uint8_t 			byte;									// один байт кода
 	int 				vars;
 	unsigned int		args_num;								// число принимаемых аргументов (от 1 до 3х)
 	int 				read_args;								// 1 - есть инфо об аргументах (если их больше 1), 0 - только 1 арг-т, считывать не надо
@@ -137,6 +167,7 @@ int 						is_op(int8_t byte);
 int8_t 						read_byte(t_arena *vm, int32_t	place, int32_t step);
 uint32_t					step(t_slider *cursor, t_operation *op);
 t_slider					*write_args_types(t_slider *s, t_operation *op, int8_t code);
+void						rw_memory(t_arena *vm, t_slider *sl, int sliders, t_operation *op);
 void						read_args_size(t_arena *vm, t_slider *s, t_operation *op);
 int32_t						read_mem(t_arena *vm, t_slider *s, uint8_t i, t_operation *op);
 int32_t						bytes_to_magic(const uint8_t *magic, int32_t place,size_t size);
@@ -146,6 +177,30 @@ int32_t						find_place(int32_t place);
 t_slider					*copy_slider(t_arena *vm, t_slider *sl, int32_t addr);
 uint32_t					next_step(uint8_t arg_type, t_operation *op);
 void						cycles_to_die_check(t_arena *vm);
+
+/*
+ * 	визуализация
+ */
+
+
+
+void						show_war(t_arena *vm);
+t_viz						*new_viz(t_arena *vm);
+void						put_data(t_arena *vm);
+void						set_key(t_arena *vm);
+void						clear_slider(t_arena *vm, t_slider *sl);
+void						draw_slider(t_arena *vm, t_slider *sl);
+void						update_map(t_arena *vm, t_slider *sl, int32_t place, int32_t s);
+void						draw(t_arena *vm);
+void						draw_info(t_arena *vm);
+
+void					draw_winner(t_arena *vm);
+void					draw_aff(t_arena *vm);
+void					draw_menu(t_arena *vm);
+void					draw_players(t_arena *vm);
+void					init_colors(void);
+void					init_sl(t_arena *vm);
+void					init_map(t_arena *vm);
 
 /*
  * 	функции операций
@@ -167,6 +222,7 @@ void		lldi(t_arena *vm, t_slider *sl);
 void		lfork(t_arena *vm, t_slider *sl);
 void		aff(t_arena *vm, t_slider *sl);
 void		fork_op(t_arena *vm, t_slider *sl);
+void		play_sound(t_arena *vm, char flag);
 
 /*
  * 	структуры операций

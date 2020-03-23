@@ -111,6 +111,7 @@ add_executable(Virtual_Machine
         includes/corewar.h
         includes/error.h
         includes/op.h
+        includes/visual.h
         srcs/corewar/additional.c
         srcs/corewar/calculate.c
         srcs/corewar/check_input.c
@@ -126,4 +127,10 @@ add_executable(Virtual_Machine
         srcs/corewar/print_some.c
         srcs/corewar/read_code.c
         srcs/corewar/read_memory.c
-        srcs/corewar/start_war.c)
+        srcs/corewar/start_war.c
+        srcs/corewar/vis_draw.c
+        srcs/corewar/vis_init.c
+        srcs/corewar/vis_keys.c
+        srcs/corewar/vis_data.c
+        srcs/corewar/vis_put.c
+        srcs/corewar/vis_start.c)

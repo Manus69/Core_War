@@ -51,4 +51,9 @@ void		aff(t_arena *vm, t_slider *sl)
 	sl->step += REG_NAME_SIZE;
 	if (vm->aff_print)
 		ft_printf("{green}Operaions aff says: %c{eoc} \n", (char)value);
+	if (vm->visual)
+	{
+		vm->viz->aff = (char)value;
+		vm->viz->aff_champ = sl->player;
+	}
 }

@@ -44,6 +44,7 @@ static void		delete_died_cursors(t_arena *vm)
 			if (previous)
 				previous->next = current;
 			ft_memdel((void **)&delete);
+			play_sound(vm, 'd');
 		}
 		else
 		{

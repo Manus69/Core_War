@@ -5,7 +5,7 @@ FLAGS = -Wall -Wextra -Werror -O3
 
 # Libraries and Includes
 
-COREWAR_LIBRARIES = -lftprintf -L$(FT_PRINTF_DIRECTORY)
+COREWAR_LIBRARIES = -lncurses -lftprintf -L$(FT_PRINTF_DIRECTORY)
 
 COREWAR_INCLUDES = \
 	-I$(HEADERS_DIRECTORY)\
@@ -24,10 +24,11 @@ FT_PRINTF_HEADERS = $(FT_PRINTF_DIRECTORY)includes/
 
 HEADERS_DIRECTORY = ./includes/
 
-COREWAR_HEADERS_LIST = \
-	op.h\
-	corewar.h\
-	error.h\
+COREWAR_HEADERS_LIST =	\
+	op.h				\
+	corewar.h			\
+	error.h				\
+	visual.h			\
 
 COREWAR_HEADERS = $(addprefix $(HEADERS_DIRECTORY), $(COREWAR_HEADERS_LIST))
 
@@ -51,6 +52,12 @@ COREWAR_SOURCES_LIST =	corewar.c			\
 						op_5_8.c			\
 						op_9_12.c			\
 						op_13_16.c			\
+						vis_start.c			\
+						vis_init.c			\
+						vis_keys.c			\
+						vis_put.c			\
+						vis_draw.c			\
+						vis_data.c			\
 
 COREWAR_SOURCES = $(addprefix $(COREWAR_SOURCES_DIRECTORY), $(COREWAR_SOURCES_LIST))
 
