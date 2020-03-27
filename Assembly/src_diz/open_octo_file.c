@@ -33,18 +33,28 @@ int		taste_magic(unsigned char *input)
 	int *value;
 	int i;
 	int val;
+	int bytes_to_check;
+
+	char *byte_value = "ea83f3"; //this is bad;
 
 	if (!(value = (int *)malloc(sizeof(int))))
 		return (FAIL);
 	i = -1;
 	val = 3;
 	*value = COREWAR_EXEC_MAGIC;
-	while (++i < 4)
+	bytes_to_check = 6;
+	while (++i < bytes_to_check)
 	{
-		if (input[i] != ((unsigned char*)value)[val])
+		// if (input[i] != ((unsigned char*)value)[val])
+		// {
+		// 	free(value);
+		// 	return (FAIL);
+		// }
+		//
+		if (input[i] != byte_value[i])
 		{
 			free(value);
-			return (FAIL);
+			return(FAIL);
 		}
 		val--;
 	}

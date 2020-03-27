@@ -405,6 +405,7 @@ void here_we_go(char *file_name)
         }
         free(current_line);
     }
+    close(file);
     labels = NULL;
     classify_all_tokens(tokens, &labels, 1);
     measure_token_size(tokens);
@@ -413,10 +414,21 @@ void here_we_go(char *file_name)
     transcription_parameters = get_transcription_parameters(tokens);
 
     t_generic_list *translation = translate_tokens(tokens, labels, transcription_parameters);
-    ft_printf("%#x", COREWAR_EXEC_MAGIC);
-    display_byte_strings(translation);
+    //
+    char *prefix = ft_strdup("00ea83f3"); //fix it later;
+    t_generic_list *prefix_item = new_generic_list(prefix);
+    //
+    // ft_printf("00%x", COREWAR_EXEC_MAGIC);
+    // display_byte_strings(translation);
+    prefix_item = concatenate_lists(prefix_item, translation, NULL);
+    // display_byte_strings(prefix_item);
+    file = open("file1.cor", O_RDWR | O_CREAT);
+    tokens_to_bytes(prefix_item, file);
 
     //TESTING AREA
+
+    // file = open("test_file", O_RDWR, O_CREAT);
+    // string_to_bytes("ff", file);
 
     // t_generic_list *test_token = get_next_typed_token(tokens, string);
     // display_token(test_token->stuff);

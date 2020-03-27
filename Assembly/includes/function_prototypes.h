@@ -17,6 +17,10 @@ void display_token(t_token *token);
 void display_all_tokens(t_generic_list *tokens);
 void display_classification_error_message(t_token *token, int verbose);
 void display_byte_strings(t_generic_list *tokens);
+
+void string_to_bytes(char *string, int file_descriptor);
+void tokens_to_bytes(t_generic_list *tokens, int file_descriptor);
+
 void invoke_error(char *error_message);
 
 int     is_quotation_mark(char *string);
