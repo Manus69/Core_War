@@ -34,18 +34,35 @@ t_token *get_next_token(int *n, char *line)
     //
     test = line[*n];
     //
-    if (is_a_member(g_separators, line[*n]))
+    m = *n;
+    if (line[*n] == '"')
+    {
+        // *n = *n + 1;
+        
+        while (line[m] != '\0')
+        {
+            m = m + 1;
+            if (line[m] == '"')
+            {
+                m = m + 1;
+                break ;
+            } 
+        }
+    }
+    else if (is_a_member(g_separators, line[*n]))
     {
         substring = ft_strsub(line, *n, 1);
         token = new_token(substring, 0);
         *n = *n + 1;
         return (token);
     }
-    m = *n;
-    while (line[m] != '\0' && !is_a_member(g_separators, line[m]) && !is_a_member(g_spaces, line[m]))
+    else
     {
-        test = line[m];
-        m = m + 1;
+        while (line[m] != '\0' && !is_a_member(g_separators, line[m]) && !is_a_member(g_spaces, line[m]))
+        {
+            test = line[m];
+            m = m + 1;
+        }
     }
     if (m - *n > 0)
     {
@@ -114,6 +131,8 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
     {
         if (is_quotation_mark(current_token->string))
             current_token->type = opening_quotation_mark;
+        else if (is_string(current_token->string))
+            current_token->type = string;
         else
             display_classification_error_message(current_token, verbose);
     }
@@ -121,6 +140,8 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
     {
         if (is_quotation_mark(current_token->string))
             current_token->type = opening_quotation_mark;
+        else if (is_string(current_token->string))
+            current_token->type = string;
         else
             display_classification_error_message(current_token, verbose);
     }
@@ -201,6 +222,8 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
     {
         if (is_quotation_mark(current_token->string))
             current_token->type = closing_quotation_mark;
+        else if (is_new_line(current_token->string))
+            current_token->type = new_line;
         else
             current_token->type = string;
     }
@@ -232,7 +255,7 @@ void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int ve
 //.name "..." .name "..." ... is considered valid now?
 
 t_generic_list *translate_tokens(t_generic_list *tokens,
-t_generic_list *labels, t_transcription_parameters *transcription_aprameters)
+t_generic_list *labels, t_transcription_parameters *transcription_parameters)
 {
     t_generic_list *translation;
     t_generic_list *current_token;
@@ -245,7 +268,7 @@ t_generic_list *labels, t_transcription_parameters *transcription_aprameters)
 
     char *debug_string;
 
-    string_translation_mode = 0;
+    string_translation_mode = 1;
     translation = NULL;
     last_element = NULL;
     bytes_encoded = 0;
@@ -263,24 +286,19 @@ t_generic_list *labels, t_transcription_parameters *transcription_aprameters)
         {
             string_translation_mode = 2;
         }
-        else if (current_token_cast->type == string)
+        else if (current_token_cast->type == string && string_translation_mode == 1) //make a separate function ffs;
         {
             current_token_translation = encode_string(current_token_cast, &bytes_encoded);
-            //
-            // display_byte_strings(current_token_translation);
-            //
             translation = concatenate_lists(translation, current_token_translation, last_element);
+            last_element = get_last_element(current_token_translation);
             //
             // display_byte_strings(translation);
             //
-            last_element = get_last_element(current_token_translation);
-        }
-        else if (current_token_cast->type == closing_quotation_mark && string_translation_mode == 1)
-        {
+
             //REMAINING BYTES
             if (bytes_encoded > PROG_NAME_LENGTH)
                 invoke_error("champ name is too long;");
-            current_token_translation = get_null_padding(PROG_NAME_LENGTH - bytes_encoded);
+            current_token_translation = get_null_padding(PROG_NAME_LENGTH - transcription_parameters->name_size);
             translation = concatenate_lists(translation, current_token_translation, last_element);
             //
             // display_byte_strings(translation);
@@ -299,16 +317,22 @@ t_generic_list *labels, t_transcription_parameters *transcription_aprameters)
             last_element = get_last_element(current_token_translation);
 
             //EXEC CODE SIZE
-            current_token_translation = new_generic_list(decimal_to_hex(transcription_aprameters->exec_code_size, 4));
+            current_token_translation = new_generic_list(decimal_to_hex(transcription_parameters->exec_code_size, 4));
             translation = concatenate_lists(translation, current_token_translation, last_element);
             last_element = get_last_element(current_token_translation);
+            //
+            // display_byte_strings(translation);
+            //
         }
-        else if (current_token_cast->type == closing_quotation_mark && string_translation_mode == 2)
+        else if (current_token_cast->type == string && string_translation_mode == 2)
         {
+            current_token_translation = encode_string(current_token_cast, &bytes_encoded);
+            translation = concatenate_lists(translation, current_token_translation, last_element);
+            last_element = get_last_element(current_token_translation);
             //REMAINING BYTES
-            if (bytes_encoded > CHAMP_MAX_SIZE)
+            if (bytes_encoded > COMMENT_LENGTH)
                 invoke_error("champ comment is too long;");
-            current_token_translation = get_null_padding(CHAMP_MAX_SIZE - bytes_encoded);
+            current_token_translation = get_null_padding(COMMENT_LENGTH - transcription_parameters->comment_size);
             translation = concatenate_lists(translation, current_token_translation, last_element);
             //
             // display_byte_strings(translation);
@@ -413,6 +437,7 @@ void here_we_go(char *file_name)
     // display_all_tokens(tokens);
     transcription_parameters = get_transcription_parameters(tokens);
 
+    //string translation is FUCKED UP;
     t_generic_list *translation = translate_tokens(tokens, labels, transcription_parameters);
     //
     char *prefix = ft_strdup("00ea83f3"); //fix it later;

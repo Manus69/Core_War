@@ -6,7 +6,7 @@ t_generic_list *get_next_typed_token(t_generic_list *tokens, enum e_token_type t
     t_generic_list *current_token;
     t_token *token_cast;
 
-    current_token = tokens;
+    current_token = tokens->next;
     while (current_token)
     {
         token_cast = (t_token *)current_token->stuff;
@@ -26,20 +26,34 @@ t_transcription_parameters *get_transcription_parameters(t_generic_list *tokens)
     int distance;
 
     parameters = mallokill(sizeof(t_transcription_parameters));
-    current_token = get_next_typed_token(tokens, opening_quotation_mark);
-    distance = ((t_token *)current_token->stuff)->distance;
-    current_token = get_next_typed_token(current_token, closing_quotation_mark);
-    parameters->name_size = ((t_token *)current_token->stuff)->distance - distance;
+    // current_token = get_next_typed_token(tokens, opening_quotation_mark);
+    // distance = ((t_token *)current_token->stuff)->distance;
+    // current_token = get_next_typed_token(current_token, closing_quotation_mark);
+    // parameters->name_size = ((t_token *)current_token->stuff)->distance - distance;
+    current_token = get_next_typed_token(tokens, string);
+    token_cast = (t_token *)current_token->stuff;
+    parameters->name_size = ft_strlen(((t_token *)current_token->stuff)->string) - 2;
     if (!parameters->name_size)
         invoke_error(GENERIC_ERROR_MESSAGE); //get the right message;
-    current_token = get_next_typed_token(current_token, opening_quotation_mark);
-    distance = ((t_token *)current_token->stuff)->distance;
-    current_token = get_next_typed_token(current_token, closing_quotation_mark);
-    parameters->comment_size = ((t_token *)current_token->stuff)->distance - distance;
-    if (!parameters->name_size)
+    // current_token = get_next_typed_token(current_token, opening_quotation_mark);
+    // distance = ((t_token *)current_token->stuff)->distance;
+    // current_token = get_next_typed_token(current_token, closing_quotation_mark);
+    // parameters->comment_size = ((t_token *)current_token->stuff)->distance - distance;
+    current_token = get_next_typed_token(current_token, string);
+    token_cast = (t_token *)current_token->stuff;
+    if (!current_token)
         invoke_error(GENERIC_ERROR_MESSAGE);
-    distance = ((t_token*)current_token->stuff)->distance;
-    current_token = get_last_element(current_token);
-    parameters->exec_code_size = ((t_token *)current_token->stuff)->distance - distance;
+    parameters->comment_size = ft_strlen(((t_token *)current_token->stuff)->string) - 2;
+    if (!parameters->comment_size)
+        invoke_error(GENERIC_ERROR_MESSAGE);
+    // distance = ((t_token*)current_token->stuff)->distance;
+    // current_token = get_last_element(current_token);
+    // parameters->exec_code_size = ((t_token *)current_token->stuff)->distance - distance;
+    current_token = get_last_element(tokens);
+    token_cast = (t_token *)current_token->stuff;
+    parameters->exec_code_size = ((t_token *)current_token->stuff)->distance -
+    parameters->name_size - parameters->comment_size;
+    if (parameters->exec_code_size < 0)
+        invoke_error("this is wrong!");
     return (parameters);
 }

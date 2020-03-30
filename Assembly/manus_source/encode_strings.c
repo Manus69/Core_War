@@ -19,18 +19,24 @@ t_generic_list *get_null_padding(int number_of_bytes)
 t_generic_list *encode_string(t_token *token, int *bytes_encoded)
 {
     int n;
+    int q;
     t_generic_list *encoding;
     char *current_byte;
 
     n = 0;
+    q = 0;
     encoding = NULL;
     while (token->string[n] != '\0')
     {
-        current_byte = ft_itoa_base(token->string[n], NUMBER_SYSTEM_BASE);
-        encoding = add_to_list(encoding, current_byte);
+        if (token->string[n] != '"')
+        {
+            current_byte = ft_itoa_base(token->string[n], NUMBER_SYSTEM_BASE);
+            encoding = add_to_list(encoding, current_byte);
+            q = q + 1;
+        }
         n = n + 1;
     }
-    *bytes_encoded = *bytes_encoded + n;
+    *bytes_encoded = *bytes_encoded + q;
     return (encoding);
 }
 

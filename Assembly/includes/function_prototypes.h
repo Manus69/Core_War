@@ -39,6 +39,8 @@ int     is_registry(char *string);
 int     is_direct(char *string);
 int     is_indirect(char *string);
 
+int     is_string(char *string);
+
 void    set_token_size(t_token *token);
 void    measure_token_size(t_generic_list *tokens);
 

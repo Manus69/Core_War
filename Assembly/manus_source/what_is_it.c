@@ -181,6 +181,19 @@ int     is_indirect(char *string)
     return (0);
 }
 
+int     is_string(char *string)
+{
+    int length;
+
+    length = ft_strlen(string);
+    if (string[0] == '"')
+    {
+        if (string[length - 1] == '"')
+            return (1);
+    }
+    return (0);
+}
+
 //
 
 int     check_argument_token(t_token *token)
@@ -244,7 +257,9 @@ void measure_token_size(t_generic_list *tokens)
     {
         debug_token = ((t_token *)current_token->stuff);
         if (debug_token->type == string)
-            debug_token->size = ft_strlen(debug_token->string);
+        {
+            debug_token->size = ft_strlen(debug_token->string) - 2; //scary;
+        }
         else if (debug_token->type == operation)
         {
             operation_type = get_operation_name(debug_token);
