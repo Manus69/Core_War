@@ -42,20 +42,20 @@ int		taste_magic(unsigned char *input)
 	i = -1;
 	val = 3;
 	*value = COREWAR_EXEC_MAGIC;
-	bytes_to_check = 6;
+	bytes_to_check = 4;
 	while (++i < bytes_to_check)
 	{
-		// if (input[i] != ((unsigned char*)value)[val])
-		// {
-		// 	free(value);
-		// 	return (FAIL);
-		// }
-		//
-		if (input[i] != byte_value[i])
+		if (input[i] != ((unsigned char*)value)[val])
 		{
 			free(value);
-			return(FAIL);
+			return (FAIL);
 		}
+		//
+		// if (input[i] != byte_value[i])
+		// {
+		// 	free(value);
+		// 	return(FAIL);
+		// }
 		val--;
 	}
 	free(value);

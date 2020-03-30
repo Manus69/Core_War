@@ -20,7 +20,7 @@ int		fill_null_point(t_dsm *src_code)
 	while (++i < 4)
 	{
 		//
-		char current_symbol = src_code->input[src_code->current_position++];
+		// char current_symbol = src_code->input[src_code->current_position++];
 		//
 		if (src_code->input[src_code->current_position++])
 			return (FAIL);

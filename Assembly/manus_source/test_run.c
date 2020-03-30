@@ -423,7 +423,7 @@ void here_we_go(char *file_name)
     prefix_item = concatenate_lists(prefix_item, translation, NULL);
     // display_byte_strings(prefix_item);
     file = open("file1.cor", O_RDWR | O_CREAT);
-    tokens_to_bytes(prefix_item, file);
+    tokens_to_bytes(prefix_item, 1); //change for a suitable file descriptor;
 
     //TESTING AREA
 
