@@ -45,7 +45,10 @@ char *get_number_encoding(t_token *token)
     char *number_encoding;
     char *value_substring;
 
-    value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
+    if (token->string[0] == '-')
+        value_substring = token->string;
+    else
+        value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
     number_encoding = decimal_to_hex(ft_atoi(value_substring), token->size);
     return (number_encoding);
 }

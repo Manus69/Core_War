@@ -10,7 +10,6 @@
 
 
 //.name "..." .name "..." ... is considered valid now?
-//string separators are lost during tokenization;
 //is it necessary to check for large (more than two bytes) numbers?
 //the size constants are all fucked up!
 
