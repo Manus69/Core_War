@@ -70,6 +70,16 @@ int get_distance_to_the_previous_operation(t_token *token, t_generic_list *token
 t_generic_list *get_next_typed_token(t_generic_list *tokens, enum e_token_type type);
 t_transcription_parameters *get_transcription_parameters(t_generic_list *tokens);
 
+t_generic_list *translate_tokens(t_generic_list *tokens,
+t_generic_list *labels, t_transcription_parameters *transcription_parameters);
+
+t_token *new_token(char *string, enum e_token_type type);
+t_token *get_next_token(int *n, char *line);
+t_generic_list *line_to_tokens(char *line);
+
+void classify_token(t_token *current_token, t_token *previous_token, int verbose);
+void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int verbose);
+
 void here_we_go(char *str);
 
 #endif

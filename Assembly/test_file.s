@@ -1,2 +1,4 @@
-.name           "42"
-.comment        "Just a basic Winner Program"
+.name "Jumper !"
+.comment "en fait C forker !"
+
+st r6,-4

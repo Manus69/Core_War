@@ -178,6 +178,11 @@ int     is_indirect(char *string)
         if (check_substring_characters(string, 0, length - 1, DIGITS))
             return (1);
     }
+    else if (string[n] == '-' && (length > 1))
+    {
+        if (check_substring_characters(string, 1, length - 1, DIGITS))
+            return (1);
+    }
     return (0);
 }
 

@@ -12,8 +12,11 @@ void display_token(t_token *token)
         ft_printf("---------------\n");
         return ;
     }
-    type = "unknown";
-    if (token->type == command_name)
+    if (token->type == null)
+        type = "null";
+    else if (token->type == unknown)
+        type = "unknown";
+    else if (token->type == command_name)
         type = "command_name";
     else if (token->type == command_comment)
         type = "command_comment";

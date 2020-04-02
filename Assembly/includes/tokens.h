@@ -38,6 +38,7 @@ typedef struct s_transcription_parameters t_transcription_parameters;
 
 enum e_token_type
 {
+    null,
     unknown,
     command_name,
     command_comment,
