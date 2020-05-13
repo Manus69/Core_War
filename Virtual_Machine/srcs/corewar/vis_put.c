@@ -83,11 +83,9 @@ void		draw(t_arena *vm)
 {
 	werase(vm->viz->win);
 	werase(vm->viz->w_info);
-	werase(vm->viz->w_help);
 	draw_arena(vm);
 	draw_info(vm);
 	draw_border(vm);
 	wrefresh(vm->viz->w_info);
 	wrefresh(vm->viz->win);
-	wrefresh(vm->viz->w_help);
 }

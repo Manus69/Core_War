@@ -6,18 +6,18 @@ t_slider	*init_slider(t_arena *vm, int	id, int place, int flag)
 	static uint32_t	cursor_id;
 
 	if (!(new = (t_slider *)ft_memalloc(sizeof(t_slider))))
-		print_error(MALLOC_ERROR, vm);; //номер чеспиона от которого произошла каретка
+		print_error(MALLOC_ERROR, vm);
 	new->id = ++cursor_id;
-	new->carry = 0; //значение carry для прыжка
-	new->code = 0; //байт кода
-	new->last_live = 0; //последний раз выполненная операция live
-	new->cool_down = 0; //циклов до выхода
-	new->place = place; // положение каретки
-	new->step = 0; //шаг
+	new->carry = 0;
+	new->code = 0;
+	new->last_live = 0;
+	new->cool_down = 0;
+	new->place = place;
+	new->step = 0;
 	if (flag)
 	{
-		new->r[0] = -(vm->ch[id]->number); //регистры
-		new->player = vm->ch[id]; // чемпион
+		new->r[0] = -(vm->ch[id]->number);
+		new->player = vm->ch[id];
 	}
 	return (new);
 }
@@ -70,6 +70,7 @@ t_arena		*init_arena(void)
 	if (!(buffer = (t_arena *)ft_memalloc(sizeof(t_arena))))
 		print_error(MALLOC_ERROR, buffer);
 	buffer->read_arg = 0;
+	buffer->nice = 0;
 	buffer->players = 0;
 	buffer->read_num = 0;
 	buffer->cycles = 0;

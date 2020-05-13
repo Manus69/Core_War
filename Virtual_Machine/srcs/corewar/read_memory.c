@@ -17,15 +17,15 @@ int32_t		read_mem(t_arena *vm, t_slider *s, uint8_t i, t_operation *op)
 	int32_t		place;
 
 	read = 0;
-	if (s->type_of_args[i - 1] & T_DIR) //if T_DIR
+	if (s->type_of_args[i - 1] & T_DIR)
 		read = bytes_to_magic(vm->map, s->place + s->step, op->size_t_dir);
-	else if (s->type_of_args[i - 1] & T_IND) //if T_INDIR
+	else if (s->type_of_args[i - 1] & T_IND)
 	{
 		place = bytes_to_magic(vm->map, s->place + s->step, IND_SIZE);
 		place = op->mod ? (place % IDX_MOD) : place;
 		read = bytes_to_magic(vm->map, s->place + place, DIR_SIZE);
 	}
-	else if (s->type_of_args[i - 1] & T_REG) //if T_REG
+	else if (s->type_of_args[i - 1] & T_REG)
 		read = s->r[read_byte(vm, s->place, s->step) - 1];
 	s->step += next_step(s->type_of_args[i - 1], op);
 	return (read);

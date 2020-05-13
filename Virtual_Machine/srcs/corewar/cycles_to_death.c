@@ -1,6 +1,6 @@
 #include "corewar.h"
 
-void	print_error(char *error, t_arena *vm) //генерация ошибок и чистка памяти
+void	print_error(char *error, t_arena *vm)
 {
 	perror(error);
 	free_arena(&vm);
@@ -44,7 +44,6 @@ static void		delete_died_cursors(t_arena *vm)
 			if (previous)
 				previous->next = current;
 			ft_memdel((void **)&delete);
-			play_sound(vm, 'd');
 		}
 		else
 		{

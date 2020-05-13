@@ -7,7 +7,7 @@ uint32_t	step(t_slider *cursor, t_operation *op)
 
 	i = 0;
 	step = 0;
-	step += 1 + (op->read_args ? 1 : 0); // перепрыгиваем код операции и аргумент если есть
+	step += 1 + (op->read_args ? 1 : 0);
 	while (i < operation_list[cursor->code - 1].args_num)
 	{
 		step += next_step(cursor->type_of_args[i], op);
@@ -60,7 +60,7 @@ int32_t		bytes_to_magic(const uint8_t *magic, int32_t place, size_t size)
 	return (result);
 }
 
-int32_t		get_magic(int fd, t_arena *vm) //считывыет 4 части по 8 байт и возвращает 32 байта
+int32_t		get_magic(int fd, t_arena *vm)
 {
 	int	bytes;
 	uint8_t	symbols[4];

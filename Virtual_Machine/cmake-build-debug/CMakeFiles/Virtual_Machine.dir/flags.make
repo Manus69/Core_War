@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I"/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes" -I"/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/ft_lftprintf/includes/libft" -I"/Volumes/d_60Gb/Новая папка/Core_War/Virtual_Machine/includes" 
+C_INCLUDES = -I/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/ft_lftprintf/includes -I/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/ft_lftprintf/includes/libft -I/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/includes 
 

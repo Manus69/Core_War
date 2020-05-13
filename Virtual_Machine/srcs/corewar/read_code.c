@@ -8,7 +8,7 @@ int	is_register(t_arena *vm, int32_t place, int32_t step)
 	return (r_id >= 1 && r_id <= REG_NUMBER);
 }
 
-int			check_reg(t_slider *cursor, t_arena *vm, t_operation *op) // nope
+int			check_reg(t_slider *cursor, t_arena *vm, t_operation *op)
 {
 	unsigned int		i;
 	uint32_t	step;
@@ -52,16 +52,16 @@ int			compare_args(t_slider *sl, t_operation *op)
 
 void	read_args_size(t_arena *vm, t_slider *s, t_operation *op)
 {
-	int8_t byte; //int8_t
+	int8_t byte;
 
 	byte = 0;
 	if (op->read_args != 0)
-		byte = read_args(vm, s->place, 1); // считываем размер args
-		s = write_args_types(s, op, byte); // если байты в порядке и мы записали агрументы, тогда s->write == 1
+		byte = read_args(vm, s->place, 1);
+		s = write_args_types(s, op, byte);
 		if (compare_args(s, op) && check_reg(s, vm, op))
 		{
 			s->step += 1;
-			op->operation(vm, s); // запускаем функцию
+			op->operation(vm, s);
 			s->write = 0;
 		}
 		else

@@ -31,8 +31,7 @@ void	draw_menu(t_arena *vm) {
 	wattroff(vm->viz->w_info, color_palette[2]);
 	mvwprintw(vm->viz->w_info, vm->viz->place += 1, BORDER, "SPACE - pause");
 	mvwprintw(vm->viz->w_info, vm->viz->place += 1, BORDER, "ESC - exit");
-	mvwprintw(vm->viz->w_info, vm->viz->place += 1, BORDER, "\"s\" - sound off/on");
-	mvwprintw(vm->viz->w_info, vm->viz->place += 1, BORDER, "\"1\" - speed + 10");
+	mvwprintw(vm->viz->w_info, vm->viz->place += 2, BORDER, "\"1\" - speed + 10");
 	mvwprintw(vm->viz->w_info, vm->viz->place += 1, BORDER, "\"2\" - speed + 100");
 	mvwprintw(vm->viz->w_info, vm->viz->place += 1, BORDER, "\"3\" - speed - 10");
 	mvwprintw(vm->viz->w_info, vm->viz->place += 1, BORDER, "\"4\" - speed - 100");
@@ -50,14 +49,4 @@ void	draw_aff(t_arena *vm)
 	if (ft_isprint(vm->viz->aff))
 		wprintw(vm->viz->w_info, " '%c'", vm->viz->aff);
 	wattroff(vm->viz->w_info, color_palette[i]);
-}
-
-void	draw_winner(t_arena *vm)
-{
-	vm->viz->place = (vm->viz->place + (MEM_SIZE / 64 + 4) - 3) / 2;
-	mvwprintw(vm->viz->w_info, vm->viz->place, BORDER, "The winner is ");
-	wattron(vm->viz->w_info, color_palette[vm->last_alive->number]);
-	wprintw(vm->viz->w_info, "%.36s", vm->last_alive->name);
-	wattroff(vm->viz->w_info, color_palette[vm->last_alive->number]);
-	play_sound(vm, 'v');
 }

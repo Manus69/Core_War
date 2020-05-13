@@ -8,14 +8,15 @@ void	draw_slider(t_arena *vm, t_slider *sl)
 
 void		put_data(t_arena *vm)
 {
-	initscr(); 					// переводит терминал в curses-режим
-	nodelay(stdscr, true);		// вызов приводит к тому, что getch является неблокирующим вызовом. Если выход не готов, getch возвращает ERR.
-	curs_set(0);				// установка курсора в невидимое - 0, нормальное - 1 или очень видимое - 2 состояние
-	use_default_colors();		// делает прозрачность доступной и не нужно самим настраивать атрибуты цвета
-	start_color();				// должен быть вызван , если будем использовать цвета
-	init_colors();				// выше - определяем необходимые цвета
+	initscr();
+	noecho();
+	nodelay(stdscr, true);
+	curs_set(0);
+	use_default_colors();
+	start_color();
+	init_colors();
 	init_map(vm);
-	vm->viz->win = newwin(MEM_SIZE / 64 + 4, (64 * 3 + 5) + 4, 1, 2);	//	создаем окно для игры
-	vm->viz->w_info = newwin(MEM_SIZE / 64 + 4, (64 * 3 + 5) / 4 + 10, 1, (64 * 3 + 5) + 6);	//	окно для инфы справа
+	vm->viz->win = newwin(MEM_SIZE / 64 + 4, (64 * 3 + 5) + 4, 1, 2);
+	vm->viz->w_info = newwin(MEM_SIZE / 64 + 4, (64 * 3 + 5) / 4 + 10, 1, (64 * 3 + 5) + 6);
 	init_sl(vm);
 }

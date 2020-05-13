@@ -36,7 +36,7 @@ void	set_key(t_arena *vm)
 		vm->viz->speed -= 100;
 	else if (vm->viz->key == '5')
 		vm->viz->speed = 30;
-	vm->viz->go = (!vm->num_slider) ? 0 : vm->viz->go; // остановка работы если не осталось живых кареток
-	vm->viz->speed = (vm->viz->speed < 1) ? 1 : vm->viz->speed; // чтобы скорость не была отрицательной
-	vm->viz->speed = (vm->viz->speed > 600) ? 600 : vm->viz->speed; // максимальный порог скорости
+	vm->viz->go = (!vm->num_slider) ? 0 : vm->viz->go;
+	vm->viz->speed = (vm->viz->speed < 1) ? 1 : vm->viz->speed;
+	vm->viz->speed = (vm->viz->speed > 600) ? 600 : vm->viz->speed;
 }

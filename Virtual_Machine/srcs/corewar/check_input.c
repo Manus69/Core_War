@@ -1,6 +1,6 @@
 #include "corewar.h"
 
-int 	check_file_name(char  *name, char *str) // проверка корректности имени файла
+int 	check_file_name(char  *name, char *str)
 {
 	while (*name && *name != '.')
 		name++;
@@ -17,7 +17,7 @@ int 	check_file_name(char  *name, char *str) // проверка коррект�
 		return (0);
 }
 
-int 	check_name(char *s1, char *s2) //проверка того, что строки равны
+int 	check_name(char *s1, char *s2)
 {
 	while (*s1 && *s2)
 	{
@@ -32,81 +32,83 @@ int 	check_name(char *s1, char *s2) //проверка того, что стро
 		return (0);
 }
 
-t_arena		*find_num_arg(char 	*argv,t_arena *vm) // ищет число и записывает его инфу в зависимости от флага
+t_arena		*find_num_arg(char 	*argv,t_arena *vm)
 {
 	long num;
 
-	if ((num = ft_atoi_size_t(argv)) < 0) //определяет размер числа (циклов может быть больше чем вместит инт)
+	if ((num = ft_atoi_size_t(argv)) < 0)
 		print_error(ARGS_ERROR, vm);
-	if (vm->read_arg == 3)  //если нужно изменить номер игрока флаг -n
+	if (vm->read_arg == 3)
 	{
-		if (num >= 1 && num <= 4) //номер может быть от 1го до 4х
-			vm->read_num = (int)num; //next player num
+		if (num >= 1 && num <= 4)
+			vm->read_num = (int)num;
 		else
 			print_error(PLAYER_ID_ERROR, vm);
 	}
-	else if (vm->read_arg == 2) //после какого числа циклов отразить состояние памяти флаг -s
-		vm->show = (size_t)num; //num cycles to show
-	else if (vm->read_arg == 1) //после какого числа циклов отразить состояние памяти и закончить игру флаги -d и -dump
+	else if (vm->read_arg == 2)
+		vm->show = (size_t)num;
+	else if (vm->read_arg == 1)
 		vm->d_dump = (size_t)num;
 	else
 		print_error(ARGS_ERROR, vm);
-	vm->read_arg = vm->read_arg == 3 ? -1 : -2; //был ли флаг n (-1) или другой флаг (-2)?
+	vm->read_arg = vm->read_arg == 3 ? -1 : -2;
 	return (vm);
 }
 
-t_arena		*find_flag(char *argv, t_arena *vm) //ищет и определяет тип флага
+t_arena		*find_flag(char *argv, t_arena *vm)
 {
 	int 	len;
 
 	argv++;
 	len = ft_strlen(argv);
 	if (len == 1 && *argv == 'd' && vm->print_type == 0 && (vm->read_arg = 1))
-		vm->print_type = 1; //64 bytes per_line
+		vm->print_type = 1;
 	else if (len == 1 && *argv == 'a' && vm->aff_print == 0)
-		vm->aff_print = 1; //for aff
+		vm->aff_print = 1;
+	else if (len == 1 && *argv == 'c' && vm->nice == 0)
+		vm->nice = 1;
 	else if (len == 1 && *argv == 'v' && vm->visual == 0)
-		vm->visual = 1; //for visual
+		vm->visual = 1;
 	else if (len == 1 && *argv == 's' && vm->show == 0 && (vm->read_arg = 2))
-		vm->show = 1; //for show
+		vm->show = 1;
 	else if (len == 1 && *argv == 'n' && vm->read_num == 0 && (vm->read_arg = 3))
-		vm->read_num = 1; //for num of player
+		vm->read_num = 1;
 	else if (len == 4 && check_name(argv, "dump") &&
 		vm->print_type == 0 && (vm->read_arg = 1))
-		vm->print_type = 2;  //32 bytes per_line
+		vm->print_type = 2;
 	else
 	{
-		usage(0);
+		usage(0, vm->nice);
 		print_error(FLAG_ERROR, vm);
 	}
 	return (vm);
 }
 
-t_arena 	*check_input(char **argv, int argc, t_arena *vm) //проверка и считывание всего ввода
+t_arena 	*check_input(char **argv, int argc, t_arena *vm)
 {
 	argc--;
 	argv++;
 	while (argc--)
 	{
-		if (vm->read_arg > 0) //запускается если ранее были флаги после которых должно идти число
-			vm = find_num_arg(*argv, vm); //проверяет наличие числа и считывает его
-		else if (**argv == '-') //проверка на флаги
-			vm = find_flag(*argv, vm);//проверяет знакомые флаги, если флаг неизвестен будет ошибка
-		else if (check_file_name(*argv, ".cor")) //проверяет название файла
-			vm = get_champion(*argv, vm);//проверяет файл и читает игрока
-		else //если введен не флаг и не файл игрока то будет ошибка и юзедж
+		if (vm->read_arg > 0)
+			vm = find_num_arg(*argv, vm);
+		else if (**argv == '-')
+			vm = find_flag(*argv, vm);
+		else if (check_file_name(*argv, ".cor"))
+			vm = get_champion(*argv, vm);
+		else
 		{
-			usage(0);
+			usage(0, vm->nice);
 			print_error(FLAG_ERROR, vm);
 		}
 		argv++;
 	}
-	if (vm->read_arg || vm->read_arg < 0)//если не введен флаг игрока но есть флаги будет ошибка
+	if (vm->read_arg || vm->read_arg < 0 || ((vm->nice || vm->aff_print || vm->visual) && vm->players <= 0))
 	{
-		usage(0);
+		usage(0, vm->nice);
 		print_error(ARGS_ERROR, vm);
 	}
 	else
-		vm = set_player_id(vm); // назначает id игрокам, у которых не проставлен номер флагом -n
+		vm = set_player_id(vm);
 	return (vm);
 }

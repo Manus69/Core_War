@@ -1,5 +1,4 @@
 #include "corewar.h"
-//очистка памяти
 
 void	free_slider(t_slider *slider, int count)
 {

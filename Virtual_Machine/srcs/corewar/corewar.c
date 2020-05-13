@@ -1,24 +1,36 @@
 #include "corewar.h"
 
-void	inroduction(t_arena *head, int count)
+void	inroduction(t_arena *head, int count, int nice)
 {
 	int		i;
 
 	i = 0;
-	ft_printf("{green}Introducing contestants...{eoc}\n");
-	while (i < count)
+	if (nice) {
+		ft_printf("{green}Introducing contestants...{eoc}\n");
+		while (i < count)
+		{
+			if (i + 1 == 1)
+				ft_printf("{red}* :smile_1  ");
+			else if (i + 1 == 2)
+				ft_printf("{red}* :smile_7  ");
+			else if (i + 1 == 3)
+				ft_printf("{red}* :smile_5  ");
+			else if (i + 1 == 4)
+				ft_printf("{red}* :smile_8  ");
+			ft_printf("Player %d: {blue}weighing %d bytes, ", head->ch[i]->number, head->ch[i]->pl_size);
+			ft_printf("\"%s\" (\"%s\")!{eoc}\n", head->ch[i]->name, head->ch[i]->comment);
+			i++;
+		}
+	}
+	else
 	{
-		if (i + 1 == 1)
-			ft_printf("{red}* :smile_1  ");
-		else if (i + 1 == 2)
-			ft_printf("{red}* :smile_7  ");
-		else if (i + 1 == 3)
-			ft_printf("{red}* :smile_5  ");
-		else if (i + 1 == 4)
-			ft_printf("{red}* :smile_8  ");
-		ft_printf("Player %d: {blue}weighing %d bytes, ", head->ch[i]->number, head->ch[i]->pl_size);
-		ft_printf("\"%s\" (\"%s\")!{eoc}\n", head->ch[i]->name, head->ch[i]->comment);
-		i++;
+		ft_printf("Introducing contestants...\n");
+		while (i < count)
+		{
+			ft_printf("Player %d: weighing %d bytes, ", head->ch[i]->number, head->ch[i]->pl_size);
+			ft_printf("\"%s\" (\"%s\")!\n", head->ch[i]->name, head->ch[i]->comment);
+			i++;
+		}
 	}
 }
 
@@ -78,9 +90,9 @@ t_arena		*ready_to_start(t_arena *vm)
 	int 	i;
 	t_champion	*last;
 
-	if (vm->print_type == 0) //устанавливаем для печати размер строки по умолчанию, если не было флага
+	if (vm->print_type == 0)
 		vm->print_type = 1;
-	last = vm->champion; // нужен для заполнения массива
+	last = vm->champion;
 	i = 0;
 	while (i < vm->players)
 	{
@@ -89,8 +101,8 @@ t_arena		*ready_to_start(t_arena *vm)
 		i++;
 	}
 	if (!vm->visual)
-		inroduction(vm, vm->players); //представляем участников
-	vm = fill_arena(vm, vm->players, 0); //записываем код в арену
+		inroduction(vm, vm->players, vm->nice);
+	vm = fill_arena(vm, vm->players, 0);
 	vm = get_slider(vm);
 	return (vm);
 }
@@ -102,7 +114,7 @@ int main(int argc, char **argv)
 	vm = init_arena();
 	if (argc >= 2)
 	{
-		vm = check_input(argv, argc, vm); //проверяет валидность, заполняет структуру вм и чемпионов(лежат в вм) из файла
+		vm = check_input(argv, argc, vm);
 		vm = ready_to_start(vm);
 		if (!vm->visual)
 			start_war(vm);
@@ -110,7 +122,7 @@ int main(int argc, char **argv)
 			show_war(vm);
 	}
 	else
-		usage(0); //как использовать если передать в функцию число 1 - запустит титульник
-	free_arena(&vm); //очистка памяти
+		usage(0, 0);
+	free_arena(&vm);
 	return (0);
 }

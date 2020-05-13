@@ -31,7 +31,6 @@ void		init_map(t_arena *vm)
 
 void		init_colors(void)
 {
-	// Цветовая пара состоит из переднего плана (цвета для символов) и цвета фона (для пустого поля, на котором отображается символы).
 	init_pair(WHITE, COLOR_WHITE, 0);
 	init_pair(GREEN, COLOR_GREEN, 0);
 	init_pair(YELLOW, COLOR_YELLOW, 0);
@@ -76,7 +75,5 @@ t_viz	*new_viz(t_arena *vm)
 	new->speed = 30;
 	new->place = 0;
 	new->time = 0;
-	new->help = 0;
-	new->sound = 0;
 	return (new);
 }
