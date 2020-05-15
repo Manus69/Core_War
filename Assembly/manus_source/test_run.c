@@ -104,7 +104,6 @@ void here_we_go(char *file_name)
     char *prefix = ft_strdup("00ea83f3"); //fix it later;
     t_generic_list *prefix_item = new_generic_list(prefix);
     //
-    // ft_printf("00%x", COREWAR_EXEC_MAGIC);
     // display_byte_strings(translation);
     prefix_item = concatenate_lists(prefix_item, translation, NULL);
     // display_byte_strings(prefix_item);

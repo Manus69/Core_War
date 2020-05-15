@@ -44,11 +44,15 @@ t_transcription_parameters *get_transcription_parameters(t_generic_list *tokens)
     if (!current_token)
         invoke_error(GENERIC_ERROR_MESSAGE);
     parameters->comment_size = ft_strlen(((t_token *)current_token->stuff)->string) - 2;
-    if (!parameters->comment_size)
-        invoke_error(GENERIC_ERROR_MESSAGE);
+
+    //assuming 0 comment size is ok;
+    // if (!parameters->comment_size)
+    //     invoke_error(GENERIC_ERROR_MESSAGE);
+
     // distance = ((t_token*)current_token->stuff)->distance;
     // current_token = get_last_element(current_token);
     // parameters->exec_code_size = ((t_token *)current_token->stuff)->distance - distance;
+
     current_token = get_last_element(tokens);
     token_cast = (t_token *)current_token->stuff;
     parameters->exec_code_size = ((t_token *)current_token->stuff)->distance -
