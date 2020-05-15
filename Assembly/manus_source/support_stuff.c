@@ -14,6 +14,22 @@ int is_a_member(char *set, char c)
     return (0);
 }
 
+int is_in_string(const char *string, char c)
+{
+    int n;
+    int last_occurence;
+
+    last_occurence = -1;
+    n = 0;
+    while (string[n] != '\0')
+    {
+        if (string[n] == c)
+            last_occurence = n;
+        n = n + 1;
+    }
+    return (last_occurence);
+}
+
 void carry_propagate(char *number, int index, int bytes_left)
 {
     if (bytes_left == 0)

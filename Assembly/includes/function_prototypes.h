@@ -8,6 +8,7 @@
 void	*mallokill(size_t size);
 
 int is_a_member(char *set, char c);
+int is_in_string(const char *string, char c);
 char *get_binary_complement(char *binary_number, int number_of_bytes);
 void carry_propagate(char *number, int index, int bytes_left); //make it static later;
 int binary_to_decimal(char *binary_number);

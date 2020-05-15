@@ -7,7 +7,7 @@
 #include "function_prototypes.h"
 #include <fcntl.h>
 
-char *replace_extension(char *file_name)
+char *replace_extension(const char *file_name)
 {
     unsigned int length;
     char *replacing_string;
@@ -23,10 +23,27 @@ char *replace_extension(char *file_name)
     return (replacing_string);
 }
 
+char *trim_file_name(const char *file_name)
+{
+    unsigned int length;
+    char *resulting_string;
+    int slash_index;
+
+    length = ft_strlen(file_name);
+    if (length < 3)
+        invoke_error("file name error 2"); //EMSG
+    slash_index = is_in_string(file_name, '/'); //define a macro for this!
+    if (slash_index == -1)
+        return (ft_strdup(file_name));
+    resulting_string = ft_strsub(file_name, slash_index + 1, length - slash_index - 1);
+    return (resulting_string);
+}
+
 //.name "..." .name "..." ... is considered valid now?
 //is it necessary to check for large (more than two bytes) numbers?
 //the size constants are all fucked up!
 //add support for ; character;
+//where are the files supposed to go if one runs the pogramme from a different directory? 
 
 void here_we_go(char *file_name)
 {
@@ -92,8 +109,9 @@ void here_we_go(char *file_name)
     prefix_item = concatenate_lists(prefix_item, translation, NULL);
     // display_byte_strings(prefix_item);
     //
-    char *new_file_name = replace_extension(file_name);
-    file = open(new_file_name, O_RDWR | O_CREAT);
+    char *new_file_name = trim_file_name(file_name);
+    new_file_name = replace_extension(new_file_name);  //leak;
+    file = open(new_file_name, O_RDWR | O_CREAT, 0777);
     if (file < 0)
         invoke_error("open / create failure"); // EMSG
     tokens_to_bytes(prefix_item, file); //change for a suitable file descriptor;
