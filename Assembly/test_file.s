@@ -1,4 +1,7 @@
-.name "Jumper !"
-.comment "en fait C forker !"
+.name   	"Batman"
+.comment	"This city needs me"
 
-st r6,-4
+sti r1, %7, %1
+live %0
+ld %0, r2
+zjmp %-19

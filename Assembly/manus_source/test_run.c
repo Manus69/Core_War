@@ -7,11 +7,26 @@
 #include "function_prototypes.h"
 #include <fcntl.h>
 
+char *replace_extension(char *file_name)
+{
+    unsigned int length;
+    char *replacing_string;
 
+    if (ft_strlen(file_name) < 3)
+        invoke_error("file name error"); //EMSG
+    length = ft_strlen(file_name) + 2;
+    replacing_string = ft_strnew(length);
+    replacing_string = ft_strcpy(replacing_string, file_name);
+    replacing_string[length - 3] = 'c';
+    replacing_string[length - 2] = 'o';
+    replacing_string[length - 1] = 'r';
+    return (replacing_string);
+}
 
 //.name "..." .name "..." ... is considered valid now?
 //is it necessary to check for large (more than two bytes) numbers?
 //the size constants are all fucked up!
+//add support for ; character;
 
 void here_we_go(char *file_name)
 {
@@ -77,8 +92,11 @@ void here_we_go(char *file_name)
     prefix_item = concatenate_lists(prefix_item, translation, NULL);
     // display_byte_strings(prefix_item);
     //
-    // file = open("file1.cor", O_RDWR | O_CREAT);
-    tokens_to_bytes(prefix_item, 1); //change for a suitable file descriptor;
+    char *new_file_name = replace_extension(file_name);
+    file = open(new_file_name, O_RDWR | O_CREAT);
+    if (file < 0)
+        invoke_error("open / create failure"); // EMSG
+    tokens_to_bytes(prefix_item, file); //change for a suitable file descriptor;
 
     //TESTING AREA
 
