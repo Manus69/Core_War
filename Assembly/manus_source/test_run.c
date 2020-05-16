@@ -43,7 +43,8 @@ char *trim_file_name(const char *file_name)
 //is it necessary to check for large (more than two bytes) numbers?
 //the size constants are all fucked up!
 //add support for ; character;
-//where are the files supposed to go if one runs the pogramme from a different directory? 
+//where are the files supposed to go if one runs the pogramme from a different directory?
+//remove the file that might have been created after the error invocation;
 
 void here_we_go(char *file_name)
 {

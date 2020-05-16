@@ -47,6 +47,8 @@ char *get_number_encoding(t_token *token)
 
     if (token->string[0] == '-')
         value_substring = token->string;
+    else if (is_a_member(DIGITS, token->string[0])) //starts with a digit - ergo a number? 
+        value_substring = token->string;
     else
         value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
     number_encoding = decimal_to_hex(ft_atoi(value_substring), token->size);
