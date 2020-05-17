@@ -14,6 +14,11 @@ void carry_propagate(char *number, int index, int bytes_left); //make it static 
 int binary_to_decimal(char *binary_number);
 char *decimal_to_hex(int n, int number_of_bytes);
 
+//testing;
+char *decimal_to_hex_mk2(int n, int number_of_bytes);
+char *ft_itoa_base_local(unsigned int n, unsigned int base);
+//
+
 void display_token(t_token *token);
 void display_all_tokens(t_generic_list *tokens);
 void display_classification_error_message(t_token *token, int verbose);
@@ -22,7 +27,7 @@ void display_byte_strings(t_generic_list *tokens);
 void string_to_bytes(char *string, int file_descriptor);
 void tokens_to_bytes(t_generic_list *tokens, int file_descriptor);
 
-void invoke_error(char *error_message);
+void invoke_error(char *error_message, t_token *current_token, char *current_string);
 
 int     is_quotation_mark(char *string);
 int     is_label(char *string);

@@ -44,6 +44,7 @@ char *get_number_encoding(t_token *token)
 {
     char *number_encoding;
     char *value_substring;
+    int number;
 
     if (token->string[0] == '-')
         value_substring = token->string;
@@ -51,7 +52,12 @@ char *get_number_encoding(t_token *token)
         value_substring = token->string;
     else
         value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
-    number_encoding = decimal_to_hex(ft_atoi(value_substring), token->size);
+    number = ft_atoi(value_substring);
+    if (number < 0)
+    {
+        ; // why am i checking this? 
+    }
+    number_encoding = decimal_to_hex_mk2(number, token->size);
     return (number_encoding);
 }
 
@@ -82,7 +88,7 @@ char *get_indirect_address_encoding(t_token *token, t_generic_list *tokens)
 
     distance_to_operation = get_distance_to_the_previous_operation(token, tokens);
     if (distance_to_operation < 0)
-        invoke_error("indirect addressing is broken");
+        invoke_error("indirect addressing is broken", token, NULL);
     address_value = ft_atoi_base(token->string, 16);
     actual_distance = distance_to_operation + address_value;
 }

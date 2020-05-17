@@ -78,7 +78,7 @@ t_generic_list *tokens, t_generic_list *labels)
     absolute_distance = get_absolute_distance_to_the_label(current_token, label_name, labels);
     distance_to_the_previous_operation = get_distance_to_the_previous_operation(current_token, tokens);
     if (distance_to_the_previous_operation < 0)
-        invoke_error("this is broken!");
+        invoke_error("this is broken!", current_token, NULL); //message
     return (absolute_distance + distance_to_the_previous_operation);
 }
 

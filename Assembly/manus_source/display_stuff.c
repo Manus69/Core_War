@@ -85,9 +85,18 @@ void display_classification_error_message(t_token *token, int verbose)
     exit(1);
 }
 
-void invoke_error(char *error_message)
+//dont forget to change the output file descriptor
+void invoke_error(char *error_message, t_token *current_token, char *current_string)
 {
     ft_printf(error_message);
+    if (current_token)
+    {
+        display_token(current_token);
+    }
+    if (current_string)
+    {
+        ft_printf(current_string);
+    }
     exit(1);
 }
 
@@ -113,7 +122,7 @@ void string_to_bytes(char *string, int file_descriptor)
     index = 0;
     length = ft_strlen(string);
     if (length == 0 || (length % 2) != 0)
-        invoke_error("string is broken;"); //EMSG
+        invoke_error("in string to bytes: string is broken:", NULL, string); //EMSG
     while (index < length)
     {
         current_byte = ft_strsub(string, index, 2); //leak;

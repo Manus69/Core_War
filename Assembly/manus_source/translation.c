@@ -23,7 +23,7 @@ t_generic_list *labels, t_transcription_parameters *transcription_parameters)
     bytes_encoded = 0;
     current_token = tokens;
     if (!current_token)
-        invoke_error("empty token list"); //message?
+        invoke_error("empty token list", NULL, NULL); //message?
     while (current_token)
     {
         current_token_cast = (t_token *)current_token->stuff;
@@ -46,7 +46,7 @@ t_generic_list *labels, t_transcription_parameters *transcription_parameters)
 
             //REMAINING BYTES
             if (bytes_encoded > PROG_NAME_LENGTH)
-                invoke_error("champ name is too long;");
+                invoke_error("champ name is too long;", current_token_cast, NULL);
             current_token_translation = get_null_padding(PROG_NAME_LENGTH - transcription_parameters->name_size);
             translation = concatenate_lists(translation, current_token_translation, last_element);
             //
@@ -80,7 +80,7 @@ t_generic_list *labels, t_transcription_parameters *transcription_parameters)
             last_element = get_last_element(current_token_translation);
             //REMAINING BYTES
             if (bytes_encoded > COMMENT_LENGTH)
-                invoke_error("champ comment is too long;");
+                invoke_error("champ comment is too long;", current_token_cast, NULL);
             current_token_translation = get_null_padding(COMMENT_LENGTH - transcription_parameters->comment_size);
             translation = concatenate_lists(translation, current_token_translation, last_element);
             //

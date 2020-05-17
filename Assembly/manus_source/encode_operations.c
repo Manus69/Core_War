@@ -31,7 +31,7 @@ char *get_type_encoding(int number_of_arguments, ...)
     int n;
 
     if (number_of_arguments > MAX_ARGS_NUMBER)
-        invoke_error(GENERIC_ERROR_MESSAGE);
+        invoke_error("can't get the type encoding\n", NULL, NULL); //msg
     n = 0;
     byte_string = ft_strdup("");
     va_start(arg_list, number_of_arguments);
@@ -82,7 +82,6 @@ enum e_operation_name get_operation_name(t_token *token)
 
 t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
 {
-    // t_generic_list *encoding;
     int argument_count;
     enum e_operation_name operation;
     char *byte;
@@ -100,7 +99,7 @@ t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
     while (n < argument_count)
     {
         if (!token)
-            invoke_error("encode type is broken");
+            invoke_error("encode type is broken", NULL, NULL);
 
         debug_item = ((t_token *)token->stuff);
 

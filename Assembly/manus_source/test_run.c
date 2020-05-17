@@ -13,7 +13,7 @@ char *replace_extension(const char *file_name)
     char *replacing_string;
 
     if (ft_strlen(file_name) < 3)
-        invoke_error("file name error"); //EMSG
+        invoke_error("file name error", NULL, NULL); //EMSG
     length = ft_strlen(file_name) + 2;
     replacing_string = ft_strnew(length);
     replacing_string = ft_strcpy(replacing_string, file_name);
@@ -31,7 +31,7 @@ char *trim_file_name(const char *file_name)
 
     length = ft_strlen(file_name);
     if (length < 3)
-        invoke_error("file name error 2"); //EMSG
+        invoke_error("file name error while trimmig", NULL, NULL); //EMSG
     slash_index = is_in_string(file_name, '/'); //define a macro for this!
     if (slash_index == -1)
         return (ft_strdup(file_name));
@@ -105,7 +105,8 @@ void here_we_go(char *file_name)
     char *prefix = ft_strdup("00ea83f3"); //fix it later;
     t_generic_list *prefix_item = new_generic_list(prefix);
     //
-    // display_byte_strings(translation);
+    display_byte_strings(translation);
+    //
     prefix_item = concatenate_lists(prefix_item, translation, NULL);
     // display_byte_strings(prefix_item);
     //
@@ -113,19 +114,8 @@ void here_we_go(char *file_name)
     new_file_name = replace_extension(new_file_name);  //leak;
     file = open(new_file_name, O_RDWR | O_CREAT, 0777);
     if (file < 0)
-        invoke_error("open / create failure"); // EMSG
+        invoke_error("open / create failure", NULL, NULL); // EMSG
     tokens_to_bytes(prefix_item, file); //change for a suitable file descriptor;
-
-    //TESTING AREA
-
-    // file = open("test_file", O_RDWR, O_CREAT);
-    // string_to_bytes("ff", file);
-
-    // t_generic_list *test_token = get_next_typed_token(tokens, string);
-    // display_token(test_token->stuff);
-    // test_token = test_token->next;
-    // test_token = get_next_typed_token(test_token, string);
-    // display_token(test_token->stuff);
 }
 
 // int main()

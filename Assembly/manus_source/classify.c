@@ -155,7 +155,7 @@ void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int ve
         {
             ft_printf("\nPREVIOUS TOKEN:\n");
             display_token(previous_token);
-            invoke_error("current token is bricked!\n");
+            invoke_error("current token is bricked!\n previous token:", previous_token, NULL);
             // break ;
         }
         current_token = current_item->stuff;

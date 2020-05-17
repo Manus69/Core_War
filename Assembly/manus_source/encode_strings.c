@@ -30,7 +30,8 @@ t_generic_list *encode_string(t_token *token, int *bytes_encoded)
     {
         if (token->string[n] != '"')
         {
-            current_byte = ft_itoa_base(token->string[n], NUMBER_SYSTEM_BASE);
+            // current_byte = ft_itoa_base(token->string[n], NUMBER_SYSTEM_BASE);
+            current_byte = ft_itoa_base_local(token->string[n], NUMBER_SYSTEM_BASE);
             encoding = add_to_list(encoding, current_byte);
             q = q + 1;
         }
