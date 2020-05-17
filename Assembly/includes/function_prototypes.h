@@ -17,6 +17,8 @@ char *decimal_to_hex(int n, int number_of_bytes);
 //testing;
 char *decimal_to_hex_mk2(int n, int number_of_bytes);
 char *ft_itoa_base_local(unsigned int n, unsigned int base);
+long why_atol(const char *number_string);
+int check_number_string(const char *number_string);
 //
 
 void display_token(t_token *token);

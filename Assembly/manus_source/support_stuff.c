@@ -1,4 +1,5 @@
 #include "function_prototypes.h"
+#include <limits.h>
 
 int is_a_member(char *set, char c)
 {
@@ -174,24 +175,24 @@ char *get_hex_with_padding(int decimal, int number_of_bytes)
     return (resulting_string);
 }
 
-char *decimal_to_hex(int n, int number_of_bytes)
-{
-    int decimal;
-    char *binary_complement;
-    char *number_string;
+// char *decimal_to_hex(int n, int number_of_bytes)
+// {
+//     int decimal;
+//     char *binary_complement;
+//     char *number_string;
 
-    if (n >= 0)
-    {
-        return (get_hex_with_padding(n, number_of_bytes));
-    }
-    n = -n;
-    number_string = ft_itoa_base(n, 2);
-    binary_complement = get_binary_complement(number_string, number_of_bytes); //leak;
-    decimal = binary_to_decimal(binary_complement);
-    return (get_hex_with_padding(decimal, number_of_bytes));
-}
+//     if (n >= 0)
+//     {
+//         return (get_hex_with_padding(n, number_of_bytes));
+//     }
+//     n = -n;
+//     number_string = ft_itoa_base(n, 2);
+//     binary_complement = get_binary_complement(number_string, number_of_bytes); //leak;
+//     decimal = binary_to_decimal(binary_complement);
+//     return (get_hex_with_padding(decimal, number_of_bytes));
+// }
 
-char *decimal_to_hex_mk2(int n, int number_of_bytes) //using unsigned int
+char *decimal_to_hex_mk2(int n, int number_of_bytes) //using unsigned int; does it work correctly?
 {
     unsigned int decimal;
     char *binary_complement;
@@ -206,4 +207,42 @@ char *decimal_to_hex_mk2(int n, int number_of_bytes) //using unsigned int
     binary_complement = get_binary_complement(number_string, number_of_bytes); //leak;
     decimal = binary_to_unsigned_decimal(binary_complement);
     return (get_hex_with_padding(decimal, number_of_bytes));
+}
+
+long why_atol(const char *number_string) //hope i didnt make a blunder;
+{
+    long result;
+    unsigned int n;
+    int sign;
+
+    result = 0;
+    sign = (number_string[0] == '-') ? -1 : 1;
+    n = 0;
+    while (number_string[n] != '\0')
+    {
+        if (n == 0 && number_string[n] == '-')
+        {
+            n = n + 1;
+            continue ;
+        }
+        if (!is_a_member(DIGITS, number_string[n]))
+            return (sign * result);
+        result = (result * 10) + ((int)number_string[n] - '0');
+        n = n + 1;
+    }
+    return (sign * result);
+}
+
+int check_number_string(const char *number_string)
+{
+    long number;
+    unsigned int length;
+
+    length = ft_strlen(number_string);
+    if (length > 12) //longer than INT_MIN
+        return (0);
+    number = why_atol(number_string);
+    if (number < INT_MIN || number > INT_MAX)
+        return (0);
+    return (1);
 }

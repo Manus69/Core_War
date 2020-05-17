@@ -1,6 +1,20 @@
 #include "tokens.h"
 #include "function_prototypes.h"
 
+int check_ascii_string(const char *string)
+{
+    unsigned int n;
+
+    n = 0;
+    while (string[n] != '\0')
+    {
+        if (!ft_isascii(string[n]))
+            return (0);
+        n = n + 1;
+    }
+    return (1);
+}
+
 t_generic_list *get_null_padding(int number_of_bytes)
 {
     int n;
@@ -26,6 +40,8 @@ t_generic_list *encode_string(t_token *token, int *bytes_encoded)
     n = 0;
     q = 0;
     encoding = NULL;
+    if (!check_ascii_string(token->string))
+        invoke_error("nonascii characters in string\n", NULL, token->string); //message
     while (token->string[n] != '\0')
     {
         if (token->string[n] != '"')

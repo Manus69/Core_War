@@ -63,7 +63,7 @@ char *get_type_encoding(int number_of_arguments, ...)
     }
     n = binary_to_decimal(byte_string);
     va_end(arg_list);
-    return (decimal_to_hex(n, 1));
+    return (decimal_to_hex_mk2(n, 1));
 }
 
 enum e_operation_name get_operation_name(t_token *token)
@@ -132,7 +132,8 @@ t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
     }
     n = binary_to_decimal(byte_string);
     *bytes_encoded = *bytes_encoded + 1;
-    return (new_generic_list(decimal_to_hex(n, 1)));
+    // return (new_generic_list(decimal_to_hex(n, 1)));
+    return (new_generic_list(decimal_to_hex_mk2(n, 1)));
 }
 
 t_generic_list *encode_operation(t_token *token, int *bytes_encoded)
@@ -145,7 +146,7 @@ t_generic_list *encode_operation(t_token *token, int *bytes_encoded)
     while (operation < NUMBER_OF_OPERATIONS)
     {
         if (strcmp(token->string, op_tab[operation].op_name) == 0)
-            operation_code = decimal_to_hex(op_tab[operation].op_code, 1);
+            operation_code = decimal_to_hex_mk2(op_tab[operation].op_code, 1);
         operation = operation + 1;
     }
     encoding = new_generic_list(operation_code);

@@ -66,7 +66,7 @@ t_generic_list *labels, t_transcription_parameters *transcription_parameters)
             last_element = get_last_element(current_token_translation);
 
             //EXEC CODE SIZE
-            current_token_translation = new_generic_list(decimal_to_hex(transcription_parameters->exec_code_size, 4));
+            current_token_translation = new_generic_list(decimal_to_hex_mk2(transcription_parameters->exec_code_size, 4));
             translation = concatenate_lists(translation, current_token_translation, last_element);
             last_element = get_last_element(current_token_translation);
             //

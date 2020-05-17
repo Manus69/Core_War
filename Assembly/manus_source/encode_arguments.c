@@ -8,7 +8,7 @@ char *get_registry_encoding(t_token *token)
     char *value_substring;
 
     value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
-    registry_encoding = decimal_to_hex(ft_atoi(value_substring), token->size);
+    registry_encoding = decimal_to_hex_mk2(ft_atoi(value_substring), token->size);
     return (registry_encoding);
 }
 
@@ -18,7 +18,7 @@ char *get_direct_number_encoding(t_token *token)
     char *value_substring;
 
     value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
-    number_encoding = decimal_to_hex(ft_atoi(value_substring), token->size);
+    number_encoding = decimal_to_hex_mk2(ft_atoi(value_substring), token->size);
     return (number_encoding);
 }
 
@@ -33,7 +33,7 @@ t_generic_list *tokens, t_generic_list *labels)
     current_token = ((t_token *)token->stuff);
     label_name = ft_strsub(current_token->string, 2, ft_strlen(current_token->string) - 1);
     distance = get_distance_to_the_label(token, label_name, tokens, labels);
-    label_encoding = decimal_to_hex(distance, current_token->size);
+    label_encoding = decimal_to_hex_mk2(distance, current_token->size);
     return (label_encoding);
 }
 
@@ -52,11 +52,11 @@ char *get_number_encoding(t_token *token)
         value_substring = token->string;
     else
         value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
+    //
+    if (!check_number_string(value_substring))
+        invoke_error("argement is bigger than int in absolute value\n", token, NULL);
+    //
     number = ft_atoi(value_substring);
-    if (number < 0)
-    {
-        ; // why am i checking this? 
-    }
     number_encoding = decimal_to_hex_mk2(number, token->size);
     return (number_encoding);
 }
@@ -72,7 +72,7 @@ t_generic_list *tokens, t_generic_list *labels)
     current_token = ((t_token *)token->stuff);
     label_name = ft_strsub(current_token->string, 2, ft_strlen(current_token->string) - 1);
     distance = get_distance_to_the_label(token, label_name, tokens, labels);
-    label_encoding = decimal_to_hex(distance, current_token->size);
+    label_encoding = decimal_to_hex_mk2(distance, current_token->size);
     return (label_encoding);
 }
 //

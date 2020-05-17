@@ -45,6 +45,7 @@ char *trim_file_name(const char *file_name)
 //add support for ; character;
 //where are the files supposed to go if one runs the pogramme from a different directory?
 //remove the file that might have been created after the error invocation;
+//ft_itoa_base from libft is shit;
 
 void here_we_go(char *file_name)
 {
@@ -104,10 +105,8 @@ void here_we_go(char *file_name)
     //
     char *prefix = ft_strdup("00ea83f3"); //fix it later;
     t_generic_list *prefix_item = new_generic_list(prefix);
-    //
-    display_byte_strings(translation);
-    //
     prefix_item = concatenate_lists(prefix_item, translation, NULL);
+    //
     // display_byte_strings(prefix_item);
     //
     char *new_file_name = trim_file_name(file_name);
