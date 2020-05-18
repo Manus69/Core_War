@@ -16,9 +16,9 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else if (is_new_line(current_token->string))
             current_token->type = new_line;
         else if (is_comment_character(current_token->string))
-            current_token->type = hashtag;
+            current_token->type = comment_char;
         else
-            display_classification_error_message(current_token, verbose);
+            invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
     else if (previous_token->type == new_line)
     {
@@ -27,7 +27,7 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else if (is_label(current_token->string))
             current_token->type = label;
         else if (is_comment_character(current_token->string))
-            current_token->type = hashtag;
+            current_token->type = comment_char;
         else if (is_operation(current_token->string))
             current_token->type = operation;
         else if (is_command_name(current_token->string))
@@ -35,7 +35,7 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else if (is_command_comment(current_token->string))
             current_token->type = command_comment;
         else
-            display_classification_error_message(current_token, verbose);
+            invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
     else if (previous_token->type == command_name)
     {
@@ -44,7 +44,7 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else if (is_string(current_token->string))
             current_token->type = string;
         else
-            display_classification_error_message(current_token, verbose);
+            invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
     else if (previous_token->type == command_comment)
     {
@@ -53,7 +53,7 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else if (is_string(current_token->string))
             current_token->type = string;
         else
-            display_classification_error_message(current_token, verbose);
+            invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
     else if (previous_token->type == label)
     {
@@ -62,42 +62,42 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else if (is_operation(current_token->string))
             current_token->type = operation;
         else if (is_comment_character(current_token->string))
-            current_token->type = hashtag;
+            current_token->type = comment_char;
         else
-            display_classification_error_message(current_token, verbose);
+            invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
     else if (previous_token->type == operation)
     {
         if (is_comment_character(current_token->string))
-            current_token->type = hashtag;
+            current_token->type = comment_char;
         else if (check_argument_token(current_token))
             ;
         else if (is_new_line(current_token->string))
             current_token->type = new_line;
         else
-            display_classification_error_message(current_token, verbose);
+            invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
     else if (previous_token->type == argument)
     {
         if (is_comment_character(current_token->string))
-            current_token->type = hashtag;
+            current_token->type = comment_char;
         else if (is_argument_separator(current_token->string))
             current_token->type = comma;
         else if (is_new_line(current_token->string))
             current_token->type = new_line;
         else
-            display_classification_error_message(current_token, verbose);
+            invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
     else if (previous_token->type == comma)
     {
         if (is_comment_character(current_token->string))
-            current_token->type = hashtag;
+            current_token->type = comment_char;
         else if (check_argument_token(current_token))
             ;
         else
-            display_classification_error_message(current_token, verbose);
+            invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
-    else if (previous_token->type == hashtag)
+    else if (previous_token->type == comment_char)
     {
         if (is_new_line(current_token->string))
             current_token->type = new_line;
@@ -125,7 +125,7 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else if (is_new_line(current_token->string))
             current_token->type = new_line;
         else
-            display_classification_error_message(current_token, verbose);
+            invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
         
     }
     else if (previous_token->type == string)

@@ -36,8 +36,8 @@ void display_token(t_token *token)
         type = "opening_quotation_mark";
     else if (token->type == closing_quotation_mark)
         type = "closing_quotation_mark";
-    else if (token->type == hashtag)
-        type = "hashtag";
+    else if (token->type == comment_char)
+        type = "comment_char";
     else if (token->type == comma)
         type = "comma";
     ft_printf("Token at %p\nString: %s\n", token, token->type == new_line ? "\\n" : token->string);
@@ -71,23 +71,28 @@ void display_all_tokens(t_generic_list *tokens)
     }
 }
 
-void display_classification_error_message(t_token *token, int verbose)
-{
-    if (verbose)
-    {
-        ft_printf(CLASSIFICATION_ERROR_MESSAGE);
-        display_token(token);
-    }
-    else
-    {
-        ft_printf(GENERIC_ERROR_MESSAGE);
-    }
-    exit(1);
-}
+// void display_classification_error_message(t_token *token, int verbose)
+// {
+//     if (verbose)
+//     {
+//         ft_printf(CLASSIFICATION_ERROR_MESSAGE);
+//         display_token(token);
+//     }
+//     else
+//     {
+//         ft_printf(GENERIC_ERROR_MESSAGE);
+//     }
+   
+//     exit(1);
+// }
 
 //dont forget to change the output file descriptor
 void invoke_error(char *error_message, t_token *current_token, char *current_string)
 {
+    //
+    extern const char *g_file_name;
+    ft_printf("file name: %s\n", g_file_name);
+    //
     ft_printf(error_message);
     if (current_token)
     {

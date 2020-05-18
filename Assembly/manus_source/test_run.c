@@ -7,6 +7,8 @@
 #include "function_prototypes.h"
 #include <fcntl.h>
 
+const char *g_file_name;
+
 char *replace_extension(const char *file_name)
 {
     unsigned int length;
@@ -63,6 +65,11 @@ void here_we_go(char *file_name)
         ft_printf("%s", FILE_ERROR_MESSAGE);
         exit(1);
     }
+
+    //
+    g_file_name = file_name;
+    //
+
     tokens = NULL;
     last_element = NULL;
     while (get_next_line(file, &current_line) > 0) //careful about the trailing \n; the thing is fucked up;

@@ -62,7 +62,7 @@ int     is_quotation_mark(char *string)
 
 int     is_comment_character(char *string)
 {
-    return (check_symbol(string, COMMENT_CHAR));
+    return (check_symbol(string, COMMENT_CHAR) || check_symbol(string, COMMENT_CHAR_ALT));
 }
 
 int     is_new_line(char *string)

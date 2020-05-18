@@ -51,7 +51,7 @@ enum e_token_type
     operation,
     argument,
     comma,
-    hashtag,
+    comment_char,
     comment,
     new_line
 };
