@@ -7,7 +7,7 @@
 #include "function_prototypes.h"
 #include <fcntl.h>
 
-const char *g_file_name;
+const char *g_file_name; //used to pass filename between the files;
 
 char *replace_extension(const char *file_name)
 {
@@ -97,7 +97,7 @@ void here_we_go(char *file_name)
     close(file);
     labels = NULL;
     //
-    // display_all_tokens(tokens);
+    display_all_tokens(tokens);
     //
     classify_all_tokens(tokens, &labels, 1);
     measure_token_size(tokens);

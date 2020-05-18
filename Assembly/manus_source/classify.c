@@ -3,7 +3,7 @@
 #include "operation_table.h"
 #include "function_prototypes.h"
 
-void classify_token(t_token *current_token, t_token *previous_token, int verbose)
+void classify_token(t_token *current_token, t_token *previous_token, int verbose) //is verbose even necessary? 
 {
     if (!current_token)
         return ;
@@ -52,6 +52,8 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
             current_token->type = opening_quotation_mark;
         else if (is_string(current_token->string))
             current_token->type = string;
+        else if (is_multistring_start(current_token->string))
+            current_token->type = multiline_string;
         else
             invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
@@ -115,8 +117,10 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
     {
         if (is_quotation_mark(current_token->string))
             current_token->type = closing_quotation_mark;
-        else
+        else if (is_string(current_token->string))
             current_token->type = string;
+        else
+            invoke_error("something is wrong", current_token, NULL);
     }
     else if (previous_token->type == closing_quotation_mark)
     {
@@ -137,6 +141,15 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else
             current_token->type = string;
     }
+    else if (previous_token->type == multiline_string)
+    {
+        if (is_quotation_mark(current_token->string))
+            current_token->type = closing_quotation_mark;
+        else if (is_multistring_end(current_token->string))
+            current_token->type = multiline_string;
+        else if (is_multistring(current_token->string))
+            current_token->type = multiline_string;
+    }
     // set_token_size(current_token);
 }
 
@@ -152,12 +165,7 @@ void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int ve
     while (current_item)
     {
         if (!current_item->stuff)
-        {
-            ft_printf("\nPREVIOUS TOKEN:\n");
-            display_token(previous_token);
             invoke_error("current token is bricked!\n previous token:", previous_token, NULL);
-            // break ;
-        }
         current_token = current_item->stuff;
         classify_token(current_token, previous_token, verbose);
         if (current_token->type == label)

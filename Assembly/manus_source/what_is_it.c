@@ -199,6 +199,30 @@ int     is_string(char *string)
     return (0);
 }
 
+int     is_multistring_start(char *string)
+{
+    if (string[0] == '"')
+        return (1);
+    return (0);
+}
+
+int     is_multistring_end(char *string)
+{
+    int length;
+
+    length = ft_strlen(string);
+    if (string[length - 1] == '"')
+        return (1);
+    return (0);
+}
+
+int     is_multistring(char *string)
+{
+    if (ft_strlen(string) != 0)
+        return (1);
+    return (0);
+}
+
 //
 
 int     check_argument_token(t_token *token)

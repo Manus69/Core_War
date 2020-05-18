@@ -29,7 +29,7 @@
 static char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "and",
 "or", "xor", "zjmp", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};
 static char *g_command_names[] = {".name", ".comment", 0};
-static char g_separators[] = {'"', COMMENT_CHAR, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
+static char g_separators[] = {'"', COMMENT_CHAR, COMMENT_CHAR_ALT, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
 static char g_spaces[] = {' ', '\t', 0};
 
 typedef struct s_line_token t_line_token;
@@ -45,6 +45,7 @@ enum e_token_type
     opening_quotation_mark,
     closing_quotation_mark,
     string,
+    multiline_string,
     champ_name,
     champ_comment,
     label,
