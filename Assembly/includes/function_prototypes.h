@@ -13,6 +13,7 @@ char *get_binary_complement(char *binary_number, int number_of_bytes);
 void carry_propagate(char *number, int index, int bytes_left); //make it static later;
 int binary_to_decimal(char *binary_number);
 char *decimal_to_hex(int n, int number_of_bytes);
+char *concat(char *lhs, char *rhs);
 
 //testing;
 char *decimal_to_hex_mk2(int n, int number_of_bytes);
@@ -49,9 +50,11 @@ int     is_indirect(char *string);
 
 int     is_string(char *string);
 
+//this is bad;
 int     is_multistring_start(char *string);
 int     is_multistring_end(char *string);
 int     is_multistring(char *string);
+//
 
 void    set_token_size(t_token *token);
 void    measure_token_size(t_generic_list *tokens);

@@ -43,11 +43,13 @@ t_generic_list *encode_string(t_token *token, int *bytes_encoded)
     if (!check_ascii_string(token->string))
         invoke_error("nonascii characters in string\n", NULL, token->string); //message
     while (token->string[n] != '\0')
-    {
+    {       
         if (token->string[n] != '"')
         {
             // current_byte = ft_itoa_base(token->string[n], NUMBER_SYSTEM_BASE);
             current_byte = ft_itoa_base_local(token->string[n], NUMBER_SYSTEM_BASE);
+            if (ft_strlen(current_byte) < 2)
+                current_byte = concat("0", current_byte); //leak
             encoding = add_to_list(encoding, current_byte);
             q = q + 1;
         }

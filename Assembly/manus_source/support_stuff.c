@@ -31,6 +31,30 @@ int is_in_string(const char *string, char c)
     return (last_occurence);
 }
 
+char *concat(char *lhs, char *rhs)
+{
+    char *result;
+    unsigned int index;
+    unsigned int n;
+
+    result = ft_strnew(ft_strlen(lhs) + ft_strlen(rhs));
+    index = 0;
+    n = 0;
+    while (lhs[n] != '\0')
+    {
+        result[n] = lhs[n];
+        n = n + 1;
+    }
+    index = n;
+    n = 0;
+    while (rhs[n] != '\0')
+    {
+        result[index + n] = rhs[n];
+        n = n + 1;
+    }
+    return (result);
+}
+
 void carry_propagate(char *number, int index, int bytes_left)
 {
     if (bytes_left == 0)
