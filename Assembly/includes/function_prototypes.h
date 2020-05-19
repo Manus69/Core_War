@@ -7,7 +7,7 @@
 
 void	*mallokill(size_t size);
 
-int is_a_member(char *set, char c);
+int is_a_member(const char *set, char c);
 int is_in_string(const char *string, char c);
 char *get_binary_complement(char *binary_number, int number_of_bytes);
 void carry_propagate(char *number, int index, int bytes_left); //make it static later;
@@ -29,7 +29,7 @@ void display_byte_strings(t_generic_list *tokens);
 void string_to_bytes(char *string, int file_descriptor);
 void tokens_to_bytes(t_generic_list *tokens, int file_descriptor);
 
-void invoke_error(char *error_message, t_token *current_token, char *current_string);
+void invoke_error(const char *error_message, t_token *current_token, const char *current_string);
 
 int     is_quotation_mark(char *string);
 int     is_label(char *string);

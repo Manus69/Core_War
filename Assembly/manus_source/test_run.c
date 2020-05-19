@@ -41,13 +41,120 @@ char *trim_file_name(const char *file_name)
     return (resulting_string);
 }
 
+int read_header(int file, char *buffer) //assuming the buffer is allocated
+{
+    int number_of_quotes;
+    int number_of_lines;
+    int current_index;
+
+    number_of_lines = 1;
+    number_of_quotes = 0;
+    current_index = 0;
+    while (number_of_quotes < 4) //quote number invariant
+    {
+        if (read(file, &buffer[current_index], 1) <= 0)
+            invoke_error("something is wrong with the header\n", NULL, NULL); //get the right message;
+        
+        if (buffer[current_index] == '"')
+            number_of_quotes ++;
+        else if (buffer[current_index] == '\n')
+            number_of_lines ++;
+        current_index ++;
+    }
+    return (number_of_lines);
+}
+
+int get_next_index(const char *string, int start, const char *char_set)
+{
+    int n;
+
+    n = start;
+    while (string[n] != '\0')
+    {
+        if (is_a_member(char_set, string[n]))
+            return (n);
+        n = n + 1;
+    }
+
+    //to avoid error checking;
+    invoke_error("string parsing errror\n", NULL, string);
+    //
+
+    return (-1);
+}
+
+char *concat(char *lhs, char *rhs)
+{
+    char *result;
+    unsigned int index;
+    unsigned int n;
+
+    result = ft_strnew(ft_strlen(lhs) + ft_strlen(rhs));
+    index = 0;
+    n = 0;
+    while (lhs[n] != '\0')
+    {
+        result[n] = lhs[n];
+        n = n + 1;
+    }
+    index = n;
+    n = 0;
+    while (rhs[n] != '\0')
+    {
+        result[index + n] = rhs[n];
+        n = n + 1;
+    }
+    return (result);
+}
+
+char *get_next_substring(const char *string, int *start,
+const char *start_char_set, const char *end_char_set)
+{
+    int m;
+    int n;
+    char *substring;
+
+    m = get_next_index(string, *start, start_char_set);
+    n = get_next_index(string, m + 1, end_char_set);
+    substring = ft_strsub(string, m, n - m);
+    *start = n;
+    return (substring);
+}
+
+t_generic_list *parse_header(const char *header)
+{
+    // int m;
+    int n;
+    char *string; //debug variable? 
+    // t_token *current_token; //maybe this one too
+    t_generic_list *token_list;
+
+    token_list = NULL;
+    n = 0;
+    string = get_next_substring(header, &n, ".", "\t \"");
+    token_list = add_to_list(token_list, new_token(string, 0));
+    string = get_next_substring(header, &n, "\"", "\"");
+    string = concat(string, "\""); //leak;
+    n = n + 1;
+    token_list = add_to_list(token_list, new_token(string, 0));
+
+    string = get_next_substring(header, &n, ".", "\t \"");
+    token_list = add_to_list(token_list, new_token(string, 0));
+    string = get_next_substring(header, &n, "\"", "\"");
+    string = concat(string, "\""); //leak;
+    n = n + 1;
+    token_list = add_to_list(token_list, new_token(string, 0));
+
+    return (token_list);
+}
+
 //.name "..." .name "..." ... is considered valid now?
 //is it necessary to check for large (more than two bytes) numbers?
 //the size constants are all fucked up!
-//add support for ; character;
 //where are the files supposed to go if one runs the pogramme from a different directory?
 //remove the file that might have been created after the error invocation;
 //ft_itoa_base from libft is shit;
+//make an overarching structure for input and lists or something;
 
 void here_we_go(char *file_name)
 {
@@ -70,10 +177,20 @@ void here_we_go(char *file_name)
     g_file_name = file_name;
     //
 
+    char *buffer = ft_strnew(1000); //set the buffer size constant; 
+    int number_of_header_lines = read_header(file, buffer); //reading the header twice, like a retard;
+    // ft_printf("%s %d", buffer, number_of_header_lines);
+
+    //
+
     tokens = NULL;
     last_element = NULL;
+    int current_line_number = 1;
+    tokens = parse_header(buffer);
     while (get_next_line(file, &current_line) > 0) //careful about the trailing \n; the thing is fucked up;
     {
+        if (current_line_number ++ <= number_of_header_lines)
+            continue ;
         line_tokens = line_to_tokens(current_line);
         if (line_tokens)
         {

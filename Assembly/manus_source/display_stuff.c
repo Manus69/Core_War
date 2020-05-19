@@ -87,20 +87,20 @@ void display_all_tokens(t_generic_list *tokens)
 // }
 
 //dont forget to change the output file descriptor
-void invoke_error(char *error_message, t_token *current_token, char *current_string)
+void invoke_error(const char *error_message, t_token *current_token, const char *current_string)
 {
     //
     extern const char *g_file_name;
     ft_printf("file name: %s\n", g_file_name);
     //
-    ft_printf(error_message);
+    ft_printf("%s", error_message);
     if (current_token)
     {
         display_token(current_token);
     }
     if (current_string)
     {
-        ft_printf(current_string);
+        ft_printf("%s", current_string);
     }
     exit(1);
 }

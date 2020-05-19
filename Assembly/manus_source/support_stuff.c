@@ -1,7 +1,7 @@
 #include "function_prototypes.h"
 #include <limits.h>
 
-int is_a_member(char *set, char c)
+int is_a_member(const char *set, char c)
 {
     int n;
 
