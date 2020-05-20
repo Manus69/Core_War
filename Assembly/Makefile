@@ -9,7 +9,7 @@ SRCS_P := ft_binary_read.c open_octo_file.c\
 SRC := asm_main.c fork_to_read.c take_name.c
 ASM_DIR := manus_source
 SRCS_ASM := test_run.c classify.c display_stuff.c distances.c encode_arguments.c encode_operations.c\
-		encode_strings.c generic_list.c mallokill.c support_stuff.c token.c\
+		encode_strings.c file_stuff.c generic_list.c mallokill.c support_stuff.c token.c\
 		transcription.c translation.c what_is_it.c
 SSRCS_ASM :=$(addprefix $(ASM_DIR)/, $(SRCS_ASM))
 SSRCS_P := $(addprefix $(P_DIR)/, $(SRCS_P))
@@ -26,7 +26,7 @@ all: $(LIB_PRINT)  $(NAME)
 
 #
 debug_source = debug_stuff.c test_run.c classify.c display_stuff.c distances.c encode_arguments.c encode_operations.c\
-		encode_strings.c generic_list.c mallokill.c support_stuff.c token.c\
+		encode_strings.c file_stuff.c generic_list.c mallokill.c support_stuff.c token.c\
 		transcription.c translation.c what_is_it.c
 debug_source_p = $(addprefix $(ASM_DIR)/, $(debug_source))
 debug_objects = $(debug_source_p:.c=.o)

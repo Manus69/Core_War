@@ -9,36 +9,26 @@
 
 const char *g_file_name; //used to pass filename between the files;
 
-char *replace_extension(const char *file_name)
+unsigned int measure_file_size(int file)
 {
-    unsigned int length;
-    char *replacing_string;
+    unsigned int size;
+    char buffer[1];
 
-    if (ft_strlen(file_name) < 3)
-        invoke_error("file name error", NULL, NULL); //EMSG
-    length = ft_strlen(file_name) + 2;
-    replacing_string = ft_strnew(length);
-    replacing_string = ft_strcpy(replacing_string, file_name);
-    replacing_string[length - 3] = 'c';
-    replacing_string[length - 2] = 'o';
-    replacing_string[length - 1] = 'r';
-    return (replacing_string);
+    size = 0;
+    while (read(file, buffer, 1))
+        size ++;
+    return (size);
 }
 
-char *trim_file_name(const char *file_name)
+char get_last_char(int file) //make one function for this and file size if you really need it
 {
-    unsigned int length;
-    char *resulting_string;
-    int slash_index;
+    unsigned int n;
+    char buffer[1];
 
-    length = ft_strlen(file_name);
-    if (length < 3)
-        invoke_error("file name error while trimmig", NULL, NULL); //EMSG
-    slash_index = is_in_string(file_name, '/'); //define a macro for this!
-    if (slash_index == -1)
-        return (ft_strdup(file_name));
-    resulting_string = ft_strsub(file_name, slash_index + 1, length - slash_index - 1);
-    return (resulting_string);
+    n = 0;
+    while (read(file, buffer, 1))
+        ;
+    return (buffer[0]);
 }
 
 int read_header(int file, char *buffer) //assuming the buffer is allocated
@@ -125,6 +115,7 @@ t_generic_list *parse_header(const char *header)
     return (token_list);
 }
 
+
 //is it necessary to check for large (more than two bytes) numbers?
 //the size constants are all fucked up!
 //where are the files supposed to go if one runs the pogramme from a different directory?
@@ -133,11 +124,14 @@ t_generic_list *parse_header(const char *header)
 //make an overarching structure for input and lists or something;
 
 //header must be checked during parsing; fuck (#.name ... .name ) etc;
+//.name and .comment can change places
 //clean up the structs and grammar
+//check redistry numbers
+//st 500 ld 16 - wtf is this?
 
 void here_we_go(char *file_name)
 {
-    char *current_line;
+    char *current_line; //make a separate function
     int file;
     t_transcription_parameters *transcription_parameters;
     t_generic_list *tokens;
@@ -145,23 +139,27 @@ void here_we_go(char *file_name)
     t_generic_list *last_element;
     t_generic_list *labels;
 
-    file = open(file_name, O_RDONLY);
-    if (file < 0)
-    {
-        ft_printf("%s", FILE_ERROR_MESSAGE);
-        exit(1);
-    }
-
     //
     g_file_name = file_name;
     //
+
+    file = open(file_name, O_RDONLY);
+    if (file < 0)
+        invoke_error(FILE_ERROR_MESSAGE, NULL, NULL);
+
+    //do header reading in one go
+    char last_char = get_last_char(file);
+    if (last_char != '\n')
+        invoke_error("no newline at the end of file\n", NULL, NULL);
+    close(file);
+    file = open(file_name, O_RDONLY);
+    // ft_printf("%c ", last_char);
 
     char *buffer = ft_strnew(HEADER_BUFFER_SIZE); //set the buffer size constant; 
     int number_of_header_lines = read_header(file, buffer);
     // ft_printf("%s %d", buffer, number_of_header_lines);
 
     //
-
     tokens = NULL;
     int current_line_number = 1;
     tokens = parse_header(buffer);
@@ -172,10 +170,13 @@ void here_we_go(char *file_name)
     // exit(1);
     //
 
+    int last_line_length = -1;
     while (get_next_line(file, &current_line) > 0) //careful about the trailing \n; the thing is fucked up;
     {
-        // if (current_line_number ++ <= number_of_header_lines)
-        //     continue ;
+        //
+        last_line_length = ft_strlen(current_line);
+        //
+
         line_tokens = line_to_tokens(current_line);
         if (line_tokens)
         {
@@ -197,6 +198,8 @@ void here_we_go(char *file_name)
         free(current_line);
     }
     close(file);
+    if (last_line_length != 0)
+        invoke_error("the file does not end in an empty line\n", NULL, ft_itoa(last_line_length));
     labels = NULL;
     //
     // display_all_tokens(tokens);
@@ -224,6 +227,7 @@ void here_we_go(char *file_name)
     if (file < 0)
         invoke_error("open / create failure", NULL, NULL); // EMSG
     tokens_to_bytes(prefix_item, file); //change for a suitable file descriptor;
+    ft_printf("Writing output program to %s\n", new_file_name); //make a string constant message? 
 }
 
 // int main()

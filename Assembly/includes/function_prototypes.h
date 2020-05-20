@@ -22,6 +22,9 @@ long why_atol(const char *number_string);
 int check_number_string(const char *number_string);
 //
 
+char *replace_extension(const char *file_name);
+char *trim_file_name(const char *file_name);
+
 void display_token(t_token *token);
 void display_all_tokens(t_generic_list *tokens);
 void display_classification_error_message(t_token *token, int verbose);
