@@ -132,7 +132,7 @@ t_generic_list *parse_header(const char *header)
 //ft_itoa_base from libft is shit;
 //make an overarching structure for input and lists or something;
 
-//header must be checked during parsing; fuck
+//header must be checked during parsing; fuck (#.name ... .name ) etc;
 //clean up the structs and grammar
 
 void here_we_go(char *file_name)
@@ -156,7 +156,7 @@ void here_we_go(char *file_name)
     g_file_name = file_name;
     //
 
-    char *buffer = ft_strnew(1000); //set the buffer size constant; 
+    char *buffer = ft_strnew(HEADER_BUFFER_SIZE); //set the buffer size constant; 
     int number_of_header_lines = read_header(file, buffer);
     // ft_printf("%s %d", buffer, number_of_header_lines);
 

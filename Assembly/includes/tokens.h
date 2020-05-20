@@ -11,6 +11,7 @@
 # define DIGITS "0123456789"
 # define NUMBER_SYSTEM_BASE 16
 # define PADDING_SIZE 4
+# define HEADER_BUFFER_SIZE 1e6
 
 //depreciated; 
 # define ARG_ENCODING_SIZE 1 //is there a constant in the header already?
