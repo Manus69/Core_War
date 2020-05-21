@@ -115,6 +115,7 @@ void display_byte_strings(t_generic_list *tokens)
         ft_printf("%s", current->stuff);
         current = current->next;
     }
+    ft_printf("\n");
 }
 
 void string_to_bytes(char *string, int file_descriptor)

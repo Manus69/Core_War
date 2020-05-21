@@ -130,7 +130,7 @@ void check_terminator(const char *file_name)
 
 
 void translate_and_write_to_file(t_generic_list *tokens, t_generic_list *labels,
-t_transcription_parameters *transcription_parameters)
+t_transcription_parameters *transcription_parameters, int visible)
 {
     int file;
     t_generic_list *translation;
@@ -140,13 +140,21 @@ t_transcription_parameters *transcription_parameters)
     translation = translate_tokens(tokens, labels, transcription_parameters);
     prefix_item = new_generic_list(ft_strdup("00ea83f3"));
     prefix_item = concatenate_lists(prefix_item, translation, NULL);
+
+    if (visible)
+    {
+        display_byte_strings(prefix_item);
+        // return ;
+    }
+
     new_file_name = trim_file_name(g_file_name);
     new_file_name = replace_extension(new_file_name);  //leak;
     file = open(new_file_name, O_RDWR | O_CREAT, 0777);
     if (file < 0)
         invoke_error("open / create failure", NULL, NULL); // EMSG
     tokens_to_bytes(prefix_item, file); //change for a suitable file descriptor;
-    ft_printf("Writing output program to %s\n", new_file_name); //make a string constant message? 
+    ft_printf("Writing output program to %s\n", new_file_name); //make a string constant message?
+    close(file);
 }
 
 //where are the files supposed to go if one runs the pogramme from a different directory?
@@ -157,13 +165,17 @@ t_transcription_parameters *transcription_parameters)
 //header must be checked during parsing; fuck (#.name ... .name ) etc;
 //.name and .comment can change places
 //clean up the structs and grammar
-//st 500 ld 16 - wtf is this?
+//empty champ name? 
+//double label: \n label2 ? 
+//translation of comment lenght is wrong
 
 //disassmbler crashed on some input
+//add argument type checks!
 
 void here_we_go(char *file_name)
 {
     int file;
+    char *buffer;
     t_transcription_parameters *transcription_parameters;
     t_generic_list *tokens;
     t_generic_list *labels;
@@ -176,8 +188,8 @@ void here_we_go(char *file_name)
     if (file < 0)
         invoke_error(FILE_ERROR_MESSAGE, NULL, NULL);
 
-    char *buffer = ft_strnew(HEADER_BUFFER_SIZE);
-    int number_of_header_lines = read_header(file, buffer);
+    buffer = ft_strnew(HEADER_BUFFER_SIZE);
+    read_header(file, buffer);
     // ft_printf("%s %d", buffer, number_of_header_lines);
 
     //
@@ -198,8 +210,7 @@ void here_we_go(char *file_name)
     // display_all_tokens(tokens);
     //
     transcription_parameters = get_transcription_parameters(tokens);
-    translate_and_write_to_file(tokens, labels, transcription_parameters);
-    
+    translate_and_write_to_file(tokens, labels, transcription_parameters, 1);
 }
 
 
