@@ -90,6 +90,7 @@ t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
     int n;
 
     t_token *debug_item;
+    debug_item = ((t_token *)token->stuff);
 
     n = 0;
     operation = get_operation_name((t_token *)token->stuff);
@@ -99,9 +100,9 @@ t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
     while (n < argument_count)
     {
         if (!token)
-            invoke_error("encode type is broken", NULL, NULL);
+            invoke_error("cant encode operation type\n", debug_item, NULL);
 
-        debug_item = ((t_token *)token->stuff);
+        // debug_item = ((t_token *)token->stuff);
 
         if (((t_token *)token->stuff)->argument_type == registry)
             byte = ft_strdup("01");

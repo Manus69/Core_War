@@ -270,3 +270,36 @@ int check_number_string(const char *number_string)
         return (0);
     return (1);
 }
+
+int get_next_index(const char *string, int start, const char *char_set)
+{
+    int n;
+
+    n = start;
+    while (string[n] != '\0')
+    {
+        if (is_a_member(char_set, string[n]))
+            return (n);
+        n = n + 1;
+    }
+
+    //to avoid error checking;
+    invoke_error("string parsing errror\n", NULL, string);
+    //
+
+    return (-1);
+}
+
+char *get_next_substring(const char *string, int *start,
+const char *start_char_set, const char *end_char_set)
+{
+    int m;
+    int n;
+    char *substring;
+
+    m = get_next_index(string, *start, start_char_set);
+    n = get_next_index(string, m + 1, end_char_set);
+    substring = ft_strsub(string, m, n - m);
+    *start = n;
+    return (substring);
+}

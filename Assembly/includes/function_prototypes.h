@@ -15,6 +15,10 @@ int binary_to_decimal(char *binary_number);
 char *decimal_to_hex(int n, int number_of_bytes);
 char *concat(char *lhs, char *rhs);
 
+int get_next_index(const char *string, int start, const char *char_set);
+char *get_next_substring(const char *string, int *start,
+const char *start_char_set, const char *end_char_set);
+
 //testing;
 char *decimal_to_hex_mk2(int n, int number_of_bytes);
 char *ft_itoa_base_local(unsigned int n, unsigned int base);
