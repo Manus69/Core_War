@@ -13,6 +13,8 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
     {
         if (is_command_name(current_token->string))
             current_token->type = command_name;
+        else if (is_command_comment(current_token->string))
+            current_token->type = command_comment;
         else if (is_new_line(current_token->string))
             current_token->type = new_line;
         else if (is_comment_character(current_token->string))

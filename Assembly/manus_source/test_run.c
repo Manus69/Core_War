@@ -166,17 +166,14 @@ t_transcription_parameters *transcription_parameters, int visible)
 //.name and .comment can change places
 //clean up the structs and grammar
 //empty champ name? 
-//double label: \n label2 ? 
-//translation of comment lenght is wrong
+//double label: \n label2 ?
 
 //disassmbler crashed on some input
 //add argument type checks!
 //retarder label names? :label: ? 
 
-
-// gobepc:	st r1, :buff
-// 	ld :buff,r1
-// buff:	st r1,r1	
+//transcription parameters do no work when comment and name come in reverse order
+//make separate enum entries for comment and name strings? 
 
 void here_we_go(char *file_name)
 {
