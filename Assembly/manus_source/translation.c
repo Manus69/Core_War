@@ -98,6 +98,7 @@ t_generic_list *labels, t_transcription_parameters *transcription_parameters)
             string_translation_mode = champ_comment_string;
         else if (current_token_cast->type == string && string_translation_mode == champ_name_string) //make a separate function ffs;
         {
+            //this is wrong; they can come in the opposite order
             current_token_translation = translate_champ_name(current_token, last_element, transcription_parameters, &bytes_encoded);
             translation = current_token_translation;
         }

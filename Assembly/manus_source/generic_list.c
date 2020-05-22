@@ -111,5 +111,3 @@ t_generic_list *augmenting_list, t_generic_list *last_element)
 	last_element->next = augmenting_list;
 	return (base_list);
 }
-
-t_generic_list *concat_lists_increment_last();

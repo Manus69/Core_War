@@ -72,9 +72,16 @@ t_generic_list *tokens, t_generic_list *labels)
     char *label_name;
     t_token *current_token;
     char *label_encoding;
+
+    int index;
     
-    current_token = ((t_token *)token->stuff);
-    label_name = ft_strsub(current_token->string, 2, ft_strlen(current_token->string) - 1);
+    current_token = ((t_token *)token->stuff); 
+    
+    index = 0;
+    while (!is_a_member(LABEL_CHARS, current_token->string[index]))
+        index ++;
+
+    label_name = ft_strsub(current_token->string, index, ft_strlen(current_token->string) - 1);
     distance = get_distance_to_the_label(token, label_name, tokens, labels);
     label_encoding = decimal_to_hex_mk2(distance, current_token->size);
     return (label_encoding);
@@ -118,7 +125,7 @@ t_generic_list *tokens, t_generic_list *labels, int *bytes_encoded)
     }
     else if (current_token->argument_type == indirect) //this might be wrong;
     {
-        if (current_token->string[1] == LABEL_CHAR)
+        if (current_token->string[0] == LABEL_CHAR)
             encoding_string = get_label_encoding(token, tokens, labels);
         else
             encoding_string = get_number_encoding(current_token);

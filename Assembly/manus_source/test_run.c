@@ -171,6 +171,8 @@ t_transcription_parameters *transcription_parameters, int visible)
 
 //disassmbler crashed on some input
 //add argument type checks!
+//retarder label names? :label: ? 
+
 
 // gobepc:	st r1, :buff
 // 	ld :buff,r1
