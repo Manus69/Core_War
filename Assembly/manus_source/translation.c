@@ -9,55 +9,80 @@ enum e_string_stranslation_mode
     champ_comment_string,
 };
 
-void translate_champ_name(t_generic_list *translation, t_generic_list *current_token,
+t_generic_list *translate_champ_comment(t_generic_list *current_token, t_generic_list *last_element,
 t_transcription_parameters *transcription_parameters, int *bytes_encoded)
 {
-    t_generic_list *current_token_translation;
-    t_generic_list *last_element;
+    t_generic_list *translation;
+    // t_generic_list *last_element;
+    t_generic_list *byte_string;
 
-    t_token *current_token_cast;
-    
-    current_token_cast = (t_token *)current_token->stuff;
 
+    translation = encode_string((t_token *)current_token->stuff, bytes_encoded);
+    // translation = concatenate_lists(translation, current_token_translation, last_element);
     last_element = get_last_element(translation);
-    current_token_translation = encode_string(current_token_cast, bytes_encoded);
-    translation = concatenate_lists(translation, current_token_translation, last_element);
-    last_element = get_last_element(current_token_translation);
 
     //REMAINING BYTES
-    if (*bytes_encoded > PROG_NAME_LENGTH)
-        invoke_error("champ name is too long;", current_token_cast, NULL);
-    current_token_translation = get_null_padding(PROG_NAME_LENGTH - transcription_parameters->name_size);
-    translation = concatenate_lists(translation, current_token_translation, last_element);
-    last_element = get_last_element(current_token_translation);
+    if (transcription_parameters->comment_size > COMMENT_LENGTH)
+        invoke_error("champ comment is too long;", (t_token *)current_token->stuff, NULL);
+    byte_string = get_null_padding(COMMENT_LENGTH - transcription_parameters->comment_size); //this is constant; this cant be right
+    translation = concatenate_lists(translation, byte_string, last_element);
+    last_element = get_last_element(byte_string);
 
     //PADDING
-    current_token_translation = get_null_padding(PADDING_SIZE);
-    translation = concatenate_lists(translation, current_token_translation, last_element);
-    last_element = get_last_element(current_token_translation);
+    byte_string = get_null_padding(PADDING_SIZE);
+    translation = concatenate_lists(translation, byte_string, last_element);
+    // last_element = get_last_element(current_token_translation);
+
+    return (translation);
+}
+
+t_generic_list *translate_champ_name(t_generic_list *current_token, t_generic_list *last_element,
+t_transcription_parameters *transcription_parameters, int *bytes_encoded)
+{
+    t_generic_list *translation;
+    t_generic_list *byte_string;
+    // t_generic_list *last_element;
+    int name_length;
+
+    name_length = 0;
+    translation = encode_string((t_token *)current_token->stuff, &name_length);
+    // translation = concatenate_lists(translation, current_token_translation, last_element);
+    last_element = get_last_element(translation);
+
+    //REMAINING BYTES
+    if (name_length > PROG_NAME_LENGTH)
+        invoke_error("champ name is too long;", (t_token *)current_token->stuff, NULL);
+    byte_string = get_null_padding(PROG_NAME_LENGTH - transcription_parameters->name_size); //is this right?
+    translation = concatenate_lists(translation, byte_string, last_element);
+    last_element = get_last_element(byte_string);
+
+    //PADDING
+    byte_string = get_null_padding(PADDING_SIZE);
+    translation = concatenate_lists(translation, byte_string, last_element);
+    last_element = get_last_element(byte_string);
 
     //EXEC CODE SIZE
-    current_token_translation = new_generic_list(decimal_to_hex_mk2(transcription_parameters->exec_code_size, 4));
-    translation = concatenate_lists(translation, current_token_translation, last_element);
-    last_element = get_last_element(current_token_translation);
+    byte_string = new_generic_list(decimal_to_hex_mk2(transcription_parameters->exec_code_size, 4));
+    translation = concatenate_lists(translation, byte_string, last_element);
+    // last_element = get_last_element(current_token_translation);
+
+    return (translation);
 }
 
 t_generic_list *translate_tokens(t_generic_list *tokens,
 t_generic_list *labels, t_transcription_parameters *transcription_parameters)
 {
-    t_generic_list *translation;
     t_generic_list *current_token;
     t_generic_list *current_token_translation;
     t_generic_list *last_element;
     t_token *current_token_cast;
     int bytes_encoded;
+
+    t_generic_list *translation;
     
-    // int string_translation_mode; //1 for name, 2 for comment? THIS APPROACH IS FUCKED UP;
     enum e_string_stranslation_mode string_translation_mode;
 
-    char *debug_string;
-
-    string_translation_mode = 1;
+    // string_translation_mode = champ_name_string; // this is wrong though since the name and comment can be in the reverse oreder
     translation = NULL;
     last_element = NULL;
     bytes_encoded = 0;
@@ -73,41 +98,22 @@ t_generic_list *labels, t_transcription_parameters *transcription_parameters)
             string_translation_mode = champ_comment_string;
         else if (current_token_cast->type == string && string_translation_mode == champ_name_string) //make a separate function ffs;
         {
-            translate_champ_name(translation, current_token, transcription_parameters, &bytes_encoded);
+            current_token_translation = translate_champ_name(current_token, last_element, transcription_parameters, &bytes_encoded);
+            translation = current_token_translation;
         }
         else if (current_token_cast->type == string && string_translation_mode == champ_comment_string)
         {
-            last_element = get_last_element(translation);
-            current_token_translation = encode_string(current_token_cast, &bytes_encoded);
+            current_token_translation = translate_champ_comment(current_token, last_element, transcription_parameters, &bytes_encoded);
             translation = concatenate_lists(translation, current_token_translation, last_element);
-            last_element = get_last_element(current_token_translation);
-
-            //REMAINING BYTES
-            if (bytes_encoded > COMMENT_LENGTH) //this is wrong! you must measure the comment's length;
-                invoke_error("champ comment is too long;", current_token_cast, NULL);
-            current_token_translation = get_null_padding(COMMENT_LENGTH - transcription_parameters->comment_size);
-            translation = concatenate_lists(translation, current_token_translation, last_element);
-            last_element = get_last_element(current_token_translation);
-
-            //PADDING
-            current_token_translation = get_null_padding(PADDING_SIZE);
-            translation = concatenate_lists(translation, current_token_translation, last_element);
-            last_element = get_last_element(current_token_translation);
         }
         else if (current_token_cast->type == operation)
         {
             current_token_translation = encode_operation(current_token_cast, &bytes_encoded);
-
-            debug_string = current_token_translation->stuff;
-
             translation = concatenate_lists(translation, current_token_translation, last_element);
             last_element = current_token_translation;
             if (op_tab[get_operation_name(current_token_cast)].arg_code_flag)
             {
                 current_token_translation = encode_type(current_token, &bytes_encoded);
-
-                debug_string = current_token_translation->stuff;
-
                 translation = concatenate_lists(translation, current_token_translation, last_element);
                 last_element = current_token_translation;
             }
@@ -115,9 +121,6 @@ t_generic_list *labels, t_transcription_parameters *transcription_parameters)
         else if (current_token_cast->type == argument)
         {
             current_token_translation = encode_argument(current_token, tokens, labels, &bytes_encoded);
-
-            debug_string = current_token_translation->stuff;
-
             translation = concatenate_lists(translation, current_token_translation, last_element);
             last_element = current_token_translation;
         }

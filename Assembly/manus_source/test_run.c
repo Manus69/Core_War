@@ -172,6 +172,10 @@ t_transcription_parameters *transcription_parameters, int visible)
 //disassmbler crashed on some input
 //add argument type checks!
 
+// gobepc:	st r1, :buff
+// 	ld :buff,r1
+// buff:	st r1,r1	
+
 void here_we_go(char *file_name)
 {
     int file;
@@ -210,7 +214,7 @@ void here_we_go(char *file_name)
     // display_all_tokens(tokens);
     //
     transcription_parameters = get_transcription_parameters(tokens);
-    translate_and_write_to_file(tokens, labels, transcription_parameters, 1);
+    translate_and_write_to_file(tokens, labels, transcription_parameters, 0);
 }
 
 

@@ -27,28 +27,33 @@ t_transcription_parameters *get_transcription_parameters(t_generic_list *tokens)
     int distance;
 
     parameters = mallokill(sizeof(t_transcription_parameters));
+
+    //champ name
     current_token = get_next_typed_token(tokens, string);
+    if (!current_token)
+        invoke_error("cant get transcription parameters\n", NULL, NULL); //get the right message;
     token_cast = (t_token *)current_token->stuff;
     parameters->name_size = ft_strlen(((t_token *)current_token->stuff)->string) - 2;
-    if (!parameters->name_size)
-        invoke_error("cant get transcription parameters\n", token_cast, NULL); //get the right message;
+    if (parameters->name_size > PROG_NAME_LENGTH)
+        invoke_error("champ name is too big", NULL, NULL); //msg
     
     //getting champ comment
     current_token = get_next_typed_token(current_token, string);
-    token_cast = (t_token *)current_token->stuff;
     if (!current_token)
-        invoke_error("cant get transcription parameters 2\n", token_cast, NULL);
+        invoke_error("cant get transcription parameters 2\n", NULL, NULL); //msg
+    token_cast = (t_token *)current_token->stuff;
     parameters->comment_size = ft_strlen(((t_token *)current_token->stuff)->string) - 2;
+    if (parameters->comment_size > COMMENT_LENGTH)
+        invoke_error("champ comment is too long", NULL, NULL); //message
 
-    //assuming 0 comment size is ok;
-    // if (!parameters->comment_size)
-    //     invoke_error(GENERIC_ERROR_MESSAGE);
-
+    //exec code size
     current_token = get_last_element(tokens);
+    if (!current_token)
+        invoke_error("cant get transcription parameters 3\n", NULL, NULL); //msg
     token_cast = (t_token *)current_token->stuff;
     parameters->exec_code_size = ((t_token *)current_token->stuff)->distance -
     parameters->name_size - parameters->comment_size;
-    if (parameters->exec_code_size < 0)
-        invoke_error("parameters are broken\n", token_cast, NULL);
+    if (parameters->exec_code_size > CHAMP_MAX_SIZE)
+        invoke_error("champ code is too long\n", token_cast, NULL);
     return (parameters);
 }
