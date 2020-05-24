@@ -41,6 +41,7 @@ t_container *new_container(const char *file_name)
     container->labels = NULL;
     container->parameters = new_parameters();
     container->translated_tokens = NULL;
+    container->translation = new_translation();
 
     return (container);
 }

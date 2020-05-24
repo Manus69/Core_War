@@ -38,6 +38,7 @@ typedef struct s_line_token t_line_token;
 typedef struct s_token t_token;
 typedef struct s_transcription_parameters t_transcription_parameters;
 typedef struct s_container t_container;
+typedef struct s_translation t_translation;
 
 enum e_token_type
 {
@@ -109,6 +110,7 @@ struct s_container
     t_generic_list *labels;
     t_generic_list *translated_tokens;
     t_transcription_parameters *parameters;
+    t_translation *translation;  
 };
 
 #endif

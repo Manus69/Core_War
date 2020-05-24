@@ -80,9 +80,8 @@ enum e_operation_name get_operation_name(t_token *token)
     return (dummy_operation); //should never be executed;
 }
 
-t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
+t_generic_list *encode_type(t_generic_list *token)
 {
-    int argument_count;
     enum e_operation_name operation;
     char *byte;
     char *byte_string;
@@ -94,10 +93,9 @@ t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
 
     n = 0;
     operation = get_operation_name((t_token *)token->stuff);
-    argument_count = op_tab[operation].arg_count;
     token = token->next;
     byte_string = ft_strdup("");
-    while (n < argument_count)
+    while (n < op_tab[operation].arg_count)
     {
         if (!token)
             invoke_error("cant encode operation type\n", debug_item, NULL);
@@ -132,12 +130,10 @@ t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded)
         n = n + 1;
     }
     n = binary_to_decimal(byte_string);
-    *bytes_encoded = *bytes_encoded + 1;
-    // return (new_generic_list(decimal_to_hex(n, 1)));
     return (new_generic_list(decimal_to_hex_mk2(n, 1)));
 }
 
-t_generic_list *encode_operation(t_token *token, int *bytes_encoded)
+t_generic_list *encode_operation(t_token *token)
 {
     t_generic_list *encoding;
     enum e_operation_name operation;
@@ -151,7 +147,6 @@ t_generic_list *encode_operation(t_token *token, int *bytes_encoded)
         operation = operation + 1;
     }
     encoding = new_generic_list(operation_code);
-    *bytes_encoded = *bytes_encoded + 1;
     return (encoding);
 }
 

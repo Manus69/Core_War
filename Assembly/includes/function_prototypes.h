@@ -70,20 +70,20 @@ void    measure_token_size(t_generic_list *tokens);
 
 int     check_argument_token(t_token *token);
 
-t_generic_list *encode_string(t_token *token, int *bytes_encoded);
+t_generic_list *encode_string(t_token *token);
 t_generic_list *get_null_padding(int number_of_bytes);
-t_generic_list *encode_string_tokens(t_generic_list *tokens, int *bytes_encoded);
-t_generic_list *encode_operation(t_token *token, int *bytes_encoded);
+t_generic_list *encode_string_tokens(t_generic_list *tokens);
+t_generic_list *encode_operation(t_token *token);
 
 char *get_registry_encoding(t_token *token);
 char *get_direct_number_encoding(t_token *token);
 t_generic_list *encode_argument(t_generic_list *token,
-t_generic_list *tokens, t_generic_list *labels, int *bytes_encoded);
+t_generic_list *tokens, t_generic_list *labels);
 
 char *grab_n_bytes_from_address(t_generic_list *tokens, int address, int number_of_bytes);
 
 char *get_type_encoding(int number_of_arguments, ...);
-t_generic_list *encode_type(t_generic_list *token, int *bytes_encoded);
+t_generic_list *encode_type(t_generic_list *token);
 enum e_operation_name get_operation_name(t_token *token);
 
 int get_distance_to_the_label(t_generic_list *token, char *label_name,
@@ -94,8 +94,8 @@ int get_distance_to_the_previous_operation(t_token *token, t_generic_list *token
 t_generic_list *get_next_typed_token(t_generic_list *tokens, enum e_token_type type);
 void get_transcription_parameters(t_container *container);
 
-t_generic_list *translate_tokens(t_generic_list *tokens,
-t_generic_list *labels, t_transcription_parameters *transcription_parameters);
+struct s_translation *new_translation(void);
+t_generic_list *translate_tokens(t_container *container);
 
 t_token *new_token(char *string, enum e_token_type type);
 t_token *get_next_token(int *n, char *line);

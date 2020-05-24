@@ -36,14 +36,14 @@ t_generic_list *concatenate_translation(const struct s_translation *translation)
 }
 
 t_generic_list *translate_champ_comment(t_generic_list *current_token,
-t_transcription_parameters *transcription_parameters, int *bytes_encoded)
+t_transcription_parameters *transcription_parameters)
 {
     t_generic_list *translation;
     t_generic_list *last_element;
     t_generic_list *byte_string;
 
 
-    translation = encode_string((t_token *)current_token->stuff, bytes_encoded);
+    translation = encode_string((t_token *)current_token->stuff);
     // translation = concatenate_lists(translation, current_token_translation, last_element);
     last_element = get_last_element(translation);
 
@@ -63,7 +63,7 @@ t_transcription_parameters *transcription_parameters, int *bytes_encoded)
 }
 
 t_generic_list *translate_champ_name(t_generic_list *current_token,
-t_transcription_parameters *transcription_parameters, int *bytes_encoded)
+t_transcription_parameters *transcription_parameters)
 {
     t_generic_list *translation;
     t_generic_list *byte_string;
@@ -71,8 +71,7 @@ t_transcription_parameters *transcription_parameters, int *bytes_encoded)
     int name_length;
 
     name_length = 0;
-    translation = encode_string((t_token *)current_token->stuff, &name_length);
-    // translation = concatenate_lists(translation, current_token_translation, last_element);
+    translation = encode_string((t_token *)current_token->stuff);
     last_element = get_last_element(translation);
 
     //REMAINING BYTES
@@ -90,61 +89,49 @@ t_transcription_parameters *transcription_parameters, int *bytes_encoded)
     //EXEC CODE SIZE
     byte_string = new_generic_list(decimal_to_hex_mk2(transcription_parameters->exec_code_size, 4));
     translation = concatenate_lists(translation, byte_string, last_element);
-    // last_element = get_last_element(current_token_translation);
 
     return (translation);
 }
 
-t_generic_list *translate_tokens(t_generic_list *tokens,
-t_generic_list *labels, t_transcription_parameters *transcription_parameters)
+t_generic_list *translate_tokens(t_container *container)
 {
     t_generic_list *current_token;
-    t_generic_list *current_token_translation;
+    t_generic_list *token_translation;
     t_generic_list *last_element;
-    t_token *current_token_cast;
-    int bytes_encoded;
-    
+    // t_token *current_token_cast;
     struct s_translation *translation;
 
-    //
-    // ft_printf("%d %d %d\n", transcription_parameters->name_size, transcription_parameters->comment_size, transcription_parameters->exec_code_size);
-    // exit(1);
-    //
-
-    translation = new_translation();
+    // translation = new_translation();
+    translation = container->translation;
     last_element = NULL;
-    bytes_encoded = 0;
-    current_token = tokens;
+    current_token = container->tokens;
     if (!current_token)
         invoke_error("empty token list int translate tokens\n", NULL, NULL); //message?
     while (current_token)
     {
-        current_token_cast = (t_token *)current_token->stuff;
-        if (current_token_cast->type == champ_name)
+        // current_token_cast = (t_token *)current_token->stuff;
+
+        if (((t_token *)current_token->stuff)->type == champ_name)
+            translation->champ_name = translate_champ_name(current_token, container->parameters);
+        else if (((t_token *)current_token->stuff)->type == champ_comment)
+            translation->champ_comment = translate_champ_comment(current_token, container->parameters);
+        else if (((t_token *)current_token->stuff)->type == operation)
         {
-            translation->champ_name = translate_champ_name(current_token, transcription_parameters, &bytes_encoded);
-        }
-        else if (current_token_cast->type == champ_comment)
-        {
-            translation->champ_comment = translate_champ_comment(current_token, transcription_parameters, &bytes_encoded);
-        }
-        else if (current_token_cast->type == operation)
-        {
-            current_token_translation = encode_operation(current_token_cast, &bytes_encoded);
-            translation->exec_code = concatenate_lists(translation->exec_code, current_token_translation, last_element);
-            last_element = current_token_translation;
-            if (op_tab[get_operation_name(current_token_cast)].arg_code_flag)
+            token_translation = encode_operation((t_token *)current_token->stuff);
+            translation->exec_code = concatenate_lists(translation->exec_code, token_translation, last_element);
+            last_element = token_translation;
+            if (op_tab[get_operation_name((t_token *)current_token->stuff)].arg_code_flag)
             {
-                current_token_translation = encode_type(current_token, &bytes_encoded);
-                translation->exec_code = concatenate_lists(translation->exec_code, current_token_translation, last_element);
-                last_element = current_token_translation;
+                token_translation = encode_type(current_token);
+                translation->exec_code = concatenate_lists(translation->exec_code, token_translation, last_element);
+                last_element = token_translation;
             }
         }
-        else if (current_token_cast->type == argument)
+        else if (((t_token *)current_token->stuff)->type == argument)
         {
-            current_token_translation = encode_argument(current_token, tokens, labels, &bytes_encoded);
-            translation->exec_code = concatenate_lists(translation->exec_code, current_token_translation, last_element);
-            last_element = current_token_translation;
+            token_translation = encode_argument(current_token, container->tokens, container->labels);
+            translation->exec_code = concatenate_lists(translation->exec_code, token_translation, last_element);
+            last_element = token_translation;
         }
         current_token = current_token->next;
     }

@@ -60,6 +60,11 @@ t_generic_list *parse_header(const char *header)
     return (token_list);
 }
 
+void header_to_tokens(const char *header, t_generic_list *tokens)
+{
+    ;
+}
+
 void lines_to_tokens(int file, t_generic_list *tokens)
 {
     char *current_line;
@@ -91,15 +96,14 @@ void lines_to_tokens(int file, t_generic_list *tokens)
     }
 }
 
-void translate_and_write_to_file(t_generic_list *tokens, t_generic_list *labels,
-t_transcription_parameters *transcription_parameters, int visible)
+void translate_and_write_to_file(t_container *container, int visible)
 {
     int file;
     t_generic_list *translation;
     t_generic_list *prefix_item;
     char *new_file_name;
 
-    translation = translate_tokens(tokens, labels, transcription_parameters);
+    translation = translate_tokens(container);
     prefix_item = new_generic_list(ft_strdup("00ea83f3"));
     prefix_item = concatenate_lists(prefix_item, translation, NULL);
 
@@ -136,28 +140,24 @@ t_transcription_parameters *transcription_parameters, int visible)
 
 //transcription parameters do no work when comment and name come in reverse order
 //get rid of string and quotation mark tokens? 
-//do i need to check the file size? 
+//do i need to check the file size?
+//header has problems with #
+//quote number invariant might be wrong: # "" ? 
 
 void here_we_go(char *file_name)
 {
-    // int file;
     char *buffer;
-    // t_transcription_parameters *transcription_parameters;
-    // t_generic_list *tokens;
-    // t_generic_list *labels;
-
     t_container *container;
 
     container = new_container(file_name);
     //
-    g_file_name = file_name;
+    g_file_name = file_name; //used in invoke error calls
     //
 
     buffer = ft_strnew(HEADER_BUFFER_SIZE);
     read_header(container->file_descriptor, buffer);
     // ft_printf("%s %d", buffer, number_of_header_lines);
 
-    //
     container->tokens = parse_header(buffer);
     lines_to_tokens(container->file_descriptor, container->tokens);
     close(container->file_descriptor);
@@ -169,12 +169,12 @@ void here_we_go(char *file_name)
     classify_all_tokens(container->tokens, &container->labels, 1);
     measure_token_size(container->tokens);
     set_global_distance(container);
-    // //
-    // display_all_tokens(tokens);
+    //
+    // display_all_tokens(container->tokens);
     // exit(1);
     //
     get_transcription_parameters(container);
-    translate_and_write_to_file(container->tokens, container->labels, container->parameters, 0);
+    translate_and_write_to_file(container, 0);
 }
 
 

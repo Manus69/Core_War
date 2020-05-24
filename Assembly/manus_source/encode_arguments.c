@@ -91,7 +91,7 @@ t_generic_list *tokens, t_generic_list *labels)
 //
 
 t_generic_list *encode_argument(t_generic_list *token,
-t_generic_list *tokens, t_generic_list *labels, int *bytes_encoded)
+t_generic_list *tokens, t_generic_list *labels)
 {
     t_generic_list *encoding;
     t_token *current_token;
@@ -103,10 +103,8 @@ t_generic_list *tokens, t_generic_list *labels, int *bytes_encoded)
     else if (current_token->argument_type == direct)
     {
         if (current_token->string[1] == LABEL_CHAR)
-            // encoding_string = get_direct_label_encoding(token, tokens, labels);
             encoding_string = get_label_encoding(token, tokens, labels);
         else
-            // encoding_string = get_direct_number_encoding(current_token);
             encoding_string = get_number_encoding(current_token);
     }
     else if (current_token->argument_type == indirect) //this might be wrong;
@@ -117,6 +115,5 @@ t_generic_list *tokens, t_generic_list *labels, int *bytes_encoded)
             encoding_string = get_number_encoding(current_token);
     }
     encoding = new_generic_list(encoding_string);
-    *bytes_encoded = *bytes_encoded + current_token->size;
     return (encoding);
 }

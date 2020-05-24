@@ -30,7 +30,7 @@ t_generic_list *get_null_padding(int number_of_bytes)
     return (encoding);
 }
 
-t_generic_list *encode_string(t_token *token, int *bytes_encoded)
+t_generic_list *encode_string(t_token *token)
 {
     int n;
     int q;
@@ -55,11 +55,10 @@ t_generic_list *encode_string(t_token *token, int *bytes_encoded)
         }
         n = n + 1;
     }
-    *bytes_encoded = *bytes_encoded + q;
     return (encoding);
 }
 
-t_generic_list *encode_string_tokens(t_generic_list *tokens, int *bytes_encoded)
+t_generic_list *encode_string_tokens(t_generic_list *tokens)
 {
     t_generic_list *current_token;
     t_generic_list *encoding;
@@ -71,7 +70,7 @@ t_generic_list *encode_string_tokens(t_generic_list *tokens, int *bytes_encoded)
     last_element = NULL;
     while (((t_token *)current_token->stuff)->type == string)
     {
-        string_encoding = encode_string((t_token *)current_token->stuff, bytes_encoded);
+        string_encoding = encode_string((t_token *)current_token->stuff);
         encoding = concatenate_lists(encoding, string_encoding, last_element);
         last_element = get_last_element(string_encoding);
         current_token = current_token->next;

@@ -44,7 +44,6 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         if (is_quotation_mark(current_token->string))
             current_token->type = opening_quotation_mark;
         else if (is_string(current_token->string))
-            // current_token->type = string;
             current_token->type = champ_name;
         else
             invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
@@ -54,7 +53,6 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         if (is_quotation_mark(current_token->string))
             current_token->type = opening_quotation_mark;
         else if (is_string(current_token->string))
-            // current_token->type = string;
             current_token->type = champ_comment;
         else if (is_multistring_start(current_token->string))
             current_token->type = multiline_string;
@@ -126,7 +124,7 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else
             invoke_error("something is wrong", current_token, NULL);
     }
-    else if (previous_token->type == closing_quotation_mark)
+    else if (previous_token->type == closing_quotation_mark) //get rid of it
     {
         if (is_quotation_mark(current_token->string))
             current_token->type = opening_quotation_mark;
@@ -136,7 +134,7 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
             invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
         
     }
-    else if (previous_token->type == string) //???
+    else if (previous_token->type == string) //this has to go
     {
         if (is_quotation_mark(current_token->string))
             current_token->type = closing_quotation_mark;
@@ -147,16 +145,6 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else
             current_token->type = string;
     }
-    else if (previous_token->type == multiline_string)
-    {
-        if (is_quotation_mark(current_token->string))
-            current_token->type = closing_quotation_mark;
-        else if (is_multistring_end(current_token->string))
-            current_token->type = multiline_string;
-        else if (is_multistring(current_token->string))
-            current_token->type = multiline_string;
-    }
-    // set_token_size(current_token);
 }
 
 void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int verbose)
