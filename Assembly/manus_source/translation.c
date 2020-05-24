@@ -3,19 +3,6 @@
 #include "operation_table.h"
 #include "function_prototypes.h"
 
-enum e_string_stranslation_mode
-{
-    champ_name_string,
-    champ_comment_string,
-};
-
-struct s_translation
-{
-    t_generic_list *champ_name;
-    t_generic_list *champ_comment;
-    t_generic_list *exec_code;
-};
-
 struct s_translation *new_translation(void)
 {
     struct s_translation *translation;
@@ -24,6 +11,7 @@ struct s_translation *new_translation(void)
     translation->champ_name = NULL;
     translation->champ_comment = NULL;
     translation->exec_code = NULL;
+
     return (translation);
 }
 
@@ -117,7 +105,6 @@ t_generic_list *labels, t_transcription_parameters *transcription_parameters)
     int bytes_encoded;
     
     struct s_translation *translation;
-    enum e_string_stranslation_mode string_translation_mode;
 
     //
     // ft_printf("%d %d %d\n", transcription_parameters->name_size, transcription_parameters->comment_size, transcription_parameters->exec_code_size);
@@ -133,15 +120,11 @@ t_generic_list *labels, t_transcription_parameters *transcription_parameters)
     while (current_token)
     {
         current_token_cast = (t_token *)current_token->stuff;
-        if (current_token_cast->type == command_name)
-            string_translation_mode = champ_name_string;
-        else if (current_token_cast->type == command_comment)
-            string_translation_mode = champ_comment_string;
-        else if (current_token_cast->type == string && string_translation_mode == champ_name_string)
+        if (current_token_cast->type == champ_name)
         {
             translation->champ_name = translate_champ_name(current_token, transcription_parameters, &bytes_encoded);
         }
-        else if (current_token_cast->type == string && string_translation_mode == champ_comment_string)
+        else if (current_token_cast->type == champ_comment)
         {
             translation->champ_comment = translate_champ_comment(current_token, transcription_parameters, &bytes_encoded);
         }

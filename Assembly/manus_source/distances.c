@@ -82,12 +82,12 @@ t_generic_list *tokens, t_generic_list *labels)
     return (absolute_distance + distance_to_the_previous_operation);
 }
 
-void set_global_distance(t_generic_list *tokens)
+void set_global_distance(t_container *container)
 {
     int distance;
     t_generic_list *current_token;
 
-    current_token = tokens;
+    current_token = container->tokens;
     distance = 0;
     while (current_token)
     {
@@ -95,4 +95,5 @@ void set_global_distance(t_generic_list *tokens)
         distance = distance + ((t_token *)current_token->stuff)->size;
         current_token = current_token->next;
     }
+    container->size_of_tokens = distance;
 }

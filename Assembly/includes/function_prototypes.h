@@ -4,6 +4,8 @@
 # include "tokens.h"
 # include "ft_printf.h"
 # include "libft.h"
+# include <fcntl.h>
+# include <sys/types.h>
 
 void	*mallokill(size_t size);
 
@@ -86,11 +88,11 @@ enum e_operation_name get_operation_name(t_token *token);
 
 int get_distance_to_the_label(t_generic_list *token, char *label_name,
 t_generic_list *tokens, t_generic_list *labels);
-void set_global_distance(t_generic_list *tokens);
+void set_global_distance(t_container *container);
 int get_distance_to_the_previous_operation(t_token *token, t_generic_list *token_list);
 
 t_generic_list *get_next_typed_token(t_generic_list *tokens, enum e_token_type type);
-t_transcription_parameters *get_transcription_parameters(t_generic_list *tokens);
+void get_transcription_parameters(t_container *container);
 
 t_generic_list *translate_tokens(t_generic_list *tokens,
 t_generic_list *labels, t_transcription_parameters *transcription_parameters);
@@ -103,5 +105,9 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
 void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int verbose);
 
 void here_we_go(char *str);
+
+//container
+// struct s_transcription_parameters *new_parameters(void);
+t_container *new_container(const char *file_name);
 
 #endif

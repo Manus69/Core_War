@@ -285,9 +285,13 @@ void measure_token_size(t_generic_list *tokens)
     while (current_token)
     {
         debug_token = ((t_token *)current_token->stuff);
-        if (debug_token->type == string)
+        if (debug_token->type == string) //this has to go maybe?
         {
             debug_token->size = ft_strlen(debug_token->string) - 2; //scary;
+        }
+        else if (debug_token->type == champ_name || debug_token->type == champ_comment)
+        {
+            debug_token->size = ft_strlen(debug_token->string) - 2;
         }
         else if (debug_token->type == operation)
         {

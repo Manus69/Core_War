@@ -22,6 +22,10 @@ void display_token(t_token *token)
         type = "command_comment";
     else if (token->type == string)
         type = "string";
+    else if (token->type == champ_name)
+        type = "champ_name";
+    else if (token->type == champ_comment)
+        type = "champ_comment";
     else if (token->type == label)
         type = "label";
     else if (token->type == operation)

@@ -2,6 +2,7 @@
 # define TOKENS_H
 
 # include "op.h"
+# include "generic_list.h"
 
 # define GENERIC_ERROR_MESSAGE "Error!\n"
 # define FILE_ERROR_MESSAGE "Could not open the file;\n"
@@ -36,6 +37,7 @@ static char g_spaces[] = {' ', '\t', 0};
 typedef struct s_line_token t_line_token;
 typedef struct s_token t_token;
 typedef struct s_transcription_parameters t_transcription_parameters;
+typedef struct s_container t_container;
 
 enum e_token_type
 {
@@ -47,8 +49,8 @@ enum e_token_type
     closing_quotation_mark,
     string,
     multiline_string,
-    // champ_name,
-    // champ_comment,
+    champ_name,
+    champ_comment,
     label,
     operation,
     argument,
@@ -88,6 +90,25 @@ struct s_transcription_parameters
     int name_size;
     int comment_size;
     int exec_code_size;
+};
+
+struct s_translation
+{
+    t_generic_list *champ_name;
+    t_generic_list *champ_comment;
+    t_generic_list *exec_code;
+};
+
+struct s_container
+{
+    int file_descriptor;
+    int size_of_tokens;
+    const char *file_name;
+    char *new_file_name;
+    t_generic_list *tokens;
+    t_generic_list *labels;
+    t_generic_list *translated_tokens;
+    t_transcription_parameters *parameters;
 };
 
 #endif

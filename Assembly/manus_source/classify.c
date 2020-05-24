@@ -44,7 +44,8 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         if (is_quotation_mark(current_token->string))
             current_token->type = opening_quotation_mark;
         else if (is_string(current_token->string))
-            current_token->type = string;
+            // current_token->type = string;
+            current_token->type = champ_name;
         else
             invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
@@ -53,7 +54,8 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         if (is_quotation_mark(current_token->string))
             current_token->type = opening_quotation_mark;
         else if (is_string(current_token->string))
-            current_token->type = string;
+            // current_token->type = string;
+            current_token->type = champ_comment;
         else if (is_multistring_start(current_token->string))
             current_token->type = multiline_string;
         else
@@ -115,7 +117,7 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else
             current_token->type = comment;
     }
-    else if (previous_token->type == opening_quotation_mark)
+    else if (previous_token->type == opening_quotation_mark) //is this ever executed?  
     {
         if (is_quotation_mark(current_token->string))
             current_token->type = closing_quotation_mark;
@@ -134,7 +136,7 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
             invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
         
     }
-    else if (previous_token->type == string)
+    else if (previous_token->type == string) //???
     {
         if (is_quotation_mark(current_token->string))
             current_token->type = closing_quotation_mark;
