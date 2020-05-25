@@ -2,7 +2,7 @@
 
 void	print_error(char *error, t_arena *vm)
 {
-	perror(error);
+	ft_putstr_fd(error, 2);
 	free_arena(&vm);
 	exit(1);
 }
