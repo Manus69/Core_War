@@ -12,7 +12,7 @@
 # define DIGITS "0123456789"
 # define NUMBER_SYSTEM_BASE 16
 # define PADDING_SIZE 4
-# define HEADER_BUFFER_SIZE 1e6
+# define BUFFER_SIZE 1024
 
 //depreciated; 
 # define ARG_ENCODING_SIZE 1 //is there a constant in the header already?
@@ -31,7 +31,7 @@
 static char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "and",
 "or", "xor", "zjmp", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};
 static char *g_command_names[] = {".name", ".comment", 0};
-static char g_separators[] = {'"', COMMENT_CHAR, COMMENT_CHAR_ALT, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
+static char g_separators[] = {'"', '\n', COMMENT_CHAR, COMMENT_CHAR_ALT, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
 static char g_spaces[] = {' ', '\t', 0};
 
 typedef struct s_line_token t_line_token;

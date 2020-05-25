@@ -60,36 +60,125 @@ t_generic_list *parse_header(const char *header)
     return (token_list);
 }
 
-void header_to_tokens(const char *header, t_generic_list *tokens)
+char get_char(int file)
 {
-    ;
+    char character;
+
+    if (read(file, &character, 1) > 0)
+        return (character);
+    return (-1);
 }
 
-void lines_to_tokens(int file, t_generic_list *tokens)
+struct s_buffer
+{
+    char *content;
+    unsigned int current_content_size;
+    unsigned int max_content_size;
+};
+
+typedef struct s_buffer t_buffer;
+
+t_buffer *new_buffer(unsigned int size)
+{
+    t_buffer *buffer;
+
+    buffer = mallokill(sizeof(struct s_buffer));
+    buffer->content = ft_strnew(size);
+    buffer->current_content_size = 0;
+    buffer->max_content_size = size;
+
+    return (buffer);
+}
+
+char *get_buffer_string(t_buffer *buffer)
+{
+    char *string;
+
+    string = ft_strnew(buffer->current_content_size);
+    buffer->current_content_size = 0;
+
+    return (string);
+}
+
+int add_to_buffer(t_buffer *buffer, char c)
+{
+    if (buffer->current_content_size == buffer->max_content_size)
+        return (0);
+    buffer->content[buffer->current_content_size] = c;
+    buffer->current_content_size ++;
+
+    return (1);
+}
+
+void read_file(t_container *container)
+{
+    t_buffer *buffer;
+    t_generic_list *last_token;
+    char *string;
+    char current_char;
+    
+    t_token *token;
+
+    last_token = NULL;
+    buffer = new_buffer(BUFFER_SIZE);
+    while ((current_char = get_char(container->file_name)) != -1)
+    {
+        if (is_a_member(g_spaces, current_char))
+        {
+            if (!buffer->current_content_size)
+                continue ;
+            string = get_buffer_string(buffer->current_content_size);
+            token = new_token(string, 0);
+            add_to_list(container->tokens, token); //how slow is it? should i use concat instead? 
+        }
+        else if (is_a_member(g_separators, current_char))
+        {
+            if (buffer->current_content_size)
+            {
+                string = get_buffer_string(buffer);
+                token = new_token(string, 0);
+                add_to_list(container->tokens, token);
+            }
+            string = ft_strdup(&current_char);
+            token = new_token(string, 0);
+            add_to_list(container->tokens, token);
+        }
+        else
+        {
+            if (!add_to_buffer(buffer, current_char))
+                invoke_error("the string is too long\n", NULL, NULL); //msg
+        }
+    }
+}
+
+
+
+void lines_to_tokens(t_container *container)
 {
     char *current_line;
     t_generic_list *line_tokens;
     t_generic_list *last_element;
 
-    last_element = get_last_element(tokens);
-    while (get_next_line(file, &current_line) > 0)
+    // last_element = get_last_element(container->tokens);
+    last_element = NULL;
+    while (get_next_line(container->file_descriptor, &current_line) > 0)
     {
         line_tokens = line_to_tokens(current_line);
         if (line_tokens)
         {
-            tokens = concatenate_lists(tokens, line_tokens, last_element);
+            container->tokens = concatenate_lists(container->tokens, line_tokens, last_element);
             last_element = get_last_element(line_tokens);
             last_element = add_to_list(last_element, new_token("\n", new_line));
             last_element = last_element->next;
         }
-        else if (!line_tokens && !tokens)
+        else if (!line_tokens && !container->tokens)
         {
-            tokens = new_generic_list(new_token("\n", new_line));
-            last_element = tokens;
+            container->tokens = new_generic_list(new_token("\n", new_line));
+            last_element = container->tokens;
         }
         else if (!line_tokens)
         {
-            tokens = concatenate_lists(tokens, new_generic_list(new_token("\n", new_line)), last_element);
+            container->tokens = concatenate_lists(container->tokens, new_generic_list(new_token("\n", new_line)), last_element);
             last_element = last_element->next;
         }
         free(current_line);
@@ -142,11 +231,13 @@ void translate_and_write_to_file(t_container *container, int visible)
 //get rid of string and quotation mark tokens? 
 //do i need to check the file size?
 //header has problems with #
-//quote number invariant might be wrong: # "" ? 
+//quote number invariant might be wrong: # "" ?
+
+//the header approach is wrong
 
 void here_we_go(char *file_name)
 {
-    char *buffer;
+    // char *buffer;
     t_container *container;
 
     container = new_container(file_name);
@@ -154,16 +245,22 @@ void here_we_go(char *file_name)
     g_file_name = file_name; //used in invoke error calls
     //
 
-    buffer = ft_strnew(HEADER_BUFFER_SIZE);
-    read_header(container->file_descriptor, buffer);
+    // buffer = ft_strnew(HEADER_BUFFER_SIZE);
+    // read_header(container->file_descriptor, buffer);
     // ft_printf("%s %d", buffer, number_of_header_lines);
 
-    container->tokens = parse_header(buffer);
-    lines_to_tokens(container->file_descriptor, container->tokens);
+    // container->tokens = parse_header(buffer);
+
+    char buffer[] = "012345";
+    char *string = get_buffer_string(buffer, 2);
+    ft_printf("%s ", string);
+    exit(1);
+
+    lines_to_tokens(container);
     close(container->file_descriptor);
     //
-    // display_all_tokens(tokens);
-    // exit(1);
+    display_all_tokens(container->tokens);
+    exit(1);
     //
     
     classify_all_tokens(container->tokens, &container->labels, 1);
