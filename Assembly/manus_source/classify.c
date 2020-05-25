@@ -3,7 +3,7 @@
 #include "operation_table.h"
 #include "function_prototypes.h"
 
-void classify_token(t_token *current_token, t_token *previous_token, int verbose) //is verbose even necessary? 
+void classify_token(t_token *current_token, t_token *previous_token)
 {
     if (!current_token)
         return ;
@@ -41,21 +41,15 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
     }
     else if (previous_token->type == command_name)
     {
-        if (is_quotation_mark(current_token->string))
-            current_token->type = opening_quotation_mark;
-        else if (is_string(current_token->string))
+        if (is_string(current_token->string))
             current_token->type = champ_name;
         else
             invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
     else if (previous_token->type == command_comment)
     {
-        if (is_quotation_mark(current_token->string))
-            current_token->type = opening_quotation_mark;
-        else if (is_string(current_token->string))
+        if (is_string(current_token->string))
             current_token->type = champ_comment;
-        else if (is_multistring_start(current_token->string))
-            current_token->type = multiline_string;
         else
             invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
     }
@@ -115,39 +109,28 @@ void classify_token(t_token *current_token, t_token *previous_token, int verbose
         else
             current_token->type = comment;
     }
-    else if (previous_token->type == opening_quotation_mark) //is this ever executed?  
-    {
-        if (is_quotation_mark(current_token->string))
-            current_token->type = closing_quotation_mark;
-        else if (is_string(current_token->string))
-            current_token->type = string;
-        else
-            invoke_error("something is wrong", current_token, NULL);
-    }
-    else if (previous_token->type == closing_quotation_mark) //get rid of it
-    {
-        if (is_quotation_mark(current_token->string))
-            current_token->type = opening_quotation_mark;
-        else if (is_new_line(current_token->string))
-            current_token->type = new_line;
-        else
-            invoke_error(CLASSIFICATION_ERROR_MESSAGE, current_token, NULL);
-        
-    }
     else if (previous_token->type == string) //this has to go
     {
-        if (is_quotation_mark(current_token->string))
-            current_token->type = closing_quotation_mark;
-        else if (is_new_line(current_token->string))
+        if (is_new_line(current_token->string))
             current_token->type = new_line;
         else if (is_comment_character(current_token->string))
             current_token->type = comment_char;
         else
             current_token->type = string;
     }
+    else if (previous_token->type == champ_name)
+    {
+        if (is_new_line(current_token->string))
+            current_token->type = new_line;
+    }
+    else if (previous_token->type == champ_comment)
+    {
+        if (is_new_line(current_token->string))
+            current_token->type = new_line;
+    }
 }
 
-void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int verbose)
+void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels)
 {
     t_token *current_token;
     t_token *previous_token;
@@ -161,10 +144,12 @@ void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int ve
         if (!current_item->stuff)
             invoke_error("current token is bricked!\n previous token:", previous_token, NULL);
         current_token = current_item->stuff;
-        classify_token(current_token, previous_token, verbose);
+        classify_token(current_token, previous_token);
         if (current_token->type == label)
             *labels = add_to_list(*labels, current_token);
         current_item = current_item->next;
         previous_token = current_token;
     }
+    if (current_token->type != new_line)
+        invoke_error("no new line at the end of file\n", NULL, NULL);
 }

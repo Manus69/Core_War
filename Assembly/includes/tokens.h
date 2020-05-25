@@ -33,12 +33,14 @@ static char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "and",
 static char *g_command_names[] = {".name", ".comment", 0};
 static char g_separators[] = {'"', '\n', COMMENT_CHAR, COMMENT_CHAR_ALT, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
 static char g_spaces[] = {' ', '\t', 0};
+static char g_comment_chars[] = {COMMENT_CHAR, COMMENT_CHAR_ALT, 0};
 
 typedef struct s_line_token t_line_token;
 typedef struct s_token t_token;
 typedef struct s_transcription_parameters t_transcription_parameters;
 typedef struct s_container t_container;
 typedef struct s_translation t_translation;
+typedef struct s_buffer t_buffer;
 
 enum e_token_type
 {
@@ -46,10 +48,9 @@ enum e_token_type
     unknown,
     command_name,
     command_comment,
-    opening_quotation_mark,
-    closing_quotation_mark,
+    // opening_quotation_mark,
+    // closing_quotation_mark,
     string,
-    multiline_string,
     champ_name,
     champ_comment,
     label,
@@ -111,6 +112,20 @@ struct s_container
     t_generic_list *translated_tokens;
     t_transcription_parameters *parameters;
     t_translation *translation;  
+};
+
+enum e_string_writing_mode
+{
+    regular,
+    inside_string,
+};
+
+struct s_buffer
+{
+    char *content;
+    unsigned int current_content_size;
+    unsigned int max_content_size;
+    enum e_string_writing_mode mode;
 };
 
 #endif

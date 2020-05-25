@@ -36,10 +36,10 @@ void display_token(t_token *token)
         type = "comment";
     else if (token->type == new_line)
         type = "new_line";
-    else if (token->type == opening_quotation_mark)
-        type = "opening_quotation_mark";
-    else if (token->type == closing_quotation_mark)
-        type = "closing_quotation_mark";
+    // else if (token->type == opening_quotation_mark)
+    //     type = "opening_quotation_mark";
+    // else if (token->type == closing_quotation_mark)
+    //     type = "closing_quotation_mark";
     else if (token->type == comment_char)
         type = "comment_char";
     else if (token->type == comma)
@@ -74,21 +74,6 @@ void display_all_tokens(t_generic_list *tokens)
         current = current->next;
     }
 }
-
-// void display_classification_error_message(t_token *token, int verbose)
-// {
-//     if (verbose)
-//     {
-//         ft_printf(CLASSIFICATION_ERROR_MESSAGE);
-//         display_token(token);
-//     }
-//     else
-//     {
-//         ft_printf(GENERIC_ERROR_MESSAGE);
-//     }
-   
-//     exit(1);
-// }
 
 //dont forget to change the output file descriptor
 void invoke_error(const char *error_message, t_token *current_token, const char *current_string)
@@ -137,7 +122,6 @@ void string_to_bytes(char *string, int file_descriptor)
     {
         current_byte = ft_strsub(string, index, 2); //leak;
         ft_dprintf(file_descriptor, "%c", ft_atoi_base(current_byte, NUMBER_SYSTEM_BASE));
-        // ft_printf("%d ", ft_atoi_base(current_byte, NUMBER_SYSTEM_BASE));
         index = index + 2;
     }
 }

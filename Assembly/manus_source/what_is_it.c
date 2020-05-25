@@ -199,30 +199,6 @@ int     is_string(char *string)
     return (0);
 }
 
-int     is_multistring_start(char *string)
-{
-    if (string[0] == '"')
-        return (1);
-    return (0);
-}
-
-int     is_multistring_end(char *string)
-{
-    int length;
-
-    length = ft_strlen(string);
-    if (string[length - 1] == '"')
-        return (1);
-    return (0);
-}
-
-int     is_multistring(char *string)
-{
-    if (ft_strlen(string) != 0)
-        return (1);
-    return (0);
-}
-
 //
 
 int     check_argument_token(t_token *token)
@@ -304,7 +280,6 @@ void measure_token_size(t_generic_list *tokens)
         else if (debug_token->type == argument)
         {
             if (debug_token->argument_type == registry) // this is bullshit;
-                // debug_token->size = op_tab[operation_type].size_t_dir ? REGISTRY_NAME_SIZE : REGISTRY_SIZE;
                 debug_token->size = REGISTRY_NAME_SIZE;
             else if (debug_token->argument_type == direct)
                 debug_token->size = op_tab[operation_type].size_t_dir ? DIRECT_ADDRESS_SIZE : DIRECT_VALUE_SIZE;
@@ -313,34 +288,4 @@ void measure_token_size(t_generic_list *tokens)
         }
         current_token = current_token->next;
     }
-}
-
-char *grab_n_bytes_from_address(t_generic_list *tokens, int address, int number_of_bytes)
-{
-    t_generic_list *current_token;
-    int byte_counter;
-    char *byte_string;
-    char *stored_pointer;
-    t_token *debug_token;
-
-    address = address % MEM_SIZE;
-    current_token = tokens;
-    byte_counter = 0;
-    byte_string = ft_strdup("");
-    stored_pointer = byte_string;
-    while (byte_counter < number_of_bytes)
-    {
-        debug_token = ((t_token *)current_token->stuff);
-        
-        if (((t_token *)current_token->stuff)->size + byte_counter > number_of_bytes)
-            break ;
-        if (((t_token *)current_token->stuff)->size)
-        {
-            byte_string = ft_strjoin(byte_string, ((t_token *)current_token->stuff)->string);
-            byte_counter = byte_counter + ((t_token *)current_token->stuff)->size;
-            free(stored_pointer);
-        }
-        current_token = current_token->next;
-    }
-    return (byte_string);
 }

@@ -20,6 +20,8 @@ char *concat(char *lhs, char *rhs);
 int get_next_index(const char *string, int start, const char *char_set);
 char *get_next_substring(const char *string, int *start,
 const char *start_char_set, const char *end_char_set);
+int skip_to_char(int file, char c);
+char get_char(int file);
 
 //testing;
 char *decimal_to_hex_mk2(int n, int number_of_bytes);
@@ -59,12 +61,6 @@ int     is_indirect(char *string);
 
 int     is_string(char *string);
 
-//this is bad;
-int     is_multistring_start(char *string);
-int     is_multistring_end(char *string);
-int     is_multistring(char *string);
-//
-
 void    set_token_size(t_token *token);
 void    measure_token_size(t_generic_list *tokens);
 
@@ -101,13 +97,19 @@ t_token *new_token(char *string, enum e_token_type type);
 t_token *get_next_token(int *n, char *line);
 t_generic_list *line_to_tokens(char *line);
 
-void classify_token(t_token *current_token, t_token *previous_token, int verbose);
-void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels, int verbose);
+void classify_token(t_token *current_token, t_token *previous_token);
+void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels);
+void preprocess_all_tokens(t_generic_list *tokens);
 
 void here_we_go(char *str);
 
 //container
 // struct s_transcription_parameters *new_parameters(void);
 t_container *new_container(const char *file_name);
+
+//buffer
+t_buffer *new_buffer(unsigned int size);
+int add_to_buffer(t_buffer *buffer, char c);
+void append_buffer_to_tokens(t_container *container, t_buffer *buffer);
 
 #endif

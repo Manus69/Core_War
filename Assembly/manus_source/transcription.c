@@ -40,7 +40,6 @@ void get_comment_size(t_generic_list *tokens, t_transcription_parameters *parame
     current_token = get_next_typed_token(tokens, champ_comment);
     if (!current_token)
         invoke_error("cant get transcription parameters 2\n", NULL, NULL); //msg
-    // token_cast = (t_token *)current_token->stuff;
     parameters->comment_size = ft_strlen(((t_token *)current_token->stuff)->string) - 2;
     if (parameters->comment_size > COMMENT_LENGTH)
         invoke_error("champ comment is too long", NULL, NULL); //message
@@ -48,9 +47,6 @@ void get_comment_size(t_generic_list *tokens, t_transcription_parameters *parame
 
 void get_transcription_parameters(t_container *container)
 {
-    // t_generic_list *current_token;
-    // t_token *token_cast;
-
     //champ name
     get_name_size(container->tokens, container->parameters);
     
@@ -58,12 +54,6 @@ void get_transcription_parameters(t_container *container)
     get_comment_size(container->tokens, container->parameters);
 
     //exec code size
-    // current_token = get_last_element(tokens);
-    // if (!current_token)
-    //     invoke_error("cant get transcription parameters 3\n", NULL, NULL); //msg
-    // token_cast = (t_token *)current_token->stuff;
-    // parameters->exec_code_size = ((t_token *)current_token->stuff)->distance -
-    // parameters->name_size - parameters->comment_size;
     container->parameters->exec_code_size = container->size_of_tokens -
     container->parameters->name_size - container->parameters->comment_size;
     if (container->parameters->exec_code_size > CHAMP_MAX_SIZE)

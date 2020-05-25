@@ -303,3 +303,24 @@ const char *start_char_set, const char *end_char_set)
     *start = n;
     return (substring);
 }
+
+char get_char(int file)
+{
+    char character;
+
+    if (read(file, &character, 1) > 0)
+        return (character);
+    return (-1);
+}
+
+int skip_to_char(int file, char c)
+{
+    char current_char;
+
+    while ((current_char = get_char(file)) != -1)
+    {
+        if (current_char == c)
+            return (1);
+    }
+    return (0);
+}
