@@ -96,16 +96,26 @@ t_transcription_parameters *transcription_parameters)
 int get_arg_count(t_generic_list *token)
 {
     t_generic_list *current_token;
+    t_token *current_token_cast;
     int arg_count;
 
     arg_count = 0;
     current_token = token->next;
+
     if (!current_token)
         invoke_error("something is wrong\n", NULL, NULL);
-    while (((t_token *)current_token->stuff)->type == argument)
+    while (1)
     {
-        arg_count ++;
-        current_token = current_token->next;
+        current_token_cast = (t_token *)current_token->stuff;
+        if (current_token_cast->type == comma)
+            current_token = current_token->next;
+        else if (current_token_cast->type == argument)
+        {
+            arg_count ++;
+            current_token = current_token->next;
+        }
+        else
+            break ;
     }
     return (arg_count);
 }
@@ -115,13 +125,40 @@ void compare_arg_counts(t_generic_list *token)
     t_token *token_cast;
     enum e_operation_name operation_name;
     int arg_count;
-    // int table_arg_count;
 
     token_cast = (t_token *)token->stuff;
     operation_name = get_operation_name(token_cast);
     arg_count = get_arg_count(token);
     if (op_tab[operation_name].arg_count != arg_count)
         invoke_error("wrong number of arguments for token\n", token_cast, NULL);
+}
+
+int get_operation_code(t_token *token)
+{
+    int value;
+    int n;
+    enum e_operation_name operation_name;
+
+    operation_name = get_operation_name(token);
+    value = 0;
+    n = 0;
+    while (n < op_tab[operation_name].arg_count)
+    {
+        value = (value | op_tab[operation_name].arg_type[n]);
+        n ++;
+    }
+    return (value);
+}
+
+void compare_arg_type(t_token *previous_operation, t_token *current_token)
+{
+    unsigned int table_value;
+
+    if (!previous_operation)
+        invoke_error("unexpected error\n", NULL, NULL); //msg
+    table_value = get_operation_code(previous_operation);
+    if (table_value != (table_value | current_token->argument_type))
+        invoke_error ("argument type mismatch\n", previous_operation, NULL); //msg
 }
 
 t_generic_list *translate_tokens(t_container *container)
@@ -132,6 +169,7 @@ t_generic_list *translate_tokens(t_container *container)
     struct s_translation *translation;
     //
     t_token *current_token_cast;
+    t_token *previous_operation = NULL;
     //
     translation = container->translation;
     last_element = NULL;
@@ -149,6 +187,7 @@ t_generic_list *translate_tokens(t_container *container)
         else if (((t_token *)current_token->stuff)->type == operation)
         {
             compare_arg_counts(current_token);
+            previous_operation = (t_token *)current_token->stuff;
             token_translation = encode_operation((t_token *)current_token->stuff);
             translation->exec_code = concatenate_lists(translation->exec_code, token_translation, last_element);
             last_element = token_translation;
@@ -161,6 +200,7 @@ t_generic_list *translate_tokens(t_container *container)
         }
         else if (((t_token *)current_token->stuff)->type == argument)
         {
+            compare_arg_type(previous_operation, (t_token *)current_token->stuff);
             token_translation = encode_argument(current_token, container->tokens, container->labels);
             translation->exec_code = concatenate_lists(translation->exec_code, token_translation, last_element);
             last_element = token_translation;
