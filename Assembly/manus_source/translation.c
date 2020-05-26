@@ -93,15 +93,46 @@ t_transcription_parameters *transcription_parameters)
     return (translation);
 }
 
+int get_arg_count(t_generic_list *token)
+{
+    t_generic_list *current_token;
+    int arg_count;
+
+    arg_count = 0;
+    current_token = token->next;
+    if (!current_token)
+        invoke_error("something is wrong\n", NULL, NULL);
+    while (((t_token *)current_token->stuff)->type == argument)
+    {
+        arg_count ++;
+        current_token = current_token->next;
+    }
+    return (arg_count);
+}
+
+void compare_arg_counts(t_generic_list *token)
+{
+    t_token *token_cast;
+    enum e_operation_name operation_name;
+    int arg_count;
+    // int table_arg_count;
+
+    token_cast = (t_token *)token->stuff;
+    operation_name = get_operation_name(token_cast);
+    arg_count = get_arg_count(token);
+    if (op_tab[operation_name].arg_count != arg_count)
+        invoke_error("wrong number of arguments for token\n", token_cast, NULL);
+}
+
 t_generic_list *translate_tokens(t_container *container)
 {
     t_generic_list *current_token;
     t_generic_list *token_translation;
     t_generic_list *last_element;
-    // t_token *current_token_cast;
     struct s_translation *translation;
-
-    // translation = new_translation();
+    //
+    t_token *current_token_cast;
+    //
     translation = container->translation;
     last_element = NULL;
     current_token = container->tokens;
@@ -109,7 +140,7 @@ t_generic_list *translate_tokens(t_container *container)
         invoke_error("empty token list int translate tokens\n", NULL, NULL); //message?
     while (current_token)
     {
-        // current_token_cast = (t_token *)current_token->stuff;
+        current_token_cast = (t_token *)current_token->stuff;
 
         if (((t_token *)current_token->stuff)->type == champ_name)
             translation->champ_name = translate_champ_name(current_token, container->parameters);
@@ -117,6 +148,7 @@ t_generic_list *translate_tokens(t_container *container)
             translation->champ_comment = translate_champ_comment(current_token, container->parameters);
         else if (((t_token *)current_token->stuff)->type == operation)
         {
+            compare_arg_counts(current_token);
             token_translation = encode_operation((t_token *)current_token->stuff);
             translation->exec_code = concatenate_lists(translation->exec_code, token_translation, last_element);
             last_element = token_translation;

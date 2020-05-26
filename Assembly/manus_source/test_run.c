@@ -101,13 +101,23 @@ void translate_and_write_to_file(t_container *container, int visible)
 //disassmbler crashed on some input
 //add argument type checks!
 //retarder label names? :label: ? 
-
+// %: :%
 //do i need to check the file size?
+
+void check_arg_type(t_token *token)
+{
+    ;
+}
 
 void here_we_go(char *file_name)
 {
     // char *buffer;
     t_container *container;
+
+    //testing area
+    // short value = op_tab[ld_operation].arg_type[0];
+    // ft_printf("%d ", value);
+    // exit(1);
 
     container = new_container(file_name);
     //

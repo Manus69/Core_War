@@ -67,9 +67,9 @@ enum e_token_type
 enum e_argument_type
 {
     not_applicable,
-    registry,
-    direct,
-    indirect
+    registry = T_REG,
+    direct = T_DIR,
+    indirect = T_IND
 };
 
 struct s_line_token
