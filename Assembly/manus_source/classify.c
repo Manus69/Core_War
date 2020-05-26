@@ -130,14 +130,14 @@ void classify_token(t_token *current_token, t_token *previous_token)
     }
 }
 
-void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels)
+void classify_all_tokens(t_container *container)
 {
     t_token *current_token;
     t_token *previous_token;
     t_generic_list *current_item;
 
     previous_token = NULL;
-    current_item = tokens;
+    current_item = container->tokens;
 
     while (current_item)
     {
@@ -145,8 +145,14 @@ void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels)
             invoke_error("current token is bricked!\n previous token:", previous_token, NULL);
         current_token = current_item->stuff;
         classify_token(current_token, previous_token);
+        
         if (current_token->type == label)
-            *labels = add_to_list(*labels, current_token);
+            container->labels = add_to_list(container->labels, current_token);
+        else if (current_token->type == command_name)
+            set_status(container, current_token);
+        else if (current_token->type == command_comment)
+            set_status(container, current_token);
+
         current_item = current_item->next;
         previous_token = current_token;
     }

@@ -121,7 +121,7 @@ void here_we_go(char *file_name)
     // exit(1);
     //
 
-    classify_all_tokens(container->tokens, &container->labels);
+    classify_all_tokens(container);
     //
     // display_all_tokens(container->tokens);
     // exit(1);

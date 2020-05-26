@@ -76,7 +76,7 @@ void display_all_tokens(t_generic_list *tokens)
 }
 
 //dont forget to change the output file descriptor
-void invoke_error(const char *error_message, t_token *current_token, const char *current_string)
+int invoke_error(const char *error_message, t_token *current_token, const char *current_string)
 {
     //
     extern const char *g_file_name;
@@ -92,6 +92,7 @@ void invoke_error(const char *error_message, t_token *current_token, const char 
         ft_printf("%s", current_string);
     }
     exit(1);
+    return (1);
 }
 
 void display_byte_strings(t_generic_list *tokens)

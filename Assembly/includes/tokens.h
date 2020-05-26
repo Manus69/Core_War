@@ -42,6 +42,8 @@ typedef struct s_container t_container;
 typedef struct s_translation t_translation;
 typedef struct s_buffer t_buffer;
 
+typedef short t_token_list_status;
+
 enum e_token_type
 {
     null,
@@ -111,7 +113,8 @@ struct s_container
     t_generic_list *labels;
     t_generic_list *translated_tokens;
     t_transcription_parameters *parameters;
-    t_translation *translation;  
+    t_translation *translation;
+    t_token_list_status status;
 };
 
 enum e_string_writing_mode
@@ -126,6 +129,12 @@ struct s_buffer
     unsigned int current_content_size;
     unsigned int max_content_size;
     enum e_string_writing_mode mode;
+};
+
+enum e_status_code
+{
+    name_code,
+    comment_code,
 };
 
 #endif

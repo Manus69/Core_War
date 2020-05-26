@@ -253,7 +253,6 @@ void measure_token_size(t_generic_list *tokens)
 {
     enum e_operation_name operation_type;
     t_generic_list *current_token;
-    // t_token *current_operation;
     t_token *debug_token;
 
     current_token = tokens;

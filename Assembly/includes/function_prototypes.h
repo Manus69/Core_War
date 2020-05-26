@@ -41,7 +41,7 @@ void display_byte_strings(t_generic_list *tokens);
 void string_to_bytes(char *string, int file_descriptor);
 void tokens_to_bytes(t_generic_list *tokens, int file_descriptor);
 
-void invoke_error(const char *error_message, t_token *current_token, const char *current_string);
+int invoke_error(const char *error_message, t_token *current_token, const char *current_string);
 
 int     is_quotation_mark(char *string);
 int     is_label(char *string);
@@ -98,7 +98,7 @@ t_token *get_next_token(int *n, char *line);
 t_generic_list *line_to_tokens(char *line);
 
 void classify_token(t_token *current_token, t_token *previous_token);
-void classify_all_tokens(t_generic_list *tokens, t_generic_list **labels);
+void classify_all_tokens(t_container *container);
 void preprocess_all_tokens(t_generic_list *tokens);
 
 void here_we_go(char *str);
@@ -111,5 +111,8 @@ t_container *new_container(const char *file_name);
 t_buffer *new_buffer(unsigned int size);
 int add_to_buffer(t_buffer *buffer, char c);
 void append_buffer_to_tokens(t_container *container, t_buffer *buffer);
+
+//status
+void set_status(t_container *container, t_token *token);
 
 #endif
