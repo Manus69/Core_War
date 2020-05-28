@@ -36,10 +36,6 @@ void display_token(t_token *token)
         type = "comment";
     else if (token->type == new_line)
         type = "new_line";
-    // else if (token->type == opening_quotation_mark)
-    //     type = "opening_quotation_mark";
-    // else if (token->type == closing_quotation_mark)
-    //     type = "closing_quotation_mark";
     else if (token->type == comment_char)
         type = "comment_char";
     else if (token->type == comma)
@@ -121,8 +117,9 @@ void string_to_bytes(char *string, int file_descriptor)
         invoke_error("in string to bytes: string is broken:", NULL, string); //EMSG
     while (index < length)
     {
-        current_byte = ft_strsub(string, index, 2); //leak;
+        current_byte = ft_strsub(string, index, 2);
         ft_dprintf(file_descriptor, "%c", ft_atoi_base(current_byte, NUMBER_SYSTEM_BASE));
+        free(current_byte);
         index = index + 2;
     }
 }

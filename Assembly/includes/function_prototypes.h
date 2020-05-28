@@ -20,7 +20,7 @@ char *concat(char *lhs, char *rhs);
 int get_next_index(const char *string, int start, const char *char_set);
 char *get_next_substring(const char *string, int *start,
 const char *start_char_set, const char *end_char_set);
-int skip_to_char(int file, char c);
+char skip_to_char(int file, char c);
 char get_char(int file);
 
 //testing;

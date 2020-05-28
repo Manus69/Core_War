@@ -33,12 +33,11 @@ t_generic_list *get_null_padding(int number_of_bytes)
 t_generic_list *encode_string(t_token *token)
 {
     int n;
-    int q;
     t_generic_list *encoding;
     char *current_byte;
+    void *pointer;
 
     n = 0;
-    q = 0;
     encoding = NULL;
     if (!check_ascii_string(token->string))
         invoke_error("nonascii characters in string\n", NULL, token->string); //message
@@ -46,12 +45,14 @@ t_generic_list *encode_string(t_token *token)
     {       
         if (token->string[n] != '"')
         {
-            // current_byte = ft_itoa_base(token->string[n], NUMBER_SYSTEM_BASE);
             current_byte = ft_itoa_base_local(token->string[n], NUMBER_SYSTEM_BASE);
             if (ft_strlen(current_byte) < 2)
-                current_byte = concat("0", current_byte); //leak
+            {
+                pointer = current_byte;
+                current_byte = concat("0", current_byte);
+                free(pointer);
+            }
             encoding = add_to_list(encoding, current_byte);
-            q = q + 1;
         }
         n = n + 1;
     }

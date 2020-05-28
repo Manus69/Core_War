@@ -176,7 +176,6 @@ char *get_hex_with_padding(int decimal, int number_of_bytes)
     int resulting_string_length;
     char *hex_number;
     
-    // hex_number = ft_itoa_base(decimal, 16);
     hex_number = ft_itoa_base_local(decimal, NUMBER_SYSTEM_BASE);
     initial_length = ft_strlen(hex_number);
     resulting_string_length = number_of_bytes * 2;
@@ -199,28 +198,12 @@ char *get_hex_with_padding(int decimal, int number_of_bytes)
     return (resulting_string);
 }
 
-// char *decimal_to_hex(int n, int number_of_bytes)
-// {
-//     int decimal;
-//     char *binary_complement;
-//     char *number_string;
-
-//     if (n >= 0)
-//     {
-//         return (get_hex_with_padding(n, number_of_bytes));
-//     }
-//     n = -n;
-//     number_string = ft_itoa_base(n, 2);
-//     binary_complement = get_binary_complement(number_string, number_of_bytes); //leak;
-//     decimal = binary_to_decimal(binary_complement);
-//     return (get_hex_with_padding(decimal, number_of_bytes));
-// }
-
 char *decimal_to_hex_mk2(int n, int number_of_bytes) //using unsigned int; does it work correctly?
 {
     unsigned int decimal;
     char *binary_complement;
     char *number_string;
+    char *hex_with_padding;
 
     if (n >= 0)
     {
@@ -228,9 +211,12 @@ char *decimal_to_hex_mk2(int n, int number_of_bytes) //using unsigned int; does 
     }
     n = -n;
     number_string = ft_itoa_base(n, 2);
-    binary_complement = get_binary_complement(number_string, number_of_bytes); //leak;
+    binary_complement = get_binary_complement(number_string, number_of_bytes);
     decimal = binary_to_unsigned_decimal(binary_complement);
-    return (get_hex_with_padding(decimal, number_of_bytes));
+    hex_with_padding = get_hex_with_padding(decimal, number_of_bytes);
+    free(binary_complement);
+    free(number_string);
+    return (hex_with_padding);
 }
 
 long why_atol(const char *number_string) //hope i didnt make a blunder;
@@ -313,14 +299,14 @@ char get_char(int file)
     return (-1);
 }
 
-int skip_to_char(int file, char c)
+char skip_to_char(int file, char c)
 {
     char current_char;
 
     while ((current_char = get_char(file)) != -1)
     {
         if (current_char == c)
-            return (1);
+            return (current_char);
     }
-    return (0);
+    return (-1);
 }

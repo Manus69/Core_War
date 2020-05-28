@@ -106,6 +106,8 @@ int get_arg_count(t_generic_list *token)
         invoke_error("something is wrong\n", NULL, NULL);
     while (1)
     {
+        if (!current_token)
+            return (arg_count);
         current_token_cast = (t_token *)current_token->stuff;
         if (current_token_cast->type == comma)
             current_token = current_token->next;

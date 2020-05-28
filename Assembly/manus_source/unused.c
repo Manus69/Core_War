@@ -9,6 +9,16 @@ void check_terminator(int file_descriptor)
     lseek(file_descriptor, 0, SEEK_SET);
 }
 
+void check_last_character(int file) //should not be used
+{
+    char c;
+
+    lseek(file, -1, SEEK_END);
+    read(file, &c, 1);
+    if (c != '\n')
+        invoke_error("the file does not end with the new line\n", NULL, NULL);
+}
+
 void lines_to_tokens(t_container *container)
 {
     char *current_line;

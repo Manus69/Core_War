@@ -20,7 +20,11 @@ void read_file(t_container *container)
         if (is_a_member(g_comment_chars, current_char))
         {
             if (buffer->mode == regular)
-                skip_to_char(container->file_descriptor, '\n');
+            {
+                current_char = skip_to_char(container->file_descriptor, '\n');
+                add_to_buffer(buffer, current_char);
+                append_buffer_to_tokens(container, buffer);
+            }
             else if (buffer->mode == inside_string)
                 add_to_buffer(buffer, current_char);
         }
@@ -66,13 +70,14 @@ void read_file(t_container *container)
 void translate_and_write_to_file(t_container *container, int visible)
 {
     int file;
-    t_generic_list *translation;
+    // t_generic_list *translation;
     t_generic_list *prefix_item;
     char *new_file_name;
+    void *pointer;
 
-    translation = translate_tokens(container);
+    // translation = translate_tokens(container);
     prefix_item = new_generic_list(ft_strdup("00ea83f3"));
-    prefix_item = concatenate_lists(prefix_item, translation, NULL);
+    prefix_item = concatenate_lists(prefix_item, translate_tokens(container), NULL);
 
     if (visible)
     {
@@ -81,19 +86,20 @@ void translate_and_write_to_file(t_container *container, int visible)
     }
 
     new_file_name = trim_file_name(g_file_name);
-    new_file_name = replace_extension(new_file_name);  //leak;
+    pointer = new_file_name;
+    new_file_name = replace_extension(new_file_name);
     file = open(new_file_name, O_RDWR | O_CREAT, 0777);
     if (file < 0)
         invoke_error("open / create failure", NULL, NULL); // EMSG
     tokens_to_bytes(prefix_item, file); //change for a suitable file descriptor;
     ft_printf("Writing output program to %s\n", new_file_name); //make a string constant message?
     close(file);
+    free(pointer);
 }
 
 //where are the files supposed to go if one runs the pogramme from a different directory?
 //remove the file that might have been created after the error invocation;
 
-//.name and .comment can change places
 //clean up the structs and grammar
 //empty champ name? 
 //double label: \n label2 ?
@@ -103,11 +109,12 @@ void translate_and_write_to_file(t_container *container, int visible)
 //retarder label names? :label: ? 
 // %: :%
 //do i need to check the file size?
+//set the right buffer size
 
-void check_arg_type(t_token *token)
-{
-    ;
-}
+//check included system headers
+//non-ascii characters?
+
+//dont give retards an inch
 
 void here_we_go(char *file_name)
 {
