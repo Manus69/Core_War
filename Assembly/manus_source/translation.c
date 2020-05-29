@@ -15,6 +15,20 @@ struct s_translation *new_translation(void)
     return (translation);
 }
 
+void destroy_translation(t_translation **translation)
+{
+    
+    //
+    // display_all_tokens((*translation)->champ_comment);
+    // exit(1);
+    //
+    destroy_generic_list(&(*translation)->champ_name, NULL);
+    destroy_generic_list(&(*translation)->champ_comment, NULL);
+    destroy_generic_list(&(*translation)->exec_code, NULL);
+    free(*translation);
+    *translation = NULL;
+}
+
 t_generic_list *concatenate_translation(const struct s_translation *translation)
 {
     t_generic_list *resulting_list;
@@ -44,20 +58,18 @@ t_transcription_parameters *transcription_parameters)
 
 
     translation = encode_string((t_token *)current_token->stuff);
-    // translation = concatenate_lists(translation, current_token_translation, last_element);
     last_element = get_last_element(translation);
 
     //REMAINING BYTES
     if (transcription_parameters->comment_size > COMMENT_LENGTH)
         invoke_error("champ comment is too long;", (t_token *)current_token->stuff, NULL);
-    byte_string = get_null_padding(COMMENT_LENGTH - transcription_parameters->comment_size); //this is constant; this cant be right
+    byte_string = get_null_padding(COMMENT_LENGTH - transcription_parameters->comment_size);
     translation = concatenate_lists(translation, byte_string, last_element);
     last_element = get_last_element(byte_string);
 
     //PADDING
     byte_string = get_null_padding(PADDING_SIZE);
     translation = concatenate_lists(translation, byte_string, last_element);
-    // last_element = get_last_element(current_token_translation);
 
     return (translation);
 }

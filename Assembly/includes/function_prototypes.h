@@ -76,8 +76,6 @@ char *get_direct_number_encoding(t_token *token);
 t_generic_list *encode_argument(t_generic_list *token,
 t_generic_list *tokens, t_generic_list *labels);
 
-char *grab_n_bytes_from_address(t_generic_list *tokens, int address, int number_of_bytes);
-
 char *get_type_encoding(int number_of_arguments, ...);
 t_generic_list *encode_type(t_generic_list *token);
 enum e_operation_name get_operation_name(t_token *token);
@@ -91,11 +89,13 @@ t_generic_list *get_next_typed_token(t_generic_list *tokens, enum e_token_type t
 void get_transcription_parameters(t_container *container);
 
 struct s_translation *new_translation(void);
+void destroy_translation(t_translation **translation);
 t_generic_list *translate_tokens(t_container *container);
 
 t_token *new_token(char *string, enum e_token_type type);
-t_token *get_next_token(int *n, char *line);
-t_generic_list *line_to_tokens(char *line);
+void destroy_token(t_token **token_pointer);
+// t_token *get_next_token(int *n, char *line);
+// t_generic_list *line_to_tokens(char *line);
 
 void classify_token(t_token *current_token, t_token *previous_token);
 void classify_all_tokens(t_container *container);
@@ -104,8 +104,8 @@ void preprocess_all_tokens(t_generic_list *tokens);
 void here_we_go(char *str);
 
 //container
-// struct s_transcription_parameters *new_parameters(void);
 t_container *new_container(const char *file_name);
+void destroy_container(t_container **container);
 
 //buffer
 t_buffer *new_buffer(unsigned int size);

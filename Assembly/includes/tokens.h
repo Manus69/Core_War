@@ -50,8 +50,6 @@ enum e_token_type
     unknown,
     command_name,
     command_comment,
-    // opening_quotation_mark,
-    // closing_quotation_mark,
     string,
     champ_name,
     champ_comment,
@@ -133,8 +131,8 @@ struct s_buffer
 
 enum e_status_code
 {
-    name_code,
-    comment_code,
+    name_code = 1,
+    comment_code = 0,
 };
 
 #endif

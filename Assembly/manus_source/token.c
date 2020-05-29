@@ -19,76 +19,15 @@ t_token *new_token(char *string, enum e_token_type type)
     return (token);
 }
 
-t_token *get_next_token(int *n, char *line)
+void destroy_token(t_token **token)
 {
-    int m;
-    t_token *token;
-    char *substring;
-    char test;
-
-    token = NULL;
-    //
-    test = line[*n];
-    //
-    m = *n;
-    if (line[*n] == '"')
-    {
-        // *n = *n + 1;
-        
-        while (line[m] != '\0')
-        {
-            m = m + 1;
-            if (line[m] == '"')
-            {
-                m = m + 1;
-                break ;
-            } 
-        }
-    }
-    else if (is_a_member(g_separators, line[*n]))
-    {
-        substring = ft_strsub(line, *n, 1);
-        token = new_token(substring, 0);
-        *n = *n + 1;
-        return (token);
-    }
-    else
-    {
-        while (line[m] != '\0' && !is_a_member(g_separators, line[m]) && !is_a_member(g_spaces, line[m]))
-        {
-            test = line[m];
-            m = m + 1;
-        }
-    }
-    if (m - *n > 0)
-    {
-        substring = ft_strsub(line, *n, m - *n);
-        token = new_token(substring, 0);
-    }
-    *n = m;
     if (!token)
-        token = new_token("NULL TOKEN", null);
-    return (token);
+        return ;
+    if (!*token)
+        return ;
+    if ((*token)->type != null)
+        free((*token)->string);
+    free(*token);
+    *token = NULL;
 }
 
-t_generic_list *line_to_tokens(char *line)
-{
-    int n;
-    t_token *token;
-    t_generic_list *token_list;
-
-    n = 0;
-    token = NULL;
-    token_list = NULL;
-    while (line[n] != '\0')
-    {
-        while (is_a_member(g_spaces, line[n]))
-            n = n + 1;
-        token = get_next_token(&n, line);
-        //
-        // display_token(token);
-        //
-        token_list = add_to_list(token_list, token);
-    }
-    return (token_list);
-}

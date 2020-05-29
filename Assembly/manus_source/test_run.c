@@ -113,6 +113,7 @@ void translate_and_write_to_file(t_container *container, int visible)
 
 //check included system headers
 //non-ascii characters?
+//remove large integer checks
 
 //dont give retards an inch
 
@@ -151,4 +152,5 @@ void here_we_go(char *file_name)
     //
     get_transcription_parameters(container);
     translate_and_write_to_file(container, 0);
+    // destroy_container(&container);
 }

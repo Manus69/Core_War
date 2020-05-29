@@ -34,3 +34,13 @@ t_container *new_container(const char *file_name)
 
     return (container);
 }
+
+void destroy_container(t_container **container)
+{
+    destroy_generic_list(&(*container)->tokens, destroy_token);
+    destroy_generic_list(&(*container)->labels, destroy_token);
+    free((*container)->parameters);
+    destroy_translation(&(*container)->translation);
+    free(*container);
+    *container = NULL;
+}
