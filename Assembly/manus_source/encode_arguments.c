@@ -49,20 +49,29 @@ char *get_number_encoding(t_token *token)
 {
     char *number_encoding;
     char *value_substring;
+    void *pointer;
     int number;
 
+    pointer = NULL;
     if (token->string[0] == '-')
         value_substring = token->string;
     else if (is_a_member(DIGITS, token->string[0])) //starts with a digit - ergo a number? 
         value_substring = token->string;
     else
+    {
         value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
+        pointer = value_substring;
+    }
+        
     //
-    if (!check_number_string(value_substring))
-        invoke_error("argement is bigger than int in absolute value\n", token, NULL);
+    // if (!check_number_string(value_substring))
+    //     invoke_error("argement is bigger than int in absolute value\n", token, NULL);
     //
     number = ft_atoi(value_substring);
     number_encoding = decimal_to_hex_mk2(number, token->size);
+
+    free(pointer);
+    
     return (number_encoding);
 }
 
@@ -85,6 +94,9 @@ t_generic_list *tokens, t_generic_list *labels)
     label_name = ft_strsub(current_token->string, index, ft_strlen(current_token->string) - 1);
     distance = get_distance_to_the_label(token, label_name, tokens, labels);
     label_encoding = decimal_to_hex_mk2(distance, current_token->size);
+
+    free(label_name);
+
     return (label_encoding);
 }
 //

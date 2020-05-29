@@ -12,12 +12,14 @@ int get_absolute_distance_to_the_label(t_token *token, char *label_name, t_gener
     current_token = labels;
     while (current_token)
     {
-
         debug_token = (t_token *)current_token->stuff;
 
         substring = ft_strsub(debug_token->string, 0, ft_strlen(debug_token->string) - 1);
         if (ft_strcmp(substring, label_name) == 0)
+        {
+            free(substring);
             return (((t_token *)current_token->stuff)->distance - token->distance);
+        }
         free(substring);
         current_token = current_token->next;
     }

@@ -117,8 +117,10 @@ void translate_and_write_to_file(t_container *container, int visible)
 
 //check included system headers
 //non-ascii characters?
-//remove large integer checks
+//test how the large ints are encoded
 //tab at the end of file instead of \n? 
+//there is a free(NULL) in encode args
+
 
 //dont give retards an inch
 

@@ -19,6 +19,17 @@ char *get_string_of_chars(unsigned int size, char c)
     return (string);
 }
 
+char *join_and_free(char *lhs, char *rhs)
+{
+    char *result;
+
+    result = ft_strjoin(lhs, rhs);
+    free(lhs);
+    free(rhs);
+
+    return (result);
+}
+
 char *pad_with_chars(char *string, unsigned int pad_size, char c, int side)
 {
     char *result;
@@ -59,7 +70,7 @@ char *get_type_encoding(int number_of_arguments, ...)
     t_token *current_token;
     char *byte_string;
     char *byte;
-    char *saved_pointer;
+    // char *saved_pointer;
     int n;
 
     if (number_of_arguments > MAX_ARGS_NUMBER)
@@ -76,23 +87,15 @@ char *get_type_encoding(int number_of_arguments, ...)
             byte = ft_strdup("10");
         else if (current_token->argument_type == indirect)
             byte = ft_strdup("11");
-        else
-            byte = ft_strdup("xx");
-        saved_pointer = byte_string;
-        byte_string = ft_strjoin(byte_string, byte);
-        free(saved_pointer);
-        free(byte);
+
+        // saved_pointer = byte_string;
+        // byte_string = ft_strjoin(byte_string, byte);
+        // free(saved_pointer);
+        // free(byte);
+        byte_string = join_and_free(byte_string, byte);
         n = n + 1;
     }
-    while (n < MAX_ARGS_NUMBER)
-    {
-        byte = ft_strdup("00");
-        saved_pointer = byte_string;
-        byte_string = ft_strjoin(byte_string, byte);
-        free(saved_pointer);
-        free(byte);
-        n = n + 1;
-    }
+    byte_string = pad_with_chars(byte_string, (MAX_ARGS_NUMBER - n) * 2, '0', 1);
     n = binary_to_decimal(byte_string);
     va_end(arg_list);
     return (decimal_to_hex_mk2(n, 1));
@@ -149,6 +152,7 @@ static char *get_type_byte_code(t_generic_list *argument_list, int arg_count)
 t_generic_list *encode_type(t_generic_list *token)
 {
     enum e_operation_name operation;
+    t_generic_list *encoding_list_item;
     char *result;
     char *hex_encoding;
     void *pointer;
@@ -161,10 +165,13 @@ t_generic_list *encode_type(t_generic_list *token)
     pointer = result;
     pad_size = (MAX_ARGS_NUMBER - op_tab[operation].arg_count) * 2;
     result = pad_with_chars(result, pad_size, '0', 1);
-    free(pointer);
     hex_encoding = decimal_to_hex_mk2(binary_to_decimal(result), 1);
+    encoding_list_item = new_generic_list(hex_encoding);
 
-    return (new_generic_list(hex_encoding));
+    free(pointer);
+    free(result);
+    
+    return (encoding_list_item);
 }
 
 t_generic_list *encode_operation(t_token *token)
