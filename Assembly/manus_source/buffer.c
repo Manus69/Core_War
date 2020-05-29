@@ -15,6 +15,17 @@ t_buffer *new_buffer(unsigned int size)
     return (buffer);
 }
 
+void destroy_buffer(t_buffer **buffer)
+{
+    if (!buffer)
+        return ;
+    if (!*buffer)
+        return ;
+    free((*buffer)->content);
+    free(*buffer);
+    *buffer = NULL;
+}
+
 char *get_buffer_string(t_buffer *buffer)
 {
     char *string;
@@ -47,9 +58,12 @@ int add_to_buffer(t_buffer *buffer, char c)
 void append_buffer_to_tokens(t_container *container, t_buffer *buffer)
 {
     t_token *token;
+    void *pointer;
 
     if (buffer->current_content_size == 0)
         return ;
-    token = new_token(get_buffer_string(buffer), 0);
+    pointer = get_buffer_string(buffer);
+    token = new_token((char *)pointer, 0);
     container->tokens = add_to_list(container->tokens, token);
+    free(pointer);
 }

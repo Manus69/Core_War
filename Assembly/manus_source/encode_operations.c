@@ -4,6 +4,38 @@
 #include "generic_list.h"
 #include <stdarg.h>
 
+char *get_string_of_chars(unsigned int size, char c)
+{
+    char *string;
+    unsigned int n;
+
+    string = ft_strnew(size);
+    n = 0;
+    while (n < size)
+    {
+        string[n] = c;
+        n ++;
+    }
+    return (string);
+}
+
+char *pad_with_chars(char *string, unsigned int pad_size, char c, int side)
+{
+    char *result;
+    char *pad_string;
+
+    pad_string = get_string_of_chars(pad_size, c);
+    if (side == -1)
+        result = concat(pad_string, string);
+    else if (side == 1)
+        result = concat(string, pad_string);
+    else
+        invoke_error("shit!\n", NULL, NULL); //msg?
+    free(pad_string);
+
+    return (result);
+}
+
 char *get_zero_bit_string(int number_of_bytes)
 {
     int n;
@@ -80,57 +112,59 @@ enum e_operation_name get_operation_name(t_token *token)
     return (dummy_operation); //should never be executed;
 }
 
+static char *get_type_byte_code(t_generic_list *argument_list, int arg_count)
+{
+    // t_token *token_cast;
+    void *pointer;
+    char *byte_code;
+    char *byte;
+    t_generic_list *current_token;
+    
+    byte_code = ft_strdup("");
+    current_token = argument_list;
+    while (arg_count)
+    {
+        // token_cast = ((t_token *)argument_list->stuff);
+        if (((t_token *)current_token->stuff)->argument_type == registry)
+            byte = ft_strdup("01");
+        else if (((t_token *)current_token->stuff)->argument_type == direct)
+            byte = ft_strdup("10");
+        else if (((t_token *)current_token->stuff)->argument_type == indirect)
+            byte = ft_strdup("11");
+        else
+            byte = NULL;
+        if (byte)
+        {
+            pointer = byte_code;
+            byte_code = ft_strjoin(byte_code, byte);
+            arg_count --;
+            free(pointer);
+            free(byte);
+        }
+        current_token = current_token->next;
+    }
+    return (byte_code);
+}
+
 t_generic_list *encode_type(t_generic_list *token)
 {
     enum e_operation_name operation;
-    char *byte;
-    char *byte_string;
-    char *saved_pointer;
-    int n;
+    char *result;
+    char *hex_encoding;
+    void *pointer;
+    unsigned int pad_size;
 
-    t_token *debug_item;
-    debug_item = ((t_token *)token->stuff);
 
-    n = 0;
     operation = get_operation_name((t_token *)token->stuff);
     token = token->next;
-    byte_string = ft_strdup("");
-    while (n < op_tab[operation].arg_count)
-    {
-        if (!token)
-            invoke_error("cant encode operation type\n", debug_item, NULL);
+    result = get_type_byte_code(token, op_tab[operation].arg_count);
+    pointer = result;
+    pad_size = (MAX_ARGS_NUMBER - op_tab[operation].arg_count) * 2;
+    result = pad_with_chars(result, pad_size, '0', 1);
+    free(pointer);
+    hex_encoding = decimal_to_hex_mk2(binary_to_decimal(result), 1);
 
-        // debug_item = ((t_token *)token->stuff);
-
-        if (((t_token *)token->stuff)->argument_type == registry)
-            byte = ft_strdup("01");
-        else if (((t_token *)token->stuff)->argument_type == direct)
-            byte = ft_strdup("10");
-        else if (((t_token *)token->stuff)->argument_type == indirect)
-            byte = ft_strdup("11");
-        else
-        {
-            token = token->next;
-            continue ;
-        }
-        saved_pointer = byte_string;
-        byte_string = ft_strjoin(byte_string, byte);
-        free(saved_pointer);
-        free(byte);
-        token = token->next;
-        n = n + 1;
-    }
-    while (n < MAX_ARGS_NUMBER)
-    {
-        byte = ft_strdup("00");
-        saved_pointer = byte_string;
-        byte_string = ft_strjoin(byte_string, byte);
-        free(saved_pointer);
-        free(byte);
-        n = n + 1;
-    }
-    n = binary_to_decimal(byte_string);
-    return (new_generic_list(decimal_to_hex_mk2(n, 1)));
+    return (new_generic_list(hex_encoding));
 }
 
 t_generic_list *encode_operation(t_token *token)

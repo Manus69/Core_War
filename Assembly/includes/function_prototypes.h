@@ -93,7 +93,10 @@ void destroy_translation(t_translation **translation);
 t_generic_list *translate_tokens(t_container *container);
 
 t_token *new_token(char *string, enum e_token_type type);
+t_token *copy_token(t_token *token);
 void destroy_token(t_token **token_pointer);
+void destroy_token_mk2(void *pp_token);
+void destroy_token_dumb(void *token);
 // t_token *get_next_token(int *n, char *line);
 // t_generic_list *line_to_tokens(char *line);
 
@@ -109,6 +112,7 @@ void destroy_container(t_container **container);
 
 //buffer
 t_buffer *new_buffer(unsigned int size);
+void destroy_buffer(t_buffer **buffer);
 int add_to_buffer(t_buffer *buffer, char c);
 void append_buffer_to_tokens(t_container *container, t_buffer *buffer);
 

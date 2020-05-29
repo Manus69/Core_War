@@ -65,6 +65,7 @@ void read_file(t_container *container)
             add_to_buffer(buffer, current_char);
     }
     append_buffer_to_tokens(container, buffer);
+    destroy_buffer(&buffer);
 }
 
 void translate_and_write_to_file(t_container *container, int visible)
@@ -93,8 +94,11 @@ void translate_and_write_to_file(t_container *container, int visible)
         invoke_error("open / create failure", NULL, NULL); // EMSG
     tokens_to_bytes(prefix_item, file); //change for a suitable file descriptor;
     ft_printf("Writing output program to %s\n", new_file_name); //make a string constant message?
+
     close(file);
     free(pointer);
+    free(new_file_name);
+    destroy_generic_list(&prefix_item, free);
 }
 
 //where are the files supposed to go if one runs the pogramme from a different directory?
@@ -114,8 +118,10 @@ void translate_and_write_to_file(t_container *container, int visible)
 //check included system headers
 //non-ascii characters?
 //remove large integer checks
+//tab at the end of file instead of \n? 
 
 //dont give retards an inch
+
 
 void here_we_go(char *file_name)
 {
@@ -123,9 +129,7 @@ void here_we_go(char *file_name)
     t_container *container;
 
     //testing area
-    // short value = op_tab[ld_operation].arg_type[0];
-    // ft_printf("%d ", value);
-    // exit(1);
+
 
     container = new_container(file_name);
     //

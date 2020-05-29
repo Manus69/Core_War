@@ -25,6 +25,7 @@ t_generic_list *get_null_padding(int number_of_bytes)
     while (n < number_of_bytes)
     {
         encoding = add_to_list(encoding, ft_strdup("00"));
+        // encoding = add_to_list(encoding, "00");
         n = n + 1;
     }
     return (encoding);
