@@ -120,7 +120,7 @@ void translate_and_write_to_file(t_container *container, int visible)
 //test how the large ints are encoded
 //tab at the end of file instead of \n? 
 //there is a free(NULL) in encode args
-
+//barriere.s wtf?
 
 //dont give retards an inch
 
@@ -158,5 +158,5 @@ void here_we_go(char *file_name)
     //
     get_transcription_parameters(container);
     translate_and_write_to_file(container, 0);
-    // destroy_container(&container);
+    destroy_container(&container);
 }

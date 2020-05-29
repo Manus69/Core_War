@@ -38,9 +38,9 @@ t_container *new_container(const char *file_name)
 void destroy_container(t_container **container)
 {
     destroy_generic_list(&(*container)->tokens, destroy_token_dumb);
-    // destroy_generic_list(&(*container)->labels, NULL);
+    destroy_generic_list(&(*container)->labels, NULL);
     free((*container)->parameters);
-    destroy_translation(&(*container)->translation);
+    free((*container)->translation);
     free(*container);
     *container = NULL;
 }
