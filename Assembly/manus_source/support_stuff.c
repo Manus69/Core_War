@@ -78,7 +78,7 @@ char *get_binary_complement(char *binary_number, int number_of_bytes)
     final_number_of_bits = number_of_bytes * 8;
     initial_number_of_bits = ft_strlen(binary_number);
     if (final_number_of_bits < initial_number_of_bits)
-        return (NULL); //this is questionable;
+        initial_number_of_bits = final_number_of_bits; //this is questionable;
     complement = ft_strnew(final_number_of_bits);
     n = 0;
     while (n < initial_number_of_bits)
@@ -222,10 +222,12 @@ char *decimal_to_hex_mk2(int n, int number_of_bytes) //using unsigned int; does 
 long why_atol(const char *number_string) //hope i didnt make a blunder;
 {
     long result;
+    long previous_result;
     unsigned int n;
     int sign;
 
     result = 0;
+    previous_result = 0;
     sign = (number_string[0] == '-') ? -1 : 1;
     n = 0;
     while (number_string[n] != '\0')
@@ -238,6 +240,12 @@ long why_atol(const char *number_string) //hope i didnt make a blunder;
         if (!is_a_member(DIGITS, number_string[n]))
             return (sign * result);
         result = (result * 10) + ((int)number_string[n] - '0');
+
+        if (result >= previous_result)
+            previous_result = result;
+        else
+            return ((sign == -1) ? 0 : -1);
+        
         n = n + 1;
     }
     return (sign * result);
@@ -255,39 +263,6 @@ int check_number_string(const char *number_string)
     if (number < INT_MIN || number > INT_MAX)
         return (0);
     return (1);
-}
-
-int get_next_index(const char *string, int start, const char *char_set)
-{
-    int n;
-
-    n = start;
-    while (string[n] != '\0')
-    {
-        if (is_a_member(char_set, string[n]))
-            return (n);
-        n = n + 1;
-    }
-
-    //to avoid error checking;
-    invoke_error("string parsing errror\n", NULL, string);
-    //
-
-    return (-1);
-}
-
-char *get_next_substring(const char *string, int *start,
-const char *start_char_set, const char *end_char_set)
-{
-    int m;
-    int n;
-    char *substring;
-
-    m = get_next_index(string, *start, start_char_set);
-    n = get_next_index(string, m + 1, end_char_set);
-    substring = ft_strsub(string, m, n - m);
-    *start = n;
-    return (substring);
 }
 
 char get_char(int file)

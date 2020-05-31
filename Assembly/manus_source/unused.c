@@ -118,3 +118,88 @@ t_generic_list *line_to_tokens(char *line)
     }
     return (token_list);
 }
+
+
+t_generic_list *encode_string_tokens(t_generic_list *tokens)
+{
+    t_generic_list *current_token;
+    t_generic_list *encoding;
+    t_generic_list *string_encoding;
+    t_generic_list *last_element;
+
+    current_token = tokens;
+    encoding = NULL;
+    last_element = NULL;
+    while (((t_token *)current_token->stuff)->type == string)
+    {
+        string_encoding = encode_string((t_token *)current_token->stuff);
+        encoding = concatenate_lists(encoding, string_encoding, last_element);
+        last_element = get_last_element(string_encoding);
+        current_token = current_token->next;
+        if (((t_token *)current_token->stuff)->type == string)
+        {
+            last_element = add_to_list(last_element, ft_itoa_base(' ', NUMBER_SYSTEM_BASE));
+            last_element = last_element->next;
+        }
+    }
+    return (encoding);
+}
+
+
+void set_token_size(t_token *token) //this will not work, since arg size varies depending on the operation ffs
+{
+    enum e_operation_name operation_type;
+
+    if (token->type == string)
+        token->size = ft_strlen(token->string);
+    else if (token->type == operation)
+    {
+        operation_type = get_operation_name(token);
+        if (op_tab[operation_type].arg_code_flag == 1)
+            token->size = 2;
+        else
+            token->size = 1;
+    }
+    else if (token->type == argument)
+    {
+        if (token->argument_type == registry)
+            token->size = REG_ARG_SIZE;
+        else if (token->argument_type == direct)
+            token->size = DIR_ARG_SIZE;
+        else if (token->argument_type == indirect)
+            token->size = IND_ARG_SIZE;
+    }
+}
+
+int get_next_index(const char *string, int start, const char *char_set)
+{
+    int n;
+
+    n = start;
+    while (string[n] != '\0')
+    {
+        if (is_a_member(char_set, string[n]))
+            return (n);
+        n = n + 1;
+    }
+
+    //to avoid error checking;
+    invoke_error("string parsing errror\n", NULL, string, NULL);
+    //
+
+    return (-1);
+}
+
+char *get_next_substring(const char *string, int *start,
+const char *start_char_set, const char *end_char_set)
+{
+    int m;
+    int n;
+    char *substring;
+
+    m = get_next_index(string, *start, start_char_set);
+    n = get_next_index(string, m + 1, end_char_set);
+    substring = ft_strsub(string, m, n - m);
+    *start = n;
+    return (substring);
+}

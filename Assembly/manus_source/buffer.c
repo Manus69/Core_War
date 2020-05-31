@@ -40,12 +40,10 @@ int add_to_buffer(t_buffer *buffer, char c)
 {
     if (buffer->current_content_size == buffer->max_content_size)
     {
-        invoke_error("buffer is full\n", NULL, NULL); //msg
         return (0);
     }
     if (c < 0)
     {
-        invoke_error("forbidden character\n", NULL, &c); //msg
         return (0);
     }
 

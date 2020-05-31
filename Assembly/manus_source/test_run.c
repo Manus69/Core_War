@@ -61,6 +61,16 @@ void read_file(t_container *container)
             else if (buffer->mode == inside_string)
                 add_to_buffer(buffer, current_char);
         }
+        else if(!ft_isascii(current_char))
+        {
+            destroy_buffer(&buffer);
+            invoke_error("non ascii char\n", NULL, NULL, container); //msg
+        }
+        else if (current_char == '\0')
+        {
+            destroy_buffer(&buffer);
+            invoke_error("null character", NULL, NULL, container); //msg
+        }
         else
             add_to_buffer(buffer, current_char);
     }
@@ -71,12 +81,10 @@ void read_file(t_container *container)
 void translate_and_write_to_file(t_container *container, int visible)
 {
     int file;
-    // t_generic_list *translation;
     t_generic_list *prefix_item;
     char *new_file_name;
     void *pointer;
 
-    // translation = translate_tokens(container);
     prefix_item = new_generic_list(ft_strdup("00ea83f3"));
     prefix_item = concatenate_lists(prefix_item, translate_tokens(container), NULL);
 
@@ -86,12 +94,12 @@ void translate_and_write_to_file(t_container *container, int visible)
         // return ;
     }
 
-    new_file_name = trim_file_name(g_file_name);
+    new_file_name = trim_file_name(g_file_name, container);
     pointer = new_file_name;
-    new_file_name = replace_extension(new_file_name);
+    new_file_name = replace_extension(new_file_name, container);
     file = open(new_file_name, O_RDWR | O_CREAT, 0777);
     if (file < 0)
-        invoke_error("open / create failure", NULL, NULL); // EMSG
+        invoke_error("open / create failure", NULL, NULL, container); // EMSG
     tokens_to_bytes(prefix_item, file); //change for a suitable file descriptor;
     ft_printf("Writing output program to %s\n", new_file_name); //make a string constant message?
 
@@ -101,37 +109,37 @@ void translate_and_write_to_file(t_container *container, int visible)
     destroy_generic_list(&prefix_item, free);
 }
 
+/*questionable*/
+//tab at the end of file instead of \n? both asms work with \t right now; 
+//there is a free(NULL) in encode args
+//barriere.s wtf?
+//
+
 //where are the files supposed to go if one runs the pogramme from a different directory?
 //remove the file that might have been created after the error invocation;
 
-//clean up the structs and grammar
 //empty champ name? 
-//double label: \n label2 ?
 
 //disassmbler crashed on some input
-//add argument type checks!
-//retarder label names? :label: ? 
-// %: :%
+
 //do i need to check the file size?
 //set the right buffer size
 
 //check included system headers
 //non-ascii characters?
-//test how the large ints are encoded
-//tab at the end of file instead of \n? 
-//there is a free(NULL) in encode args
-//barriere.s wtf?
+
+//add checks for add to buffer calls, since it cant call invoke_error anymore
+//noidea.s
 
 //dont give retards an inch
 
 
 void here_we_go(char *file_name)
 {
-    // char *buffer;
     t_container *container;
 
     //testing area
-
+  
 
     container = new_container(file_name);
     //

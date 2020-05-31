@@ -20,8 +20,8 @@ void display_token(t_token *token)
         type = "command_name";
     else if (token->type == command_comment)
         type = "command_comment";
-    else if (token->type == string)
-        type = "string";
+    // else if (token->type == string)
+    //     type = "string";
     else if (token->type == champ_name)
         type = "champ_name";
     else if (token->type == champ_comment)
@@ -72,7 +72,8 @@ void display_all_tokens(t_generic_list *tokens)
 }
 
 //dont forget to change the output file descriptor
-int invoke_error(const char *error_message, t_token *current_token, const char *current_string)
+int invoke_error(const char *error_message, t_token *current_token,
+const char *current_string, t_container *container)
 {
     //
     extern const char *g_file_name;
@@ -80,13 +81,11 @@ int invoke_error(const char *error_message, t_token *current_token, const char *
     //
     ft_printf("%s", error_message);
     if (current_token)
-    {
         display_token(current_token);
-    }
     if (current_string)
-    {
         ft_printf("%s", current_string);
-    }
+    if (container)
+        destroy_container(&container);
     exit(1);
     return (1);
 }
@@ -113,8 +112,10 @@ void string_to_bytes(char *string, int file_descriptor)
 
     index = 0;
     length = ft_strlen(string);
+
     if (length == 0 || (length % 2) != 0)
-        invoke_error("in string to bytes: string is broken:", NULL, string); //EMSG
+        invoke_error("in string to bytes: string is broken:", NULL, string, NULL); //this is a debug message, it will go away
+
     while (index < length)
     {
         current_byte = ft_strsub(string, index, 2);

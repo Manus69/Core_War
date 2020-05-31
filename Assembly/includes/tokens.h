@@ -50,7 +50,7 @@ enum e_token_type
     unknown,
     command_name,
     command_comment,
-    string,
+    // string,
     champ_name,
     champ_comment,
     label,

@@ -50,7 +50,7 @@ t_generic_list *concatenate_translation(const struct s_translation *translation)
 }
 
 t_generic_list *translate_champ_comment(t_generic_list *current_token,
-t_transcription_parameters *transcription_parameters)
+t_container *container)
 {
     t_generic_list *translation;
     t_generic_list *last_element;
@@ -61,9 +61,9 @@ t_transcription_parameters *transcription_parameters)
     last_element = get_last_element(translation);
 
     //REMAINING BYTES
-    if (transcription_parameters->comment_size > COMMENT_LENGTH)
-        invoke_error("champ comment is too long;", (t_token *)current_token->stuff, NULL);
-    byte_string = get_null_padding(COMMENT_LENGTH - transcription_parameters->comment_size);
+    if (container->parameters->comment_size > COMMENT_LENGTH)
+        invoke_error("champ comment is too long;", (t_token *)current_token->stuff, NULL, container);
+    byte_string = get_null_padding(COMMENT_LENGTH - container->parameters->comment_size);
     translation = concatenate_lists(translation, byte_string, last_element);
     last_element = get_last_element(byte_string);
 
@@ -75,7 +75,7 @@ t_transcription_parameters *transcription_parameters)
 }
 
 t_generic_list *translate_champ_name(t_generic_list *current_token,
-t_transcription_parameters *transcription_parameters)
+t_container *container)
 {
     t_generic_list *translation;
     t_generic_list *byte_string;
@@ -88,8 +88,8 @@ t_transcription_parameters *transcription_parameters)
 
     //REMAINING BYTES
     if (name_length > PROG_NAME_LENGTH)
-        invoke_error("champ name is too long;", (t_token *)current_token->stuff, NULL);
-    byte_string = get_null_padding(PROG_NAME_LENGTH - transcription_parameters->name_size); //is this right?
+        invoke_error("champ name is too long;", (t_token *)current_token->stuff, NULL, container);
+    byte_string = get_null_padding(PROG_NAME_LENGTH - container->parameters->name_size); //is this right?
     translation = concatenate_lists(translation, byte_string, last_element);
     last_element = get_last_element(byte_string);
 
@@ -99,7 +99,7 @@ t_transcription_parameters *transcription_parameters)
     last_element = get_last_element(byte_string);
 
     //EXEC CODE SIZE
-    byte_string = new_generic_list(decimal_to_hex_mk2(transcription_parameters->exec_code_size, 4));
+    byte_string = new_generic_list(decimal_to_hex_mk2(container->parameters->exec_code_size, 4));
     translation = concatenate_lists(translation, byte_string, last_element);
 
     return (translation);
@@ -114,8 +114,6 @@ int get_arg_count(t_generic_list *token)
     arg_count = 0;
     current_token = token->next;
 
-    if (!current_token)
-        invoke_error("something is wrong\n", NULL, NULL);
     while (1)
     {
         if (!current_token)
@@ -134,7 +132,7 @@ int get_arg_count(t_generic_list *token)
     return (arg_count);
 }
 
-void compare_arg_counts(t_generic_list *token)
+void compare_arg_counts(t_generic_list *token, t_container *container)
 {
     t_token *token_cast;
     enum e_operation_name operation_name;
@@ -144,7 +142,7 @@ void compare_arg_counts(t_generic_list *token)
     operation_name = get_operation_name(token_cast);
     arg_count = get_arg_count(token);
     if (op_tab[operation_name].arg_count != arg_count)
-        invoke_error("wrong number of arguments for token\n", token_cast, NULL);
+        invoke_error("wrong number of arguments for token\n", token_cast, NULL, container);
 }
 
 int get_operation_code(t_token *token)
@@ -164,15 +162,15 @@ int get_operation_code(t_token *token)
     return (value);
 }
 
-void compare_arg_type(t_token *previous_operation, t_token *current_token)
+void compare_arg_type(t_token *previous_operation, t_token *current_token, t_container *container)
 {
     unsigned int table_value;
 
     if (!previous_operation)
-        invoke_error("unexpected error\n", NULL, NULL); //msg
+        invoke_error("unexpected error\n", NULL, NULL, container); //msg
     table_value = get_operation_code(previous_operation);
     if (table_value != (table_value | current_token->argument_type))
-        invoke_error ("argument type mismatch\n", previous_operation, NULL); //msg
+        invoke_error ("argument type mismatch\n", previous_operation, NULL, container); //msg
 }
 
 t_generic_list *translate_tokens(t_container *container)
@@ -188,19 +186,17 @@ t_generic_list *translate_tokens(t_container *container)
     translation = container->translation;
     last_element = NULL;
     current_token = container->tokens;
-    if (!current_token)
-        invoke_error("empty token list int translate tokens\n", NULL, NULL); //message?
     while (current_token)
     {
         current_token_cast = (t_token *)current_token->stuff;
 
         if (((t_token *)current_token->stuff)->type == champ_name)
-            translation->champ_name = translate_champ_name(current_token, container->parameters);
+            translation->champ_name = translate_champ_name(current_token, container);
         else if (((t_token *)current_token->stuff)->type == champ_comment)
-            translation->champ_comment = translate_champ_comment(current_token, container->parameters);
+            translation->champ_comment = translate_champ_comment(current_token, container);
         else if (((t_token *)current_token->stuff)->type == operation)
         {
-            compare_arg_counts(current_token);
+            compare_arg_counts(current_token, container);
             previous_operation = (t_token *)current_token->stuff;
             token_translation = encode_operation((t_token *)current_token->stuff);
             translation->exec_code = concatenate_lists(translation->exec_code, token_translation, last_element);
@@ -214,8 +210,8 @@ t_generic_list *translate_tokens(t_container *container)
         }
         else if (((t_token *)current_token->stuff)->type == argument)
         {
-            compare_arg_type(previous_operation, (t_token *)current_token->stuff);
-            token_translation = encode_argument(current_token, container->tokens, container->labels);
+            compare_arg_type(previous_operation, (t_token *)current_token->stuff, container);
+            token_translation = encode_argument(current_token, container->tokens, container);
             translation->exec_code = concatenate_lists(translation->exec_code, token_translation, last_element);
             last_element = token_translation;
         }

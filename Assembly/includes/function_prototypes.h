@@ -30,8 +30,8 @@ long why_atol(const char *number_string);
 int check_number_string(const char *number_string);
 //
 
-char *replace_extension(const char *file_name);
-char *trim_file_name(const char *file_name);
+char *replace_extension(const char *file_name, t_container *container);
+char *trim_file_name(const char *file_name, t_container *container);
 
 void display_token(t_token *token);
 void display_all_tokens(t_generic_list *tokens);
@@ -41,7 +41,8 @@ void display_byte_strings(t_generic_list *tokens);
 void string_to_bytes(char *string, int file_descriptor);
 void tokens_to_bytes(t_generic_list *tokens, int file_descriptor);
 
-int invoke_error(const char *error_message, t_token *current_token, const char *current_string);
+int invoke_error(const char *error_message, t_token *current_token,
+const char *current_string, t_container *t_container);
 
 int     is_quotation_mark(char *string);
 int     is_label(char *string);
@@ -71,17 +72,17 @@ t_generic_list *get_null_padding(int number_of_bytes);
 t_generic_list *encode_string_tokens(t_generic_list *tokens);
 t_generic_list *encode_operation(t_token *token);
 
-char *get_registry_encoding(t_token *token);
+char *get_registry_encoding(t_token *token, t_container *container);
 char *get_direct_number_encoding(t_token *token);
 t_generic_list *encode_argument(t_generic_list *token,
-t_generic_list *tokens, t_generic_list *labels);
+t_generic_list *tokens, t_container *container);
 
 char *get_type_encoding(int number_of_arguments, ...);
 t_generic_list *encode_type(t_generic_list *token);
 enum e_operation_name get_operation_name(t_token *token);
 
 int get_distance_to_the_label(t_generic_list *token, char *label_name,
-t_generic_list *tokens, t_generic_list *labels);
+t_generic_list *tokens, t_container *container);
 void set_global_distance(t_container *container);
 int get_distance_to_the_previous_operation(t_token *token, t_generic_list *token_list);
 

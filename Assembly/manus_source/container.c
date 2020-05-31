@@ -16,13 +16,17 @@ struct s_transcription_parameters *new_parameters(void)
 t_container *new_container(const char *file_name)
 {
     t_container *container;
+    int file_descriptor;
+
+    
+    file_descriptor = open(file_name, O_RDONLY);
+    if (file_descriptor < 0)
+        invoke_error(FILE_ERROR_MESSAGE, NULL, NULL, NULL);
 
     container = mallokill(sizeof(t_container));
 
+    container->file_descriptor = file_descriptor;
     container->file_name = file_name;
-    container->file_descriptor = open(file_name, O_RDONLY);
-    if (container->file_descriptor < 0)
-        invoke_error(FILE_ERROR_MESSAGE, NULL, NULL);
     container->size_of_tokens = -1;
     container->new_file_name = NULL;
     container->tokens = NULL;

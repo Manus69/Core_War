@@ -40,8 +40,6 @@ char *pad_with_chars(char *string, unsigned int pad_size, char c, int side)
         result = concat(pad_string, string);
     else if (side == 1)
         result = concat(string, pad_string);
-    else
-        invoke_error("shit!\n", NULL, NULL); //msg?
     free(pad_string);
 
     return (result);
@@ -70,11 +68,11 @@ char *get_type_encoding(int number_of_arguments, ...)
     t_token *current_token;
     char *byte_string;
     char *byte;
-    // char *saved_pointer;
     int n;
 
-    if (number_of_arguments > MAX_ARGS_NUMBER)
-        invoke_error("can't get the type encoding\n", NULL, NULL); //msg
+    // if (number_of_arguments > MAX_ARGS_NUMBER)
+    //     invoke_error("can't get the type encoding\n", NULL, NULL); //msg
+
     n = 0;
     byte_string = ft_strdup("");
     va_start(arg_list, number_of_arguments);
@@ -88,10 +86,6 @@ char *get_type_encoding(int number_of_arguments, ...)
         else if (current_token->argument_type == indirect)
             byte = ft_strdup("11");
 
-        // saved_pointer = byte_string;
-        // byte_string = ft_strjoin(byte_string, byte);
-        // free(saved_pointer);
-        // free(byte);
         byte_string = join_and_free(byte_string, byte);
         n = n + 1;
     }

@@ -70,23 +70,6 @@ int				is_on_the_list(t_generic_list *generic_list, void *stuff)
 	return (0);
 }
 
-// void			destroy_generic_list(t_generic_list **generic_list)
-// {
-// 	t_generic_list **current;
-// 	t_generic_list *next;
-
-// 	if (!generic_list || !*generic_list)
-// 		return ;
-// 	current = generic_list;
-// 	while (*current)
-// 	{
-// 		next = (*current)->next;
-// 		free(*current);
-// 		*current = NULL;
-// 		*current = next;
-// 	}
-// }
-
 void			destroy_generic_list(t_generic_list **list, void (*destructor)(void *))
 {
 	t_generic_list **current;

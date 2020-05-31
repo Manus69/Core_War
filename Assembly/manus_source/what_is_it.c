@@ -34,12 +34,14 @@ int     check_substring_characters(char *string, int start_index, int end_index,
 
 int     is_label(char *string)
 {
-    int n;
+    unsigned int n;
+    unsigned int length;
 
     if (!generic_token_string_check(string, LABEL_CHAR, 0))
         return (0);
     n = 0;
-    while (string[n] != LABEL_CHAR)
+    length = ft_strlen(string);
+    while (n < length - 1)
     {
         if (!is_a_member(LABEL_CHARS, string[n]))
             return (0);
@@ -224,30 +226,68 @@ int     check_argument_token(t_token *token)
     return (0);
 }
 
-void set_token_size(t_token *token) //this will not work, since arg size varies depending on the operation ffs
+static void measure_op_size(t_token *token)
 {
     enum e_operation_name operation_type;
 
-    if (token->type == string)
-        token->size = ft_strlen(token->string);
-    else if (token->type == operation)
-    {
-        operation_type = get_operation_name(token);
-        if (op_tab[operation_type].arg_code_flag == 1)
-            token->size = 2;
-        else
-            token->size = 1;
-    }
-    else if (token->type == argument)
-    {
-        if (token->argument_type == registry)
-            token->size = REG_ARG_SIZE;
-        else if (token->argument_type == direct)
-            token->size = DIR_ARG_SIZE;
-        else if (token->argument_type == indirect)
-            token->size = IND_ARG_SIZE;
-    }
+    operation_type = get_operation_name(token);
+    if (op_tab[operation_type].arg_code_flag == 1)
+        token->size = 2;
+    else
+        token->size = 1;
 }
+
+static void measure_arg_size(t_token *token)
+{
+    enum e_operation_name operation_type;
+
+    operation_type = get_operation_name(token);
+
+    if (token->argument_type == registry)
+        token->size = REGISTRY_NAME_SIZE;
+    else if (token->argument_type == direct)
+        token->size = op_tab[operation_type].size_t_dir ? DIRECT_ADDRESS_SIZE : DIRECT_VALUE_SIZE;
+    else if (token->argument_type == indirect)
+        token->size = INDIRECT_VALUE_SIZE;
+}
+
+// void measure_token_size(t_generic_list *tokens)
+// {
+//     enum e_operation_name operation_type;
+
+//     t_generic_list *current_token;
+//     t_token *debug_token;
+
+//     current_token = tokens;
+//     while (current_token)
+//     {
+//         debug_token = ((t_token *)current_token->stuff);
+
+//         operation_type = get_operation_name(debug_token);
+
+//         if (debug_token->type == champ_name || debug_token->type == champ_comment)
+//             debug_token->size = ft_strlen(debug_token->string) - 2;
+//         else if (debug_token->type == operation)
+//         {
+//             // measure_op_size(debug_token);
+//             if (op_tab[operation_type].arg_code_flag == 1)
+//                 debug_token->size = 2;
+//             else
+//                 debug_token->size = 1;
+//         }
+//         else if (debug_token->type == argument)
+//         {
+//             // measure_arg_size(debug_token);
+//             if (debug_token->argument_type == registry)
+//                 debug_token->size = REGISTRY_NAME_SIZE;
+//             else if (debug_token->argument_type == direct)
+//                 debug_token->size = op_tab[operation_type].size_t_dir ? DIRECT_ADDRESS_SIZE : DIRECT_VALUE_SIZE;
+//             else if (debug_token->argument_type == indirect)
+//                 debug_token->size = INDIRECT_VALUE_SIZE;
+//         }
+//         current_token = current_token->next;
+//     }
+// }
 
 void measure_token_size(t_generic_list *tokens)
 {
@@ -260,11 +300,8 @@ void measure_token_size(t_generic_list *tokens)
     while (current_token)
     {
         debug_token = ((t_token *)current_token->stuff);
-        if (debug_token->type == string) //this has to go maybe?
-        {
-            debug_token->size = ft_strlen(debug_token->string) - 2; //scary;
-        }
-        else if (debug_token->type == champ_name || debug_token->type == champ_comment)
+        
+        if (debug_token->type == champ_name || debug_token->type == champ_comment)
         {
             debug_token->size = ft_strlen(debug_token->string) - 2;
         }
@@ -275,6 +312,8 @@ void measure_token_size(t_generic_list *tokens)
                 debug_token->size = 2;
             else
                 debug_token->size = 1;
+            //
+            // measure_op_size(debug_token);
         }
         else if (debug_token->type == argument)
         {
@@ -284,6 +323,8 @@ void measure_token_size(t_generic_list *tokens)
                 debug_token->size = op_tab[operation_type].size_t_dir ? DIRECT_ADDRESS_SIZE : DIRECT_VALUE_SIZE;
             else if (debug_token->argument_type == indirect)
                 debug_token->size = INDIRECT_VALUE_SIZE;
+            //
+            measure_arg_size(debug_token);
         }
         current_token = current_token->next;
     }
