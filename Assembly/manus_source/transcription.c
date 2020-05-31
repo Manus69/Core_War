@@ -26,7 +26,7 @@ void get_name_size(t_generic_list *tokens, t_container *container)
 
     current_token = get_next_typed_token(tokens, champ_name);
     if (!current_token)
-        invoke_error("cant get transcription parameters\n", NULL, NULL, container); //get the right message;
+        invoke_error("cant get transcription parameters\n", NULL, NULL, container); //msg
     token_cast = (t_token *)current_token->stuff;
     container->parameters->name_size = ft_strlen(((t_token *)current_token->stuff)->string) - 2;
     if (container->parameters->name_size > PROG_NAME_LENGTH)

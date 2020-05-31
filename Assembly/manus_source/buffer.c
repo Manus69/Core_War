@@ -11,6 +11,7 @@ t_buffer *new_buffer(unsigned int size)
     buffer->current_content_size = 0;
     buffer->max_content_size = size;
     buffer->mode = regular;
+    buffer->status = green;
 
     return (buffer);
 }
@@ -40,16 +41,18 @@ int add_to_buffer(t_buffer *buffer, char c)
 {
     if (buffer->current_content_size == buffer->max_content_size)
     {
+        buffer->status = red;
         return (0);
     }
     if (c < 0)
     {
+        buffer->status = red;
         return (0);
     }
 
     buffer->content[buffer->current_content_size] = c;
     buffer->current_content_size ++;
-
+    buffer->status = green;
     return (1);
 }
 

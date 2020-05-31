@@ -9,75 +9,6 @@
 
 const char *g_file_name;
 
-void read_file(t_container *container)
-{
-    t_buffer *buffer;
-    char current_char;
-
-    buffer = new_buffer(BUFFER_SIZE);
-    while ((current_char = get_char(container->file_descriptor)) != -1)
-    {
-        if (is_a_member(g_comment_chars, current_char))
-        {
-            if (buffer->mode == regular)
-            {
-                current_char = skip_to_char(container->file_descriptor, '\n');
-                add_to_buffer(buffer, current_char);
-                append_buffer_to_tokens(container, buffer);
-            }
-            else if (buffer->mode == inside_string)
-                add_to_buffer(buffer, current_char);
-        }
-        else if (current_char == '"')
-        {
-            if (buffer->mode == regular)
-            {
-                append_buffer_to_tokens(container, buffer);
-                add_to_buffer(buffer, current_char);
-                buffer->mode = inside_string;
-            }
-            else if (buffer->mode == inside_string)
-            {
-                add_to_buffer(buffer, current_char);
-                append_buffer_to_tokens(container, buffer);
-                buffer->mode = regular;
-            }
-        }
-        else if (is_a_member(g_spaces, current_char))
-        {
-            if (buffer->mode == regular)
-                append_buffer_to_tokens(container, buffer);
-            else if (buffer->mode == inside_string)
-                add_to_buffer(buffer, current_char);
-        }
-        else if (current_char == '\n' || current_char == SEPARATOR_CHAR)
-        {
-            if (buffer->mode == regular)
-            {
-                append_buffer_to_tokens(container, buffer);
-                add_to_buffer(buffer, current_char);
-                append_buffer_to_tokens(container, buffer);
-            }
-            else if (buffer->mode == inside_string)
-                add_to_buffer(buffer, current_char);
-        }
-        else if(!ft_isascii(current_char))
-        {
-            destroy_buffer(&buffer);
-            invoke_error("non ascii char\n", NULL, NULL, container); //msg
-        }
-        else if (current_char == '\0')
-        {
-            destroy_buffer(&buffer);
-            invoke_error("null character", NULL, NULL, container); //msg
-        }
-        else
-            add_to_buffer(buffer, current_char);
-    }
-    append_buffer_to_tokens(container, buffer);
-    destroy_buffer(&buffer);
-}
-
 void translate_and_write_to_file(t_container *container, int visible)
 {
     int file;
@@ -127,6 +58,7 @@ void translate_and_write_to_file(t_container *container, int visible)
 
 //check included system headers
 //non-ascii characters?
+//malloc return value checks? 
 
 //add checks for add to buffer calls, since it cant call invoke_error anymore
 //noidea.s

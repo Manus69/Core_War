@@ -50,7 +50,6 @@ enum e_token_type
     unknown,
     command_name,
     command_comment,
-    // string,
     champ_name,
     champ_comment,
     label,
@@ -68,6 +67,24 @@ enum e_argument_type
     registry = T_REG,
     direct = T_DIR,
     indirect = T_IND
+};
+
+enum e_status_code
+{
+    name_code = 1,
+    comment_code = 0,
+};
+
+enum e_buffer_status
+{
+    green,
+    red,
+};
+
+enum e_string_writing_mode
+{
+    regular,
+    inside_string,
 };
 
 struct s_line_token
@@ -115,24 +132,13 @@ struct s_container
     t_token_list_status status;
 };
 
-enum e_string_writing_mode
-{
-    regular,
-    inside_string,
-};
-
 struct s_buffer
 {
     char *content;
     unsigned int current_content_size;
     unsigned int max_content_size;
     enum e_string_writing_mode mode;
-};
-
-enum e_status_code
-{
-    name_code = 1,
-    comment_code = 0,
+    enum e_buffer_status status;
 };
 
 #endif

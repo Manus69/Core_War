@@ -41,8 +41,10 @@ void display_byte_strings(t_generic_list *tokens);
 void string_to_bytes(char *string, int file_descriptor);
 void tokens_to_bytes(t_generic_list *tokens, int file_descriptor);
 
-int invoke_error(const char *error_message, t_token *current_token,
+int invoke_error(const char *error_message, t_token *token,
 const char *current_string, t_container *t_container);
+void invoke_destruction(const char *error_message, t_token *token,
+const char *current_string, t_container *container);
 
 int     is_quotation_mark(char *string);
 int     is_label(char *string);
@@ -119,5 +121,8 @@ void append_buffer_to_tokens(t_container *container, t_buffer *buffer);
 
 //status
 void set_status(t_container *container, t_token *token);
+
+//read file
+void read_file(t_container *container);
 
 #endif
