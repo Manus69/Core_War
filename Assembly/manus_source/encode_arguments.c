@@ -17,34 +17,7 @@ char *get_registry_encoding(t_token *token, t_container *container)
     return (registry_encoding);
 }
 
-char *get_direct_number_encoding(t_token *token)
-{
-    char *number_encoding;
-    char *value_substring;
-
-    value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
-    number_encoding = decimal_to_hex_mk2(ft_atoi(value_substring), token->size);
-    return (number_encoding);
-}
-
-char *get_direct_label_encoding(t_generic_list *token,
-t_generic_list *tokens, t_container *contaner)
-{
-    int distance;
-    char *label_name;
-    t_token *current_token;
-    char *label_encoding;
-    
-    current_token = ((t_token *)token->stuff);
-    label_name = ft_strsub(current_token->string, 2, ft_strlen(current_token->string) - 1);
-    distance = get_distance_to_the_label(token, label_name, tokens, contaner);
-    label_encoding = decimal_to_hex_mk2(distance, current_token->size);
-    return (label_encoding);
-}
-
-//
 //this works the same way for both direct and indirect values as its implemented right now;
-//
 char *get_number_encoding(t_token *token)
 {
     char *number_encoding;
@@ -62,15 +35,8 @@ char *get_number_encoding(t_token *token)
         value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
         pointer = value_substring;
     }
-        
-    //
-    // if (!check_number_string(value_substring))
-    //     invoke_error("argement is bigger than int in absolute value\n", token, NULL);
-    //
-    // number = ft_atoi(value_substring);
     number = (int)why_atol(value_substring);
     number_encoding = decimal_to_hex_mk2(number, token->size);
-
     free(pointer);
     
     return (number_encoding);
@@ -100,9 +66,6 @@ t_generic_list *tokens, t_container *container)
 
     return (label_encoding);
 }
-//
-//
-//
 
 t_generic_list *encode_argument(t_generic_list *token,
 t_generic_list *tokens, t_container *container)
@@ -121,7 +84,7 @@ t_generic_list *tokens, t_container *container)
         else
             encoding_string = get_number_encoding(current_token);
     }
-    else if (current_token->argument_type == indirect) //this might be wrong;
+    else if (current_token->argument_type == indirect)
     {
         if (current_token->string[0] == LABEL_CHAR)
             encoding_string = get_label_encoding(token, tokens, container);

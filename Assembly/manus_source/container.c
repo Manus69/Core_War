@@ -18,7 +18,6 @@ t_container *new_container(const char *file_name)
     t_container *container;
     int file_descriptor;
 
-    
     file_descriptor = open(file_name, O_RDONLY);
     if (file_descriptor < 0)
         invoke_error(FILE_ERROR_MESSAGE, NULL, NULL, NULL);

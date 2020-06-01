@@ -58,10 +58,12 @@ void translate_and_write_to_file(t_container *container, int visible)
 
 //check included system headers
 //non-ascii characters?
-//malloc return value checks? 
+//malloc return value checks? use mallokill consistently?
+//ft_memchr() memccpy() send off compiler warnings;
 
 //add checks for add to buffer calls, since it cant call invoke_error anymore
 //noidea.s
+//leaks on invalid input?
 
 //dont give retards an inch
 
@@ -84,7 +86,6 @@ void here_we_go(char *file_name)
     // display_all_tokens(container->tokens);
     // exit(1);
     //
-
     classify_all_tokens(container);
     //
     // display_all_tokens(container->tokens);

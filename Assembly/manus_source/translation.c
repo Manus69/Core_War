@@ -17,11 +17,6 @@ struct s_translation *new_translation(void)
 
 void destroy_translation(t_translation **translation)
 {
-    
-    //
-    // display_all_tokens((*translation)->champ_comment);
-    // exit(1);
-    //
     destroy_generic_list(&(*translation)->champ_name, NULL);
     destroy_generic_list(&(*translation)->champ_comment, NULL);
     destroy_generic_list(&(*translation)->exec_code, NULL);

@@ -104,7 +104,7 @@ int     is_command(char *string)
     return (is_string_in_array(string, g_command_names));
 }
 
-int     is_command_name(char *string) //this is shit design;
+int     is_command_name(char *string)
 {
     if (ft_strcmp(string, g_command_names[0]) == 0)
         return (1);
@@ -224,16 +224,6 @@ int     check_argument_token(t_token *token)
         return (1);
     }
     return (0);
-}
-
-static int measure_op_size(t_token *token) //this wont work 
-{
-    enum e_operation_name operation_type;
-
-    operation_type = get_operation_name(token);
-    if (op_tab[operation_type].arg_code_flag == 1)
-        return (2);
-    return (1);
 }
 
 static void measure_arg_size(t_token *token, enum e_operation_name operation_type)

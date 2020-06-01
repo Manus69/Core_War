@@ -26,7 +26,8 @@ int get_absolute_distance_to_the_label(t_token *token, char *label_name, t_conta
     return (invoke_error("the label is missing\n", debug_token, NULL, container));
 }
 
-int get_distance_to_the_previous_operation(t_token *token, t_generic_list *token_list) //returns a positive number;
+//returns a positive number;
+int get_distance_to_the_previous_operation(t_token *token, t_generic_list *token_list) 
 {
     t_generic_list *current_token;
     t_token *previous_operation;
@@ -81,7 +82,7 @@ t_generic_list *tokens, t_container *container)
     distance_to_the_previous_operation = get_distance_to_the_previous_operation(current_token, tokens);
 
     if (distance_to_the_previous_operation < 0)
-        invoke_error("this is broken!", current_token, NULL, NULL); //debug message;
+        invoke_error(UNEXPECTED_ERROR, current_token, NULL, NULL);
 
     return (absolute_distance + distance_to_the_previous_operation);
 }

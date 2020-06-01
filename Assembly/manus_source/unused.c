@@ -1,3 +1,5 @@
+#include "function_prototypes.h"
+
 void check_terminator(int file_descriptor)
 {
     char buffer[1];
@@ -202,4 +204,60 @@ const char *start_char_set, const char *end_char_set)
     substring = ft_strsub(string, m, n - m);
     *start = n;
     return (substring);
+}
+
+char *get_type_encoding(int number_of_arguments, ...)
+{
+    va_list arg_list;
+    t_token *current_token;
+    char *byte_string;
+    char *byte;
+    int n;
+
+    n = 0;
+    byte_string = ft_strdup("");
+    va_start(arg_list, number_of_arguments);
+    while (n < number_of_arguments)
+    {
+        current_token = va_arg(arg_list, t_token *);
+        if (current_token->argument_type == registry)
+            byte = ft_strdup("01");
+        else if (current_token->argument_type == direct)
+            byte = ft_strdup("10");
+        else if (current_token->argument_type == indirect)
+            byte = ft_strdup("11");
+
+        byte_string = join_and_free(byte_string, byte);
+        n = n + 1;
+    }
+    byte_string = pad_with_chars(byte_string, (MAX_ARGS_NUMBER - n) * 2, '0', 1);
+    n = binary_to_decimal(byte_string);
+    va_end(arg_list);
+    return (decimal_to_hex_mk2(n, 1));
+}
+
+char *get_direct_label_encoding(t_generic_list *token,
+t_generic_list *tokens, t_container *contaner)
+{
+    int distance;
+    char *label_name;
+    t_token *current_token;
+    char *label_encoding;
+    
+    current_token = ((t_token *)token->stuff);
+    label_name = ft_strsub(current_token->string, 2, ft_strlen(current_token->string) - 1);
+    distance = get_distance_to_the_label(token, label_name, tokens, contaner);
+    label_encoding = decimal_to_hex_mk2(distance, current_token->size);
+    return (label_encoding);
+}
+
+
+char *get_direct_number_encoding(t_token *token)
+{
+    char *number_encoding;
+    char *value_substring;
+
+    value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
+    number_encoding = decimal_to_hex_mk2(ft_atoi(value_substring), token->size);
+    return (number_encoding);
 }

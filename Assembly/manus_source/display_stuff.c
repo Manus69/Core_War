@@ -20,8 +20,6 @@ void display_token(t_token *token)
         type = "command_name";
     else if (token->type == command_comment)
         type = "command_comment";
-    // else if (token->type == string)
-    //     type = "string";
     else if (token->type == champ_name)
         type = "champ_name";
     else if (token->type == champ_comment)
@@ -32,12 +30,8 @@ void display_token(t_token *token)
         type = "operation";
     else if (token->type == argument)
         type = "argument";
-    else if (token->type == comment)
-        type = "comment";
     else if (token->type == new_line)
         type = "new_line";
-    else if (token->type == comment_char)
-        type = "comment_char";
     else if (token->type == comma)
         type = "comma";
     ft_printf("Token at %p\nString: %s\n", token, token->type == new_line ? "\\n" : token->string);

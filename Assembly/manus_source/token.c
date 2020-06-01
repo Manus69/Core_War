@@ -31,34 +31,6 @@ t_token *copy_token(t_token *token)
     return (token_copy);
 }
 
-void destroy_token(t_token **token)
-{
-    if (!token)
-        return ;
-    if (!*token)
-        return ;
-    if ((*token)->type != null)
-        free((*token)->string);
-    free(*token);
-    *token = NULL;
-}
-
-void destroy_token_mk2(void *pp_token)
-{
-    char **pp_string;
-    t_token **pp_token_cast;
-
-    if (!pp_token)
-        return ;
-    pp_token_cast = (t_token **)pp_token;
-    pp_string = &(*pp_token_cast)->string;
-    if ((*pp_token_cast)->type != null)
-        free((*pp_token_cast)->string);
-    *pp_string = NULL;
-    free(*pp_token_cast);
-    *pp_token_cast = NULL;
-}
-
 void destroy_token_dumb(void *token)
 {
     t_token *token_cast;

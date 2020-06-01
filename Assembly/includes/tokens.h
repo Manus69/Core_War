@@ -8,6 +8,7 @@
 # define FILE_ERROR_MESSAGE "Could not open the file;\n"
 # define CLASSIFICATION_ERROR_MESSAGE "Could not classify token:\n"
 # define ARGUMENT_ERROR_MESSAGE "Argument error;\n"
+# define UNEXPECTED_ERROR "Something is wrong;\n"
 # define SPACES " \t"
 # define DIGITS "0123456789"
 # define NUMBER_SYSTEM_BASE 16
@@ -56,8 +57,8 @@ enum e_token_type
     operation,
     argument,
     comma,
-    comment_char,
-    comment,
+    // comment_char,
+    // comment,
     new_line
 };
 

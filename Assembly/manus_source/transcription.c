@@ -5,6 +5,7 @@ t_generic_list *get_next_typed_token(t_generic_list *tokens, enum e_token_type t
 {
     t_generic_list *current_token;
     t_token *token_cast;
+    static const char *message = "the programm quit unexpectedly\nlast token:";
 
     token_cast = NULL;
     current_token = tokens->next;
@@ -15,7 +16,7 @@ t_generic_list *get_next_typed_token(t_generic_list *tokens, enum e_token_type t
             return (current_token);
         current_token = current_token->next;
     }
-    invoke_error("the programm quit unexpectedly\nlast token:", token_cast, NULL, NULL);
+    invoke_error(message, token_cast, NULL, NULL);
     return (NULL);
 }
 
@@ -23,30 +24,36 @@ void get_name_size(t_generic_list *tokens, t_container *container)
 {
     t_generic_list *current_token;
     t_token *token_cast;
+    static const char *message = "champ name is too big";
 
     current_token = get_next_typed_token(tokens, champ_name);
     if (!current_token)
-        invoke_error("cant get transcription parameters\n", NULL, NULL, container); //msg
+        invoke_error(UNEXPECTED_ERROR, NULL, NULL, container);
     token_cast = (t_token *)current_token->stuff;
-    container->parameters->name_size = ft_strlen(((t_token *)current_token->stuff)->string) - 2;
+    container->parameters->name_size = ft_strlen(token_cast->string) - 2;
     if (container->parameters->name_size > PROG_NAME_LENGTH)
-        invoke_error("champ name is too big", NULL, NULL, container); //msg
+        invoke_error(message, NULL, NULL, container); //msg
 }
 
 void get_comment_size(t_generic_list *tokens, t_container *container)
 {
     t_generic_list *current_token;
+    t_token *token_cast;
+    static const char *message = "champ comment is too long";
 
     current_token = get_next_typed_token(tokens, champ_comment);
     if (!current_token)
-        invoke_error("cant get transcription parameters 2\n", NULL, NULL, container); //msg
-    container->parameters->comment_size = ft_strlen(((t_token *)current_token->stuff)->string) - 2;
+        invoke_error(UNEXPECTED_ERROR, NULL, NULL, container);
+    token_cast = (t_token *)current_token->stuff;
+    container->parameters->comment_size = ft_strlen(token_cast->string) - 2;
     if (container->parameters->comment_size > COMMENT_LENGTH)
-        invoke_error("champ comment is too long", NULL, NULL, container); //message
+        invoke_error(message, NULL, NULL, container); //message
 }
 
 void get_transcription_parameters(t_container *container)
 {
+    static const char *message = "champ code is too long\n";
+
     //champ name
     get_name_size(container->tokens, container);
     
@@ -57,5 +64,5 @@ void get_transcription_parameters(t_container *container)
     container->parameters->exec_code_size = container->size_of_tokens -
     container->parameters->name_size - container->parameters->comment_size;
     if (container->parameters->exec_code_size > CHAMP_MAX_SIZE)
-        invoke_error("champ code is too long\n", NULL, NULL, container);
+        invoke_error(message, NULL, NULL, container);
 }

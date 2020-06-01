@@ -66,9 +66,9 @@ void read_file(t_container *container)
         else if (current_char == '\n' || current_char == SEPARATOR_CHAR)
             process_separators(container, buffer, current_char);
         else if(!ft_isascii(current_char))
-            invoke_destruction("non ascii char\n", NULL, NULL, container); //msg
+            invoke_error("non ascii char\n", NULL, NULL, container); //msg
         else if (current_char == '\0')
-            invoke_destruction("null character", NULL, NULL, container); //msg
+            invoke_error("null character", NULL, NULL, container); //msg
         else
             add_to_buffer(buffer, current_char);
         if (buffer->status == red)

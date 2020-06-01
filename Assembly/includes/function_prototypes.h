@@ -125,4 +125,8 @@ void set_status(t_container *container, t_token *token);
 //read file
 void read_file(t_container *container);
 
+char *pad_with_chars(char *string, unsigned int pad_size, char c, int side);
+
+char *join_and_free(char *lhs, char *rhs);
+
 #endif

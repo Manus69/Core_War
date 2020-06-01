@@ -19,6 +19,7 @@ const char *current_string, t_container *container)
     return (1);
 }
 
+//what the fuck is this? 
 void invoke_destruction(const char *error_message, t_token *token,
 const char *current_string, t_container *container)
 {

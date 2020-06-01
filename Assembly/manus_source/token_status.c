@@ -1,4 +1,3 @@
-#include "tokens.h"
 #include "function_prototypes.h"
 
 enum e_status_code get_status_code(t_token *token)
@@ -7,7 +6,7 @@ enum e_status_code get_status_code(t_token *token)
         return (name_code);
     if (token->type == command_comment)
         return (comment_code);
-    return (invoke_error("wrong token\n", token, NULL, NULL)); //should never be executed
+    return (invoke_error(UNEXPECTED_ERROR, token, NULL, NULL));
 }
 
 void set_status(t_container *container, t_token *token)
@@ -18,6 +17,6 @@ void set_status(t_container *container, t_token *token)
     status_code = get_status_code(token);
     shifted_number = (1 << status_code);
     if (container->status & shifted_number)
-        invoke_error("token duplication\n", token, NULL, container);
+        invoke_error("token duplication\n", token, NULL, container); //msg
     container->status = (container->status | shifted_number);
 }
