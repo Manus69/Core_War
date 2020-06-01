@@ -48,6 +48,29 @@ static void classify_after_operation(t_token *current_token, t_token *previous_t
         current_token->type = new_line;
 }
 
+int     check_argument_token(t_token *token)
+{
+    if (is_registry(token->string))
+    {
+        token->type = argument;
+        token->argument_type = registry;
+        return (1);
+    }
+    else if (is_direct(token->string))
+    {
+        token->type = argument;
+        token->argument_type = direct;
+        return (1);
+    }
+    else if (is_indirect(token->string))
+    {
+        token->type = argument;
+        token->argument_type = indirect;
+        return (1);
+    }
+    return (0);
+}
+
 void classify_token(t_token *current_token, t_token *previous_token)
 {
     if (!current_token)

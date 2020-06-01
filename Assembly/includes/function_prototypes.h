@@ -9,6 +9,13 @@
 
 void	*mallokill(size_t size);
 
+//check
+int     generic_token_string_check(char *string, char character, int start);
+int     check_substring_characters(char *string, int start_index, int end_index, char *set);
+int     check_symbol(char *string, char symbol);
+
+
+int     is_string_in_array(char *string, char **string_array);
 int is_a_member(const char *set, char c);
 int is_in_string(const char *string, char c);
 char *get_binary_complement(char *binary_number, int number_of_bytes);
