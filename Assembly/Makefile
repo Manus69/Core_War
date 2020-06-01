@@ -11,8 +11,9 @@ ASM_DIR := manus_source
 SRCS_ASM := test_run.c buffer.c classify.c classify_token.c container.c \
 		display_stuff.c distances.c encode_arguments.c encode_operations.c encode_type.c\
 		encode_strings.c error.c file_stuff.c generic_list.c mallokill.c \
-		read_file.c support_fluff.c support_scuff.c support_snuff.c support_stuff.c token.c token_status.c\
-		transcription.c translation.c what_is_it.c
+		read_file.c support_fluff.c support_scuff.c support_snuff.c support_stuff.c token.c \
+		token_status.c transcription.c translation.c translation_aggravation.c \
+		translation_frustration.c translation_vexation.c what_is_it.c
 SSRCS_ASM :=$(addprefix $(ASM_DIR)/, $(SRCS_ASM))
 SSRCS_P := $(addprefix $(P_DIR)/, $(SRCS_P))
 OBJECTS_P := $(SSRCS_P:.c=.o)
