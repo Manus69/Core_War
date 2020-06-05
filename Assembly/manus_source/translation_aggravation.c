@@ -32,17 +32,6 @@ t_generic_list *current_token, t_token *previous_operation, t_generic_list **las
     container->translation->exec_code = 
     concatenate_lists(container->translation->exec_code, token_translation, *last_element);
     *last_element = token_translation;
-
-    //
-    //
-    char *cast = (char *)token_translation->stuff;
-    //
-    unsigned int length = ft_strlen(cast);
-    if (length % 2 != 0 && length != 0)
-    {
-        invoke_error("translation error\n", (t_token *)current_token->stuff, cast, NULL);
-    }
-    //
 }
 
 t_generic_list *translate_tokens(t_container *container)
@@ -57,9 +46,6 @@ t_generic_list *translate_tokens(t_container *container)
     current_token = container->tokens;
     while (current_token)
     {
-        //
-        // t_token *cast = (t_token *)current_token->stuff;
-        //
         if (((t_token *)current_token->stuff)->type == champ_name)
             container->translation->champ_name = translate_champ_name(current_token, container);
         else if (((t_token *)current_token->stuff)->type == champ_comment)
