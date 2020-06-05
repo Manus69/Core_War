@@ -73,7 +73,7 @@ char *get_hex_with_padding(int decimal, int number_of_bytes)
     return (resulting_string);
 }
 
-char *decimal_to_hex_mk2(int n, int number_of_bytes) //using unsigned int; does it work correctly?
+char *decimal_to_hex_mk2(int n, int number_of_bytes)
 {
     unsigned int decimal;
     char *binary_complement;

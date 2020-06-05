@@ -43,7 +43,6 @@ void translate_and_write_to_file(t_container *container, int visible)
 /*questionable*/
 //tab at the end of file instead of \n? both asms work with \t right now; 
 //there is a free(NULL) in encode args
-//barriere.s wtf?
 //
 
 //where are the files supposed to go if one runs the pogramme from a different directory?
@@ -62,7 +61,7 @@ void translate_and_write_to_file(t_container *container, int visible)
 //ft_memchr() memccpy() send off compiler warnings;
 
 //add checks for add to buffer calls, since it cant call invoke_error anymore
-//noidea.s
+//test number arguments in different byte ranges with different signs; make it systematic
 //leaks on invalid input?
 
 //dont give retards an inch
@@ -73,7 +72,11 @@ void here_we_go(char *file_name)
     t_container *container;
 
     //testing area
-  
+    // char *str = "30469912";
+    // int n = (int)why_atol(str);
+    // short cast = (short)n;
+    // char *result = decimal_to_hex_mk2((short)n, 2);
+    // exit(1);
 
     container = new_container(file_name);
     //

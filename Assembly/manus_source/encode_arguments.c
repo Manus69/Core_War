@@ -36,9 +36,13 @@ char *get_number_encoding(t_token *token)
         pointer = value_substring;
     }
     number = (int)why_atol(value_substring);
-    number_encoding = decimal_to_hex_mk2(number, token->size);
+
+    if (token->size == 2)
+        number_encoding = decimal_to_hex_mk2((short)number, token->size);
+    else
+        number_encoding = decimal_to_hex_mk2(number, token->size);
+
     free(pointer);
-    
     return (number_encoding);
 }
 
