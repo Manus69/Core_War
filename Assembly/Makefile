@@ -9,8 +9,8 @@ SRCS_P := ft_binary_read.c open_octo_file.c\
 SRC := asm_main.c fork_to_read.c take_name.c
 ASM_DIR := manus_source
 SRCS_ASM := test_run.c buffer.c check.c classify.c classify_token.c container.c \
-		display_stuff.c display_token.c distances.c encode_arguments.c encode_operations.c encode_type.c\
-		encode_strings.c error.c file_stuff.c generic_list.c is_it_good.c is_it_fun.c \
+		display_stuff.c display_token.c distances.c encode_arguments.c encode_operations.c encode_type.c \
+		encode_strings.c error.c file_stuff.c generic_list.c generic_list_part2.c is_it_good.c is_it_fun.c \
 		mallokill.c measure_size.c \
 		read_file.c support_fluff.c support_scuff.c support_snuff.c support_stuff.c token.c \
 		token_status.c transcription.c translation.c translation_aggravation.c \

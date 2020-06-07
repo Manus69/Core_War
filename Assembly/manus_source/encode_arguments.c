@@ -1,6 +1,7 @@
 #include "tokens.h"
 #include "function_prototypes.h"
 #include "operation_table.h"
+#include "constants.h"
 
 char			*get_registry_encoding(t_token *token, t_container *container)
 {

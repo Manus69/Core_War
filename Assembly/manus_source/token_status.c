@@ -1,4 +1,5 @@
 #include "function_prototypes.h"
+#include "constants.h"
 
 enum e_status_code	get_status_code(t_token *token)
 {

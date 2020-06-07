@@ -29,6 +29,7 @@ char *trim_file_name(const char *file_name, t_container *container)
 	slash_index = is_in_string(file_name, '/');
 	if (slash_index == -1)
 		return (ft_strdup(file_name));
-	resulting_string = ft_strsub(file_name, slash_index + 1, length - slash_index - 1);
+	resulting_string =
+	ft_strsub(file_name, slash_index + 1, length - slash_index - 1);
 	return (resulting_string);
 }

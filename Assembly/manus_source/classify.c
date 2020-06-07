@@ -1,6 +1,7 @@
 #include "generic_list.h"
 #include "operation_table.h"
 #include "function_prototypes.h"
+#include "constants.h"
 
 static void classification_check(t_container *container, t_token *current_token)
 {

@@ -7,9 +7,9 @@
 #include "function_prototypes.h"
 
 
-const char *g_file_name;
+const char  *g_file_name;
 
-void translate_and_write_to_file(t_container *container, int visible)
+void        translate_and_write_to_file(t_container *container, int visible)
 {
     int file;
     t_generic_list *prefix_item;
@@ -69,16 +69,11 @@ void translate_and_write_to_file(t_container *container, int visible)
 //dont give retards an inch
 
 
-void here_we_go(char *file_name)
+void        here_we_go(char *file_name)
 {
     t_container *container;
 
     //testing area
-    // char *str = "30469912";
-    // int n = (int)why_atol(str);
-    // short cast = (short)n;
-    // char *result = decimal_to_hex_mk2((short)n, 2);
-    // exit(1);
 
     container = new_container(file_name);
     //

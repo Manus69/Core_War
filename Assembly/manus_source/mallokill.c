@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-unsigned int why_length(const char *string)
+unsigned int	why_length(const char *string)
 {
 	unsigned int n;
 
@@ -11,10 +11,10 @@ unsigned int why_length(const char *string)
 	return (n);
 }
 
-void	*mallokill(size_t size)
+void			*mallokill(size_t size)
 {
-	void *result;
-	static const char *message = "Malloc failed; Exiting;\n";
+	void				*result;
+	static const char	*message = "Malloc failed; Exiting;\n";
 
 	result = malloc(size);
 	if (!result)

@@ -1,5 +1,6 @@
 #include "function_prototypes.h"
 #include "ft_printf.h"
+#include "constants.h"
 
 void		display_all_tokens(t_generic_list *tokens)
 {

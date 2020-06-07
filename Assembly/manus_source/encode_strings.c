@@ -1,5 +1,6 @@
 #include "tokens.h"
 #include "function_prototypes.h"
+#include "constants.h"
 
 int				check_ascii_string(const char *string)
 {
@@ -44,7 +45,7 @@ t_generic_list	*encode_string(t_token *token)
 		if (token->string[n] != '"')
 		{
 			current_byte =
-			ft_itoa_base_local(token->string[n],NUMBER_SYSTEM_BASE);
+			ft_itoa_base_local(token->string[n], NUMBER_SYSTEM_BASE);
 			if (ft_strlen(current_byte) < 2)
 			{
 				pointer = current_byte;
