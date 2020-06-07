@@ -1,4 +1,15 @@
-//////////++++++
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   print_some_wight_aruc.c                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/07 16:46:53 by selly             #+#    #+#             */
+/*   Updated: 2019/11/07 16:47:21 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "printf.h"
 
 void		write_new_one(int i, int *n)
@@ -27,7 +38,7 @@ void		if_minus_off_part_one(int **s, unsigned long d, int count)
 	new = *s;
 	if (d == 0)
 		while (new[1]-- > count)
-			ft_putchar_mod('0',  new);
+			ft_putchar_mod('0', new);
 	else
 	{
 		if (new[4] == 6)
@@ -41,5 +52,21 @@ void		if_minus_off_part_one(int **s, unsigned long d, int count)
 		}
 		while (new[1]-- > count)
 			ft_putchar_mod('0', new);
+	}
+}
+
+void		write_o_x_o(int **s)
+{
+	int		*new;
+
+	new = *s;
+	if (new[4] == 6)
+		ft_putstr_mod(" 0", new[7]);
+	else
+	{
+		if (new[4] == 9)
+			ft_putstr_mod("0X", new[7]);
+		else
+			ft_putstr_mod("0x", new[7]);
 	}
 }

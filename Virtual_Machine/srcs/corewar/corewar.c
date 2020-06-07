@@ -1,45 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   corewar.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/01 16:43:06 by selly             #+#    #+#             */
+/*   Updated: 2020/06/01 16:43:48 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
-void	inroduction(t_arena *head, int count, int nice)
+t_arena			*fill_arena(t_arena *vm, int players, int x)
 {
-	int		i;
-
-	i = 0;
-	if (nice) {
-		ft_printf("{green}Introducing contestants...{eoc}\n");
-		while (i < count)
-		{
-			if (i + 1 == 1)
-				ft_printf("{red}* :smile_1  ");
-			else if (i + 1 == 2)
-				ft_printf("{red}* :smile_7  ");
-			else if (i + 1 == 3)
-				ft_printf("{red}* :smile_5  ");
-			else if (i + 1 == 4)
-				ft_printf("{red}* :smile_8  ");
-			ft_printf("Player %d: {blue}weighing %d bytes, ", head->ch[i]->number, head->ch[i]->pl_size);
-			ft_printf("\"%s\" (\"%s\")!{eoc}\n", head->ch[i]->name, head->ch[i]->comment);
-			i++;
-		}
-	}
-	else
-	{
-		ft_printf("Introducing contestants...\n");
-		while (i < count)
-		{
-			ft_printf("Player %d: weighing %d bytes, ", head->ch[i]->number, head->ch[i]->pl_size);
-			ft_printf("\"%s\" (\"%s\")!\n", head->ch[i]->name, head->ch[i]->comment);
-			i++;
-		}
-	}
-}
-
-t_arena 	*fill_arena(t_arena *vm, int players, int x)
-{
-	int 	count;
-	int 	a;
-	int 	i;
-	int 	index;
+	int			count;
+	int			a;
+	int			i;
+	int			index;
 
 	count = 1;
 	index = 0;
@@ -47,10 +25,10 @@ t_arena 	*fill_arena(t_arena *vm, int players, int x)
 	{
 		a = index;
 		i = 0;
-		while (i < vm->ch[x]->pl_size)
+		while (i < vm->ch[x]->size)
 		{
 			vm->map[a] = vm->ch[x]->code[i];
-			vm->color[a] = vm->ch[x]->number;
+			vm->color[a] = vm->ch[x]->num;
 			i++;
 			a++;
 		}
@@ -61,10 +39,10 @@ t_arena 	*fill_arena(t_arena *vm, int players, int x)
 	return (vm);
 }
 
-t_arena		*get_slider(t_arena *vm)
+t_arena			*get_slider(t_arena *vm)
 {
-	int 	i;
-	int 	place;
+	int			i;
+	int			place;
 	t_slider	*sl;
 	t_slider	*buf;
 
@@ -85,10 +63,10 @@ t_arena		*get_slider(t_arena *vm)
 	return (vm);
 }
 
-t_arena		*ready_to_start(t_arena *vm)
+t_arena			*ready_to_start(t_arena *vm)
 {
-	int 	i;
-	t_champion	*last;
+	int			i;
+	t_champ	*last;
 
 	if (vm->print_type == 0)
 		vm->print_type = 1;
@@ -96,25 +74,25 @@ t_arena		*ready_to_start(t_arena *vm)
 	i = 0;
 	while (i < vm->players)
 	{
-		vm->ch[last->number - 1] = last;
+		vm->ch[last->num - 1] = last;
 		last = last->next;
 		i++;
 	}
 	if (!vm->visual)
-		inroduction(vm, vm->players, vm->nice);
+		inroduction(vm->ch, vm->players, vm->nice, 0);
 	vm = fill_arena(vm, vm->players, 0);
 	vm = get_slider(vm);
 	return (vm);
 }
 
-int main(int argc, char **argv)
+int				main(int argc, char **argv)
 {
 	t_arena		*vm;
 
 	vm = init_arena();
 	if (argc >= 2)
 	{
-		vm = check_input(argv, argc, vm);
+		vm = check_input(argv, argc - 1, vm);
 		vm = ready_to_start(vm);
 		if (!vm->visual)
 			start_war(vm);

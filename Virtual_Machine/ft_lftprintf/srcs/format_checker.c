@@ -6,11 +6,11 @@
 /*   By: selly <selly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/22 14:26:06 by selly             #+#    #+#             */
-/*   Updated: 2019/11/04 15:55:54 by mnarwhal         ###   ########.fr       */
+/*   Updated: 2019/11/07 16:45:46 by selly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h" /////////+++++++++
+#include "printf.h"
 
 int			check_flag(const char **p, int flag_id)
 {
@@ -113,29 +113,4 @@ int			check_type(const char **p)
 	}
 	*p = new;
 	return (type_id);
-}
-
-int			check_conv(const char **p)
-{
-	char			*format;
-	const char		*new;
-	int				format_id;
-	int				result;
-
-	format = "cspdiouxXf";
-	new = *p;
-	format_id = 0;
-	if ((result = ft_char_in_string(*new, format)) > 0)
-	{
-		format_id *= 10;
-		format_id += result;
-		new++;
-	}
-	else if (format_id <= 0)
-	{
-		while (*new == ' ')
-			new++;
-	}
-	*p = new;
-	return (format_id);
 }

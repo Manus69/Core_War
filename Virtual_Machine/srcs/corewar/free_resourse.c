@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   free_resourse.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/01 00:54:43 by selly             #+#    #+#             */
+/*   Updated: 2020/07/01 15:45:04 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
-void	free_slider(t_slider *slider, int count)
+void			free_slider(t_slider *slider, int count)
 {
-	t_slider *head;
+	t_slider	*head;
 
 	head = NULL;
 	while (slider && count--)
@@ -15,9 +27,9 @@ void	free_slider(t_slider *slider, int count)
 	slider = NULL;
 }
 
-void	free_champions(t_champion *player, int count)
+void			free_champions(t_champ *player, int count)
 {
-	t_champion	*head;
+	t_champ		*head;
 
 	head = NULL;
 	while (player && count--)
@@ -36,12 +48,12 @@ void	free_champions(t_champion *player, int count)
 		free(player);
 		player = head;
 	}
-	player= NULL;
+	player = NULL;
 }
 
-void	free_arena(t_arena **arena)
+void			free_arena(t_arena **arena)
 {
-	int i;
+	int			i;
 
 	i = 0;
 	if ((*arena)->visual && (*arena)->viz)

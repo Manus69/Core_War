@@ -1487,18 +1487,18 @@ CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/op_9_12.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.s
 
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o: ../srcs/corewar/print_some.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o   -c /Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/print_some.c
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.o: ../srcs/corewar/print_some_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.o   -c /Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/print_some_1.c
 
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/print_some.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.i
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/print_some_1.c > CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.i
 
-CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/print_some.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.s
+CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/print_some_1.c -o CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.s
 
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: CMakeFiles/Virtual_Machine.dir/flags.make
 CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o: ../srcs/corewar/read_code.c
@@ -1651,7 +1651,7 @@ Virtual_Machine_OBJECTS = \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o" \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o" \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o" \
-"CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o" \
+"CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.o" \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o" \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o" \
 "CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o"
@@ -1769,7 +1769,7 @@ Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_13_16.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o
-Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o
+Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o
 Virtual_Machine: CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o

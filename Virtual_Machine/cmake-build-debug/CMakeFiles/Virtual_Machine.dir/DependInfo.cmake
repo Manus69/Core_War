@@ -114,7 +114,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/op_1_4.c" "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o"
   "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/op_5_8.c" "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o"
   "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/op_9_12.c" "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o"
-  "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/print_some.c" "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o"
+  "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/print_some_1.c" "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.o"
   "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/read_code.c" "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o"
   "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/read_memory.c" "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o"
   "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/start_war.c" "/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug/CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o"

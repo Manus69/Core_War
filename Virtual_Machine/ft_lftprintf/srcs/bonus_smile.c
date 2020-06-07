@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   bonus_smile.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/07 16:44:54 by selly             #+#    #+#             */
+/*   Updated: 2019/11/07 16:45:04 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "printf.h"
 
-int     get_smile(int i)
+int			get_smile(int i)
 {
-	int val;
-	char str[64];
+	int		val;
+	char	str[64];
 
 	val = 1;
 	val = val + 128511 + i;
@@ -18,9 +30,9 @@ int     get_smile(int i)
 	return (1);
 }
 
-int     get_smile_id(const char **p)
+int			get_smile_id(const char **p)
 {
-	int i;
+	int		i;
 
 	i = 0;
 	if (find_id(&(*p), "smile_"))
@@ -33,9 +45,9 @@ int     get_smile_id(const char **p)
 	return (i);
 }
 
-int     take_smile(const char **p)
+int			take_smile(const char **p)
 {
-	int     i;
+	int		i;
 
 	(*p)++;
 	i = get_smile_id(&(*p));
@@ -45,10 +57,10 @@ int     take_smile(const char **p)
 		return (0);
 }
 
-int     get_bonus(const char **p)
+int			get_bonus(const char **p)
 {
-	const char      *k;
-	int             i;
+	const char		*k;
+	int				i;
 
 	k = *p;
 	if (**p == '{')

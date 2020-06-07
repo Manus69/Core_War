@@ -1,13 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check_input.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/01 00:43:03 by selly             #+#    #+#             */
+/*   Updated: 2020/07/01 11:43:42 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
-int 	check_file_name(char  *name, char *str)
+int			check_file_name(char *name, char *str)
 {
 	while (*name && *name != '.')
 		name++;
 	while (*name && *str)
 	{
 		if (*name != *str)
-			break;
+			break ;
 		name++;
 		str++;
 	}
@@ -17,24 +29,24 @@ int 	check_file_name(char  *name, char *str)
 		return (0);
 }
 
-int 	check_name(char *s1, char *s2)
+int			check_name(char *s1, char *s2)
 {
 	while (*s1 && *s2)
 	{
 		if (*s1 != *s2)
-			break;
+			break ;
 		s1++;
 		s2++;
 	}
 	if (*s1 == *s2)
 		return (1);
-	else
-		return (0);
+		else
+	return (0);
 }
 
-t_arena		*find_num_arg(char 	*argv,t_arena *vm)
+t_arena		*find_num_arg(char *argv, t_arena *vm)
 {
-	long num;
+	long	num;
 
 	if ((num = ft_atoi_size_t(argv)) < 0)
 		print_error(ARGS_ERROR, vm);
@@ -57,10 +69,9 @@ t_arena		*find_num_arg(char 	*argv,t_arena *vm)
 
 t_arena		*find_flag(char *argv, t_arena *vm)
 {
-	int 	len;
+	int		len;
 
-	argv++;
-	len = ft_strlen(argv);
+	len = ft_strlen(++argv);
 	if (len == 1 && *argv == 'd' && vm->print_type == 0 && (vm->read_arg = 1))
 		vm->print_type = 1;
 	else if (len == 1 && *argv == 'a' && vm->aff_print == 0)
@@ -71,7 +82,8 @@ t_arena		*find_flag(char *argv, t_arena *vm)
 		vm->visual = 1;
 	else if (len == 1 && *argv == 's' && vm->show == 0 && (vm->read_arg = 2))
 		vm->show = 1;
-	else if (len == 1 && *argv == 'n' && vm->read_num == 0 && (vm->read_arg = 3))
+	else if (len == 1 && *argv == 'n' &&
+	vm->read_num == 0 && (vm->read_arg = 3))
 		vm->read_num = 1;
 	else if (len == 4 && check_name(argv, "dump") &&
 		vm->print_type == 0 && (vm->read_arg = 1))
@@ -84,9 +96,8 @@ t_arena		*find_flag(char *argv, t_arena *vm)
 	return (vm);
 }
 
-t_arena 	*check_input(char **argv, int argc, t_arena *vm)
+t_arena		*check_input(char **argv, int argc, t_arena *vm)
 {
-	argc--;
 	argv++;
 	while (argc--)
 	{
@@ -103,7 +114,8 @@ t_arena 	*check_input(char **argv, int argc, t_arena *vm)
 		}
 		argv++;
 	}
-	if (vm->read_arg || vm->read_arg < 0 || ((vm->nice || vm->aff_print || vm->visual) && vm->players <= 0))
+	if (vm->read_arg || vm->read_arg < 0 ||
+	((vm->nice || vm->aff_print || vm->visual) && vm->players <= 0))
 	{
 		usage(0, vm->nice);
 		print_error(ARGS_ERROR, vm);

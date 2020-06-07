@@ -1,14 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   calculate.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/01 01:13:57 by selly             #+#    #+#             */
+/*   Updated: 2020/07/01 09:29:31 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
-uint32_t	step(t_slider *cursor, t_operation *op)
+uint32_t			step(t_slider *cursor, t_oper *op)
 {
-	unsigned int		i;
-	uint32_t			step;
+	unsigned int	i;
+	uint32_t		step;
 
 	i = 0;
 	step = 0;
 	step += 1 + (op->read_args ? 1 : 0);
-	while (i < operation_list[cursor->code - 1].args_num)
+	while (i < g_operation_list[cursor->code - 1].args_num)
 	{
 		step += next_step(cursor->type_of_args[i], op);
 		i++;
@@ -16,7 +28,7 @@ uint32_t	step(t_slider *cursor, t_operation *op)
 	return (step);
 }
 
-int32_t		find_place(int32_t place)
+int32_t				find_place(int32_t place)
 {
 	place %= MEM_SIZE;
 	if (place < 0)
@@ -24,35 +36,34 @@ int32_t		find_place(int32_t place)
 	return (place);
 }
 
-
-void		magic_to_byte(uint8_t *map, int32_t place, int32_t value, int32_t s)
+void				magic_to_byte(uint8_t *m, int32_t p, int32_t val, int32_t s)
 {
-	int8_t i;
+	int8_t			i;
 
 	i = 0;
 	while (s)
 	{
-		map[find_place(place + s - 1)] = (uint8_t)((value >> i) & 0xFF);
+		m[find_place(p + s - 1)] = (uint8_t)((val >> i) & 0xFF);
 		i += 8;
 		s--;
 	}
 }
 
-int32_t		bytes_to_magic(const uint8_t *magic, int32_t place, size_t size)
+int32_t				bytes_to_magic(const uint8_t *m, int32_t place, size_t size)
 {
 	int32_t	result;
 	int		sign;
 	int		i;
 
 	result = 0;
-	sign = (magic[find_place(place)] & 0x80);
+	sign = (m[find_place(place)] & 0x80);
 	i = 0;
 	while (size)
 	{
 		if (sign)
-			result += ((magic[find_place(place + size - 1)] ^ 0xFF) << (i++ * 8));
+			result += ((m[find_place(place + size - 1)] ^ 0xFF) << (i++ * 8));
 		else
-			result += magic[find_place(place + size - 1)] << (i++ * 8);
+			result += m[find_place(place + size - 1)] << (i++ * 8);
 		size--;
 	}
 	if (sign)
@@ -60,13 +71,13 @@ int32_t		bytes_to_magic(const uint8_t *magic, int32_t place, size_t size)
 	return (result);
 }
 
-int32_t		get_magic(int fd, t_arena *vm)
+int32_t				get_magic(int fd, t_arena *vm)
 {
-	int	bytes;
-	uint8_t	symbols[4];
+	int				bytes;
+	uint8_t			symbols[4];
 
 	bytes = read(fd, &symbols, 4);
 	if (bytes < 4)
 		print_error(READ_ERROR, vm);
-	return (bytes_to_magic(symbols,0, 4));
+	return (bytes_to_magic(symbols, 0, 4));
 }

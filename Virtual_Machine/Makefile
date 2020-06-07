@@ -40,7 +40,8 @@ COREWAR_SOURCES_LIST =	corewar.c			\
 						check_input.c		\
 						calculate.c			\
 						get_champion.c		\
-						print_some.c		\
+						print_some_1.c		\
+						print_some_2.c		\
 						init_resourse.c		\
 						free_resourse.c		\
 						start_war.c			\

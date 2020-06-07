@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <fcntl.h>
 # include <stdlib.h>
 # include <string.h>
 
@@ -43,8 +42,8 @@ char				*ft_strrchr(char const *s, int c);
 char				*ft_strstr(char const *haystack, char const *needle);
 char				*ft_strnstr(char const *h, char const *n, size_t l);
 int					ft_strncmp(char const *s1, char const *s2, size_t n);
+long				ft_atoi_size_t(char const *s);
 int					ft_atoi(char const *c);
-long				ft_atoi_size_t(char const *s); //important!
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
 int					ft_isalnum(int c);

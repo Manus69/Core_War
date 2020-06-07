@@ -1,12 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   op_1_4.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/01 01:02:58 by selly             #+#    #+#             */
+/*   Updated: 2020/07/01 19:15:44 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
-void		live(t_arena *vm, t_slider *s)
+void				live(t_arena *vm, t_slider *s)
 {
-	int32_t		player_id;
-	t_operation		*op;
-	t_champion	*champ;
+	int32_t			player_id;
+	t_oper		*op;
+	t_champ			*champ;
 
-	op = &operation_list[s->code - 1];
+	op = &g_operation_list[s->code - 1];
 	player_id = read_mem(vm, s, 1, op);
 	vm->lives++;
 	s->last_live = vm->cycles;
@@ -25,14 +37,14 @@ void		live(t_arena *vm, t_slider *s)
 	}
 }
 
-void		ld(t_arena *vm, t_slider *sl)
+void				ld(t_arena *vm, t_slider *sl)
 {
 	int32_t			value;
-	t_operation		*op;
-	int 			ind;
+	t_oper			*op;
+	int				ind;
 
 	sl->step += 1;
-	op = &operation_list[sl->code - 1];
+	op = &g_operation_list[sl->code - 1];
 	value = read_mem(vm, sl, 1, op);
 	sl->carry = value == 0 ? 1 : 0;
 	ind = read_byte(vm, sl->place, sl->step);
@@ -40,11 +52,11 @@ void		ld(t_arena *vm, t_slider *sl)
 	sl->step += REG_NAME_SIZE;
 }
 
-void		st(t_arena *vm, t_slider *sl)
+void				st(t_arena *vm, t_slider *sl)
 {
-	int32_t	reg;
-	int32_t	r_value;
-	int32_t	place;
+	int32_t			reg;
+	int32_t			r_value;
+	int32_t			place;
 
 	sl->step += 1;
 	reg = read_byte(vm, sl->place, sl->step);
@@ -57,8 +69,9 @@ void		st(t_arena *vm, t_slider *sl)
 	}
 	else
 	{
-		place = bytes_to_magic(vm->map,sl->place + sl->step, IND_SIZE);
-		magic_to_byte(vm->map, sl->place + (place % IDX_MOD), r_value, DIR_SIZE);
+		place = bytes_to_magic(vm->map, sl->place + sl->step, IND_SIZE);
+		magic_to_byte(vm->map, sl->place + (place % IDX_MOD),
+				r_value, DIR_SIZE);
 		put_color(vm->color, sl->place + (place % IDX_MOD), sl, DIR_SIZE);
 		if (vm->visual)
 			update_map(vm, sl, sl->place + (place % IDX_MOD), DIR_SIZE);
@@ -66,12 +79,12 @@ void		st(t_arena *vm, t_slider *sl)
 	}
 }
 
-void		add(t_arena *vm, t_slider *sl)
+void				add(t_arena *vm, t_slider *sl)
 {
-	int32_t	reg1;
-	int32_t	reg2;
-	int32_t	reg3;
-	int32_t	value;
+	int32_t			reg1;
+	int32_t			reg2;
+	int32_t			reg3;
+	int32_t			value;
 
 	sl->step += 1;
 	reg1 = read_byte(vm, sl->place, sl->step);

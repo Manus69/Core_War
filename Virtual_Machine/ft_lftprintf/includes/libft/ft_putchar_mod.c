@@ -6,7 +6,7 @@
 /*   By: selly <selly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 13:59:18 by selly             #+#    #+#             */
-/*   Updated: 2019/09/29 13:08:21 by selly            ###   ########.fr       */
+/*   Updated: 2019/11/07 17:48:51 by selly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int	ft_putchar_mod(char c, int *m)
 {
-	int     fd;
+	int		fd;
 
 	fd = m[7];
 	if (fd < 0)
-			write(1, &c, 1);
+		write(1, &c, 1);
 	else
-			write(fd, &c, 1);
+		write(fd, &c, 1);
 	return (1);
 }

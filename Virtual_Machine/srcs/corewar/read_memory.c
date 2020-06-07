@@ -1,6 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   read_memory.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/01 20:13:22 by selly             #+#    #+#             */
+/*   Updated: 2020/07/01 21:32:39 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
-uint32_t	next_step(uint8_t arg_type, t_operation *op)
+void			show_mem(t_arena *vm)
+{
+	print_mem_status(vm);
+	if (vm->nice)
+		ft_printf("{green}Press ENTER  to continue..{eoc} \n");
+	else
+		ft_printf("Press ENTER  to continue..\n");
+	while (getchar() != '\n')
+		;
+}
+
+uint32_t		next_step(uint8_t arg_type, t_oper *op)
 {
 	if (arg_type == T_DIR)
 		return (op->size_t_dir);
@@ -11,7 +34,7 @@ uint32_t	next_step(uint8_t arg_type, t_operation *op)
 	return (0);
 }
 
-int32_t		read_mem(t_arena *vm, t_slider *s, uint8_t i, t_operation *op)
+int32_t			read_mem(t_arena *vm, t_slider *s, uint8_t i, t_oper *op)
 {
 	int32_t		read;
 	int32_t		place;

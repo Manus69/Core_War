@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   cycles_to_death.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/01 02:35:02 by selly             #+#    #+#             */
+/*   Updated: 2020/07/01 14:24:20 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
-void	print_error(char *error, t_arena *vm)
+void			print_error(char *error, t_arena *vm)
 {
-	perror(error);
+	ft_putstr_fd(error, 2);
 	free_arena(&vm);
 	exit(1);
 }
@@ -14,7 +26,7 @@ static void		reset_lives_nums(t_arena *vm)
 	i = 0;
 	while (i < vm->players)
 	{
-		vm->ch[i]->lives_before= vm->ch[i]->live;
+		vm->ch[i]->lives_before = vm->ch[i]->live;
 		vm->ch[i]->live = 0;
 		i++;
 	}
@@ -23,7 +35,8 @@ static void		reset_lives_nums(t_arena *vm)
 
 int				is_died(t_arena *vm, t_slider *cursor)
 {
-	return (vm->death_coming <= 0 || vm->cycles - cursor->last_live >= vm->death_coming);
+	return (vm->death <= 0 ||
+	vm->cycles - cursor->last_live >= vm->death);
 }
 
 static void		delete_died_cursors(t_arena *vm)
@@ -58,7 +71,7 @@ void			cycles_to_die_check(t_arena *vm)
 	delete_died_cursors(vm);
 	if (vm->checks == MAX_CHECKS || vm->lives >= NBR_LIVE)
 	{
-		vm->death_coming -= CYCLE_DELTA;
+		vm->death -= CYCLE_DELTA;
 		vm->checks = 0;
 	}
 	reset_lives_nums(vm);

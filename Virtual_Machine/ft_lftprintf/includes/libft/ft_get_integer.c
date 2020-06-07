@@ -6,7 +6,7 @@
 /*   By: selly <selly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 20:33:26 by selly             #+#    #+#             */
-/*   Updated: 2019/10/10 16:22:29 by selly            ###   ########.fr       */
+/*   Updated: 2019/11/07 17:40:40 by selly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int		ft_get_integer(const char **p)
 	num = *p;
 	ft_cut_space(&num);
 	result = 0;
-	while ((*num >= '0' && *num <= '9'))
+	while (*num >= '0' && *num <= '9')
 	{
 		i++;
 		num++;
@@ -30,10 +30,7 @@ int		ft_get_integer(const char **p)
 	num = *p;
 	while (*num >= '0' && *num <= '9')
 	{
-		if (result == 0 && i >= 10)
-			result = 10;
-		else 
-			result *= 10;
+		result = (result == 0 && i >= 10) ? 10 : result * 10;
 		result += ((*num) - '0');
 		i--;
 		num++;

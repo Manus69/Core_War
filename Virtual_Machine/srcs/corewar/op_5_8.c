@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   op_5_8.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/01 20:02:11 by selly             #+#    #+#             */
+/*   Updated: 2020/07/01 20:51:46 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
 void		bin_op(t_arena *vm, t_slider *sl, int op)
@@ -8,8 +20,8 @@ void		bin_op(t_arena *vm, t_slider *sl, int op)
 	int32_t	r_id;
 
 	sl->step += 1;
-	value_1 = read_mem(vm, sl, 1, &operation_list[sl->code - 1]);
-	value_2 = read_mem(vm, sl, 2, &operation_list[sl->code - 1]);
+	value_1 = read_mem(vm, sl, 1, &g_operation_list[sl->code - 1]);
+	value_2 = read_mem(vm, sl, 2, &g_operation_list[sl->code - 1]);
 	value = 0;
 	if (op == 1)
 		value = value_1 & value_2;

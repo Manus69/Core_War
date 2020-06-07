@@ -1,17 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_champion.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/01 00:57:33 by selly             #+#    #+#             */
+/*   Updated: 2020/07/01 15:56:37 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
-int 		check_player_id(t_arena *vm, int type)
+int				check_player_id(t_arena *vm, int type)
 {
-	t_champion	*buf;
+	t_champ	*buf;
+
+	buf = NULL;
 	if ((vm->players == 0 || vm->read_num == 0) && type)
 		return (1);
 	else if ((buf = vm->champion) != NULL && vm->read_num > 0)
 	{
 		while (buf != NULL)
 		{
-			if (vm->read_num == buf->number && type)
+			if (vm->read_num == buf->num && type)
 				print_error(DUPLICATE_ID_ERROR, vm);
-			else if (vm->read_num == buf->number)
+			else if (vm->read_num == buf->num)
 				return (0);
 			buf = buf->next;
 		}
@@ -19,7 +33,7 @@ int 		check_player_id(t_arena *vm, int type)
 	return (1);
 }
 
-t_arena		*new_player(t_champion	*player, t_arena *vm)
+t_arena			*new_player(t_champ *player, t_arena *vm)
 {
 	if (vm->players > 0)
 	{
@@ -32,10 +46,10 @@ t_arena		*new_player(t_champion	*player, t_arena *vm)
 	return (vm);
 }
 
-char		*read_str(int fd, int len, t_arena *vm)
+char			*read_str(int fd, int len, t_arena *vm)
 {
-	int		size;
-	char	*name;
+	int			size;
+	char		*name;
 
 	if (!(name = ft_strnew(len)))
 		print_error(MALLOC_ERROR, vm);
@@ -45,24 +59,24 @@ char		*read_str(int fd, int len, t_arena *vm)
 	return (name);
 }
 
-uint8_t		*read_code(int fd, size_t len, t_arena *vm)
+uint8_t			*read_code(int fd, size_t len, t_arena *vm)
 {
-	size_t	size;
-	uint8_t	*code;
-	uint8_t end;
+	size_t		size;
+	uint8_t		*code;
+	uint8_t		end;
 
 	if (!(code = (unsigned char *)malloc(sizeof(unsigned char) * len)))
 		print_error(MALLOC_ERROR, vm);
 	size = read(fd, code, len);
-	if (size != len )
+	if (size != len)
 		print_error(CODE_SIZE_ERROR, vm);
 	read(fd, &end, len);
-	if (end != 0 )
+	if (end != 0)
 		print_error(CODE_SIZE_ERROR, vm);
 	return (code);
 }
 
-t_arena		*get_champion(char 	*argv, t_arena *vm)
+t_arena			*get_champion(char *argv, t_arena *vm)
 {
 	int			fd;
 
@@ -78,13 +92,13 @@ t_arena		*get_champion(char 	*argv, t_arena *vm)
 	vm->champion->name = read_str(fd, PROG_NAME_LENGTH, vm);
 	if (get_magic(fd, vm) != 0)
 		print_error(NO_NULL_ERROR, vm);
-	if ((vm->champion->pl_size = get_magic(fd, vm)) < 0 ||
-	vm->champion->pl_size > CHAMP_MAX_SIZE)
+	if ((vm->champion->size = get_magic(fd, vm)) < 0 ||
+		vm->champion->size > CHAMP_MAX_SIZE)
 		print_error(SIZE_ERROR, vm);
 	vm->champion->comment = read_str(fd, COMMENT_LENGTH, vm);
 	if (get_magic(fd, vm) != 0)
 		print_error(NO_NULL_ERROR, vm);
-	vm->champion->code = read_code(fd, (size_t)(vm->champion->pl_size), vm);
+	vm->champion->code = read_code(fd, (size_t)(vm->champion->size), vm);
 	close(fd);
 	vm->read_arg = 0;
 	vm->read_num = 0;

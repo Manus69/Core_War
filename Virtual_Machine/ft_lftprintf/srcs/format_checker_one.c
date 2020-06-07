@@ -1,26 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen_mod.c                                    :+:      :+:    :+:   */
+/*   format_checker_one.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/29 13:09:12 by selly             #+#    #+#             */
-/*   Updated: 2019/11/07 17:49:29 by selly            ###   ########.fr       */
+/*   Created: 2019/11/07 16:45:55 by selly             #+#    #+#             */
+/*   Updated: 2019/11/07 16:45:57 by selly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "printf.h"
 
-int		ft_strlen_mod(char const *str)
+int			check_conv(const char **p)
 {
-	int		i;
+	char			*format;
+	const char		*new;
+	int				format_id;
+	int				result;
 
-	i = 0;
-	while (*str)
+	format = "cspdiouxXf";
+	new = *p;
+	format_id = 0;
+	if ((result = ft_char_in_string(*new, format)) > 0)
 	{
-		i++;
-		str++;
+		format_id *= 10;
+		format_id += result;
+		new++;
 	}
-	return (i);
+	else if (format_id <= 0)
+	{
+		while (*new == ' ')
+			new++;
+	}
+	*p = new;
+	return (format_id);
 }

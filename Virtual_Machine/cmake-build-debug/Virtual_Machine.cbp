@@ -431,7 +431,7 @@
 		<Unit filename="/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/op_9_12.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
-		<Unit filename="/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/print_some.c">
+		<Unit filename="/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/print_some_1.c">
 			<Option target="Virtual_Machine"/>
 		</Unit>
 		<Unit filename="/Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/srcs/corewar/read_code.c">

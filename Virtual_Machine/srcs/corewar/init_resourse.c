@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init_resourse.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/01 00:38:06 by selly             #+#    #+#             */
+/*   Updated: 2020/07/01 10:56:09 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
-t_slider	*init_slider(t_arena *vm, int	id, int place, int flag)
+t_slider			*init_slider(t_arena *vm, int id, int place, int flag)
 {
-	t_slider	*new;
+	t_slider		*new;
 	static uint32_t	cursor_id;
 
 	if (!(new = (t_slider *)ft_memalloc(sizeof(t_slider))))
@@ -16,28 +28,28 @@ t_slider	*init_slider(t_arena *vm, int	id, int place, int flag)
 	new->step = 0;
 	if (flag)
 	{
-		new->r[0] = -(vm->ch[id]->number);
+		new->r[0] = -(vm->ch[id]->num);
 		new->player = vm->ch[id];
 	}
 	return (new);
 }
 
-t_arena		*set_player_id(t_arena *vm)
+t_arena				*set_player_id(t_arena *vm)
 {
-	int 	count;
-	t_champion	*head;
+	int				count;
+	t_champ			*head;
 
 	head = vm->champion;
 	count = vm->players;
 	while (count && head)
 	{
 		vm->read_num = count;
-		if (head->number == 0 && check_player_id(vm, 0))
+		if (head->num == 0 && check_player_id(vm, 0))
 		{
-			head->number = count;
+			head->num = count;
 			head = head->next;
 		}
-		else if (head->number != 0 )
+		else if (head->num != 0)
 		{
 			head = head->next;
 			continue;
@@ -48,24 +60,24 @@ t_arena		*set_player_id(t_arena *vm)
 	return (vm);
 }
 
-t_champion	*init_player(int id, t_arena *vm)
+t_champ				*init_player(int id, t_arena *vm)
 {
-	t_champion	*new;
+	t_champ			*new;
 
-	if (!(new = (t_champion *)ft_memalloc(sizeof(t_champion))))
+	if (!(new = (t_champ *)ft_memalloc(sizeof(t_champ))))
 		print_error(MALLOC_ERROR, vm);
-	new->number = id;
+	new->num = id;
 	new->name = NULL;
-	new->pl_size = 0;
+	new->size = 0;
 	new->code = 0;
 	new->comment = NULL;
 	new->next = NULL;
 	return (new);
 }
 
-t_arena		*init_arena(void)
+t_arena				*init_arena(void)
 {
-	t_arena		*buffer;
+	t_arena			*buffer;
 
 	if (!(buffer = (t_arena *)ft_memalloc(sizeof(t_arena))))
 		print_error(MALLOC_ERROR, buffer);
@@ -78,7 +90,7 @@ t_arena		*init_arena(void)
 	buffer->aff_print = 0;
 	buffer->visual = 0;
 	buffer->print_type = 0;
-	buffer->death_coming = CYCLE_TO_DIE;
+	buffer->death = CYCLE_TO_DIE;
 	buffer->last_alive = NULL;
 	buffer->champion = NULL;
 	buffer->viz = NULL;

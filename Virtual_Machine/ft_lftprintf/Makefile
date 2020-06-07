@@ -37,6 +37,16 @@ SOURCES = ft_printf.c                      \
     bonus_fd.c \
     color_option.c \
     bonus_smile.c \
+    format_checker_one.c \
+    ft_printf_one.c \
+    work_with_f_one.c \
+    work_with_f_two.c \
+    work_with_f_three.c \
+    work_uxo_po_one.c \
+    work_uxo_po_two.c \
+    work_uxo_pt_one.c \
+    work_i_one.c \
+    work_i_two.c \
 
 SRCS = $(addprefix $(DIR_S)/,$(SOURCES))
 OBJS = $(addprefix $(DIR_O)/,$(SOURCES:.c=.o))

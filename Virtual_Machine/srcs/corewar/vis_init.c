@@ -1,12 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   vis_init.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/01 20:48:06 by selly             #+#    #+#             */
+/*   Updated: 2020/07/01 21:03:45 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "corewar.h"
 
-void	fill_map(t_arena *vm, int32_t place, int32_t l, int32_t player_num)
+void			fill_map(t_arena *vm, int32_t place, int32_t l, int32_t p_num)
 {
-	int32_t i;
-	int32_t value;
+	int32_t		i;
+	int32_t		value;
 
 	i = place;
-	value = ((player_num - 1) % 4) + 1;
+	value = ((p_num - 1) % 4) + 1;
 	while (i < l + place)
 	{
 		vm->viz->map[i].i = value;
@@ -14,22 +26,22 @@ void	fill_map(t_arena *vm, int32_t place, int32_t l, int32_t player_num)
 	}
 }
 
-void		init_map(t_arena *vm)
+void			init_map(t_arena *vm)
 {
-	int32_t	place;
-	int32_t	id;
+	int32_t		place;
+	int32_t		id;
 
 	place = 0;
 	id = 1;
 	while (id <= vm->players)
 	{
-		fill_map(vm, place, vm->ch[id - 1]->pl_size, id);
+		fill_map(vm, place, vm->ch[id - 1]->size, id);
 		place += MEM_SIZE / vm->players;
 		id++;
 	}
 }
 
-void		init_colors(void)
+void			init_colors(void)
 {
 	init_pair(WHITE, COLOR_WHITE, 0);
 	init_pair(GREEN, COLOR_GREEN, 0);
@@ -47,9 +59,9 @@ void		init_colors(void)
 	init_pair(LIGHT_CYAN, COLOR_WHITE, COLOR_CYAN);
 }
 
-void	init_sl(t_arena *vm)
+void			init_sl(t_arena *vm)
 {
-	t_slider *slider;
+	t_slider	*slider;
 
 	slider = vm->slider;
 	while (slider)
@@ -58,13 +70,13 @@ void	init_sl(t_arena *vm)
 		if (slider->next)
 			slider = slider->next;
 		else
-			break;
+			break ;
 	}
 }
 
-t_viz	*new_viz(t_arena *vm)
+t_viz			*new_viz(t_arena *vm)
 {
-	t_viz	*new;
+	t_viz		*new;
 
 	if (!(new = (t_viz *)ft_memalloc(sizeof(t_viz))))
 		print_error(MALLOC_ERROR, vm);

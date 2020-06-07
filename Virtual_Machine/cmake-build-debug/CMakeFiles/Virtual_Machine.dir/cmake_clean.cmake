@@ -109,7 +109,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_1_4.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_5_8.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.o"
-  "CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o"
+  "CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_code.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/read_memory.c.o"
   "CMakeFiles/Virtual_Machine.dir/srcs/corewar/start_war.c.o"

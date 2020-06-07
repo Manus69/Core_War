@@ -6,13 +6,13 @@
 /*   By: selly <selly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/22 15:35:54 by selly             #+#    #+#             */
-/*   Updated: 2019/11/04 17:44:58 by mnarwhal         ###   ########.fr       */
+/*   Updated: 2019/11/07 16:51:45 by selly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h" ////++++++++
+#include "printf.h"
 
-int	all_flags(int *s)
+int			all_flags(int *s)
 {
 	char	type;
 	int		error;

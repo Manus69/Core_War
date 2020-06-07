@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi_size_t.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: selly <selly@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/04/05 18:46:02 by selly             #+#    #+#             */
+/*   Updated: 2019/10/27 18:53:43 by selly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static int		is_space(char c)
@@ -9,7 +21,7 @@ static int		is_space(char c)
 	return (0);
 }
 
-long				ft_atoi_size_t(char const *s)
+long			ft_atoi_size_t(char const *s)
 {
 	long		num;
 

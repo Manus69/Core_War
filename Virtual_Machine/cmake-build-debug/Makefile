@@ -3093,32 +3093,32 @@ srcs/corewar/op_9_12.c.s:
 	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/op_9_12.c.s
 .PHONY : srcs/corewar/op_9_12.c.s
 
-srcs/corewar/print_some.o: srcs/corewar/print_some.c.o
+srcs/corewar/print_some_1.o: srcs/corewar/print_some_1.c.o
 
-.PHONY : srcs/corewar/print_some.o
+.PHONY : srcs/corewar/print_some_1.o
 
 # target to build an object file
-srcs/corewar/print_some.c.o:
-	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.o
-.PHONY : srcs/corewar/print_some.c.o
+srcs/corewar/print_some_1.c.o:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.o
+.PHONY : srcs/corewar/print_some_1.c.o
 
-srcs/corewar/print_some.i: srcs/corewar/print_some.c.i
+srcs/corewar/print_some_1.i: srcs/corewar/print_some_1.c.i
 
-.PHONY : srcs/corewar/print_some.i
+.PHONY : srcs/corewar/print_some_1.i
 
 # target to preprocess a source file
-srcs/corewar/print_some.c.i:
-	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.i
-.PHONY : srcs/corewar/print_some.c.i
+srcs/corewar/print_some_1.c.i:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.i
+.PHONY : srcs/corewar/print_some_1.c.i
 
-srcs/corewar/print_some.s: srcs/corewar/print_some.c.s
+srcs/corewar/print_some_1.s: srcs/corewar/print_some_1.c.s
 
-.PHONY : srcs/corewar/print_some.s
+.PHONY : srcs/corewar/print_some_1.s
 
 # target to generate assembly for a file
-srcs/corewar/print_some.c.s:
-	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some.c.s
-.PHONY : srcs/corewar/print_some.c.s
+srcs/corewar/print_some_1.c.s:
+	$(MAKE) -f CMakeFiles/Virtual_Machine.dir/build.make CMakeFiles/Virtual_Machine.dir/srcs/corewar/print_some_1.c.s
+.PHONY : srcs/corewar/print_some_1.c.s
 
 srcs/corewar/read_code.o: srcs/corewar/read_code.c.o
 
@@ -3540,9 +3540,9 @@ help:
 	@echo "... srcs/corewar/op_9_12.o"
 	@echo "... srcs/corewar/op_9_12.i"
 	@echo "... srcs/corewar/op_9_12.s"
-	@echo "... srcs/corewar/print_some.o"
-	@echo "... srcs/corewar/print_some.i"
-	@echo "... srcs/corewar/print_some.s"
+	@echo "... srcs/corewar/print_some_1.o"
+	@echo "... srcs/corewar/print_some_1.i"
+	@echo "... srcs/corewar/print_some_1.s"
 	@echo "... srcs/corewar/read_code.o"
 	@echo "... srcs/corewar/read_code.i"
 	@echo "... srcs/corewar/read_code.s"

@@ -1,4 +1,1 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine
--- Configuring done
--- Generating done
--- Build files have been written to: /Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine/cmake-build-debug
+CMakeLists.txt not found in /Volumes/d_60Gb/corewar/nice/corewar/Virtual_Machine Select CMakeLists.txt file...
