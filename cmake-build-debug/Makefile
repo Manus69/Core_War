@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Volumes/d_60Gb/Новая папка/Core_War"
+CMAKE_SOURCE_DIR = /Volumes/d_60Gb/corewar/nice/corewar
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Volumes/d_60Gb/Новая папка/Core_War/cmake-build-debug"
+CMAKE_BINARY_DIR = /Volumes/d_60Gb/corewar/nice/corewar/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Volumes/d_60Gb/Новая папка/Core_War/cmake-build-debug/CMakeFiles" "/Volumes/d_60Gb/Новая папка/Core_War/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/d_60Gb/corewar/nice/corewar/cmake-build-debug/CMakeFiles /Volumes/d_60Gb/corewar/nice/corewar/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Volumes/d_60Gb/Новая папка/Core_War/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/d_60Gb/corewar/nice/corewar/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Core_War
+# Target rules for targets named corewar
 
 # Build rule for target.
-Core_War: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Core_War
-.PHONY : Core_War
+corewar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 corewar
+.PHONY : corewar
 
 # fast build rule for target.
-Core_War/fast:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/build
-.PHONY : Core_War/fast
-
-Resources/op.o: Resources/op.c.o
-
-.PHONY : Resources/op.o
-
-# target to build an object file
-Resources/op.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Resources/op.c.o
-.PHONY : Resources/op.c.o
-
-Resources/op.i: Resources/op.c.i
-
-.PHONY : Resources/op.i
-
-# target to preprocess a source file
-Resources/op.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Resources/op.c.i
-.PHONY : Resources/op.c.i
-
-Resources/op.s: Resources/op.c.s
-
-.PHONY : Resources/op.s
-
-# target to generate assembly for a file
-Resources/op.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Resources/op.c.s
-.PHONY : Resources/op.c.s
+corewar/fast:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/build
+.PHONY : corewar/fast
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.o
 
@@ -156,7 +129,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.o: Virtual_Machine/ft_lftpri
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.i
@@ -165,7 +138,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.i: Virtual_Machine/ft_lftpri
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.s
@@ -174,7 +147,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.s: Virtual_Machine/ft_lftpri
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o
@@ -183,7 +156,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.o: Virtual_Machine/ft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
@@ -192,7 +165,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.i: Virtual_Machine/ft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
@@ -201,7 +174,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.s: Virtual_Machine/ft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.o
@@ -210,7 +183,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.o: Virtual_Machine/ft_lftpr
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.i
@@ -219,7 +192,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.i: Virtual_Machine/ft_lftpr
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.s
@@ -228,7 +201,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.s: Virtual_Machine/ft_lftpr
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.o
@@ -237,7 +210,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.o: Virtual_Machine
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.i
@@ -246,7 +219,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.i: Virtual_Machine
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.s
@@ -255,7 +228,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.s: Virtual_Machine
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.o
@@ -264,7 +237,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.o: Virtual_Machine/ft_
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.i
@@ -273,7 +246,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.i: Virtual_Machine/ft_
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.s
@@ -282,7 +255,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.s: Virtual_Machine/ft_
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.o
@@ -291,7 +264,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.o: Virtual_Machine/ft_l
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.i
@@ -300,7 +273,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.i: Virtual_Machine/ft_l
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.s
@@ -309,7 +282,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.s: Virtual_Machine/ft_l
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.o
@@ -318,7 +291,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.i
@@ -327,7 +300,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.s
@@ -336,7 +309,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.o
@@ -345,7 +318,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.o: Virtual_Machine/ft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.i
@@ -354,7 +327,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.i: Virtual_Machine/ft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.s
@@ -363,7 +336,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.s: Virtual_Machine/ft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.o
@@ -372,7 +345,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.i
@@ -381,7 +354,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.s
@@ -390,7 +363,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.o
@@ -399,7 +372,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.i
@@ -408,7 +381,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.s
@@ -417,7 +390,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.o
@@ -426,7 +399,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.i
@@ -435,7 +408,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.s
@@ -444,7 +417,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.o
@@ -453,7 +426,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.i
@@ -462,7 +435,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.s
@@ -471,7 +444,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.o
@@ -480,7 +453,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.i
@@ -489,7 +462,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.s
@@ -498,7 +471,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.o
@@ -507,7 +480,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.i
@@ -516,7 +489,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.s
@@ -525,7 +498,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.o
@@ -534,7 +507,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.o: Virtual_Machine/ft_lftpri
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.i
@@ -543,7 +516,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.i: Virtual_Machine/ft_lftpri
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.s
@@ -552,7 +525,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.s: Virtual_Machine/ft_lftpri
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.o
@@ -561,7 +534,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.o: Virtual_Machine/ft_l
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.i
@@ -570,7 +543,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.i: Virtual_Machine/ft_l
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.s
@@ -579,7 +552,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.s: Virtual_Machine/ft_l
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.o
@@ -588,7 +561,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.o: Virtual_Machine/ft_lf
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
@@ -597,7 +570,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.i: Virtual_Machine/ft_lf
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
@@ -606,7 +579,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.s: Virtual_Machine/ft_lf
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_length.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.o
@@ -615,7 +588,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_length.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_length.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.i
@@ -624,7 +597,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_length.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_length.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.s
@@ -633,7 +606,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_length.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.o
@@ -642,7 +615,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.i
@@ -651,7 +624,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.s
@@ -660,7 +633,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.o
@@ -669,7 +642,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.i
@@ -678,7 +651,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.s
@@ -687,7 +660,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.o
@@ -696,7 +669,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.o: Virtual_Machine/ft_l
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.i
@@ -705,7 +678,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.i: Virtual_Machine/ft_l
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.s
@@ -714,7 +687,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.s: Virtual_Machine/ft_l
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.o
@@ -723,7 +696,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.i
@@ -732,7 +705,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.s
@@ -741,7 +714,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.o
@@ -750,7 +723,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.i
@@ -759,7 +732,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.s
@@ -768,7 +741,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.o
@@ -777,7 +750,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.i
@@ -786,7 +759,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.s
@@ -795,7 +768,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.o
@@ -804,7 +777,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.o: Virtual_Machine/ft_lf
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.i
@@ -813,7 +786,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.i: Virtual_Machine/ft_lf
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.s
@@ -822,7 +795,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.s: Virtual_Machine/ft_lf
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.o
@@ -831,7 +804,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.i
@@ -840,7 +813,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.s
@@ -849,7 +822,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.o
@@ -858,7 +831,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.i
@@ -867,7 +840,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.s
@@ -876,7 +849,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.o
@@ -885,7 +858,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.i
@@ -894,7 +867,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.s
@@ -903,7 +876,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.o
@@ -912,7 +885,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.i
@@ -921,7 +894,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.s
@@ -930,7 +903,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.o
@@ -939,7 +912,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.i
@@ -948,7 +921,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.s
@@ -957,7 +930,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.o
@@ -966,7 +939,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.i
@@ -975,7 +948,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.s
@@ -984,7 +957,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.o
@@ -993,7 +966,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.i
@@ -1002,7 +975,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.s
@@ -1011,7 +984,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.o
@@ -1020,7 +993,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.o: Virtual_Machi
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
@@ -1029,7 +1002,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.i: Virtual_Machi
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
@@ -1038,7 +1011,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.s: Virtual_Machi
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.o
@@ -1047,7 +1020,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.i
@@ -1056,7 +1029,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.s
@@ -1065,7 +1038,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.o
@@ -1074,7 +1047,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.o: Virtual_Machine/ft_lftprin
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.i
@@ -1083,7 +1056,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.i: Virtual_Machine/ft_lftprin
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.s
@@ -1092,7 +1065,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.s: Virtual_Machine/ft_lftprin
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.o
@@ -1101,7 +1074,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.o: Virtual_Machine/f
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.i
@@ -1110,7 +1083,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.i: Virtual_Machine/f
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.s
@@ -1119,7 +1092,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.s: Virtual_Machine/f
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.o
@@ -1128,7 +1101,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.i
@@ -1137,7 +1110,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.s
@@ -1146,7 +1119,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.o
@@ -1155,7 +1128,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.o: Virtual_Machine/ft_
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
@@ -1164,7 +1137,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.i: Virtual_Machine/ft_
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
@@ -1173,7 +1146,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.s: Virtual_Machine/ft_
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.o
@@ -1182,7 +1155,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.o: Virtual_Machine/ft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
@@ -1191,7 +1164,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.i: Virtual_Machine/ft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
@@ -1200,7 +1173,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.s: Virtual_Machine/ft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.o
@@ -1209,7 +1182,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.i
@@ -1218,7 +1191,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.s
@@ -1227,7 +1200,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.o
@@ -1236,7 +1209,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.o: Virtual_Machine/ft_
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
@@ -1245,7 +1218,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.i: Virtual_Machine/ft_
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
@@ -1254,7 +1227,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.s: Virtual_Machine/ft_
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.o
@@ -1263,7 +1236,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.i
@@ -1272,7 +1245,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.s
@@ -1281,7 +1254,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o
@@ -1290,7 +1263,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.o: Virtual_Machine/ft_l
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
@@ -1299,7 +1272,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.i: Virtual_Machine/ft_l
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
@@ -1308,7 +1281,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.s: Virtual_Machine/ft_l
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o
@@ -1317,7 +1290,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.o: Virtual_Machine/ft_
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
@@ -1326,7 +1299,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.i: Virtual_Machine/ft_
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
@@ -1335,7 +1308,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.s: Virtual_Machine/ft_
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.o
@@ -1344,7 +1317,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.i
@@ -1353,7 +1326,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.s
@@ -1362,7 +1335,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.o
@@ -1371,7 +1344,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.o: Virtual_Machine/ft_l
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
@@ -1380,7 +1353,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.i: Virtual_Machine/ft_l
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
@@ -1389,7 +1362,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.s: Virtual_Machine/ft_l
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.o
@@ -1398,7 +1371,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.o: Virtual_Machine/ft_
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
@@ -1407,7 +1380,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.i: Virtual_Machine/ft_
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
@@ -1416,7 +1389,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.s: Virtual_Machine/ft_
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.o
@@ -1425,7 +1398,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.i
@@ -1434,7 +1407,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.s
@@ -1443,7 +1416,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.o
@@ -1452,7 +1425,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.i
@@ -1461,7 +1434,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.s
@@ -1470,7 +1443,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.o
@@ -1479,7 +1452,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.i
@@ -1488,7 +1461,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.s
@@ -1497,7 +1470,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.o
@@ -1506,7 +1479,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.i
@@ -1515,7 +1488,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.s
@@ -1524,7 +1497,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.o
@@ -1533,7 +1506,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.i
@@ -1542,7 +1515,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.s
@@ -1551,7 +1524,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.o
@@ -1560,7 +1533,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.o: Virtual_Machine/ft_l
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.i
@@ -1569,7 +1542,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.i: Virtual_Machine/ft_l
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.s
@@ -1578,7 +1551,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.s: Virtual_Machine/ft_l
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.o
@@ -1587,7 +1560,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.i
@@ -1596,7 +1569,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.s
@@ -1605,7 +1578,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.o
@@ -1614,7 +1587,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.i
@@ -1623,7 +1596,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.s
@@ -1632,7 +1605,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.o
@@ -1641,7 +1614,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.i
@@ -1650,7 +1623,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.s
@@ -1659,7 +1632,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.o
@@ -1668,7 +1641,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.i
@@ -1677,7 +1650,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.s
@@ -1686,7 +1659,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.o
@@ -1695,7 +1668,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.o: Virtual_Machine/ft_lf
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.i
@@ -1704,7 +1677,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.i: Virtual_Machine/ft_lf
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.s
@@ -1713,7 +1686,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.s: Virtual_Machine/ft_lf
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.o
@@ -1722,7 +1695,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.i
@@ -1731,7 +1704,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.s
@@ -1740,7 +1713,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.o
@@ -1749,7 +1722,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.i
@@ -1758,7 +1731,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.s
@@ -1767,7 +1740,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.o
@@ -1776,7 +1749,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.i
@@ -1785,7 +1758,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.s
@@ -1794,7 +1767,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.o
@@ -1803,7 +1776,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.o: Virtual_Machine/ft_
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
@@ -1812,7 +1785,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.i: Virtual_Machine/ft_
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
@@ -1821,7 +1794,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.s: Virtual_Machine/ft_
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.o
@@ -1830,7 +1803,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.i
@@ -1839,7 +1812,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.s
@@ -1848,7 +1821,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.o
@@ -1857,7 +1830,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.i
@@ -1866,7 +1839,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.s
@@ -1875,7 +1848,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.o
@@ -1884,7 +1857,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.i
@@ -1893,7 +1866,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.s
@@ -1902,7 +1875,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.o
@@ -1911,7 +1884,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.i
@@ -1920,7 +1893,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.s
@@ -1929,7 +1902,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.o
@@ -1938,7 +1911,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.i
@@ -1947,7 +1920,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.s
@@ -1956,7 +1929,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.o
@@ -1965,7 +1938,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.i
@@ -1974,7 +1947,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.s
@@ -1983,7 +1956,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.o
@@ -1992,7 +1965,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.i
@@ -2001,7 +1974,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.s
@@ -2010,7 +1983,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.o
@@ -2019,7 +1992,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.i
@@ -2028,7 +2001,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.s
@@ -2037,7 +2010,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.o
@@ -2046,7 +2019,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.i
@@ -2055,7 +2028,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.s
@@ -2064,7 +2037,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.o
@@ -2073,7 +2046,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.o: Virtual_Machine/ft_lf
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.i
@@ -2082,7 +2055,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.i: Virtual_Machine/ft_lf
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.s
@@ -2091,7 +2064,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.s: Virtual_Machine/ft_lf
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.o
@@ -2100,7 +2073,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.i
@@ -2109,7 +2082,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.s
@@ -2118,7 +2091,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.o
@@ -2127,7 +2100,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.o: Virtual_Machine/ft_lftp
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.i
@@ -2136,7 +2109,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.i: Virtual_Machine/ft_lftp
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.s
@@ -2145,7 +2118,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.s: Virtual_Machine/ft_lftp
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.o
@@ -2154,7 +2127,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.i
@@ -2163,7 +2136,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.s
@@ -2172,7 +2145,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.o
@@ -2181,7 +2154,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.o: Virtual_Machine
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
@@ -2190,7 +2163,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.i: Virtual_Machine
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
@@ -2199,7 +2172,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.s: Virtual_Machine
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.o
@@ -2208,7 +2181,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.i
@@ -2217,7 +2190,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.s
@@ -2226,7 +2199,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.s
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.o: Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.o
@@ -2235,7 +2208,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.o: Virtual_Machine/ft_lft
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.o
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.i: Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.i
@@ -2244,7 +2217,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.i: Virtual_Machine/ft_lft
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.i
 
 Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.s: Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.s
@@ -2253,7 +2226,7 @@ Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.s: Virtual_Machine/ft_lft
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/base_n_p.o: Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.o
@@ -2262,7 +2235,7 @@ Virtual_Machine/ft_lftprintf/srcs/base_n_p.o: Virtual_Machine/ft_lftprintf/srcs/
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/base_n_p.i: Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.i
@@ -2271,7 +2244,7 @@ Virtual_Machine/ft_lftprintf/srcs/base_n_p.i: Virtual_Machine/ft_lftprintf/srcs/
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/base_n_p.s: Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.s
@@ -2280,7 +2253,7 @@ Virtual_Machine/ft_lftprintf/srcs/base_n_p.s: Virtual_Machine/ft_lftprintf/srcs/
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/bonus_color.o: Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.o
@@ -2289,7 +2262,7 @@ Virtual_Machine/ft_lftprintf/srcs/bonus_color.o: Virtual_Machine/ft_lftprintf/sr
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/bonus_color.i: Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.i
@@ -2298,7 +2271,7 @@ Virtual_Machine/ft_lftprintf/srcs/bonus_color.i: Virtual_Machine/ft_lftprintf/sr
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/bonus_color.s: Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.s
@@ -2307,7 +2280,7 @@ Virtual_Machine/ft_lftprintf/srcs/bonus_color.s: Virtual_Machine/ft_lftprintf/sr
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/bonus_fd.o: Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.o
@@ -2316,7 +2289,7 @@ Virtual_Machine/ft_lftprintf/srcs/bonus_fd.o: Virtual_Machine/ft_lftprintf/srcs/
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/bonus_fd.i: Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.i
@@ -2325,7 +2298,7 @@ Virtual_Machine/ft_lftprintf/srcs/bonus_fd.i: Virtual_Machine/ft_lftprintf/srcs/
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/bonus_fd.s: Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.s
@@ -2334,7 +2307,7 @@ Virtual_Machine/ft_lftprintf/srcs/bonus_fd.s: Virtual_Machine/ft_lftprintf/srcs/
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/bonus_smile.o: Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.o
@@ -2343,7 +2316,7 @@ Virtual_Machine/ft_lftprintf/srcs/bonus_smile.o: Virtual_Machine/ft_lftprintf/sr
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/bonus_smile.i: Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.i
@@ -2352,7 +2325,7 @@ Virtual_Machine/ft_lftprintf/srcs/bonus_smile.i: Virtual_Machine/ft_lftprintf/sr
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/bonus_smile.s: Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.s
@@ -2361,7 +2334,7 @@ Virtual_Machine/ft_lftprintf/srcs/bonus_smile.s: Virtual_Machine/ft_lftprintf/sr
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/color_option.o: Virtual_Machine/ft_lftprintf/srcs/color_option.c.o
@@ -2370,7 +2343,7 @@ Virtual_Machine/ft_lftprintf/srcs/color_option.o: Virtual_Machine/ft_lftprintf/s
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/color_option.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/color_option.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/color_option.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/color_option.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/color_option.i: Virtual_Machine/ft_lftprintf/srcs/color_option.c.i
@@ -2379,7 +2352,7 @@ Virtual_Machine/ft_lftprintf/srcs/color_option.i: Virtual_Machine/ft_lftprintf/s
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/color_option.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/color_option.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/color_option.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/color_option.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/color_option.s: Virtual_Machine/ft_lftprintf/srcs/color_option.c.s
@@ -2388,7 +2361,7 @@ Virtual_Machine/ft_lftprintf/srcs/color_option.s: Virtual_Machine/ft_lftprintf/s
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/color_option.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/color_option.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/color_option.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/color_option.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/format_checker.o: Virtual_Machine/ft_lftprintf/srcs/format_checker.c.o
@@ -2397,7 +2370,7 @@ Virtual_Machine/ft_lftprintf/srcs/format_checker.o: Virtual_Machine/ft_lftprintf
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/format_checker.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/format_checker.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/format_checker.i: Virtual_Machine/ft_lftprintf/srcs/format_checker.c.i
@@ -2406,7 +2379,7 @@ Virtual_Machine/ft_lftprintf/srcs/format_checker.i: Virtual_Machine/ft_lftprintf
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/format_checker.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/format_checker.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/format_checker.s: Virtual_Machine/ft_lftprintf/srcs/format_checker.c.s
@@ -2415,7 +2388,7 @@ Virtual_Machine/ft_lftprintf/srcs/format_checker.s: Virtual_Machine/ft_lftprintf
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/format_checker.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/format_checker.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/ft_printf.o: Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.o
@@ -2424,7 +2397,7 @@ Virtual_Machine/ft_lftprintf/srcs/ft_printf.o: Virtual_Machine/ft_lftprintf/srcs
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/ft_printf.i: Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.i
@@ -2433,7 +2406,7 @@ Virtual_Machine/ft_lftprintf/srcs/ft_printf.i: Virtual_Machine/ft_lftprintf/srcs
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/ft_printf.s: Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.s
@@ -2442,7 +2415,7 @@ Virtual_Machine/ft_lftprintf/srcs/ft_printf.s: Virtual_Machine/ft_lftprintf/srcs
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.o: Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.o
@@ -2451,7 +2424,7 @@ Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.o: Virtual_Machine/ft_lf
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.i: Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.i
@@ -2460,7 +2433,7 @@ Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.i: Virtual_Machine/ft_lf
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.s: Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.s
@@ -2469,7 +2442,7 @@ Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.s: Virtual_Machine/ft_lf
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_errors.o: Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.o
@@ -2478,7 +2451,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_errors.o: Virtual_Machine/ft_lftprin
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_errors.i: Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.i
@@ -2487,7 +2460,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_errors.i: Virtual_Machine/ft_lftprin
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_errors.s: Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.s
@@ -2496,7 +2469,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_errors.s: Virtual_Machine/ft_lftprin
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_flags.o: Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.o
@@ -2505,7 +2478,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_flags.o: Virtual_Machine/ft_lftprint
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_flags.i: Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.i
@@ -2514,7 +2487,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_flags.i: Virtual_Machine/ft_lftprint
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_flags.s: Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.s
@@ -2523,7 +2496,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_flags.s: Virtual_Machine/ft_lftprint
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_floats.o: Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.o
@@ -2532,7 +2505,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_floats.o: Virtual_Machine/ft_lftprin
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_floats.i: Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.i
@@ -2541,7 +2514,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_floats.i: Virtual_Machine/ft_lftprin
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_floats.s: Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.s
@@ -2550,7 +2523,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_floats.s: Virtual_Machine/ft_lftprin
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.o: Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.o
@@ -2559,7 +2532,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.o: Virtual_Machine/ft_lftprin
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.i: Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.i
@@ -2568,7 +2541,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.i: Virtual_Machine/ft_lftprin
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.s: Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.s
@@ -2577,7 +2550,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.s: Virtual_Machine/ft_lftprin
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.o: Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.o
@@ -2586,7 +2559,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.o: Virtual_Machine/f
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.i: Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.i
@@ -2595,7 +2568,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.i: Virtual_Machine/f
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.s: Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.s
@@ -2604,7 +2577,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.s: Virtual_Machine/f
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_int.o: Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.o
@@ -2613,7 +2586,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_int.o: Virtual_Machine/ft_lftprintf/
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_int.i: Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.i
@@ -2622,7 +2595,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_int.i: Virtual_Machine/ft_lftprintf/
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_int.s: Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.s
@@ -2631,7 +2604,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_int.s: Virtual_Machine/ft_lftprintf/
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_o.o: Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.o
@@ -2640,7 +2613,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_o.o: Virtual_Machine/ft_lftprintf/sr
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_o.i: Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.i
@@ -2649,7 +2622,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_o.i: Virtual_Machine/ft_lftprintf/sr
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_o.s: Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.s
@@ -2658,7 +2631,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_o.s: Virtual_Machine/ft_lftprintf/sr
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_p.o: Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.o
@@ -2667,7 +2640,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_p.o: Virtual_Machine/ft_lftprintf/sr
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_p.i: Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.i
@@ -2676,7 +2649,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_p.i: Virtual_Machine/ft_lftprintf/sr
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_p.s: Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.s
@@ -2685,7 +2658,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_p.s: Virtual_Machine/ft_lftprintf/sr
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_u.o: Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.o
@@ -2694,7 +2667,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_u.o: Virtual_Machine/ft_lftprintf/sr
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_u.i: Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.i
@@ -2703,7 +2676,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_u.i: Virtual_Machine/ft_lftprintf/sr
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_u.s: Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.s
@@ -2712,7 +2685,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_u.s: Virtual_Machine/ft_lftprintf/sr
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.o: Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.o
@@ -2721,7 +2694,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.o: Virtual_Machine/ft_l
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.i: Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
@@ -2730,7 +2703,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.i: Virtual_Machine/ft_l
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.s: Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
@@ -2739,7 +2712,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.s: Virtual_Machine/ft_l
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.o: Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.o
@@ -2748,7 +2721,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.o: Virtual_Machine/ft_l
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.i: Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
@@ -2757,7 +2730,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.i: Virtual_Machine/ft_l
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.s: Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
@@ -2766,7 +2739,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.s: Virtual_Machine/ft_l
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.o: Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.o
@@ -2775,7 +2748,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.o: Virtual_Machine/ft_lftprint
 
 # target to build an object file
 Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.o
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.o
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.i: Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.i
@@ -2784,7 +2757,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.i: Virtual_Machine/ft_lftprint
 
 # target to preprocess a source file
 Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.i
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.i
 
 Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.s: Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.s
@@ -2793,7 +2766,7 @@ Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.s: Virtual_Machine/ft_lftprint
 
 # target to generate assembly for a file
 Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.s
 .PHONY : Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.s
 
 Virtual_Machine/srcs/corewar/additional.o: Virtual_Machine/srcs/corewar/additional.c.o
@@ -2802,7 +2775,7 @@ Virtual_Machine/srcs/corewar/additional.o: Virtual_Machine/srcs/corewar/addition
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/additional.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/additional.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/additional.c.o
 .PHONY : Virtual_Machine/srcs/corewar/additional.c.o
 
 Virtual_Machine/srcs/corewar/additional.i: Virtual_Machine/srcs/corewar/additional.c.i
@@ -2811,7 +2784,7 @@ Virtual_Machine/srcs/corewar/additional.i: Virtual_Machine/srcs/corewar/addition
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/additional.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/additional.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/additional.c.i
 .PHONY : Virtual_Machine/srcs/corewar/additional.c.i
 
 Virtual_Machine/srcs/corewar/additional.s: Virtual_Machine/srcs/corewar/additional.c.s
@@ -2820,7 +2793,7 @@ Virtual_Machine/srcs/corewar/additional.s: Virtual_Machine/srcs/corewar/addition
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/additional.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/additional.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/additional.c.s
 .PHONY : Virtual_Machine/srcs/corewar/additional.c.s
 
 Virtual_Machine/srcs/corewar/calculate.o: Virtual_Machine/srcs/corewar/calculate.c.o
@@ -2829,7 +2802,7 @@ Virtual_Machine/srcs/corewar/calculate.o: Virtual_Machine/srcs/corewar/calculate
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/calculate.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/calculate.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/calculate.c.o
 .PHONY : Virtual_Machine/srcs/corewar/calculate.c.o
 
 Virtual_Machine/srcs/corewar/calculate.i: Virtual_Machine/srcs/corewar/calculate.c.i
@@ -2838,7 +2811,7 @@ Virtual_Machine/srcs/corewar/calculate.i: Virtual_Machine/srcs/corewar/calculate
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/calculate.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/calculate.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/calculate.c.i
 .PHONY : Virtual_Machine/srcs/corewar/calculate.c.i
 
 Virtual_Machine/srcs/corewar/calculate.s: Virtual_Machine/srcs/corewar/calculate.c.s
@@ -2847,7 +2820,7 @@ Virtual_Machine/srcs/corewar/calculate.s: Virtual_Machine/srcs/corewar/calculate
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/calculate.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/calculate.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/calculate.c.s
 .PHONY : Virtual_Machine/srcs/corewar/calculate.c.s
 
 Virtual_Machine/srcs/corewar/check_input.o: Virtual_Machine/srcs/corewar/check_input.c.o
@@ -2856,7 +2829,7 @@ Virtual_Machine/srcs/corewar/check_input.o: Virtual_Machine/srcs/corewar/check_i
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/check_input.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/check_input.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/check_input.c.o
 .PHONY : Virtual_Machine/srcs/corewar/check_input.c.o
 
 Virtual_Machine/srcs/corewar/check_input.i: Virtual_Machine/srcs/corewar/check_input.c.i
@@ -2865,7 +2838,7 @@ Virtual_Machine/srcs/corewar/check_input.i: Virtual_Machine/srcs/corewar/check_i
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/check_input.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/check_input.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/check_input.c.i
 .PHONY : Virtual_Machine/srcs/corewar/check_input.c.i
 
 Virtual_Machine/srcs/corewar/check_input.s: Virtual_Machine/srcs/corewar/check_input.c.s
@@ -2874,7 +2847,7 @@ Virtual_Machine/srcs/corewar/check_input.s: Virtual_Machine/srcs/corewar/check_i
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/check_input.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/check_input.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/check_input.c.s
 .PHONY : Virtual_Machine/srcs/corewar/check_input.c.s
 
 Virtual_Machine/srcs/corewar/corewar.o: Virtual_Machine/srcs/corewar/corewar.c.o
@@ -2883,7 +2856,7 @@ Virtual_Machine/srcs/corewar/corewar.o: Virtual_Machine/srcs/corewar/corewar.c.o
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/corewar.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/corewar.c.o
 .PHONY : Virtual_Machine/srcs/corewar/corewar.c.o
 
 Virtual_Machine/srcs/corewar/corewar.i: Virtual_Machine/srcs/corewar/corewar.c.i
@@ -2892,7 +2865,7 @@ Virtual_Machine/srcs/corewar/corewar.i: Virtual_Machine/srcs/corewar/corewar.c.i
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/corewar.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/corewar.c.i
 .PHONY : Virtual_Machine/srcs/corewar/corewar.c.i
 
 Virtual_Machine/srcs/corewar/corewar.s: Virtual_Machine/srcs/corewar/corewar.c.s
@@ -2901,7 +2874,7 @@ Virtual_Machine/srcs/corewar/corewar.s: Virtual_Machine/srcs/corewar/corewar.c.s
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/corewar.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/corewar.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/corewar.c.s
 .PHONY : Virtual_Machine/srcs/corewar/corewar.c.s
 
 Virtual_Machine/srcs/corewar/cycles_to_death.o: Virtual_Machine/srcs/corewar/cycles_to_death.c.o
@@ -2910,7 +2883,7 @@ Virtual_Machine/srcs/corewar/cycles_to_death.o: Virtual_Machine/srcs/corewar/cyc
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/cycles_to_death.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.o
 .PHONY : Virtual_Machine/srcs/corewar/cycles_to_death.c.o
 
 Virtual_Machine/srcs/corewar/cycles_to_death.i: Virtual_Machine/srcs/corewar/cycles_to_death.c.i
@@ -2919,7 +2892,7 @@ Virtual_Machine/srcs/corewar/cycles_to_death.i: Virtual_Machine/srcs/corewar/cyc
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/cycles_to_death.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.i
 .PHONY : Virtual_Machine/srcs/corewar/cycles_to_death.c.i
 
 Virtual_Machine/srcs/corewar/cycles_to_death.s: Virtual_Machine/srcs/corewar/cycles_to_death.c.s
@@ -2928,7 +2901,7 @@ Virtual_Machine/srcs/corewar/cycles_to_death.s: Virtual_Machine/srcs/corewar/cyc
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/cycles_to_death.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/cycles_to_death.c.s
 .PHONY : Virtual_Machine/srcs/corewar/cycles_to_death.c.s
 
 Virtual_Machine/srcs/corewar/free_resourse.o: Virtual_Machine/srcs/corewar/free_resourse.c.o
@@ -2937,7 +2910,7 @@ Virtual_Machine/srcs/corewar/free_resourse.o: Virtual_Machine/srcs/corewar/free_
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/free_resourse.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/free_resourse.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/free_resourse.c.o
 .PHONY : Virtual_Machine/srcs/corewar/free_resourse.c.o
 
 Virtual_Machine/srcs/corewar/free_resourse.i: Virtual_Machine/srcs/corewar/free_resourse.c.i
@@ -2946,7 +2919,7 @@ Virtual_Machine/srcs/corewar/free_resourse.i: Virtual_Machine/srcs/corewar/free_
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/free_resourse.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/free_resourse.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/free_resourse.c.i
 .PHONY : Virtual_Machine/srcs/corewar/free_resourse.c.i
 
 Virtual_Machine/srcs/corewar/free_resourse.s: Virtual_Machine/srcs/corewar/free_resourse.c.s
@@ -2955,7 +2928,7 @@ Virtual_Machine/srcs/corewar/free_resourse.s: Virtual_Machine/srcs/corewar/free_
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/free_resourse.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/free_resourse.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/free_resourse.c.s
 .PHONY : Virtual_Machine/srcs/corewar/free_resourse.c.s
 
 Virtual_Machine/srcs/corewar/get_champion.o: Virtual_Machine/srcs/corewar/get_champion.c.o
@@ -2964,7 +2937,7 @@ Virtual_Machine/srcs/corewar/get_champion.o: Virtual_Machine/srcs/corewar/get_ch
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/get_champion.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/get_champion.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/get_champion.c.o
 .PHONY : Virtual_Machine/srcs/corewar/get_champion.c.o
 
 Virtual_Machine/srcs/corewar/get_champion.i: Virtual_Machine/srcs/corewar/get_champion.c.i
@@ -2973,7 +2946,7 @@ Virtual_Machine/srcs/corewar/get_champion.i: Virtual_Machine/srcs/corewar/get_ch
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/get_champion.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/get_champion.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/get_champion.c.i
 .PHONY : Virtual_Machine/srcs/corewar/get_champion.c.i
 
 Virtual_Machine/srcs/corewar/get_champion.s: Virtual_Machine/srcs/corewar/get_champion.c.s
@@ -2982,7 +2955,7 @@ Virtual_Machine/srcs/corewar/get_champion.s: Virtual_Machine/srcs/corewar/get_ch
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/get_champion.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/get_champion.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/get_champion.c.s
 .PHONY : Virtual_Machine/srcs/corewar/get_champion.c.s
 
 Virtual_Machine/srcs/corewar/init_resourse.o: Virtual_Machine/srcs/corewar/init_resourse.c.o
@@ -2991,7 +2964,7 @@ Virtual_Machine/srcs/corewar/init_resourse.o: Virtual_Machine/srcs/corewar/init_
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/init_resourse.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/init_resourse.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/init_resourse.c.o
 .PHONY : Virtual_Machine/srcs/corewar/init_resourse.c.o
 
 Virtual_Machine/srcs/corewar/init_resourse.i: Virtual_Machine/srcs/corewar/init_resourse.c.i
@@ -3000,7 +2973,7 @@ Virtual_Machine/srcs/corewar/init_resourse.i: Virtual_Machine/srcs/corewar/init_
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/init_resourse.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/init_resourse.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/init_resourse.c.i
 .PHONY : Virtual_Machine/srcs/corewar/init_resourse.c.i
 
 Virtual_Machine/srcs/corewar/init_resourse.s: Virtual_Machine/srcs/corewar/init_resourse.c.s
@@ -3009,7 +2982,7 @@ Virtual_Machine/srcs/corewar/init_resourse.s: Virtual_Machine/srcs/corewar/init_
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/init_resourse.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/init_resourse.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/init_resourse.c.s
 .PHONY : Virtual_Machine/srcs/corewar/init_resourse.c.s
 
 Virtual_Machine/srcs/corewar/op_13_16.o: Virtual_Machine/srcs/corewar/op_13_16.c.o
@@ -3018,7 +2991,7 @@ Virtual_Machine/srcs/corewar/op_13_16.o: Virtual_Machine/srcs/corewar/op_13_16.c
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/op_13_16.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_13_16.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_13_16.c.o
 .PHONY : Virtual_Machine/srcs/corewar/op_13_16.c.o
 
 Virtual_Machine/srcs/corewar/op_13_16.i: Virtual_Machine/srcs/corewar/op_13_16.c.i
@@ -3027,7 +3000,7 @@ Virtual_Machine/srcs/corewar/op_13_16.i: Virtual_Machine/srcs/corewar/op_13_16.c
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/op_13_16.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_13_16.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_13_16.c.i
 .PHONY : Virtual_Machine/srcs/corewar/op_13_16.c.i
 
 Virtual_Machine/srcs/corewar/op_13_16.s: Virtual_Machine/srcs/corewar/op_13_16.c.s
@@ -3036,7 +3009,7 @@ Virtual_Machine/srcs/corewar/op_13_16.s: Virtual_Machine/srcs/corewar/op_13_16.c
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/op_13_16.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_13_16.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_13_16.c.s
 .PHONY : Virtual_Machine/srcs/corewar/op_13_16.c.s
 
 Virtual_Machine/srcs/corewar/op_1_4.o: Virtual_Machine/srcs/corewar/op_1_4.c.o
@@ -3045,7 +3018,7 @@ Virtual_Machine/srcs/corewar/op_1_4.o: Virtual_Machine/srcs/corewar/op_1_4.c.o
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/op_1_4.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_1_4.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_1_4.c.o
 .PHONY : Virtual_Machine/srcs/corewar/op_1_4.c.o
 
 Virtual_Machine/srcs/corewar/op_1_4.i: Virtual_Machine/srcs/corewar/op_1_4.c.i
@@ -3054,7 +3027,7 @@ Virtual_Machine/srcs/corewar/op_1_4.i: Virtual_Machine/srcs/corewar/op_1_4.c.i
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/op_1_4.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_1_4.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_1_4.c.i
 .PHONY : Virtual_Machine/srcs/corewar/op_1_4.c.i
 
 Virtual_Machine/srcs/corewar/op_1_4.s: Virtual_Machine/srcs/corewar/op_1_4.c.s
@@ -3063,7 +3036,7 @@ Virtual_Machine/srcs/corewar/op_1_4.s: Virtual_Machine/srcs/corewar/op_1_4.c.s
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/op_1_4.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_1_4.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_1_4.c.s
 .PHONY : Virtual_Machine/srcs/corewar/op_1_4.c.s
 
 Virtual_Machine/srcs/corewar/op_5_8.o: Virtual_Machine/srcs/corewar/op_5_8.c.o
@@ -3072,7 +3045,7 @@ Virtual_Machine/srcs/corewar/op_5_8.o: Virtual_Machine/srcs/corewar/op_5_8.c.o
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/op_5_8.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_5_8.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_5_8.c.o
 .PHONY : Virtual_Machine/srcs/corewar/op_5_8.c.o
 
 Virtual_Machine/srcs/corewar/op_5_8.i: Virtual_Machine/srcs/corewar/op_5_8.c.i
@@ -3081,7 +3054,7 @@ Virtual_Machine/srcs/corewar/op_5_8.i: Virtual_Machine/srcs/corewar/op_5_8.c.i
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/op_5_8.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_5_8.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_5_8.c.i
 .PHONY : Virtual_Machine/srcs/corewar/op_5_8.c.i
 
 Virtual_Machine/srcs/corewar/op_5_8.s: Virtual_Machine/srcs/corewar/op_5_8.c.s
@@ -3090,7 +3063,7 @@ Virtual_Machine/srcs/corewar/op_5_8.s: Virtual_Machine/srcs/corewar/op_5_8.c.s
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/op_5_8.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_5_8.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_5_8.c.s
 .PHONY : Virtual_Machine/srcs/corewar/op_5_8.c.s
 
 Virtual_Machine/srcs/corewar/op_9_12.o: Virtual_Machine/srcs/corewar/op_9_12.c.o
@@ -3099,7 +3072,7 @@ Virtual_Machine/srcs/corewar/op_9_12.o: Virtual_Machine/srcs/corewar/op_9_12.c.o
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/op_9_12.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_9_12.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_9_12.c.o
 .PHONY : Virtual_Machine/srcs/corewar/op_9_12.c.o
 
 Virtual_Machine/srcs/corewar/op_9_12.i: Virtual_Machine/srcs/corewar/op_9_12.c.i
@@ -3108,7 +3081,7 @@ Virtual_Machine/srcs/corewar/op_9_12.i: Virtual_Machine/srcs/corewar/op_9_12.c.i
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/op_9_12.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_9_12.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_9_12.c.i
 .PHONY : Virtual_Machine/srcs/corewar/op_9_12.c.i
 
 Virtual_Machine/srcs/corewar/op_9_12.s: Virtual_Machine/srcs/corewar/op_9_12.c.s
@@ -3117,7 +3090,7 @@ Virtual_Machine/srcs/corewar/op_9_12.s: Virtual_Machine/srcs/corewar/op_9_12.c.s
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/op_9_12.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/op_9_12.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/op_9_12.c.s
 .PHONY : Virtual_Machine/srcs/corewar/op_9_12.c.s
 
 Virtual_Machine/srcs/corewar/print_some.o: Virtual_Machine/srcs/corewar/print_some.c.o
@@ -3126,7 +3099,7 @@ Virtual_Machine/srcs/corewar/print_some.o: Virtual_Machine/srcs/corewar/print_so
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/print_some.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/print_some.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/print_some.c.o
 .PHONY : Virtual_Machine/srcs/corewar/print_some.c.o
 
 Virtual_Machine/srcs/corewar/print_some.i: Virtual_Machine/srcs/corewar/print_some.c.i
@@ -3135,7 +3108,7 @@ Virtual_Machine/srcs/corewar/print_some.i: Virtual_Machine/srcs/corewar/print_so
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/print_some.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/print_some.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/print_some.c.i
 .PHONY : Virtual_Machine/srcs/corewar/print_some.c.i
 
 Virtual_Machine/srcs/corewar/print_some.s: Virtual_Machine/srcs/corewar/print_some.c.s
@@ -3144,7 +3117,7 @@ Virtual_Machine/srcs/corewar/print_some.s: Virtual_Machine/srcs/corewar/print_so
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/print_some.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/print_some.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/print_some.c.s
 .PHONY : Virtual_Machine/srcs/corewar/print_some.c.s
 
 Virtual_Machine/srcs/corewar/read_code.o: Virtual_Machine/srcs/corewar/read_code.c.o
@@ -3153,7 +3126,7 @@ Virtual_Machine/srcs/corewar/read_code.o: Virtual_Machine/srcs/corewar/read_code
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/read_code.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/read_code.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/read_code.c.o
 .PHONY : Virtual_Machine/srcs/corewar/read_code.c.o
 
 Virtual_Machine/srcs/corewar/read_code.i: Virtual_Machine/srcs/corewar/read_code.c.i
@@ -3162,7 +3135,7 @@ Virtual_Machine/srcs/corewar/read_code.i: Virtual_Machine/srcs/corewar/read_code
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/read_code.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/read_code.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/read_code.c.i
 .PHONY : Virtual_Machine/srcs/corewar/read_code.c.i
 
 Virtual_Machine/srcs/corewar/read_code.s: Virtual_Machine/srcs/corewar/read_code.c.s
@@ -3171,7 +3144,7 @@ Virtual_Machine/srcs/corewar/read_code.s: Virtual_Machine/srcs/corewar/read_code
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/read_code.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/read_code.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/read_code.c.s
 .PHONY : Virtual_Machine/srcs/corewar/read_code.c.s
 
 Virtual_Machine/srcs/corewar/read_memory.o: Virtual_Machine/srcs/corewar/read_memory.c.o
@@ -3180,7 +3153,7 @@ Virtual_Machine/srcs/corewar/read_memory.o: Virtual_Machine/srcs/corewar/read_me
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/read_memory.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/read_memory.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/read_memory.c.o
 .PHONY : Virtual_Machine/srcs/corewar/read_memory.c.o
 
 Virtual_Machine/srcs/corewar/read_memory.i: Virtual_Machine/srcs/corewar/read_memory.c.i
@@ -3189,7 +3162,7 @@ Virtual_Machine/srcs/corewar/read_memory.i: Virtual_Machine/srcs/corewar/read_me
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/read_memory.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/read_memory.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/read_memory.c.i
 .PHONY : Virtual_Machine/srcs/corewar/read_memory.c.i
 
 Virtual_Machine/srcs/corewar/read_memory.s: Virtual_Machine/srcs/corewar/read_memory.c.s
@@ -3198,7 +3171,7 @@ Virtual_Machine/srcs/corewar/read_memory.s: Virtual_Machine/srcs/corewar/read_me
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/read_memory.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/read_memory.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/read_memory.c.s
 .PHONY : Virtual_Machine/srcs/corewar/read_memory.c.s
 
 Virtual_Machine/srcs/corewar/start_war.o: Virtual_Machine/srcs/corewar/start_war.c.o
@@ -3207,7 +3180,7 @@ Virtual_Machine/srcs/corewar/start_war.o: Virtual_Machine/srcs/corewar/start_war
 
 # target to build an object file
 Virtual_Machine/srcs/corewar/start_war.c.o:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/start_war.c.o
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/start_war.c.o
 .PHONY : Virtual_Machine/srcs/corewar/start_war.c.o
 
 Virtual_Machine/srcs/corewar/start_war.i: Virtual_Machine/srcs/corewar/start_war.c.i
@@ -3216,7 +3189,7 @@ Virtual_Machine/srcs/corewar/start_war.i: Virtual_Machine/srcs/corewar/start_war
 
 # target to preprocess a source file
 Virtual_Machine/srcs/corewar/start_war.c.i:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/start_war.c.i
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/start_war.c.i
 .PHONY : Virtual_Machine/srcs/corewar/start_war.c.i
 
 Virtual_Machine/srcs/corewar/start_war.s: Virtual_Machine/srcs/corewar/start_war.c.s
@@ -3225,8 +3198,3221 @@ Virtual_Machine/srcs/corewar/start_war.s: Virtual_Machine/srcs/corewar/start_war
 
 # target to generate assembly for a file
 Virtual_Machine/srcs/corewar/start_war.c.s:
-	$(MAKE) -f CMakeFiles/Core_War.dir/build.make CMakeFiles/Core_War.dir/Virtual_Machine/srcs/corewar/start_war.c.s
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Virtual_Machine/srcs/corewar/start_war.c.s
 .PHONY : Virtual_Machine/srcs/corewar/start_war.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.o: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.i: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.s: Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.o: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.o
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.o
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.i: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.i
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.i
+
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.s: Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.s
+.PHONY : Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/additional.o: Новая_папка/Virtual_Machine/srcs/corewar/additional.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/additional.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/additional.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/additional.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/additional.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/additional.i: Новая_папка/Virtual_Machine/srcs/corewar/additional.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/additional.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/additional.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/additional.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/additional.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/additional.s: Новая_папка/Virtual_Machine/srcs/corewar/additional.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/additional.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/additional.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/additional.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/additional.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/calculate.o: Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/calculate.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/calculate.i: Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/calculate.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/calculate.s: Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/calculate.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/calculate.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/check_input.o: Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/check_input.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/check_input.i: Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/check_input.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/check_input.s: Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/check_input.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/check_input.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/corewar.o: Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/corewar.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/corewar.i: Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/corewar.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/corewar.s: Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/corewar.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/corewar.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.o: Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.i: Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.s: Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.o: Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.i: Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.s: Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/get_champion.o: Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/get_champion.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/get_champion.i: Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/get_champion.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/get_champion.s: Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/get_champion.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/get_champion.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.o: Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.i: Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.s: Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.o: Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.i: Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.s: Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.o: Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.i: Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.s: Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.o: Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.i: Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.s: Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.o: Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.i: Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.s: Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/print_some.o: Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/print_some.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/print_some.i: Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/print_some.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/print_some.s: Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/print_some.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/print_some.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/read_code.o: Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_code.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/read_code.i: Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_code.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/read_code.s: Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_code.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_code.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/read_memory.o: Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_memory.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/read_memory.i: Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_memory.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/read_memory.s: Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_memory.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/read_memory.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/start_war.o: Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/start_war.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/start_war.i: Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/start_war.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/start_war.s: Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/start_war.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/start_war.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.o: Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.i: Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.s: Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_init.o: Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_init.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_init.i: Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_init.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_init.s: Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_init.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_init.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.o: Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.i: Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.s: Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_put.o: Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_put.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_put.i: Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_put.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_put.s: Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_put.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_put.c.s
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_start.o: Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.o
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_start.o
+
+# target to build an object file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.o
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.o
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_start.i: Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.i
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_start.i
+
+# target to preprocess a source file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.i
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.i
+
+Новая_папка/Virtual_Machine/srcs/corewar/vis_start.s: Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.s
+
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_start.s
+
+# target to generate assembly for a file
+Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.s
+.PHONY : Новая_папка/Virtual_Machine/srcs/corewar/vis_start.c.s
 
 # Help Target
 help:
@@ -3236,10 +6422,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Core_War"
-	@echo "... Resources/op.o"
-	@echo "... Resources/op.i"
-	@echo "... Resources/op.s"
+	@echo "... corewar"
 	@echo "... Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.o"
 	@echo "... Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.i"
 	@echo "... Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.s"
@@ -3582,6 +6765,363 @@ help:
 	@echo "... Virtual_Machine/srcs/corewar/start_war.o"
 	@echo "... Virtual_Machine/srcs/corewar/start_war.i"
 	@echo "... Virtual_Machine/srcs/corewar/start_war.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_atoi_size_t.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_bzero.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_char_in_string.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_countwords.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cut_space.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_cutstr.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_get_integer.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalnum.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isalpha.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isascii.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isdigit.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isprint.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_isspace.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_long.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_itoa_mod.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_length.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstadd.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdel.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstdelone.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstiter.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstmap.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_lstnew.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memalloc.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memccpy.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memchr.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcmp.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memcpy.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memdel.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memmove.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_memset.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_new_integer_list.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_numzero.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_pow.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_print_symbol.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_fd.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putchar_mod.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putendl_fd.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_fd.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putnbr_mod.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_fd.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_putstr_mod.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcat.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strchr.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strclr.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcmp.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpy.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strcpymap.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdel.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strdup.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strequ.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striter.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_striteri.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strjoin.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlcat.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strlen_mod.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmap.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strmapi.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncat.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncmp.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strncpy.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnequ.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnew.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strnstr.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strrchr.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsplit.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strstr.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strsub.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_strtrim.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_thebigest_word.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_tolower.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/includes/libft/ft_toupper.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/base_n_p.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_color.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_fd.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/bonus_smile.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/color_option.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/format_checker.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/ft_printf.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/print_some_wight_aruc.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_errors.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_flags.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_floats.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_form_x.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_format_char_str.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_int.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_o.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_p.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_u.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_one.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_uxo_part_two.s"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.o"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.i"
+	@echo "... Новая_папка/Virtual_Machine/ft_lftprintf/srcs/work_with_x_big.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/additional.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/additional.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/additional.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/calculate.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/calculate.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/calculate.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/check_input.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/check_input.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/check_input.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/corewar.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/corewar.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/corewar.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/cycles_to_death.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/free_resourse.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/get_champion.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/get_champion.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/get_champion.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/init_resourse.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_13_16.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_1_4.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_5_8.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/op_9_12.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/print_some.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/print_some.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/print_some.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/read_code.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/read_code.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/read_code.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/read_memory.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/read_memory.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/read_memory.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/start_war.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/start_war.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/start_war.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_draw.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_init.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_init.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_init.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_keys.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_put.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_put.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_put.s"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_start.o"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_start.i"
+	@echo "... Новая_папка/Virtual_Machine/srcs/corewar/vis_start.s"
 .PHONY : help
 
 

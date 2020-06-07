@@ -14,7 +14,7 @@ static void	fill_map(t_arena *vm, int32_t place, int32_t l, int32_t player_num)
 	}
 }
 
-static void	init_map(t_arena *vm)
+void	init_map(t_arena *vm)
 {
 	int32_t	place;
 	int32_t	id;

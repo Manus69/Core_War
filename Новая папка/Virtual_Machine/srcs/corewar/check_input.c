@@ -76,7 +76,7 @@ t_arena		*find_flag(char *argv, t_arena *vm) //ищет и определяет 
 		vm->print_type = 2;  //32 bytes per_line
 	else
 	{
-		usage(0);
+//		usage(0);
 		print_error(FLAG_ERROR, vm);
 	}
 	return (vm);
@@ -96,14 +96,14 @@ t_arena 	*check_input(char **argv, int argc, t_arena *vm) //проверка и 
 			vm = get_champion(*argv, vm);//проверяет файл и читает игрока
 		else //если введен не флаг и не файл игрока то будет ошибка и юзедж
 		{
-			usage(0);
+//			usage(0);
 			print_error(FLAG_ERROR, vm);
 		}
 		argv++;
 	}
 	if (vm->read_arg || vm->read_arg < 0)//если не введен флаг игрока но есть флаги будет ошибка
 	{
-		usage(0);
+//		usage(0);
 		print_error(ARGS_ERROR, vm);
 	}
 	else
