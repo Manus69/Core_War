@@ -48,7 +48,8 @@ void translate_and_write_to_file(t_container *container, int visible)
 //where are the files supposed to go if one runs the pogramme from a different directory?
 //remove the file that might have been created after the error invocation;
 
-//empty champ name? 
+//empty champ name?
+//error messages
 
 //disassmbler crashed on some input
 
@@ -63,6 +64,7 @@ void translate_and_write_to_file(t_container *container, int visible)
 //add checks for add to buffer calls, since it cant call invoke_error anymore
 //test number arguments in different byte ranges with different signs; make it systematic
 //leaks on invalid input?
+//scuffed filenames? short, empty? 
 
 //dont give retards an inch
 
