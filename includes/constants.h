@@ -31,8 +31,8 @@
 static const char		*g_operation_names[] = {"live", "ld", "st", "add", "sub", "and",
 "or", "xor", "zjmp", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};
 static const char		*g_command_names[] = {".name", ".comment", 0};
-static const char		g_separators[] = {'"', '\n', COMMENT_CHAR, COMMENT_CHAR_ALT, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
+static const char		g_separators[] = {'"', '\n', COMMENT_CHAR, COMMENT_CHAR_2, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
 static const char		g_spaces[] = {' ', '\t', 0};
-static const char		g_comment_chars[] = {COMMENT_CHAR, COMMENT_CHAR_ALT, 0};
+static const char		g_comment_chars[] = {COMMENT_CHAR, COMMENT_CHAR_2, 0};
 
 #endif
