@@ -2,77 +2,109 @@
 # define TOKENS_H
 
 # include "op.h"
-
-# define GENERIC_ERROR_MESSAGE "Error!\n"
-# define FILE_ERROR_MESSAGE "Could not open the file;\n"
-# define CLASSIFICATION_ERROR_MESSAGE "Could not classify token:\n"
-# define ARGUMENT_ERROR_MESSAGE "Argument error;\n"
-# define SPACES " \t"
-# define DIGITS "0123456789"
-# define NUMBER_SYSTEM_BASE 16
-
-//depreciated; 
-# define ARG_ENCODING_SIZE 1 //is there a constant in the header already?
-# define REG_ARG_SIZE 1
-# define DIR_ARG_SIZE 2
-# define IND_ARG_SIZE 2 //how much is it really?
-//
-
-# define REGISTRY_NAME_SIZE T_REG
-# define REGISTRY_SIZE REG_SIZE
-# define DIRECT_VALUE_SIZE REGISTRY_SIZE
-# define DIRECT_ADDRESS_SIZE IND_SIZE
-# define INDIRECT_VALUE_SIZE IND_SIZE
-
-
-static char *g_operation_names[] = {"live", "ld", "st", "add", "sub", "and",
-"or", "xor", "zjmp", "ldi", "sti", "fork", "lld", "lldi", "lfork", "aff", 0};
-static char *g_command_names[] = {".name", ".comment", 0};
-static char g_separators[] = {'"', COMMENT_CHAR, SEPARATOR_CHAR, 0}; //null byte to terminate the array;
-static char g_spaces[] = {' ', '\t', 0};
+# include "generic_list.h"
 
 typedef struct s_line_token t_line_token;
 typedef struct s_token t_token;
+typedef struct s_transcription_parameters t_transcription_parameters;
+typedef struct s_container t_container;
+typedef struct s_translation t_translation;
+typedef struct s_buffer t_buffer;
+typedef short t_token_list_status;
 
 enum e_token_type
 {
-    unknown,
-    command,
-    opening_quotation_mark,
-    closing_quotation_mark,
-    string,
-    label,
-    operation,
-    argument,
-    comma,
-    hashtag,
-    comment,
-    new_line
+	null,
+	unknown,
+	command_name,
+	command_comment,
+	champ_name,
+	champ_comment,
+	label,
+	operation,
+	argument,
+	comma,
+	new_line
 };
 
 enum e_argument_type
 {
-    not_applicable,
-    registry,
-    direct,
-    indirect
+	not_applicable,
+	registry = T_REG,
+	direct = T_DIR,
+	indirect = T_IND
+};
+
+enum e_status_code
+{
+	name_code = 1,
+	comment_code = 0,
+};
+
+enum e_buffer_status
+{
+	green,
+	red,
+};
+
+enum e_string_writing_mode
+{
+	regular,
+	inside_string,
 };
 
 struct s_line_token
 {
-    int index;
-    char *label;
-    char *operation;
-    char *arguments;
+	int index;
+	char *label;
+	char *operation;
+	char *arguments;
 };
 
 struct s_token
 {
-    char *string;
-    enum e_token_type type;
-    enum e_argument_type argument_type;
-    int size;
-    int distance;
+	char *string;
+	enum e_token_type type;
+	enum e_argument_type argument_type;
+	int size;
+	int distance;
+};
+
+struct s_transcription_parameters
+{
+	int name_size;
+	int comment_size;
+	int exec_code_size;
+};
+
+struct s_translation
+{
+	t_generic_list *champ_name;
+	t_generic_list *champ_comment;
+	t_generic_list *exec_code;
+};
+
+struct s_container
+{
+	int file_descriptor;
+	int size_of_tokens;
+	const char *file_name;
+	char *new_file_name;
+	t_generic_list *tokens;
+	t_generic_list *labels;
+	t_generic_list *translated_tokens;
+	t_transcription_parameters *parameters;
+	t_translation *translation;
+	t_token_list_status status;
+};
+
+struct s_buffer
+{
+	char *content;
+	unsigned int current_content_size;
+	unsigned int max_content_size;
+	enum e_string_writing_mode mode;
+	enum e_buffer_status status;
 };
 
 #endif

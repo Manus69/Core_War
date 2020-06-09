@@ -4,7 +4,6 @@ ASM_NAME = asm
 CC = gcc
 FLAGS = -Wall -Wextra -Werror -O3
 
-# Libraries and Includes
 ASM_LIBRARIES = -lftprintf -L$(FT_PRINTF_DIRECTORY)
 COREWAR_LIBRARIES = -lncurses -lftprintf -L$(FT_PRINTF_DIRECTORY)
 
@@ -26,23 +25,22 @@ FT_PRINTF = $(FT_PRINTF_DIRECTORY)libftprintf.a
 FT_PRINTF_DIRECTORY = ./ft_lftprintf/
 FT_PRINTF_HEADERS = $(FT_PRINTF_DIRECTORY)includes/
 
-# Headers
-
 COR_HEADERS_DIRECTORY = ./includes/corewar/
 ASM_HEADERS_DIRECTORY = ./includes/asm/
 
-COREWAR_HEADERS_LIST =	\
-	op.h				\
-	corewar.h			\
-	error.h				\
-	visual.h			\
+COREWAR_HEADERS_LIST =		\
+	op.h					\
+	corewar.h				\
+	error.h					\
+	visual.h				\
 
 COREWAR_HEADERS = $(addprefix $(COR_HEADERS_DIRECTORY), $(COREWAR_HEADERS_LIST))
 
-ASM_HEADERS_LIST =	\
-	asm.h				\
-	diz_asm.h			\
-	function_prototypes.h				\
+ASM_HEADERS_LIST =			\
+	asm.h					\
+	constants.h				\
+	diz_asm.h				\
+	function_prototypes.h	\
 	generic_list.h			\
 	op.h					\
 	operation_table.h		\
@@ -50,64 +48,85 @@ ASM_HEADERS_LIST =	\
 
 ASM_HEADERS = $(addprefix $(ASM_HEADERS_DIRECTORY), $(ASM_HEADERS_LIST))
 
-# Sources
-
 COREWAR_SOURCES_DIRECTORY = ./srcs/corewar/
 
-COREWAR_SOURCES_LIST =	corewar.c			\
-						check_input.c		\
-						calculate.c			\
-						get_champion.c		\
-						print_some_1.c		\
-						print_some_2.c		\
-						init_resourse.c		\
-						free_resourse.c		\
-						start_war.c			\
-						additional.c		\
-						read_code.c			\
-						read_memory.c		\
-						cycles_to_death.c	\
-						op_1_4.c			\
-						op_5_8.c			\
-						op_9_12.c			\
-						op_13_16.c			\
-						vis_start.c			\
-						vis_init.c			\
-						vis_keys.c			\
-						vis_put.c			\
-						vis_draw.c			\
-						vis_data.c			\
+COREWAR_SOURCES_LIST =	corewar.c					\
+						check_input.c				\
+						calculate.c					\
+						get_champion.c				\
+						print_some_1.c				\
+						print_some_2.c				\
+						init_resourse.c				\
+						free_resourse.c				\
+						start_war.c					\
+						additional.c				\
+						read_code.c					\
+						read_memory.c				\
+						cycles_to_death.c			\
+						op_1_4.c					\
+						op_5_8.c					\
+						op_9_12.c					\
+						op_13_16.c					\
+						vis_start.c					\
+						vis_init.c					\
+						vis_keys.c					\
+						vis_put.c					\
+						vis_draw.c					\
+						vis_data.c					\
 
 COREWAR_SOURCES = $(addprefix $(COREWAR_SOURCES_DIRECTORY), $(COREWAR_SOURCES_LIST))
 
 ASM_SOURCES_DIRECTORY = ./srcs/assembler/
 
-ASM_SOURCES_LIST =		asm_main.c 			\
-						collect_pre_print_code.c 		\
+ASM_SOURCES_LIST =		asm_main.c 					\
+						buffer.c					\
+						check.c						\
+						classify.c					\
+						classify_token.c			\
+						collect_pre_print_code.c 	\
 						complex_instructions.c 		\
-						create_file.c		\
-						display_stuff.c		\
-						distances.c		\
-						encode_arguments.c		\
-						encode_operations.c		\
+						container.c					\
+						create_file.c				\
+						display_stuff.c				\
+						display_token.c				\
+						distances.c					\
+						encode_arguments.c			\
+						encode_operations.c			\
 						encode_strings.c			\
-						fork_to_read.c		\
+						encode_type.c				\
+						error.c						\
+						file_stuff.c				\
+						fork_to_read.c				\
 						ft_binary_read.c			\
-						generic_list.c		\
-						mallokill.c	\
+						generic_list.c				\
+						generic_list_part2.c		\
+						is_it_fun.c					\
+						is_it_good.c				\
+						mallokill.c					\
+						measure_size.c				\
 						open_octo_file.c			\
-						print_binary.c			\
+						print_binary.c				\
 						put_name_comment.c			\
-						simple_instrutions.c 			\
-						support_stuff.c			\
-						take_name.c			\
-						validate_dizasm_init.c			\
+						read_file.c					\
+						simple_instrutions.c 		\
+						support_fluff.c				\
+						support_scuff.c				\
+						support_snuff.c				\
+						support_stuff.c				\
+						take_name.c					\
+						test_run.c					\
+						token.c						\
+						token_status.c				\
+						transcription.c				\
+						translation.c				\
+						translation_aggravation.c	\
+						translation_frustration.c	\
+						translation_vexation.c		\
+						validate_dizasm_init.c		\
 						walk_throw_byte.c			\
-						what_is_it.c			\
+						what_is_it.c				\
 
 ASM_SOURCES = $(addprefix $(ASM_SOURCES_DIRECTORY), $(ASM_SOURCES_LIST))
-
-# Objects
 
 OBJECTS_DIRECTORY = ./objects/
 
@@ -120,8 +139,6 @@ ASM_OBJECTS_LIST = $(patsubst %.c, %.o, $(ASM_SOURCES_LIST))
 ASM_OBJECTS	= $(addprefix $(ASM_OBJECTS_DIRECTORY), $(ASM_OBJECTS_LIST))
 
 .PHONY: all clean fclean re
-
-# Colors
 
 CREAT = \033[0;32m
 IMPORTANT =\033[1;36m

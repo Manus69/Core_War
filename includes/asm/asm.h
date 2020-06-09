@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ASM_H
-# define ASM_H
+#ifndef ASSEMBLY_ASM_H
+# define ASSEMBLY_ASM_H
 
 # include "op.h"
 # include "printf.h"
