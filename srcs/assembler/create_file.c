@@ -49,11 +49,16 @@ int		take_new_name(t_dsm *src_code, char *old_name)
 	return (SUCCESS);
 }
 
-int		fill_new_file(t_dsm *src_code)
+int		fill_new_file(t_dsm *src_code, t_flag *has_flag)
 {
 	int fd;
+	char *file_name;
 
-	if ((fd = open(src_code->file_name,\
+	if (has_flag->change_name)
+		file_name = has_flag->new_file_name;
+	else
+		file_name = src_code->file_name;
+	if ((fd = open(file_name,\
 					O_CREAT | O_TRUNC | O_WRONLY, 0644)) < 1)
 	{
 		free(src_code->file_name);

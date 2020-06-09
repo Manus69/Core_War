@@ -8,7 +8,7 @@ enum e_operation_name operation_type)
 	if (token->argument_type == registry)
 		token->size = REGISTRY_NAME_SIZE;
 	else if (token->argument_type == direct)
-		token->size = op_tab[operation_type].size_t_dir ? DIRECT_ADDRESS_SIZE : DIRECT_VALUE_SIZE;
+		token->size = g_op_tab[operation_type].size_t_dir ? DIRECT_ADDRESS_SIZE : DIRECT_VALUE_SIZE;
 	else if (token->argument_type == indirect)
 		token->size = INDIRECT_VALUE_SIZE;
 }
@@ -29,7 +29,7 @@ void            measure_token_size(t_generic_list *tokens)
 		else if (token->type == operation)
 		{
 			operation_type = get_operation_name(token);
-			if (op_tab[operation_type].arg_code_flag == 1)
+			if (g_op_tab[operation_type].arg_code_flag == 1)
 				token->size = 2;
 			else
 				token->size = 1;

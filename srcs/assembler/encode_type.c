@@ -8,7 +8,7 @@ enum e_operation_name	get_operation_name(t_token *token)
 	operation = dummy_operation + 1;
 	while (operation < NUMBER_OF_OPERATIONS)
 	{
-		if (ft_strcmp(token->string, op_tab[operation].op_name) == 0)
+		if (ft_strcmp(token->string, g_op_tab[operation].op_name) == 0)
 			return (operation);
 		operation = operation + 1; 
 	}
@@ -56,9 +56,9 @@ t_generic_list			*encode_type(t_generic_list *token)
 
 	operation = get_operation_name((t_token *)token->stuff);
 	token = token->next;
-	result = get_type_byte_code(token, op_tab[operation].arg_count);
+	result = get_type_byte_code(token, g_op_tab[operation].arg_count);
 	pointer = result;
-	pad_size = (MAX_ARGS_NUMBER - op_tab[operation].arg_count) * 2;
+	pad_size = (MAX_ARGS_NUMBER - g_op_tab[operation].arg_count) * 2;
 	result = pad_with_chars(result, pad_size, '0', 1);
 	encoding_list_item = new_generic_list(decimal_to_hex_mk2(binary_to_decimal(result), 1));
 

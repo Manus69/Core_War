@@ -62,7 +62,7 @@ int		taste_magic(unsigned char *input)
 	return (SUCCESS);
 }
 
-int		validate_binary(t_dsm *src_code)
+int		validate_binary(t_dsm *src_code, t_flag *has_flag)
 {
 	if (src_code->file_len < 4 || !taste_magic(src_code->input))
 		return (err_validate(src_code));
@@ -79,24 +79,27 @@ int		validate_binary(t_dsm *src_code)
 		return (err_output(src_code));
 	if (!(walk_throw(src_code)))
 		return (err_output(src_code));
-	if (!(fill_new_file(src_code)))
+	if (!(fill_new_file(src_code, has_flag)))
 		return (err_output(src_code));
 	free(src_code->input);
 	free(src_code->output);
+	has_flag = free_structure(has_flag);
 	return (SUCCESS);
 }
 
 int		read_my_binary(char *str, unsigned char **buf)
 {
+	t_flag	*has_flag;
 	int		fd;
 	size_t	file_len;
 
 	file_len = 0;
+	has_flag = NULL;
 	if ((fd = open(str, O_RDONLY)) < 0)
-		return (err_out("ERROR : FILE DOES NOT EXIST"));
+		return (err_out("ERROR : FILE DOES NOT EXIST", has_flag));
 	(*buf) = ft_binary_read(fd, &file_len);
 	close(fd);
 	if (!(*buf) || file_len == 0)
-		return (err_out("ERROR : CAN'T READ"));
+		return (err_out("ERROR : CAN'T READ", has_flag));
 	return (file_len);
 }

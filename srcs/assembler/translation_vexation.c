@@ -38,7 +38,7 @@ void compare_arg_counts(t_generic_list *token, t_container *container)
 	token_cast = (t_token *)token->stuff;
 	operation_name = get_operation_name(token_cast);
 	arg_count = get_arg_count(token);
-	if (op_tab[operation_name].arg_count != arg_count)
+	if (g_op_tab[operation_name].arg_count != arg_count)
 		invoke_error("wrong number of arguments for token\n", token_cast, NULL, container); //msg
 }
 
@@ -51,9 +51,9 @@ int		get_operation_code(t_token *token)
 	operation_name = get_operation_name(token);
 	value = 0;
 	n = 0;
-	while (n < op_tab[operation_name].arg_count)
+	while (n < g_op_tab[operation_name].arg_count)
 	{
-		value = (value | op_tab[operation_name].arg_type[n]);
+		value = (value | g_op_tab[operation_name].arg_type[n]);
 		n ++;
 	}
 	return (value);

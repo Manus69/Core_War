@@ -13,7 +13,7 @@ t_generic_list *current_token, t_generic_list **last_element)
 	container->translation->exec_code =
 	concatenate_lists(container->translation->exec_code, token_translation, *last_element);
 	*last_element = token_translation;
-	if (op_tab[get_operation_name((t_token *)current_token->stuff)].arg_code_flag)
+	if (g_op_tab[get_operation_name((t_token *)current_token->stuff)].arg_code_flag)
 	{
 		token_translation = encode_type(current_token);
 		container->translation->exec_code =

@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ASSEMBLY_ASM_H
-# define ASSEMBLY_ASM_H
+#ifndef ASM_H
+# define ASM_H
 
 # include "op.h"
 # include "printf.h"
@@ -27,9 +27,10 @@
 # define ERR_USAGE 3
 # define FAIL 0
 
-int			take_name(int ac, char **av);
-int			asm_s(char *str);
-int			dizasm(char *str);
-int			err_out(char *str);
+
+int					take_name(int ac, char **av, int *arg_count, t_flag *has_flag); // добавлены 2 переменные
+int					asm_s(char *str, t_flag *has_flag);
+int					dizasm(char *str, t_flag *has_flag);
+int					err_out(char *str, t_flag *has_flag);
 
 #endif

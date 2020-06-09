@@ -14,15 +14,16 @@
 #include "diz_asm.h"
 #include "function_prototypes.h"
 
-int		asm_s(char *str)
+int		asm_s(char *str, t_flag *has_flag)
 {
 	if (str)
 		// ft_printf("to translate\n");
-		here_we_go(str);
+		here_we_go(str, has_flag);
+	has_flag = free_structure(has_flag);
 	return (SUCCESS);
 }
 
-int		dizasm(char *str)
+int		dizasm(char *str, t_flag *has_flag)
 {
 	t_dsm src_code;
 
@@ -32,5 +33,5 @@ int		dizasm(char *str)
 		return (FAIL);
 	if (!take_new_name(&src_code, str))
 		return (FAIL);
-	return (validate_binary(&src_code));
+	return (validate_binary(&src_code, has_flag));
 }

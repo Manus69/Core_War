@@ -1,6 +1,4 @@
-#include "printf.h"
-#include "libft.h"
-#include "op.h"
+#include "asm.h"
 #include "generic_list.h"
 #include "tokens.h"
 #include "operation_table.h"
@@ -9,7 +7,7 @@
 
 const char  *g_file_name;
 
-void        translate_and_write_to_file(t_container *container, int visible)
+void        translate_and_write_to_file(t_container *container, t_flag *has_flag)
 {
     int file;
     t_generic_list *prefix_item;
@@ -18,16 +16,24 @@ void        translate_and_write_to_file(t_container *container, int visible)
 
     prefix_item = new_generic_list(ft_strdup("00ea83f3"));
     prefix_item = concatenate_lists(prefix_item, translate_tokens(container), NULL);
-
-    if (visible)
+    pointer = NULL;
+    if (has_flag->visible)
     {
         display_byte_strings(prefix_item);
         // return ;
     }
-
-    new_file_name = trim_file_name(g_file_name, container);
-    pointer = new_file_name;
-    new_file_name = replace_extension(new_file_name, container);
+    if (has_flag->flag_a)
+	{
+    	ft_putstr("Here is -a flag!\n");
+	}
+    if (has_flag->change_name)
+    	new_file_name = has_flag->new_file_name;
+    else
+    {
+		new_file_name = trim_file_name(g_file_name, container);
+		pointer = new_file_name;
+		new_file_name = replace_extension(new_file_name, container);
+	}
     file = open(new_file_name, O_RDWR | O_CREAT, 0777);
     if (file < 0)
         invoke_error("open / create failure", NULL, NULL, container); // EMSG
@@ -36,7 +42,8 @@ void        translate_and_write_to_file(t_container *container, int visible)
 
     close(file);
     free(pointer);
-    free(new_file_name);
+    if (!has_flag->change_name)
+    	free(new_file_name);
     destroy_generic_list(&prefix_item, free);
 }
 
@@ -69,7 +76,7 @@ void        translate_and_write_to_file(t_container *container, int visible)
 //dont give retards an inch
 
 
-void        here_we_go(char *file_name)
+void        here_we_go(char *file_name, t_flag *has_flag)
 {
     t_container *container;
 
@@ -98,6 +105,6 @@ void        here_we_go(char *file_name)
     // exit(1);
     //
     get_transcription_parameters(container);
-    translate_and_write_to_file(container, 0);
+    translate_and_write_to_file(container, has_flag);
     destroy_container(&container);
 }

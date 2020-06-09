@@ -16,6 +16,15 @@
 
 # define OUTPUT_LEN 10000
 
+typedef struct		s_flag //структура для работы с флагами
+{
+	int 			flag_a;
+	int 			visible;
+	int 			change_name;
+	char 			*new_file_name;
+	char		 	*file_name;
+}					t_flag;
+
 typedef struct		s_byte
 {
 	unsigned char	name[PROG_NAME_LENGTH + 1];
@@ -85,7 +94,7 @@ void				print_alone_byte(t_dsm *src_code);
 
 int					read_my_binary(char *str, unsigned char **buf);
 unsigned char		*ft_binary_read(int fd, size_t *len);
-int					validate_binary(t_dsm *src_code);
+int					validate_binary(t_dsm *src_code, t_flag *has_flag);
 int					fill_name(t_dsm *src_code);
 int					fill_comment(t_dsm *src_code);
 int					fill_code_size(t_dsm *src_code);
@@ -98,7 +107,10 @@ int					write_instruction(t_dsm *src_code, int op_code);
 int					fill_simple_instruction(t_dsm *src_code);
 char				*take_short_dir(t_dsm *src_code);
 char				*take_simple_dir(t_dsm *src_code);
-int					fill_new_file(t_dsm *src_code);
+int					fill_new_file(t_dsm *src_code, t_flag *has_flag);
 int					take_new_name(t_dsm *src_code, char *old_name);
+
+t_flag				*free_structure(t_flag	*flag);
+int					is_flag(char *test, t_flag *flag, int *count, char **av);
 
 #endif

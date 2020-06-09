@@ -1,0 +1,205 @@
+# cmake_minimum_required(VERSION <specify CMake version here>)
+project(corewar C)
+
+set(CMAKE_C_STANDARD 11)
+
+include_directories(ft_lftprintf/includes)
+include_directories(ft_lftprintf/includes/libft)
+include_directories(includes)
+
+add_executable(corewar
+        ft_lftprintf/includes/libft/ft_atoi.c
+        ft_lftprintf/includes/libft/ft_atoi_base.c
+        ft_lftprintf/includes/libft/ft_atoi_size_t.c
+        ft_lftprintf/includes/libft/ft_bzero.c
+        ft_lftprintf/includes/libft/ft_char_in_string.c
+        ft_lftprintf/includes/libft/ft_countwords.c
+        ft_lftprintf/includes/libft/ft_cut_space.c
+        ft_lftprintf/includes/libft/ft_cutstr.c
+        ft_lftprintf/includes/libft/ft_get_integer.c
+        ft_lftprintf/includes/libft/ft_isalnum.c
+        ft_lftprintf/includes/libft/ft_isalpha.c
+        ft_lftprintf/includes/libft/ft_isascii.c
+        ft_lftprintf/includes/libft/ft_isdigit.c
+        ft_lftprintf/includes/libft/ft_isprint.c
+        ft_lftprintf/includes/libft/ft_isspace.c
+        ft_lftprintf/includes/libft/ft_itoa.c
+        ft_lftprintf/includes/libft/ft_itoa_base.c
+        ft_lftprintf/includes/libft/ft_itoa_long.c
+        ft_lftprintf/includes/libft/ft_itoa_mod.c
+        ft_lftprintf/includes/libft/ft_length.c
+        ft_lftprintf/includes/libft/ft_lst_free.c
+        ft_lftprintf/includes/libft/ft_lstadd.c
+        ft_lftprintf/includes/libft/ft_lstdel.c
+        ft_lftprintf/includes/libft/ft_lstdelone.c
+        ft_lftprintf/includes/libft/ft_lstiter.c
+        ft_lftprintf/includes/libft/ft_lstmap.c
+        ft_lftprintf/includes/libft/ft_lstnew.c
+        ft_lftprintf/includes/libft/ft_match.c
+        ft_lftprintf/includes/libft/ft_memalloc.c
+        ft_lftprintf/includes/libft/ft_memccpy.c
+        ft_lftprintf/includes/libft/ft_memchr.c
+        ft_lftprintf/includes/libft/ft_memcmp.c
+        ft_lftprintf/includes/libft/ft_memcpy.c
+        ft_lftprintf/includes/libft/ft_memdel.c
+        ft_lftprintf/includes/libft/ft_memmove.c
+        ft_lftprintf/includes/libft/ft_memset.c
+        ft_lftprintf/includes/libft/ft_new_integer_list.c
+        ft_lftprintf/includes/libft/ft_numzero.c
+        ft_lftprintf/includes/libft/ft_pow.c
+        ft_lftprintf/includes/libft/ft_print_char_arr.c
+        ft_lftprintf/includes/libft/ft_print_symbol.c
+        ft_lftprintf/includes/libft/ft_putchar.c
+        ft_lftprintf/includes/libft/ft_putchar_fd.c
+        ft_lftprintf/includes/libft/ft_putchar_mod.c
+        ft_lftprintf/includes/libft/ft_putendl.c
+        ft_lftprintf/includes/libft/ft_putendl_fd.c
+        ft_lftprintf/includes/libft/ft_putnbr.c
+        ft_lftprintf/includes/libft/ft_putnbr_fd.c
+        ft_lftprintf/includes/libft/ft_putnbr_mod.c
+        ft_lftprintf/includes/libft/ft_putstr.c
+        ft_lftprintf/includes/libft/ft_putstr_fd.c
+        ft_lftprintf/includes/libft/ft_putstr_mod.c
+        ft_lftprintf/includes/libft/ft_sort_word_tab.c
+        ft_lftprintf/includes/libft/ft_stdin.c
+        ft_lftprintf/includes/libft/ft_strcat.c
+        ft_lftprintf/includes/libft/ft_strchr.c
+        ft_lftprintf/includes/libft/ft_strclr.c
+        ft_lftprintf/includes/libft/ft_strcmp.c
+        ft_lftprintf/includes/libft/ft_strcpy.c
+        ft_lftprintf/includes/libft/ft_strcpymap.c
+        ft_lftprintf/includes/libft/ft_strdel.c
+        ft_lftprintf/includes/libft/ft_strdup.c
+        ft_lftprintf/includes/libft/ft_strequ.c
+        ft_lftprintf/includes/libft/ft_striter.c
+        ft_lftprintf/includes/libft/ft_striteri.c
+        ft_lftprintf/includes/libft/ft_strjoin.c
+        ft_lftprintf/includes/libft/ft_strlcat.c
+        ft_lftprintf/includes/libft/ft_strlen.c
+        ft_lftprintf/includes/libft/ft_strlen_mod.c
+        ft_lftprintf/includes/libft/ft_strmap.c
+        ft_lftprintf/includes/libft/ft_strmapi.c
+        ft_lftprintf/includes/libft/ft_strncat.c
+        ft_lftprintf/includes/libft/ft_strncmp.c
+        ft_lftprintf/includes/libft/ft_strncpy.c
+        ft_lftprintf/includes/libft/ft_strnequ.c
+        ft_lftprintf/includes/libft/ft_strnew.c
+        ft_lftprintf/includes/libft/ft_strnstr.c
+        ft_lftprintf/includes/libft/ft_strrchr.c
+        ft_lftprintf/includes/libft/ft_strsplit.c
+        ft_lftprintf/includes/libft/ft_strstr.c
+        ft_lftprintf/includes/libft/ft_strsub.c
+        ft_lftprintf/includes/libft/ft_strtrim.c
+        ft_lftprintf/includes/libft/ft_thebigest_word.c
+        ft_lftprintf/includes/libft/ft_tolower.c
+        ft_lftprintf/includes/libft/ft_toupper.c
+        ft_lftprintf/includes/libft/get_next_line.c
+        ft_lftprintf/includes/libft/libft.h
+        ft_lftprintf/includes/printf.h
+        ft_lftprintf/srcs/base_n_p.c
+        ft_lftprintf/srcs/bonus_color.c
+        ft_lftprintf/srcs/bonus_fd.c
+        ft_lftprintf/srcs/bonus_smile.c
+        ft_lftprintf/srcs/color_option.c
+        ft_lftprintf/srcs/format_checker.c
+        ft_lftprintf/srcs/format_checker_one.c
+        ft_lftprintf/srcs/ft_printf.c
+        ft_lftprintf/srcs/ft_printf_one.c
+        ft_lftprintf/srcs/print_some_wight_aruc.c
+        ft_lftprintf/srcs/work_i_one.c
+        ft_lftprintf/srcs/work_i_two.c
+        ft_lftprintf/srcs/work_uxo_po_one.c
+        ft_lftprintf/srcs/work_uxo_po_two.c
+        ft_lftprintf/srcs/work_uxo_pt_one.c
+        ft_lftprintf/srcs/work_with_errors.c
+        ft_lftprintf/srcs/work_with_f_one.c
+        ft_lftprintf/srcs/work_with_f_three.c
+        ft_lftprintf/srcs/work_with_f_two.c
+        ft_lftprintf/srcs/work_with_flags.c
+        ft_lftprintf/srcs/work_with_floats.c
+        ft_lftprintf/srcs/work_with_form_x.c
+        ft_lftprintf/srcs/work_with_format_char_str.c
+        ft_lftprintf/srcs/work_with_int.c
+        ft_lftprintf/srcs/work_with_o.c
+        ft_lftprintf/srcs/work_with_p.c
+        ft_lftprintf/srcs/work_with_u.c
+        ft_lftprintf/srcs/work_with_uxo_part_one.c
+        ft_lftprintf/srcs/work_with_uxo_part_two.c
+        ft_lftprintf/srcs/work_with_x_big.c
+        includes/asm.h
+        includes/constants.h
+        includes/diz_asm.h
+        includes/function_prototypes.h
+        includes/generic_list.h
+        includes/op.h
+        includes/operation_table.h
+        includes/tokens.h
+        "srcs/assembler/Новая папка/asm_main.c"
+        "srcs/assembler/Новая папка/collect_pre_print_code.c"
+        "srcs/assembler/Новая папка/complex_instructions.c"
+        "srcs/assembler/Новая папка/create_file.c"
+        "srcs/assembler/Новая папка/display_stuff.c"
+        "srcs/assembler/Новая папка/distances.c"
+        "srcs/assembler/Новая папка/encode_arguments.c"
+        "srcs/assembler/Новая папка/encode_operations.c"
+        "srcs/assembler/Новая папка/encode_strings.c"
+        "srcs/assembler/Новая папка/fork_to_read.c"
+        "srcs/assembler/Новая папка/ft_binary_read.c"
+        "srcs/assembler/Новая папка/generic_list.c"
+        "srcs/assembler/Новая папка/mallokill.c"
+        "srcs/assembler/Новая папка/open_octo_file.c"
+        "srcs/assembler/Новая папка/print_binary.c"
+        "srcs/assembler/Новая папка/put_name_comment.c"
+        "srcs/assembler/Новая папка/simple_instrutions.c"
+        "srcs/assembler/Новая папка/support_stuff.c"
+        "srcs/assembler/Новая папка/take_name.c"
+        "srcs/assembler/Новая папка/validate_dizasm_init.c"
+        "srcs/assembler/Новая папка/walk_throw_byte.c"
+        "srcs/assembler/Новая папка/what_is_it.c"
+        srcs/assembler/asm_main.c
+        srcs/assembler/buffer.c
+        srcs/assembler/check.c
+        srcs/assembler/classify.c
+        srcs/assembler/classify_token.c
+        srcs/assembler/collect_pre_print_code.c
+        srcs/assembler/complex_instructions.c
+        srcs/assembler/container.c
+        srcs/assembler/create_file.c
+        srcs/assembler/display_stuff.c
+        srcs/assembler/display_token.c
+        srcs/assembler/distances.c
+        srcs/assembler/encode_arguments.c
+        srcs/assembler/encode_operations.c
+        srcs/assembler/encode_strings.c
+        srcs/assembler/encode_type.c
+        srcs/assembler/error.c
+        srcs/assembler/file_stuff.c
+        srcs/assembler/fork_to_read.c
+        srcs/assembler/ft_binary_read.c
+        srcs/assembler/generic_list.c
+        srcs/assembler/generic_list_part2.c
+        srcs/assembler/is_it_fun.c
+        srcs/assembler/is_it_good.c
+        srcs/assembler/mallokill.c
+        srcs/assembler/measure_size.c
+        srcs/assembler/open_octo_file.c
+        srcs/assembler/print_binary.c
+        srcs/assembler/put_name_comment.c
+        srcs/assembler/read_file.c
+        srcs/assembler/simple_instrutions.c
+        srcs/assembler/support_fluff.c
+        srcs/assembler/support_scuff.c
+        srcs/assembler/support_snuff.c
+        srcs/assembler/support_stuff.c
+        srcs/assembler/take_name.c
+        srcs/assembler/test_run.c
+        srcs/assembler/token.c
+        srcs/assembler/token_status.c
+        srcs/assembler/transcription.c
+        srcs/assembler/translation.c
+        srcs/assembler/translation_aggravation.c
+        srcs/assembler/translation_frustration.c
+        srcs/assembler/translation_vexation.c
+        srcs/assembler/validate_dizasm_init.c
+        srcs/assembler/walk_throw_byte.c
+        srcs/assembler/what_is_it.c)

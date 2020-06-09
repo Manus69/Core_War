@@ -12,8 +12,8 @@ t_generic_list *encode_operation(t_token *token)
 	operation = dummy_operation + 1;
 	while (operation < NUMBER_OF_OPERATIONS)
 	{
-		if (strcmp(token->string, op_tab[operation].op_name) == 0)
-			operation_code = decimal_to_hex_mk2(op_tab[operation].op_code, 1);
+		if (strcmp(token->string, g_op_tab[operation].op_name) == 0)
+			operation_code = decimal_to_hex_mk2(g_op_tab[operation].op_code, 1);
 		operation = operation + 1;
 	}
 	encoding = new_generic_list(operation_code);

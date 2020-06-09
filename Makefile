@@ -95,6 +95,7 @@ ASM_SOURCES_LIST =		asm_main.c 					\
 						encode_type.c				\
 						error.c						\
 						file_stuff.c				\
+						flag_check.c				\
 						fork_to_read.c				\
 						ft_binary_read.c			\
 						generic_list.c				\

@@ -28,13 +28,15 @@ int		to_dizasm(char *str)
 		return (SUCCESS);
 }
 
-int		take_name(int ac, char **av)
+int		take_name(int ac, char **av, int *argnum, t_flag *check)
 {
 	if (ac < 2)
 		return (ERR_USAGE);
-	if (to_translate(av[1]))
+	if (ac > 2 && av[1][0] == '-' && is_flag(av[*argnum], check, argnum, av)) //проверяем наличие флагов
+		*argnum += 1;
+	if (to_translate(av[*argnum]))
 		return (TO_TRANSLATE);
-	else if (to_dizasm(av[1]))
+	else if (to_dizasm(av[*argnum]))
 		return (TO_DIZASM);
 	else
 		return (ERR_USAGE);

@@ -3,6 +3,7 @@
 # include "generic_list.h"
 # include "tokens.h"
 # include "printf.h"
+# include "asm.h"
 # include "libft.h"
 # include <fcntl.h>
 # include <sys/types.h>
@@ -128,7 +129,7 @@ void classify_token(t_token *current_token, t_token *previous_token);
 void classify_all_tokens(t_container *container);
 void preprocess_all_tokens(t_generic_list *tokens);
 
-void here_we_go(char *str);
+void here_we_go(char *str, t_flag *has_flag);
 
 //container
 t_container *new_container(const char *file_name);
