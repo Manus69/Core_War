@@ -106,7 +106,7 @@ SRC =	ft_memset.c				\
 								\
 		get_next_line.c 		\
 
-FLAGS = gcc -c -Wall -Wextra -Werror
+FLAGS = gcc -c -Wall -Wextra #-Werror
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

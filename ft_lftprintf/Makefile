@@ -12,7 +12,7 @@
 
 C = clang
 NAME = libftprintf.a
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra #-Werror
 LIBFT = includes/libft
 DIR_S = srcs
 DIR_O = objs
