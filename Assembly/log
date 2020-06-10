@@ -1,0 +1,200 @@
+file name: ./invalid/char_after_command.s
+Could not classify token:
+Token at 0x55d38b79e800
+String: .
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/char_before_command.s
+Could not classify token:
+Token at 0x55fb65d13740
+String: *
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/char_between_command.s
+Could not classify token:
+Token at 0x56430af057a0
+String: .
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/command_invalid.s
+Could not classify token:
+Token at 0x55afdd702ba0
+String: .other
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/comment_max_2048.s
+buffer overflow
+file name: ./invalid/comment_without.s
+comment command is missing
+file name: ./invalid/double_comment_invalid.s
+token duplication
+Token at 0x55f2e2789900
+String: .comment
+type: command_comment
+size: 0
+distance: -1
+---------------
+file name: ./invalid/double_label_line.s
+Could not classify token:
+Token at 0x560396f8e3e0
+String: life2:
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/double_labelchar_invalid.s
+Could not classify token:
+Token at 0x55c62aac8c00
+String: fork::
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/double_name_invalid.s
+token duplication
+Token at 0x55a07ead1ba0
+String: .name
+type: command_name
+size: 0
+distance: -1
+---------------
+file name: ./invalid/double_separatorchar.s
+Could not classify token:
+Token at 0x561cfecf5f60
+String: ,
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/empty_comment.s
+Could not classify token:
+Token at 0x55925fcbd8c0
+String: 
+
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/label_invalid.s
+the label is missing
+Token at 0x56535e139140
+String: life:
+type: label
+size: 0
+distance: 47
+---------------
+file name: ./invalid/labelchar_invalid.s
+Could not classify token:
+Token at 0x559ebf083cc0
+String: :
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/missing_close_quote_comment.s
+Could not classify token:
+Token at 0x55f0a82da8c0
+String: "its comment
+
+live %0
+
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/missing_close_quote_name.s
+Could not classify token:
+Token at 0x560ed1c51800
+String: its
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/missing_open_quote_comment.s
+Could not classify token:
+Token at 0x55c63f77c8c0
+String: its
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/missing_open_quote_name.s
+Could not classify token:
+Token at 0x562fceaa67a0
+String: Champ
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/multiple_doublequote.s
+Could not classify token:
+Token at 0x56420c015860
+String: "d'un name"
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/multiple_doublequote2.s
+Could not classify token:
+Token at 0x55cbf77d4860
+String: d'un
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/name_max_128.s
+champ name is too bigfile name: ./invalid/name_without.s
+name command is missing
+file name: ./invalid/null_char_before_comment.s
+null characterfile name: ./invalid/null_char_before_name.s
+null characterfile name: ./invalid/null_char_in_comment.s
+null characterfile name: ./invalid/null_char_in_name.s
+null characterfile name: ./invalid/op_invalid.s
+the label is missing
+Token at 0x55596ce20140
+String: life:
+type: label
+size: 0
+distance: 47
+---------------
+file name: ./invalid/params_invalid.s
+argument type mismatch
+Token at 0x55916f3fbc60
+String: fork
+type: operation
+size: 1
+distance: 36
+---------------
+file name: ./invalid/separatorchar_with_nothing.s
+Could not classify token:
+Token at 0x55b6fd4940e0
+String: 
+
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/space_after_directchar_invalid.s
+Could not classify token:
+Token at 0x55886345fcc0
+String: %
+type: unknown
+size: 0
+distance: -1
+---------------
+file name: ./invalid/space_after_labelchar_invalid.s
+Could not classify token:
+Token at 0x556979de8ba0
+String: .other
+type: unknown
+size: 0
+distance: -1
+---------------
