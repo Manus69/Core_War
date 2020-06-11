@@ -14,7 +14,7 @@
 
 int			check_file_name(char *name, char *str)
 {
-	while (*name && *name != '.')
+	while (*name && !(*name == '.' && *(name + 1) == 'c'))
 		name++;
 	while (*name && *str)
 	{

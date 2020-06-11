@@ -17,7 +17,7 @@
 # define FLAG_ERROR			"\n\033[0;31mUnknown argument or file!\033[0m\n"
 # define ARGS_ERROR			"\n\033[0;31mInput error!\033[0m\n"
 # define PLAYER_ID_ERROR	"\n\033[0;31mWrong player id!\033[0m\n"
-# define PLAYER_ERROR		"\n\033[0;31mWrong number of players is 4!\033[0m\n"
+# define PLAYER_ERROR		"\n\033[0;31mWrong number of players!\033[0m\n"
 # define DUPLICATE_ID_ERROR	"\n\033[0;31mDuplicating player id!\033[0m\n"
 # define READ_ERROR			"\n\033[0;31mCan`t open the file!\033[0m\n"
 # define NONE_BIN_ERROR		"\n\033[0;31mWrong type of file!\033[0m\n"

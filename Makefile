@@ -2,7 +2,7 @@ COREWAR_NAME = corewar
 ASM_NAME = asm
 
 CC = gcc
-FLAGS = -Wall -Wextra #-Werror -O3
+FLAGS = -Wall -Wextra -Werror -O3
 
 ASM_LIBRARIES = -lftprintf -L$(FT_PRINTF_DIRECTORY)
 COREWAR_LIBRARIES = -lncurses -lftprintf -L$(FT_PRINTF_DIRECTORY)
@@ -148,13 +148,11 @@ EOC = \033[0m
 all: $(COREWAR_NAME) $(ASM_NAME)
 
 $(COREWAR_NAME): $(FT_PRINTF) $(COREWAR_OBJECTS_DIRECTORY) $(COREWAR_OBJECTS)
-	#@$(CC) $(FLAGS) $(COREWAR_LIBRARIES) $(COREWAR_INCLUDES) $(COREWAR_OBJECTS) -o $(COREWAR_NAME)
 	@$(CC) $(FLAGS) $(COREWAR_INCLUDES) $(COREWAR_OBJECTS) -o $(COREWAR_NAME) $(COREWAR_LIBRARIES)
 	@echo "$(CREAT)objects were created! >>>$(EOC)"
 	@echo "$(IMPORTANT)COREWAR was created! >>>$(EOC)"
 
 $(ASM_NAME): $(FT_PRINTF) $(ASM_OBJECTS_DIRECTORY) $(ASM_OBJECTS)
-	#@$(CC) $(FLAGS) $(ASM_LIBRARIES) $(ASM_INCLUDES) $(ASM_OBJECTS) -o $(ASM_NAME)
 	@$(CC) $(FLAGS) $(ASM_INCLUDES) $(ASM_OBJECTS) -o $(ASM_NAME) $(ASM_LIBRARIES)
 	@echo "$(CREAT)objects were created! >>>$(EOC)"
 	@echo "$(IMPORTANT)ASM was created! >>>$(EOC)"

@@ -100,10 +100,10 @@ void			inroduction(t_champ *ch[4], int count, int nice, int i)
 		if (nice)
 		{
 			print_nice_face(i);
-			ft_printf("Player %d: {blue}", ch[i]->num);
-			ft_printf("weighing %d bytes,", ch[i]->size);
-			ft_printf(" \"%s\"", ch[i]->name);
-			ft_printf(" (\"%s\")!{eoc}\n", ch[i]->comment);
+			ft_printf("Player %d: ", ch[i]->num);
+			ft_printf("{blue}weighing %d bytes,{eoc} ", ch[i]->size);
+			ft_printf("{blue}\"%s\"{eoc} ", ch[i]->name);
+			ft_printf("{blue} (\"%s\")!{eoc} \n", ch[i]->comment);
 		}
 		else
 		{

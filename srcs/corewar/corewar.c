@@ -39,6 +39,25 @@ t_arena			*fill_arena(t_arena *vm, int players, int x)
 	return (vm);
 }
 
+int				check_players_num(t_arena *vm, int players)
+{
+	t_champ	*buf;
+
+	buf = NULL;
+	if ((vm->players == 0 || players == 0))
+		print_error(PLAYER_ERROR, vm);
+	else if ((buf = vm->champion) != NULL && players > 0)
+	{
+		while (buf != NULL)
+		{
+			if (players < buf->num)
+				print_error(PLAYER_ID_ERROR, vm);
+			buf = buf->next;
+		}
+	}
+	return (1);
+}
+
 t_arena			*get_slider(t_arena *vm)
 {
 	int			i;
@@ -70,6 +89,7 @@ t_arena			*ready_to_start(t_arena *vm)
 
 	if (vm->print_type == 0)
 		vm->print_type = 1;
+	check_players_num(vm, vm->players);
 	last = vm->champion;
 	i = 0;
 	while (i < vm->players)
