@@ -28,7 +28,7 @@ void		color_output(int color, uint8_t value, int nice)
 			ft_printf("{red}%.2x{eoc} ", value);
 	}
 	else
-		ft_printf("%.2x", value);
+		ft_printf("%.2x ", value);
 }
 
 void		put_color(int *color, int32_t place, t_slider *sl, int32_t s)
