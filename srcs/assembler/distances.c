@@ -1,7 +1,16 @@
-#include "tokens.h"
-#include "function_prototypes.h"
-#include "operation_table.h"
-#include "constants.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   distances.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:32:54 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:33:34 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 int		get_absolute_distance_to_the_label(t_token *token,
 char *label_name, t_container *container)

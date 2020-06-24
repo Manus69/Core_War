@@ -1,6 +1,16 @@
-#include "tokens.h"
-#include "function_prototypes.h"
-#include "constants.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   transcription.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 13:03:49 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 13:05:00 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 t_generic_list	*get_next_typed_token(t_generic_list *tokens, enum e_token_type type)
 {

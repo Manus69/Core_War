@@ -1,6 +1,8 @@
-#include "op.h"
+#ifndef OPERATION_TABLE_H
+# define OPERATION_TABLE_H
+//#include "op.h"
 
-#define NUMBER_OF_OPERATIONS 17
+# define NUMBER_OF_OPERATIONS 17
 
 //typedef struct      s_op
 //{
@@ -61,3 +63,5 @@ enum e_operation_name
     lfork_operation,
     aff_operation,
 };
+
+#endif

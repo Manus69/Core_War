@@ -1,7 +1,16 @@
-#include "generic_list.h"
-#include "tokens.h"
-#include "operation_table.h"
-#include "function_prototypes.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   token.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 13:04:46 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 13:05:13 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 t_token	*new_token(char *string, enum e_token_type type)
 {

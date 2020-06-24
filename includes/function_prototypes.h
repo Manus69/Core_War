@@ -102,7 +102,7 @@ void get_transcription_parameters(t_container *container);
 //translation
 struct s_translation *new_translation(void);
 void destroy_translation(t_translation **translation);
-t_generic_list *translate_tokens(t_container *container);
+t_generic_list *translate_tokens(t_container *container, t_flag *has_flag);
 
 t_generic_list *translate_champ_name(t_generic_list *current_token,
 t_container *container);
@@ -113,7 +113,7 @@ t_generic_list *concatenate_translation(const struct s_translation *translation)
 int get_arg_count(t_generic_list *token);
 void compare_arg_counts(t_generic_list *token, t_container *container);
 int get_operation_code(t_token *token);
-void compare_arg_type(t_token *previous_operation, t_token *current_token, t_container *container);
+void compare_arg_type(t_token *prev, t_token *cur, t_container *cont, t_flag *flag);
 
 //
 

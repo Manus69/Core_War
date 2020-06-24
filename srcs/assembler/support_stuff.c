@@ -1,5 +1,16 @@
-#include "function_prototypes.h"
-#include "constants.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   support_stuff.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 13:01:07 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 13:02:32 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 // #include <limits.h>
 
 int				binary_to_decimal(char *binary_number)

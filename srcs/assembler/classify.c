@@ -1,7 +1,16 @@
-#include "generic_list.h"
-#include "operation_table.h"
-#include "function_prototypes.h"
-#include "constants.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   classify.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:25:33 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:25:29 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 static void classification_check(t_container *container, t_token *current_token)
 {

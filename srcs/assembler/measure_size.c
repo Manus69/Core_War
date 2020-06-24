@@ -1,6 +1,16 @@
-#include "function_prototypes.h"
-#include "operation_table.h"
-#include "constants.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   measure_size.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 12:53:15 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 12:57:23 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 static void     measure_arg_size(t_token *token,
 enum e_operation_name operation_type)

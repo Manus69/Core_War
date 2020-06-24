@@ -1,9 +1,16 @@
-#include "asm.h"
-#include "generic_list.h"
-#include "tokens.h"
-#include "operation_table.h"
-#include "function_prototypes.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   test_run.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 13:03:33 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 13:03:33 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "asm.h"
 
 const char  *g_file_name;
 
@@ -15,7 +22,7 @@ void        translate_and_write_to_file(t_container *container, t_flag *has_flag
     void *pointer;
 
     prefix_item = new_generic_list(ft_strdup("00ea83f3"));
-    prefix_item = concatenate_lists(prefix_item, translate_tokens(container), NULL);
+    prefix_item = concatenate_lists(prefix_item, translate_tokens(container, has_flag), NULL);
     pointer = NULL;
     if (has_flag->visible)
     {

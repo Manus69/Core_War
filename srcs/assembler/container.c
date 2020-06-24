@@ -1,6 +1,16 @@
-#include "tokens.h"
-#include "function_prototypes.h"
-#include "constants.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   container.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:27:13 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:29:21 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 t_transcription_parameters *new_parameters(void)
 {
@@ -33,6 +43,7 @@ t_container					*new_container(const char *file_name)
 	container->labels = NULL;
 	container->parameters = new_parameters();
 	container->translated_tokens = NULL;
+	container->current = NULL;
 	container->translation = new_translation();
 	container->status = 0;
 

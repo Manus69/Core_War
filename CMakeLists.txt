@@ -1,5 +1,5 @@
-# cmake_minimum_required(VERSION <specify CMake version here>)
-project(corewar C)
+cmake_minimum_required(VERSION 3.18)
+project(Core_War C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -7,7 +7,7 @@ include_directories(ft_lftprintf/includes)
 include_directories(ft_lftprintf/includes/libft)
 include_directories(includes)
 
-add_executable(corewar
+add_executable(Core_War
         ft_lftprintf/includes/libft/ft_atoi.c
         ft_lftprintf/includes/libft/ft_atoi_base.c
         ft_lftprintf/includes/libft/ft_atoi_size_t.c
@@ -128,34 +128,15 @@ add_executable(corewar
         ft_lftprintf/srcs/work_with_x_big.c
         includes/asm.h
         includes/constants.h
+        includes/corewar.h
         includes/diz_asm.h
+        includes/error.h
         includes/function_prototypes.h
         includes/generic_list.h
         includes/op.h
         includes/operation_table.h
         includes/tokens.h
-        "srcs/assembler/Новая папка/asm_main.c"
-        "srcs/assembler/Новая папка/collect_pre_print_code.c"
-        "srcs/assembler/Новая папка/complex_instructions.c"
-        "srcs/assembler/Новая папка/create_file.c"
-        "srcs/assembler/Новая папка/display_stuff.c"
-        "srcs/assembler/Новая папка/distances.c"
-        "srcs/assembler/Новая папка/encode_arguments.c"
-        "srcs/assembler/Новая папка/encode_operations.c"
-        "srcs/assembler/Новая папка/encode_strings.c"
-        "srcs/assembler/Новая папка/fork_to_read.c"
-        "srcs/assembler/Новая папка/ft_binary_read.c"
-        "srcs/assembler/Новая папка/generic_list.c"
-        "srcs/assembler/Новая папка/mallokill.c"
-        "srcs/assembler/Новая папка/open_octo_file.c"
-        "srcs/assembler/Новая папка/print_binary.c"
-        "srcs/assembler/Новая папка/put_name_comment.c"
-        "srcs/assembler/Новая папка/simple_instrutions.c"
-        "srcs/assembler/Новая папка/support_stuff.c"
-        "srcs/assembler/Новая папка/take_name.c"
-        "srcs/assembler/Новая папка/validate_dizasm_init.c"
-        "srcs/assembler/Новая папка/walk_throw_byte.c"
-        "srcs/assembler/Новая папка/what_is_it.c"
+        includes/visual.h
         srcs/assembler/asm_main.c
         srcs/assembler/buffer.c
         srcs/assembler/check.c
@@ -174,6 +155,7 @@ add_executable(corewar
         srcs/assembler/encode_type.c
         srcs/assembler/error.c
         srcs/assembler/file_stuff.c
+        srcs/assembler/flag_check.c
         srcs/assembler/fork_to_read.c
         srcs/assembler/ft_binary_read.c
         srcs/assembler/generic_list.c

@@ -1,5 +1,16 @@
-#include "tokens.h"
-#include "function_prototypes.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   file_stuff.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:37:12 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:37:59 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 char *replace_extension(const char *file_name, t_container *container)
 {

@@ -1,6 +1,16 @@
-#include "generic_list.h"
-#include "operation_table.h"
-#include "function_prototypes.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   translation.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 13:06:49 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 13:15:40 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 struct s_translation	*new_translation(void)
 {

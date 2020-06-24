@@ -1,6 +1,16 @@
-#include "tokens.h"
-#include "function_prototypes.h"
-#include "constants.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   encode_strings.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:34:03 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:34:10 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 int				check_ascii_string(const char *string)
 {

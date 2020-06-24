@@ -96,6 +96,27 @@ char			*take_simple_dir(t_dsm *src_code)
 	return (itoa);
 }
 
+int				write_ind(t_dsm *src_code, t_argum *args, int j)
+{
+	char	*number;
+	t_argum	*test;
+	int		i;
+
+
+	test = args;
+	if (!(number = take_short_dir(src_code)))
+		return (FAIL);
+	i = -1;
+	j++;
+	while (number[++i])
+	{
+		src_code->output[src_code->output_position] = number[i];
+		src_code->output_position++;
+	}
+	free(number);
+	return (SUCCESS);
+}
+
 int				write_dir(t_dsm *src_code, t_argum *args, int j)
 {
 	char	*number;
@@ -127,7 +148,7 @@ static void		init_functions_args(int (*actions[])(t_dsm *, t_argum *, int))
 	actions[0] = NULL;
 	actions[1] = &write_reg;
 	actions[2] = &write_dir;
-	actions[3] = &write_dir;
+	actions[3] = &write_ind;
 }
 
 int				write_args(t_dsm *src_code, t_argum *args)

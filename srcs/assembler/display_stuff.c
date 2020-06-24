@@ -1,6 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   display_stuff.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:29:43 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:29:43 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "asm.h"
-#include "function_prototypes.h"
-#include "constants.h"
 
 void		display_all_tokens(t_generic_list *tokens)
 {

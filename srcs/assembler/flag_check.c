@@ -1,4 +1,14 @@
-#include "asm.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   flag_check.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:37:22 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:38:36 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "asm.h"
 
@@ -40,29 +50,28 @@ int 	check_new_name(char		*name)
 	return (SUCCESS);
 }
 
-char 	*get_new_name(char *s, int len)
+char 	*get_new_name(char *s, int len, char **av, int i)
 {
-	int 	i;
+	int 	a;
 	char 	*new;
-	char 	*end = ".cor";
+	char 	*str = ".cor .s";
 
-	len += 4;
-	i = 0;
+	a = 0;
+	if (to_translate(av[i + 1]))
+		i = 0;
+	else if (to_dizasm(av[i + 1]))
+		i = 5;
+	else
+		return (NULL);
+	len += i == 0 ? 4 : 2;
 	if (!(new = (char *)malloc(sizeof(char) * (len + 1))))
 		ft_putstr_fd("Malloc error", 2);
-	while (i < len)
+	while (a < len)
 	{
 		if (*s)
-		{
-			new[i] = *s;
-			s++;
-		}
+			new[a++] = *(s++);
 		else
-		{
-			new[i] = *end;
-			end++;
-		}
-		i++;
+			new[a++] = str[i++];
 	}
 	new[len] = '\0';
 	return (new);
@@ -81,7 +90,9 @@ int 	is_flag(char *test, t_flag *has_flag, int *arg_count, char **av)
 		*arg_count += 1;
 		if (check_new_name(av[*arg_count]))
 		{
-			(*has_flag).new_file_name = get_new_name(av[*arg_count], ft_strlen(av[*arg_count]));
+			(*has_flag).new_file_name = get_new_name(av[*arg_count], ft_strlen(av[*arg_count]), av, *arg_count);
+			if (!(*has_flag).new_file_name)
+				err_usage("Unknown argument or file!", has_flag);
 			(*has_flag).change_name = 1;
 			return (SUCCESS);
 		}
@@ -94,15 +105,16 @@ int 	is_flag(char *test, t_flag *has_flag, int *arg_count, char **av)
 
 t_flag		*free_structure(t_flag	*has_flag)
 {
-	if (has_flag->new_file_name)
+	if (has_flag)
 	{
-		free(has_flag->new_file_name);
-		has_flag->new_file_name = NULL;
-	}
-	if (has_flag->file_name)
-	{
-		free(has_flag->file_name);
-		has_flag->file_name = NULL;
+		if (has_flag->new_file_name) {
+			free(has_flag->new_file_name);
+			has_flag->new_file_name = NULL;
+		}
+		if (has_flag->file_name) {
+			free(has_flag->file_name);
+			has_flag->file_name = NULL;
+		}
 	}
 	return (has_flag);
 }

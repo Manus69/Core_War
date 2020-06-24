@@ -1,5 +1,16 @@
-#include "function_prototypes.h"
-#include "operation_table.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   encode_type.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:35:38 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:35:52 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 enum e_operation_name	get_operation_name(t_token *token)
 {

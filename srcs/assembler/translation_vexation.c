@@ -1,6 +1,16 @@
-#include "function_prototypes.h"
-#include "operation_table.h"
-#include "constants.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   translation_vexation.c                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/24 13:08:51 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/24 13:18:36 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 int		get_arg_count(t_generic_list *token)
 {
@@ -60,13 +70,19 @@ int		get_operation_code(t_token *token)
 }
 
 void	compare_arg_type(t_token *previous_operation,
-t_token *current_token, t_container *container)
+t_token *current_token, t_container *container, t_flag *flag)
 {
 	unsigned int table_value;
 
 	if (!previous_operation)
+	{
+		flag = free_structure(flag);
 		invoke_error(UNEXPECTED_ERROR, NULL, NULL, container);
+	}
 	table_value = get_operation_code(previous_operation);
 	if (table_value != (table_value | current_token->argument_type))
-		invoke_error ("argument type mismatch\n", previous_operation, NULL, container); //msg
+	{
+		flag = free_structure(flag);
+		invoke_error("argument type mismatch\n", previous_operation, NULL, container); //msg leaks.. if error
+	}
 }

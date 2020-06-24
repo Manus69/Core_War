@@ -91,6 +91,7 @@ struct s_container
 	const char *file_name;
 	char *new_file_name;
 	t_generic_list *tokens;
+	t_generic_list *current;
 	t_generic_list *labels;
 	t_generic_list *translated_tokens;
 	t_transcription_parameters *parameters;

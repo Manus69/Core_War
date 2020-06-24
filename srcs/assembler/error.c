@@ -1,4 +1,16 @@
-#include "function_prototypes.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   error.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:36:42 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:37:55 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 //dont forget to change the output file descriptor
 int invoke_error(const char *error_message, t_token *token,

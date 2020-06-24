@@ -1,6 +1,16 @@
-#include "function_prototypes.h"
-#include "operation_table.h"
-#include "constants.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   what is it.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/24 13:09:15 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/24 13:24:57 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 int     is_label(char *string)
 {

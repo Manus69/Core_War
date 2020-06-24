@@ -1,7 +1,16 @@
-#include "tokens.h"
-#include "function_prototypes.h"
-#include "operation_table.h"
-#include "generic_list.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   encode_operations.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:33:57 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:34:10 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 t_generic_list *encode_operation(t_token *token)
 {

@@ -1,7 +1,16 @@
-#include "tokens.h"
-#include "function_prototypes.h"
-#include "operation_table.h"
-#include "constants.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   encode_arguments.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 23:33:21 by lcaesar           #+#    #+#             */
+/*   Updated: 2020/06/23 23:33:21 by lcaesar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "asm.h"
 
 char			*get_registry_encoding(t_token *token, t_container *container)
 {

@@ -64,6 +64,7 @@ int		fill_new_file(t_dsm *src_code, t_flag *has_flag)
 		free(src_code->file_name);
 		return (FAIL);
 	}
+	ft_printf("Writing output program to %s\n", file_name);
 	ft_putstr_fd(src_code->output, fd);
 	close(fd);
 	free(src_code->file_name);

@@ -16,6 +16,11 @@
 # include "op.h"
 # include "printf.h"
 # include "diz_asm.h"
+# include "function_prototypes.h"
+# include "operation_table.h"
+# include "constants.h"
+# include "generic_list.h"
+# include "tokens.h"
 # include <fcntl.h>
 
 # define ERR_READ 0
@@ -27,9 +32,11 @@
 # define ERR_USAGE 3
 # define FAIL 0
 
-
 int					take_name(int ac, char **av, int *arg_count, t_flag *has_flag); // добавлены 2 переменные
 int					asm_s(char *str, t_flag *has_flag);
+int					to_translate(char *str);
+int					to_dizasm(char *str);
+int					err_usage(char *str, t_flag *has_flag);
 int					dizasm(char *str, t_flag *has_flag);
 int					err_out(char *str, t_flag *has_flag);
 
