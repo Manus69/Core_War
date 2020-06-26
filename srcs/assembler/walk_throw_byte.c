@@ -59,7 +59,7 @@ int		walk_throw(t_dsm *src_code)
 
 	while (src_code->current_position < src_code->file_len)
 	{
-		if (src_code->input[src_code->current_position] > 16)
+		if (src_code->input[src_code->current_position] > 16 || src_code->input[src_code->current_position] < 1)
 			return (FAIL);
 		if (g_op_tab[src_code->input[src_code->current_position]].arg_code_flag)
 		{
