@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   check.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:25:11 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:26:40 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/26 20:22:31 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/26 20:23:30 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-//what a shit function
-int     generic_token_string_check(char *string,
-char character, int start)
+int		generic_token_string_check(char *string,
+						char character, int start)
 {
 	int length;
 
@@ -28,8 +27,8 @@ char character, int start)
 	return (1);
 }
 
-int     check_substring_characters(char *string,
-int start_index, int end_index, char *set)
+int		check_substring_characters(char *string,
+			int start_index, int end_index, char *set)
 {
 	int n;
 
@@ -45,7 +44,7 @@ int start_index, int end_index, char *set)
 	return (1);
 }
 
-int     check_symbol(char *string, char symbol)
+int		check_symbol(char *string, char symbol)
 {
 	if (ft_strlen(string) == 1 && string[0] == symbol)
 		return (1);
