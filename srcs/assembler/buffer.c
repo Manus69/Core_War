@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   buffer.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:21:22 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:22:18 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/26 20:21:25 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/26 20:21:28 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ t_buffer	*new_buffer(unsigned int size)
 	buffer->max_content_size = size;
 	buffer->mode = regular;
 	buffer->status = green;
-
 	return (buffer);
 }
 
@@ -43,7 +42,6 @@ char		*get_buffer_string(t_buffer *buffer)
 
 	string = ft_strsub(buffer->content, 0, buffer->current_content_size);
 	buffer->current_content_size = 0;
-
 	return (string);
 }
 
@@ -59,9 +57,8 @@ int			add_to_buffer(t_buffer *buffer, char c)
 		buffer->status = red;
 		return (0);
 	}
-
 	buffer->content[buffer->current_content_size] = c;
-	buffer->current_content_size ++;
+	buffer->current_content_size++;
 	buffer->status = green;
 	return (1);
 }
