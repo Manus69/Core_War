@@ -31,7 +31,8 @@ void        translate_and_write_to_file(t_container *container, t_flag *has_flag
     }
     if (has_flag->flag_a)
 	{
-    	ft_putstr("Here is -a flag!\n");
+    	// ft_putstr("Here is -a flag!\n");
+        display_all_tokens(container->tokens);
 	}
     if (has_flag->change_name)
     	new_file_name = has_flag->new_file_name;
@@ -76,9 +77,12 @@ void        translate_and_write_to_file(t_container *container, t_flag *has_flag
 //ft_memchr() memccpy() send off compiler warnings;
 
 //add checks for add to buffer calls, since it cant call invoke_error anymore
+
+//TESTING ROAD MAP
 //test number arguments in different byte ranges with different signs; make it systematic
 //leaks on invalid input?
-//scuffed filenames? short, empty? 
+//scuffed filenames? short, empty?
+//.cor consisting of two champs? 
 
 //dont give retards an inch
 
