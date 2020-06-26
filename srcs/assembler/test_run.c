@@ -41,7 +41,7 @@ void        translate_and_write_to_file(t_container *container, t_flag *has_flag
 		pointer = new_file_name;
 		new_file_name = replace_extension(new_file_name, container);
 	}
-    file = open(new_file_name, O_RDWR | O_CREAT, 0777);
+    file = open(new_file_name, O_RDWR | O_CREAT | O_TRUNC, 0777);
     if (file < 0)
         invoke_error("open / create failure", NULL, NULL, container); // EMSG
     tokens_to_bytes(prefix_item, file); //change for a suitable file descriptor;
