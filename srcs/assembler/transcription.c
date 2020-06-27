@@ -3,20 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   transcription.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 13:03:49 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 13:05:00 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 18:05:18 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 18:11:09 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-t_generic_list	*get_next_typed_token(t_generic_list *tokens, enum e_token_type type)
+#define UNEXPECTED_QUIT "the programm quit unexpectedly\nlast token:"
+
+t_generic_list	*get_next_typed_token(t_generic_list *tokens,
+		enum e_token_type type)
 {
+	static const char	*message = UNEXPECTED_QUIT;
 	t_generic_list		*current_token;
 	t_token				*token_cast;
-	static const char	*message = "the programm quit unexpectedly\nlast token:";
 
 	token_cast = NULL;
 	current_token = tokens->next;
@@ -43,7 +46,7 @@ void			get_name_size(t_generic_list *tokens, t_container *container)
 	token_cast = (t_token *)current_token->stuff;
 	container->parameters->name_size = ft_strlen(token_cast->string) - 2;
 	if (container->parameters->name_size > PROG_NAME_LENGTH)
-		invoke_error(message, NULL, NULL, container); //msg
+		invoke_error(message, NULL, NULL, container);
 }
 
 void			get_comment_size(t_generic_list *tokens, t_container *container)
@@ -58,20 +61,15 @@ void			get_comment_size(t_generic_list *tokens, t_container *container)
 	token_cast = (t_token *)current_token->stuff;
 	container->parameters->comment_size = ft_strlen(token_cast->string) - 2;
 	if (container->parameters->comment_size > COMMENT_LENGTH)
-		invoke_error(message, NULL, NULL, container); //message
+		invoke_error(message, NULL, NULL, container);
 }
 
 void			get_transcription_parameters(t_container *container)
 {
 	static const char *message = "champ code is too long\n";
 
-	//champ name
 	get_name_size(container->tokens, container);
-	
-	//getting champ comment
 	get_comment_size(container->tokens, container);
-
-	//exec code size
 	container->parameters->exec_code_size = container->size_of_tokens -
 	container->parameters->name_size - container->parameters->comment_size;
 	if (container->parameters->exec_code_size > CHAMP_MAX_SIZE)
