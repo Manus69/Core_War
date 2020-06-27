@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   encode_strings.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:34:03 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:34:10 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:43:42 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 16:44:43 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ t_generic_list	*encode_string(t_token *token)
 	n = 0;
 	encoding = NULL;
 	while (token->string[n] != '\0')
-	{       
+	{
 		if (token->string[n] != '"')
 		{
 			current_byte =
