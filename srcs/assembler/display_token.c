@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   display_token.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:30:44 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:39:22 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:17:09 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 16:23:06 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-static void print_argument(t_token *token)
+static void	print_argument(t_token *token)
 {
 	char *argumnet_type;
 
@@ -27,7 +27,19 @@ static void print_argument(t_token *token)
 	ft_printf("argument_type: %s\n", argumnet_type);
 }
 
-static void print_type(t_token *token)
+static void	print_type_helper(char **type, t_token *token)
+{
+	if (token->type == operation)
+		(*type) = "operation";
+	else if (token->type == argument)
+		(*type) = "argument";
+	else if (token->type == new_line)
+		(*type) = "new_line";
+	else if (token->type == comma)
+		(*type) = "comma";
+}
+
+static void	print_type(t_token *token)
 {
 	char *type;
 
@@ -46,15 +58,10 @@ static void print_type(t_token *token)
 		type = "champ_comment";
 	else if (token->type == label)
 		type = "label";
-	else if (token->type == operation)
-		type = "operation";
-	else if (token->type == argument)
-		type = "argument";
-	else if (token->type == new_line)
-		type = "new_line";
-	else if (token->type == comma)
-		type = "comma";
-	ft_printf("Token at %p\nString: %s\n", token, token->type == new_line ? "\\n" : token->string);
+	else
+		print_type_helper(&type, token);
+	ft_printf("Token at %p\nString: %s\n", token,
+			token->type == new_line ? "\\n" : token->string);
 	ft_printf("type: %s\n", type);
 }
 
