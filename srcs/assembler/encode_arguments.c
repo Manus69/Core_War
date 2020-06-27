@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   encode_arguments.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:33:21 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:33:21 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:33:05 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 16:39:02 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,11 @@ char			*get_registry_encoding(t_token *token, t_container *container)
 	registry_value = ft_atoi(value_substring);
 	free(value_substring);
 	if (registry_value < 0 || registry_value > 16)
-		invoke_error("registry number out of range\n", token, NULL, container); //msg
+		invoke_error("registry number out of range\n", token, NULL, container);
 	registry_encoding = decimal_to_hex_mk2(registry_value, token->size);
 	return (registry_encoding);
 }
 
-//this works the same way for both direct and indirect values as it's implemented right now;
 char			*get_number_encoding(t_token *token)
 {
 	char	*number_encoding;
@@ -38,11 +37,12 @@ char			*get_number_encoding(t_token *token)
 	pointer = NULL;
 	if (token->string[0] == '-')
 		value_substring = token->string;
-	else if (is_a_member(DIGITS, token->string[0])) //starts with a digit - ergo a number? 
+	else if (is_a_member(DIGITS, token->string[0]))
 		value_substring = token->string;
 	else
 	{
-		value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
+		value_substring = ft_strsub(token->string, 1,
+				ft_strlen(token->string) - 1);
 		pointer = value_substring;
 	}
 	number = (int)why_atol(value_substring);
@@ -55,31 +55,28 @@ char			*get_number_encoding(t_token *token)
 }
 
 char			*get_label_encoding(t_generic_list *token,
-t_generic_list *tokens, t_container *container)
+		t_generic_list *tokens, t_container *container)
 {
 	int		distance;
 	char	*label_name;
 	t_token	*current_token;
 	char	*label_encoding;
 	int		index;
-	
-	current_token = ((t_token *)token->stuff); 
+
+	current_token = ((t_token *)token->stuff);
 	index = 0;
 	while (!is_a_member(LABEL_CHARS, current_token->string[index]))
-		index ++;
-
+		index++;
 	label_name = ft_strsub(current_token->string,
 	index, ft_strlen(current_token->string) - 1);
 	distance = get_distance_to_the_label(token, label_name, tokens, container);
 	label_encoding = decimal_to_hex_mk2(distance, current_token->size);
-
 	free(label_name);
-
 	return (label_encoding);
 }
 
 t_generic_list	*encode_argument(t_generic_list *token,
-t_generic_list *tokens, t_container *container)
+		t_generic_list *tokens, t_container *container)
 {
 	t_generic_list	*encoding;
 	t_token			*current_token;
