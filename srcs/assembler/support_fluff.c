@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   support_fluff.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 12:53:43 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 13:00:01 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 17:29:34 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 17:31:19 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-char    get_char(int file)
+char	get_char(int file)
 {
 	char character;
 
@@ -21,7 +21,7 @@ char    get_char(int file)
 	return (-1);
 }
 
-char    skip_to_char(int file, char c)
+char	skip_to_char(int file, char c)
 {
 	char current_char;
 
@@ -33,7 +33,7 @@ char    skip_to_char(int file, char c)
 	return (-1);
 }
 
-int     is_a_member(const char *set, char c)
+int		is_a_member(const char *set, char c)
 {
 	int n;
 
@@ -47,7 +47,7 @@ int     is_a_member(const char *set, char c)
 	return (0);
 }
 
-int     is_in_string(const char *string, char c)
+int		is_in_string(const char *string, char c)
 {
 	int n;
 	int last_occurence;
@@ -63,11 +63,11 @@ int     is_in_string(const char *string, char c)
 	return (last_occurence);
 }
 
-char    *concat(char *lhs, char *rhs)
+char	*concat(char *lhs, char *rhs)
 {
-	char            *result;
-	unsigned int    index;
-	unsigned int    n;
+	char			*result;
+	unsigned int	index;
+	unsigned int	n;
 
 	result = ft_strnew(ft_strlen(lhs) + ft_strlen(rhs));
 	index = 0;
