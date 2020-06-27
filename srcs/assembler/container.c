@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   container.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:27:13 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:29:21 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:09:05 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 16:11:08 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-t_transcription_parameters *new_parameters(void)
+t_transcription_parameters	*new_parameters(void)
 {
 	struct s_transcription_parameters *parameters;
 
@@ -20,7 +20,6 @@ t_transcription_parameters *new_parameters(void)
 	parameters->name_size = -1;
 	parameters->comment_size = -1;
 	parameters->exec_code_size = -1;
-
 	return (parameters);
 }
 
@@ -32,9 +31,7 @@ t_container					*new_container(const char *file_name)
 	file_descriptor = open(file_name, O_RDONLY);
 	if (file_descriptor < 0)
 		invoke_error(FILE_ERROR_MESSAGE, NULL, NULL, NULL);
-
 	container = mallokill(sizeof(t_container));
-
 	container->file_descriptor = file_descriptor;
 	container->file_name = file_name;
 	container->size_of_tokens = -1;
@@ -46,7 +43,6 @@ t_container					*new_container(const char *file_name)
 	container->current = NULL;
 	container->translation = new_translation();
 	container->status = 0;
-
 	return (container);
 }
 
