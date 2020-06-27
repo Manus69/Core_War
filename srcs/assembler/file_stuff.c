@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   file_stuff.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:37:12 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:37:59 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:50:39 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 16:51:44 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-char *replace_extension(const char *file_name, t_container *container)
+char	*replace_extension(const char *file_name, t_container *container)
 {
-	unsigned int    length;
-	char            *replacing_string;
+	unsigned int	length;
+	char			*replacing_string;
 
 	if (ft_strlen(file_name) < 3)
-		invoke_error("file name error", NULL, NULL, container); //EMSG
+		invoke_error("file name error", NULL, NULL, container);
 	length = ft_strlen(file_name) + 2;
 	replacing_string = ft_strnew(length);
 	replacing_string = ft_strcpy(replacing_string, file_name);
@@ -28,15 +28,15 @@ char *replace_extension(const char *file_name, t_container *container)
 	return (replacing_string);
 }
 
-char *trim_file_name(const char *file_name, t_container *container)
+char	*trim_file_name(const char *file_name, t_container *container)
 {
-	unsigned int    length;
-	char            *resulting_string;
-	int             slash_index;
+	unsigned int	length;
+	char			*resulting_string;
+	int				slash_index;
 
 	length = ft_strlen(file_name);
 	if (length < 3)
-		invoke_error("file name error while trimmig", NULL, NULL, container); //EMSG
+		invoke_error("file name error while trimmig", NULL, NULL, container);
 	slash_index = is_in_string(file_name, '/');
 	if (slash_index == -1)
 		return (ft_strdup(file_name));
