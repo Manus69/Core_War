@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 17:32:04 by gemerald          #+#    #+#             */
-/*   Updated: 2020/06/27 17:40:56 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/06/27 18:52:44 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,11 +47,10 @@ char		*ft_itoa_base_local(unsigned int n, unsigned int base)
 	unsigned int		m;
 	char				*result;
 	unsigned int		index;
-	static const char	*char_set;
+	static const char	*char_set = "0123456789abcdef";
 
 	max_power = 1;
 	m = 0;
-	*char_set = "0123456789abcdef";
 	while (max_power <= n)
 	{
 		max_power = max_power * base;
