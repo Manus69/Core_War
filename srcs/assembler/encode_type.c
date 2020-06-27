@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   encode_type.c                                   :+:      :+:    :+:   */
+/*   encode_type.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:35:38 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:35:52 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:46:14 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 16:48:08 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,18 @@ enum e_operation_name	get_operation_name(t_token *token)
 	{
 		if (ft_strcmp(token->string, g_op_tab[operation].op_name) == 0)
 			return (operation);
-		operation = operation + 1; 
+		operation = operation + 1;
 	}
-	return (dummy_operation); //should never be executed;
+	return (dummy_operation);
 }
 
 static char				*get_type_byte_code(t_generic_list *argument_list,
-int arg_count)
+		int arg_count)
 {
-	//void			*pointer;
 	char			*byte_code;
 	char			*byte;
 	t_generic_list	*current_token;
-	
+
 	byte_code = ft_strdup("");
 	current_token = argument_list;
 	while (arg_count)
@@ -49,7 +48,7 @@ int arg_count)
 		if (byte)
 		{
 			byte_code = join_and_free(byte_code, byte);
-			arg_count --;
+			arg_count--;
 		}
 		current_token = current_token->next;
 	}
@@ -64,17 +63,15 @@ t_generic_list			*encode_type(t_generic_list *token)
 	void					*pointer;
 	unsigned int			pad_size;
 
-
 	operation = get_operation_name((t_token *)token->stuff);
 	token = token->next;
 	result = get_type_byte_code(token, g_op_tab[operation].arg_count);
 	pointer = result;
 	pad_size = (MAX_ARGS_NUMBER - g_op_tab[operation].arg_count) * 2;
 	result = pad_with_chars(result, pad_size, '0', 1);
-	encoding_list_item = new_generic_list(decimal_to_hex_mk2(binary_to_decimal(result), 1));
-
+	encoding_list_item =\
+			new_generic_list(decimal_to_hex_mk2(binary_to_decimal(result), 1));
 	free(pointer);
 	free(result);
-	
 	return (encoding_list_item);
 }
