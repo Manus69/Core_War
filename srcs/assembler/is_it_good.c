@@ -3,35 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   is_it_good.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 12:27:33 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 12:55:57 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 17:20:06 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 17:20:35 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-int     is_command(char *string)
+int	is_command(char *string)
 {
 	return (is_string_in_array(string, g_command_names));
 }
 
-int     is_command_name(char *string)
+int	is_command_name(char *string)
 {
 	if (ft_strcmp(string, g_command_names[0]) == 0)
 		return (1);
 	return (0);
 }
 
-int     is_command_comment(char *string)
+int	is_command_comment(char *string)
 {
 	if (ft_strcmp(string, g_command_names[1]) == 0)
 		return (1);
 	return (0);
 }
 
-int     is_string(char *string)
+int	is_string(char *string)
 {
 	int length;
 
