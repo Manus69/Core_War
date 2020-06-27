@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 13:08:43 by gemerald          #+#    #+#             */
-/*   Updated: 2020/03/07 13:09:25 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/06/27 19:20:39 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@
 # define ERR_USAGE 3
 # define FAIL 0
 
-int					take_name(int ac, char **av, int *arg_count, t_flag *has_flag); // добавлены 2 переменные
+int					take_name(int ac, char **av, int *arg_count,
+					t_flag *has_flag);
 int					asm_s(char *str, t_flag *has_flag);
 int					to_translate(char *str);
 int					to_dizasm(char *str);
