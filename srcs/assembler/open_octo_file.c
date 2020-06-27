@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 13:32:18 by gemerald          #+#    #+#             */
-/*   Updated: 2020/03/07 13:33:10 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/06/27 17:25:25 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ int		taste_magic(unsigned char *input)
 	int val;
 	int bytes_to_check;
 
-	//char *byte_value = "ea83f3"; //this is bad;
-
 	if (!(value = (int *)malloc(sizeof(int))))
 		return (FAIL);
 	i = -1;
@@ -50,12 +48,6 @@ int		taste_magic(unsigned char *input)
 			free(value);
 			return (FAIL);
 		}
-		//
-		// if (input[i] != byte_value[i])
-		// {
-		// 	free(value);
-		// 	return(FAIL);
-		// }
 		val--;
 	}
 	free(value);
