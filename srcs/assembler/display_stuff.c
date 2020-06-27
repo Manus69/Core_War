@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   display_stuff.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:29:43 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:29:43 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:13:43 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 16:15:49 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,19 +42,17 @@ void		string_to_bytes(char *string, int file_descriptor)
 	int				index;
 	int				length;
 	char			*current_byte;
-	//unsigned char	byte_value;
 
 	index = 0;
 	length = ft_strlen(string);
-
 	if (length == 0 || (length % 2) != 0)
-		invoke_error("in string to bytes: string is broken:", NULL, string, NULL); //this is a debug message, it will go away
-
+		invoke_error("in string to bytes: string is broken:", NULL,
+				string, NULL);
 	while (index < length)
 	{
 		current_byte = ft_strsub(string, index, 2);
-		ft_putchar_fd(ft_atoi_base(current_byte, NUMBER_SYSTEM_BASE), file_descriptor);
-	//	ft_dprintf(file_descriptor, "%c", ft_atoi_base(current_byte, NUMBER_SYSTEM_BASE)); надо добавить!!!!!
+		ft_putchar_fd(ft_atoi_base(current_byte, NUMBER_SYSTEM_BASE),
+				file_descriptor);
 		free(current_byte);
 		index = index + 2;
 	}
@@ -65,10 +63,9 @@ void		tokens_to_bytes(t_generic_list *tokens, int file_descriptor)
 	t_generic_list *current_token;
 
 	current_token = tokens;
-	while(current_token)
+	while (current_token)
 	{
 		string_to_bytes(current_token->stuff, file_descriptor);
 		current_token = current_token->next;
 	}
 }
-
