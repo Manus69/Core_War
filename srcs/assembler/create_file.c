@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 13:29:28 by gemerald          #+#    #+#             */
-/*   Updated: 2020/03/07 13:30:22 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/06/27 16:12:41 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,8 @@ int		take_new_name(t_dsm *src_code, char *old_name)
 
 int		fill_new_file(t_dsm *src_code, t_flag *has_flag)
 {
-	int fd;
-	char *file_name;
+	int		fd;
+	char	*file_name;
 
 	if (has_flag->change_name)
 		file_name = has_flag->new_file_name;
