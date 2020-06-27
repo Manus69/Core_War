@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 13:22:20 by gemerald          #+#    #+#             */
-/*   Updated: 2020/03/07 13:22:40 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/06/27 17:14:20 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int		asm_s(char *str, t_flag *has_flag)
 {
 	if (str)
-		// ft_printf("to translate\n");
 		here_we_go(str, has_flag);
 	has_flag = free_structure(has_flag);
 	return (SUCCESS);
