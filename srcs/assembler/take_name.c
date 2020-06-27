@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 13:22:53 by gemerald          #+#    #+#             */
-/*   Updated: 2020/03/07 13:23:22 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/06/27 18:00:00 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int		take_name(int ac, char **av, int *argnum, t_flag *check)
 {
 	if (ac < 2)
 		return (ERR_USAGE);
-	if (ac > 2 && av[1][0] == '-' && is_flag(av[*argnum], check, argnum, av)) //проверяем наличие флагов
+	if (ac > 2 && av[1][0] == '-' && is_flag(av[*argnum], check, argnum, av))
 		*argnum += 1;
 	if (to_translate(av[*argnum]))
 		return (TO_TRANSLATE);
