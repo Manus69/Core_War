@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   token.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 13:04:46 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 13:05:13 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 18:02:43 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 18:03:31 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,10 @@ t_token	*copy_token(t_token *token)
 	token_copy->argument_type = token->argument_type;
 	token_copy->distance = token->distance;
 	token_copy->size = token->size;
-
 	return (token_copy);
 }
 
-void    destroy_token_dumb(void *token)
+void	destroy_token_dumb(void *token)
 {
 	t_token *token_cast;
 
