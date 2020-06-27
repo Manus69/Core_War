@@ -3,44 +3,43 @@
 /*                                                        :::      ::::::::   */
 /*   distances.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:32:54 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:33:34 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:27:45 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 16:31:53 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
 int		get_absolute_distance_to_the_label(t_token *token,
-char *label_name, t_container *container)
+		char *label_name, t_container *container)
 {
 	t_generic_list	*current_token;
 	char			*substring;
-	
-	t_token *debug_token;
+	t_token			*debug_token;
 
 	current_token = container->labels;
 	while (current_token)
 	{
 		debug_token = (t_token *)current_token->stuff;
-
 		substring = ft_strsub(debug_token->string,
 		0, ft_strlen(debug_token->string) - 1);
 		if (ft_strcmp(substring, label_name) == 0)
 		{
 			free(substring);
-			return (((t_token *)current_token->stuff)->distance - token->distance);
+			return (((t_token *)current_token->stuff)->distance -\
+					token->distance);
 		}
 		free(substring);
 		current_token = current_token->next;
 	}
-	return (invoke_error("the label is missing\n", debug_token, NULL, container));
+	return (invoke_error("the label is missing\n",
+				debug_token, NULL, container));
 }
 
-//returns a positive number;
 int		get_distance_to_the_previous_operation(t_token *token,
-t_generic_list *token_list) 
+		t_generic_list *token_list)
 {
 	t_generic_list	*current_token;
 	t_token			*previous_operation;
@@ -84,11 +83,10 @@ int		get_distance_to_the_next_operation(t_generic_list *token)
 }
 
 int		get_distance_to_the_label(t_generic_list *token, char *label_name,
-t_generic_list *tokens, t_container *container)
+		t_generic_list *tokens, t_container *container)
 {
 	int		absolute_distance;
 	int		distance_to_the_previous_operation;
-	//int		distance_to_the_next_operation;
 	t_token	*current_token;
 
 	current_token = ((t_token *)token->stuff);
@@ -96,10 +94,8 @@ t_generic_list *tokens, t_container *container)
 	label_name, container);
 	distance_to_the_previous_operation =
 	get_distance_to_the_previous_operation(current_token, tokens);
-
 	if (distance_to_the_previous_operation < 0)
 		invoke_error(UNEXPECTED_ERROR, current_token, NULL, NULL);
-
 	return (absolute_distance + distance_to_the_previous_operation);
 }
 
