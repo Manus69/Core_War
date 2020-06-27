@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   generic_list.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar <lcaesar@student.42.fr>            +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/13 19:19:24 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/02/13 19:20:10 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 17:15:20 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 17:16:11 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,11 +70,11 @@ int				is_on_the_list(t_generic_list *generic_list, void *stuff)
 	return (0);
 }
 
-void			destroy_generic_list(t_generic_list **list, void (*destructor)(void *))
+void			destroy_generic_list(t_generic_list **list,
+		void (*destructor)(void *))
 {
 	t_generic_list **current;
 	t_generic_list *next;
-
 
 	if (!list || !*list)
 		return ;
