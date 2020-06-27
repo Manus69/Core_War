@@ -3,22 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   support_stuff.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 13:01:07 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 13:02:32 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 17:44:18 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 17:56:50 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
-// #include <limits.h>
 
 int				binary_to_decimal(char *binary_number)
 {
-	int result;
-	int current_base;
-	int number_of_bits;
-	int n;
+	int	result;
+	int	current_base;
+	int	number_of_bits;
+	int	n;
 
 	result = 0;
 	current_base = 1;
@@ -55,14 +54,23 @@ unsigned int	binary_to_unsigned_decimal(char *binary_number)
 	return (result);
 }
 
-char		*get_hex_with_padding(int decimal, int number_of_bytes)
+static void		init_vars(int resulting_string_length, char **resulting_string)
+{
+	int i;
+
+	i = -1;
+	while (++i < resulting_string_length)
+		(*resulting_string)[i] = '0';
+}
+
+char			*get_hex_with_padding(int decimal, int number_of_bytes)
 {
 	int		m;
 	int		initial_length;
 	char	*resulting_string;
 	int		resulting_string_length;
 	char	*hex_number;
-	
+
 	hex_number = ft_itoa_base_local(decimal, NUMBER_SYSTEM_BASE);
 	initial_length = ft_strlen(hex_number);
 	resulting_string_length = number_of_bytes * 2;
@@ -70,22 +78,18 @@ char		*get_hex_with_padding(int decimal, int number_of_bytes)
 		resulting_string_length = initial_length;
 	resulting_string = ft_strnew(resulting_string_length);
 	m = 0;
-	while (m < resulting_string_length)
-	{
-		resulting_string[m] = '0';
-		m = m + 1;
-	}
-	m = 0;
+	init_vars(resulting_string_length, &resulting_string);
 	while (m < initial_length)
 	{
-		resulting_string[resulting_string_length - 1 - m] = hex_number[initial_length - 1 - m];
+		resulting_string[resulting_string_length - 1 - m] =\
+							hex_number[initial_length - 1 - m];
 		m = m + 1;
 	}
 	free(hex_number);
 	return (resulting_string);
 }
 
-char		*decimal_to_hex_mk2(int n, int number_of_bytes)
+char			*decimal_to_hex_mk2(int n, int number_of_bytes)
 {
 	unsigned int	decimal;
 	char			*binary_complement;
