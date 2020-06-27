@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   encode_operations.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 23:33:57 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 23:34:10 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:40:17 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 16:40:51 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-t_generic_list *encode_operation(t_token *token)
+t_generic_list	*encode_operation(t_token *token)
 {
 	t_generic_list			*encoding;
 	enum e_operation_name	operation;
