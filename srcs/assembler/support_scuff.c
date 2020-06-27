@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   support_scuff.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 12:57:11 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/23 13:00:45 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 17:32:04 by gemerald          #+#    #+#             */
+/*   Updated: 2020/06/27 17:40:56 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-long        why_atol(const char *number_string) //hope i didnt make a blunder;
+long		why_atol(const char *number_string)
 {
-	long            result;
-	long            previous_result;
-	unsigned int    n;
-	int             sign;
+	long			result;
+	long			previous_result;
+	unsigned int	n;
+	int				sign;
 
 	result = 0;
 	previous_result = 0;
@@ -33,27 +33,25 @@ long        why_atol(const char *number_string) //hope i didnt make a blunder;
 		if (!is_a_member(DIGITS, number_string[n]))
 			return (sign * result);
 		result = (result * 10) + ((int)number_string[n] - '0');
-
-		if (result >= previous_result)
-			previous_result = result;
-		else
+		if (result <= previous_result)
 			return ((sign == -1) ? 0 : -1);
-		
+		previous_result = result;
 		n = n + 1;
 	}
 	return (sign * result);
 }
 
-char        *ft_itoa_base_local(unsigned int n, unsigned int base)
+char		*ft_itoa_base_local(unsigned int n, unsigned int base)
 {
-	unsigned long       max_power;
-	unsigned int        m;
-	char                *result;
-	unsigned int        index;
-	static const char   *char_set = "0123456789abcdef";
+	unsigned long		max_power;
+	unsigned int		m;
+	char				*result;
+	unsigned int		index;
+	static const char	*char_set;
 
 	max_power = 1;
 	m = 0;
+	*char_set = "0123456789abcdef";
 	while (max_power <= n)
 	{
 		max_power = max_power * base;
@@ -72,7 +70,7 @@ char        *ft_itoa_base_local(unsigned int n, unsigned int base)
 	return (result);
 }
 
-void        carry_propagate(char *number, int index, int bytes_left)
+void		carry_propagate(char *number, int index, int bytes_left)
 {
 	if (bytes_left == 0)
 		return ;
@@ -85,25 +83,24 @@ void        carry_propagate(char *number, int index, int bytes_left)
 		number[index] = '1';
 }
 
-char        *get_binary_complement(char *binary_number, int number_of_bytes)
+char		*get_binary_complement(char *binary_number, int number_of_bytes)
 {
-	char    *complement;
-	int     n;
-	int     initial_number_of_bits;
-	int     final_number_of_bits;
+	char	*complement;
+	int		n;
+	int		initial_number_of_bits;
+	int		final_number_of_bits;
 
 	final_number_of_bits = number_of_bytes * 8;
 	initial_number_of_bits = ft_strlen(binary_number);
 	if (final_number_of_bits < initial_number_of_bits)
-		initial_number_of_bits = final_number_of_bits; //this is questionable;
+		initial_number_of_bits = final_number_of_bits;
 	complement = ft_strnew(final_number_of_bits);
 	n = 0;
 	while (n < initial_number_of_bits)
 	{
-		if (binary_number[initial_number_of_bits - n - 1] == '0')
-			complement[final_number_of_bits - 1 - n] = '1';
-		else
-			complement[final_number_of_bits - 1 - n] = '0';
+		(binary_number[initial_number_of_bits - n - 1] == '0') ?\
+			(complement[final_number_of_bits - 1 - n] = '1') :\
+			(complement[final_number_of_bits - 1 - n] = '0');
 		n = n + 1;
 	}
 	while (n < final_number_of_bits)
