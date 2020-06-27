@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   translation_vexation.c                          :+:      :+:    :+:   */
+/*   translation_vexation.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mnarwhal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/24 13:08:51 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/24 13:18:36 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:56:56 by mnarwhal          #+#    #+#             */
+/*   Updated: 2020/06/27 16:57:00 by mnarwhal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int		get_arg_count(t_generic_list *token)
 
 	arg_count = 0;
 	current_token = token->next;
-
 	while (1)
 	{
 		if (!current_token)
@@ -30,7 +29,7 @@ int		get_arg_count(t_generic_list *token)
 			current_token = current_token->next;
 		else if (current_token_cast->type == argument)
 		{
-			arg_count ++;
+			arg_count++;
 			current_token = current_token->next;
 		}
 		else
@@ -39,7 +38,7 @@ int		get_arg_count(t_generic_list *token)
 	return (arg_count);
 }
 
-void compare_arg_counts(t_generic_list *token, t_container *container)
+void	compare_arg_counts(t_generic_list *token, t_container *container)
 {
 	t_token					*token_cast;
 	enum e_operation_name	operation_name;
@@ -49,7 +48,8 @@ void compare_arg_counts(t_generic_list *token, t_container *container)
 	operation_name = get_operation_name(token_cast);
 	arg_count = get_arg_count(token);
 	if (g_op_tab[operation_name].arg_count != arg_count)
-		invoke_error("wrong number of arguments for token\n", token_cast, NULL, container); //msg
+		invoke_error("wrong number of arguments for token\n", token_cast,
+		NULL, container);
 }
 
 int		get_operation_code(t_token *token)
@@ -64,7 +64,7 @@ int		get_operation_code(t_token *token)
 	while (n < g_op_tab[operation_name].arg_count)
 	{
 		value = (value | g_op_tab[operation_name].arg_type[n]);
-		n ++;
+		n++;
 	}
 	return (value);
 }
@@ -83,6 +83,7 @@ t_token *current_token, t_container *container, t_flag *flag)
 	if (table_value != (table_value | current_token->argument_type))
 	{
 		flag = free_structure(flag);
-		invoke_error("argument type mismatch\n", previous_operation, NULL, container); //msg leaks.. if error
+		invoke_error("argument type mismatch\n",
+			previous_operation, NULL, container);
 	}
 }

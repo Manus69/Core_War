@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   what is it.c                                       :+:      :+:    :+:   */
+/*   what_is_it.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcaesar  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mnarwhal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/24 13:09:15 by lcaesar           #+#    #+#             */
-/*   Updated: 2020/06/24 13:24:57 by lcaesar          ###   ########.fr       */
+/*   Created: 2020/06/27 16:41:56 by mnarwhal          #+#    #+#             */
+/*   Updated: 2020/06/27 16:42:06 by mnarwhal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-int     is_label(char *string)
+int		is_label(char *string)
 {
-	unsigned int n;
-	unsigned int length;
+	unsigned int	n;
+	unsigned int	length;
 
 	if (!generic_token_string_check(string, LABEL_CHAR, 0))
 		return (0);
@@ -30,12 +30,10 @@ int     is_label(char *string)
 	return (1);
 }
 
-//argument classification
-
-int     is_registry(char *string)
+int		is_registry(char *string)
 {
-	int n;
-	
+	int				n;
+
 	if (!generic_token_string_check(string, 'r', 1))
 		return (0);
 	n = 1;
@@ -48,11 +46,11 @@ int     is_registry(char *string)
 	return (1);
 }
 
-int     is_direct(char *string)
+int		is_direct(char *string)
 {
-	int n;
-	int length;
-	
+	int				n;
+	int				length;
+
 	if (!generic_token_string_check(string, DIRECT_CHAR, 1))
 		return (0);
 	n = 1;
@@ -75,10 +73,10 @@ int     is_direct(char *string)
 	return (0);
 }
 
-int     is_indirect(char *string)
+int		is_indirect(char *string)
 {
-	int n;
-	int length;
+	int				n;
+	int				length;
 
 	n = 0;
 	length = ft_strlen(string);

@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 13:38:59 by gemerald          #+#    #+#             */
-/*   Updated: 2020/03/07 13:40:39 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/06/27 16:45:09 by mnarwhal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,8 @@ int		walk_throw(t_dsm *src_code)
 
 	while (src_code->current_position < src_code->file_len)
 	{
-		if (src_code->input[src_code->current_position] > 16 || src_code->input[src_code->current_position] < 1)
+		if (src_code->input[src_code->current_position] > 16 ||
+			src_code->input[src_code->current_position] < 1)
 			return (FAIL);
 		if (g_op_tab[src_code->input[src_code->current_position]].arg_code_flag)
 		{
