@@ -109,6 +109,10 @@ char				*take_short_dir(t_dsm *src_code);
 char				*take_simple_dir(t_dsm *src_code);
 int					fill_new_file(t_dsm *src_code, t_flag *has_flag);
 int					take_new_name(t_dsm *src_code, char *old_name);
+int				write_instruction(t_dsm *src_code, int op_code);
+int				write_reg(t_dsm *src_code, t_argum *args, int j);
+char			*take_short_dir(t_dsm *src_code);
+char			*take_simple_dir(t_dsm *src_code);
 
 t_flag				*free_structure(t_flag	*flag);
 int					is_flag(char *test, t_flag *flag, int *count, char **av);

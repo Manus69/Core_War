@@ -84,6 +84,7 @@ ASM_SOURCES_LIST =		asm_main.c 					\
 						classify_token.c			\
 						collect_pre_print_code.c 	\
 						complex_instructions.c 		\
+						complex_instructions_01.c   \
 						container.c					\
 						create_file.c				\
 						display_stuff.c				\
