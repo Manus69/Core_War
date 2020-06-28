@@ -4,7 +4,7 @@
 # compile C with /Library/Developer/CommandLineTools/usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes -I/Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft -I/Volumes/d_60Gb/corewar/check/Core_War/includes
+C_INCLUDES = -I/Volumes/d_60Gb/corewar/check/28.06/Core_War/ft_lftprintf/includes -I/Volumes/d_60Gb/corewar/check/28.06/Core_War/ft_lftprintf/includes/libft -I/Volumes/d_60Gb/corewar/check/28.06/Core_War/includes
 
 C_FLAGS = -g -std=gnu11
 
