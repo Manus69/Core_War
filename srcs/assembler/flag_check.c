@@ -85,6 +85,11 @@ int 	is_flag(char *test, t_flag *has_flag, int *arg_count, char **av)
 		(*has_flag).flag_a = 1;
 		return (SUCCESS);
 	}
+	else if (test[0] == '-' && test[1]=='v' && test[2] == '\0') //если флаг -а запоминаем и идем дальше
+	{
+		(*has_flag).visible = 1;
+		return (SUCCESS);
+	}
 	else if (test[0] == '-' && test[1]=='n' && test[2] == '\0') //если флаг -n считываем новое имя файла и идем дальше
 	{
 		*arg_count += 1;
