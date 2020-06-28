@@ -52,65 +52,30 @@ static void		translate_argument(t_container *container,
 	*last_element = token_translation;
 }
 
-// t_generic_list	*translate_tokens(t_container *cntner, t_flag *has_flag)
-// {
-// 	t_generic_list	*cur_tok;
-// 	t_generic_list	*last_element;
-// 	t_token			*prev_oper;
-
-// 	last_element = NULL;
-// 	prev_oper = NULL;
-// 	cur_tok = cntner->tokens;
-// 	while (cur_tok)
-// 	{
-// 		if (((t_token *)cur_tok->stuff)->type == champ_name)
-// 			cntner->translation->champ_name =
-// 					translate_champ_name(cur_tok, cntner);
-// 		else if (((t_token *)cur_tok->stuff)->type == champ_comment)
-// 			cntner->translation->champ_comment =
-// 					translate_champ_comment(cur_tok, cntner);
-// 		else if (((t_token *)cur_tok->stuff)->type == operation
-// 				&& (prev_oper = (t_token *)cur_tok->stuff))
-// 			translate_operation(cntner, cur_tok, &last_element);
-// 		else if (((t_token *)cur_tok->stuff)->type == argument
-// 				&& (cntner->current = cur_tok))
-// 			translate_argument(cntner, has_flag, prev_oper, &last_element);
-// 		cur_tok = cur_tok->next;
-// 	}
-// 	return (concatenate_translation(cntner->translation));
-// }
-
-t_generic_list  *translate_tokens(t_container *container, t_flag *has_flag)
+t_generic_list	*translate_tokens(t_container *cntner, t_flag *has_flag)
 {
-	t_generic_list	*current_token;
-	//t_generic_list	*token_translation;
+	t_generic_list	*cur_tok;
 	t_generic_list	*last_element;
-	t_token			*previous_operation;
+	t_token			*prev_oper;
 
 	last_element = NULL;
-	previous_operation = NULL;
-	current_token = container->tokens;
-	while (current_token)
+	prev_oper = NULL;
+	cur_tok = cntner->tokens;
+	while (cur_tok)
 	{
-		if (((t_token *)current_token->stuff)->type == champ_name)
-			container->translation->champ_name = translate_champ_name(current_token, container);
-		else if (((t_token *)current_token->stuff)->type == champ_comment)
-			container->translation->champ_comment = translate_champ_comment(current_token, container);
-		else if (((t_token *)current_token->stuff)->type == operation)
-		{
-			previous_operation = (t_token *)current_token->stuff;
-			translate_operation(container, current_token, &last_element);
-		}
-		else if (((t_token *)current_token->stuff)->type == argument)
-		{
-			container->current = current_token;
-			//
-			t_token *cast = (t_token *)current_token->stuff;
-			//
-			translate_argument(container, has_flag, previous_operation, &last_element);
-		}
-
-		current_token = current_token->next;
+		if (((t_token *)cur_tok->stuff)->type == champ_name)
+			cntner->translation->champ_name =
+					translate_champ_name(cur_tok, cntner);
+		else if (((t_token *)cur_tok->stuff)->type == champ_comment)
+			cntner->translation->champ_comment =
+					translate_champ_comment(cur_tok, cntner);
+		else if (((t_token *)cur_tok->stuff)->type == operation
+				&& (prev_oper = (t_token *)cur_tok->stuff))
+			translate_operation(cntner, cur_tok, &last_element);
+		else if (((t_token *)cur_tok->stuff)->type == argument
+				&& (cntner->current = cur_tok))
+			translate_argument(cntner, has_flag, prev_oper, &last_element);
+		cur_tok = cur_tok->next;
 	}
-	return (concatenate_translation(container->translation));
+	return (concatenate_translation(cntner->translation));
 }
