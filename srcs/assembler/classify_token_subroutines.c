@@ -1,7 +1,7 @@
 
 #include "asm.h"
 
-void	classify_after_null(t_token *current_token, t_token *previous_token)
+void	classify_after_null(t_token *current_token)
 {
 	if (is_command_name(current_token->string))
 		current_token->type = command_name;
@@ -11,8 +11,7 @@ void	classify_after_null(t_token *current_token, t_token *previous_token)
 		current_token->type = new_line;
 }
 
-void	classify_after_new_line(t_token *current_token,
-		t_token *previous_token)
+void	classify_after_new_line(t_token *current_token)
 {
 	if (is_new_line(current_token->string))
 		current_token->type = new_line;
@@ -26,8 +25,7 @@ void	classify_after_new_line(t_token *current_token,
 		current_token->type = command_comment;
 }
 
-void	classify_after_label(t_token *current_token,
-		t_token *previous_token)
+void	classify_after_label(t_token *current_token)
 {
 	if (is_new_line(current_token->string))
 		current_token->type = new_line;
@@ -35,8 +33,7 @@ void	classify_after_label(t_token *current_token,
 		current_token->type = operation;
 }
 
-void	classify_after_argument(t_token *current_token,
-		t_token *previous_token)
+void	classify_after_argument(t_token *current_token)
 {
 	if (is_argument_separator(current_token->string))
 		current_token->type = comma;
@@ -44,8 +41,7 @@ void	classify_after_argument(t_token *current_token,
 		current_token->type = new_line;
 }
 
-void	classify_after_operation(t_token *current_token,
-		t_token *previous_token)
+void	classify_after_operation(t_token *current_token)
 {
 	if (check_argument_token(current_token))
 		;

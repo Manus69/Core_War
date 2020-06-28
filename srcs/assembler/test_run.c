@@ -16,14 +16,17 @@ const char  *g_file_name;
 
 void        translate_and_write_to_file(t_container *container, t_flag *has_flag)
 {
-    int file;
-    t_generic_list *prefix_item;
-    char *new_file_name;
-    void *pointer;
+    int             file;
+    t_generic_list  *prefix_item;
+    char            *new_file_name;
+    void            *pointer;
 
     prefix_item = new_generic_list(ft_strdup("00ea83f3"));
     prefix_item = concatenate_lists(prefix_item, translate_tokens(container, has_flag), NULL);
     pointer = NULL;
+    //
+    // has_flag->visible = 1;
+    //
     if (has_flag->visible) //what flag is that? 
         display_byte_strings(prefix_item);
     if (has_flag->flag_a)

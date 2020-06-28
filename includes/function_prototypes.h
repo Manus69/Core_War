@@ -64,16 +64,11 @@ int				is_indirect(char *string);
 int				is_string(char *string);
 int				check_argument_token(t_token *token);
 
-void			classify_after_null(t_token *current_token,
-				t_token *previous_token);
-void			classify_after_new_line(t_token *current_token,
-				t_token *previous_token);
-void			classify_after_label(t_token *current_token,
-				t_token *previous_token);
-void			classify_after_argument(t_token *current_token,
-				t_token *previous_token);
-void			classify_after_operation(t_token *current_token,
-				t_token *previous_token);
+void			classify_after_null(t_token *current_token);
+void			classify_after_new_line(t_token *current_token);
+void			classify_after_label(t_token *current_token);
+void			classify_after_argument(t_token *current_token);
+void			classify_after_operation(t_token *current_token);
 
 /*
 ** encoding

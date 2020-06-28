@@ -40,9 +40,9 @@ void		classify_token(t_token *current_token, t_token *previous_token)
 	if (!current_token || !current_token->string)
 		return ;
 	else if (previous_token == NULL)
-		classify_after_null(current_token, previous_token);
+		classify_after_null(current_token);
 	else if (previous_token->type == new_line)
-		classify_after_new_line(current_token, previous_token);
+		classify_after_new_line(current_token);
 	else if (previous_token->type == command_name &&
 			is_string(current_token->string))
 		current_token->type = champ_name;
@@ -50,11 +50,11 @@ void		classify_token(t_token *current_token, t_token *previous_token)
 			is_string(current_token->string))
 		current_token->type = champ_comment;
 	else if (previous_token->type == label)
-		classify_after_label(current_token, previous_token);
+		classify_after_label(current_token);
 	else if (previous_token->type == operation)
-		classify_after_operation(current_token, previous_token);
+		classify_after_operation(current_token);
 	else if (previous_token->type == argument)
-		classify_after_argument(current_token, previous_token);
+		classify_after_argument(current_token);
 	else if (previous_token->type == comma &&
 			check_argument_token(current_token))
 		return ;
