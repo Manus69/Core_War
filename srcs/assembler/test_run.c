@@ -76,7 +76,8 @@ void        translate_and_write_to_file(t_container *container, t_flag *has_flag
 //add checks for add to buffer calls, since it cant call invoke_error anymore
 
 //TESTING ROAD MAP
-//test number arguments in different byte ranges with different signs; make it systematic
+//atol is suspicious as fuck; 
+//test number arguments in different byte ranges with different signs; make it systematic !
 //leaks on invalid input?
 //scuffed filenames? short, empty?
 //.cor consisting of two champs? 
@@ -88,6 +89,13 @@ void        here_we_go(char *file_name, t_flag *has_flag)
 {
     t_container *container;
 
+    //
+    // char *string = "2147483648";
+    // int x = (int)why_atol(string);
+    // int y = (int)atol(string);
+    // exit(1);
+    //
+
     container = new_container(file_name);
     g_file_name = file_name;
 
@@ -96,6 +104,10 @@ void        here_we_go(char *file_name, t_flag *has_flag)
     classify_all_tokens(container);
     measure_token_size(container->tokens);
     set_global_distance(container);
+    //
+    // display_all_tokens(container->tokens);
+    // exit(1);
+    //
     get_transcription_parameters(container);
     translate_and_write_to_file(container, has_flag);
     destroy_container(&container);

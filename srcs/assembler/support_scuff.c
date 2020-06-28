@@ -33,7 +33,7 @@ long		why_atol(const char *number_string)
 		if (!is_a_member(DIGITS, number_string[n]))
 			return (sign * result);
 		result = (result * 10) + ((int)number_string[n] - '0');
-		if (result <= previous_result)
+		if (result < previous_result)
 			return ((sign == -1) ? 0 : -1);
 		previous_result = result;
 		n = n + 1;
