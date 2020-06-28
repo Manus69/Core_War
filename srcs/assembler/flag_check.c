@@ -33,8 +33,8 @@ int		check_new_name(char *name)
 	char	*not_first;
 
 	i = 0;
-	*alpha = "abcdefghigklmnopqrstuvwxyz_";
-	*not_first = "ABCDEFGHIGKLMNOPQRSTUVWXYZ1234567890";
+	alpha = "abcdefghigklmnopqrstuvwxyz_";
+	not_first = "ABCDEFGHIGKLMNOPQRSTUVWXYZ1234567890";
 	while (name[i] != '\0')
 	{
 		if (i == 0)
@@ -59,7 +59,7 @@ char	*get_new_name(char *s, int len, char **av, int i)
 	char	*str;
 
 	a = 0;
-	*str = ".cor .s";
+	str = ".cor .s";
 	if (to_translate(av[i + 1]))
 		i = 0;
 	else if (to_dizasm(av[i + 1]))
