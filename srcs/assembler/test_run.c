@@ -24,16 +24,10 @@ void        translate_and_write_to_file(t_container *container, t_flag *has_flag
     prefix_item = new_generic_list(ft_strdup("00ea83f3"));
     prefix_item = concatenate_lists(prefix_item, translate_tokens(container, has_flag), NULL);
     pointer = NULL;
-    if (has_flag->visible)
-    {
+    if (has_flag->visible) //what flag is that? 
         display_byte_strings(prefix_item);
-        // return ;
-    }
     if (has_flag->flag_a)
-	{
-    	// ft_putstr("Here is -a flag!\n");
         display_all_tokens(container->tokens);
-	}
     if (has_flag->change_name)
     	new_file_name = has_flag->new_file_name;
     else
@@ -91,30 +85,14 @@ void        here_we_go(char *file_name, t_flag *has_flag)
 {
     t_container *container;
 
-    //testing area
-
     container = new_container(file_name);
-    //
-    g_file_name = file_name; //used in invoke error calls
-    //
+    g_file_name = file_name;
 
     read_file(container);
     close(container->file_descriptor);
-    //
-    // display_all_tokens(container->tokens);
-    // exit(1);
-    //
     classify_all_tokens(container);
-    //
-    // display_all_tokens(container->tokens);
-    // exit(1);
-    //
     measure_token_size(container->tokens);
     set_global_distance(container);
-    //
-    // display_all_tokens(container->tokens);
-    // exit(1);
-    //
     get_transcription_parameters(container);
     translate_and_write_to_file(container, has_flag);
     destroy_container(&container);

@@ -23,6 +23,7 @@ typedef struct s_container					t_container;
 typedef struct s_translation				t_translation;
 typedef struct s_buffer						t_buffer;
 typedef short								t_token_list_status;
+typedef enum e_operation_name				t_op_name;
 
 enum										e_token_type
 {
