@@ -27,6 +27,13 @@
 //test number arguments in different byte ranges with different signs; make it systematic !
 //leaks on invalid input?
 //scuffed filenames? short, empty?
-//.cor consisting of two champs? 
+//.cor consisting of two champs?
+
+//print errors on the str_err
+
+//label_chars checks LABEL@~!
+//invalid files memory leaks .cor and .s
+//.cor files as .s
+//check-list
 
 //dont give retards an inch
