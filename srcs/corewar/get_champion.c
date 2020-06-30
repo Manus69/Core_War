@@ -63,15 +63,11 @@ uint8_t			*read_code(int fd, size_t len, t_arena *vm)
 {
 	size_t		size;
 	uint8_t		*code;
-	uint8_t		end;
 
 	if (!(code = (unsigned char *)malloc(sizeof(unsigned char) * len)))
 		print_error(MALLOC_ERROR, vm);
 	size = read(fd, code, len);
 	if (size != len)
-		print_error(CODE_SIZE_ERROR, vm);
-	read(fd, &end, len);
-	if (end != 0)
 		print_error(CODE_SIZE_ERROR, vm);
 	return (code);
 }

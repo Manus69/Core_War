@@ -63,10 +63,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Volumes/d_60Gb/corewar/check/Core_War
+CMAKE_SOURCE_DIR = /Volumes/d_60Gb/corewar/30.06/buf/Core_War
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug
+CMAKE_BINARY_DIR = /Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Core_War.dir/depend.make
@@ -79,2135 +79,2135 @@ include CMakeFiles/Core_War.dir/flags.make
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.o: ../ft_lftprintf/includes/libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_atoi.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_atoi.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_atoi.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_atoi.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_atoi.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.o: ../ft_lftprintf/includes/libft/ft_atoi_base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_atoi_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_atoi_base.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_atoi_base.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_atoi_base.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_atoi_base.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_atoi_base.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_base.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o: ../ft_lftprintf/includes/libft/ft_atoi_size_t.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_atoi_size_t.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_atoi_size_t.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_atoi_size_t.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_atoi_size_t.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_atoi_size_t.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_atoi_size_t.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_atoi_size_t.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.o: ../ft_lftprintf/includes/libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_bzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_bzero.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_bzero.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_bzero.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_bzero.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_bzero.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_bzero.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o: ../ft_lftprintf/includes/libft/ft_char_in_string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_char_in_string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_char_in_string.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_char_in_string.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_char_in_string.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_char_in_string.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_char_in_string.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_char_in_string.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.o: ../ft_lftprintf/includes/libft/ft_countwords.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_countwords.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_countwords.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_countwords.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_countwords.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_countwords.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_countwords.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_countwords.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o: ../ft_lftprintf/includes/libft/ft_cut_space.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_cut_space.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_cut_space.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_cut_space.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_cut_space.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_cut_space.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_cut_space.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cut_space.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o: ../ft_lftprintf/includes/libft/ft_cutstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_cutstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_cutstr.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_cutstr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_cutstr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_cutstr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_cutstr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_cutstr.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o: ../ft_lftprintf/includes/libft/ft_get_integer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_get_integer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_get_integer.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_get_integer.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_get_integer.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_get_integer.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_get_integer.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_get_integer.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o: ../ft_lftprintf/includes/libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isalnum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isalnum.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isalnum.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isalnum.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isalnum.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isalnum.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalnum.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o: ../ft_lftprintf/includes/libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isalpha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isalpha.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isalpha.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isalpha.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isalpha.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isalpha.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isalpha.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.o: ../ft_lftprintf/includes/libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isascii.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isascii.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isascii.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isascii.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isascii.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isascii.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o: ../ft_lftprintf/includes/libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isdigit.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isdigit.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isdigit.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isdigit.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isdigit.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isdigit.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.o: ../ft_lftprintf/includes/libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isprint.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isprint.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isprint.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isprint.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isprint.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isprint.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.o: ../ft_lftprintf/includes/libft/ft_isspace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isspace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isspace.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isspace.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isspace.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_isspace.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_isspace.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_isspace.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.o: ../ft_lftprintf/includes/libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.o: ../ft_lftprintf/includes/libft/ft_itoa_base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa_base.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa_base.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa_base.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa_base.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa_base.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_base.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o: ../ft_lftprintf/includes/libft/ft_itoa_long.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa_long.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa_long.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa_long.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa_long.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa_long.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa_long.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_long.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o: ../ft_lftprintf/includes/libft/ft_itoa_mod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa_mod.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa_mod.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa_mod.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa_mod.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_itoa_mod.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_itoa_mod.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_itoa_mod.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.o: ../ft_lftprintf/includes/libft/ft_length.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_length.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_length.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_length.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_length.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_length.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_length.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_length.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.o: ../ft_lftprintf/includes/libft/ft_lst_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lst_free.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lst_free.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lst_free.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lst_free.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lst_free.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lst_free.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lst_free.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o: ../ft_lftprintf/includes/libft/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstadd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstadd.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstadd.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstadd.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstadd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstadd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstadd.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o: ../ft_lftprintf/includes/libft/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstdel.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstdel.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstdel.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstdel.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstdel.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdel.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o: ../ft_lftprintf/includes/libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstdelone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstdelone.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstdelone.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstdelone.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstdelone.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstdelone.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstdelone.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o: ../ft_lftprintf/includes/libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstiter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstiter.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstiter.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstiter.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstiter.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstiter.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstiter.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o: ../ft_lftprintf/includes/libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstmap.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstmap.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstmap.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstmap.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstmap.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstmap.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o: ../ft_lftprintf/includes/libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstnew.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstnew.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstnew.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_lstnew.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_lstnew.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_lstnew.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.o: ../ft_lftprintf/includes/libft/ft_match.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_match.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_match.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_match.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_match.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_match.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_match.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_match.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o: ../ft_lftprintf/includes/libft/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memalloc.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memalloc.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memalloc.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memalloc.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memalloc.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memalloc.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o: ../ft_lftprintf/includes/libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memccpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memccpy.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memccpy.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memccpy.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memccpy.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memccpy.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memccpy.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.o: ../ft_lftprintf/includes/libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memchr.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memchr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memchr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memchr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memchr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memchr.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o: ../ft_lftprintf/includes/libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memcmp.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memcmp.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memcmp.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memcmp.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memcmp.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcmp.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o: ../ft_lftprintf/includes/libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memcpy.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memcpy.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memcpy.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memcpy.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memcpy.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memcpy.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.o: ../ft_lftprintf/includes/libft/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memdel.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memdel.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memdel.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memdel.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memdel.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memdel.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.o: ../ft_lftprintf/includes/libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memmove.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memmove.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memmove.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memmove.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memmove.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memmove.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memmove.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.o: ../ft_lftprintf/includes/libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memset.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memset.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memset.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_memset.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_memset.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_memset.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o: ../ft_lftprintf/includes/libft/ft_new_integer_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_new_integer_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_new_integer_list.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_new_integer_list.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_new_integer_list.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_new_integer_list.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_new_integer_list.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_new_integer_list.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.o: ../ft_lftprintf/includes/libft/ft_numzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_numzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_numzero.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_numzero.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_numzero.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_numzero.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_numzero.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_numzero.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.o: ../ft_lftprintf/includes/libft/ft_pow.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_pow.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_pow.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_pow.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_pow.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_pow.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_pow.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_pow.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.o: ../ft_lftprintf/includes/libft/ft_print_char_arr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_print_char_arr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_print_char_arr.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_print_char_arr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_print_char_arr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_print_char_arr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_print_char_arr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_char_arr.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o: ../ft_lftprintf/includes/libft/ft_print_symbol.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_print_symbol.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_print_symbol.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_print_symbol.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_print_symbol.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_print_symbol.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_print_symbol.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_print_symbol.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.o: ../ft_lftprintf/includes/libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putchar.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putchar.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putchar.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putchar.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putchar.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o: ../ft_lftprintf/includes/libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putchar_fd.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putchar_fd.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putchar_fd.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putchar_fd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putchar_fd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_fd.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o: ../ft_lftprintf/includes/libft/ft_putchar_mod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putchar_mod.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putchar_mod.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putchar_mod.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putchar_mod.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putchar_mod.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putchar_mod.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putchar_mod.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.o: ../ft_lftprintf/includes/libft/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putendl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putendl.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putendl.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putendl.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putendl.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putendl.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o: ../ft_lftprintf/includes/libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putendl_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putendl_fd.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putendl_fd.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putendl_fd.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putendl_fd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putendl_fd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putendl_fd.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o: ../ft_lftprintf/includes/libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putnbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putnbr.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putnbr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putnbr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putnbr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putnbr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o: ../ft_lftprintf/includes/libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putnbr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putnbr_fd.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putnbr_fd.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putnbr_fd.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putnbr_fd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putnbr_fd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_fd.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o: ../ft_lftprintf/includes/libft/ft_putnbr_mod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putnbr_mod.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putnbr_mod.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putnbr_mod.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putnbr_mod.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putnbr_mod.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putnbr_mod.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putnbr_mod.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.o: ../ft_lftprintf/includes/libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putstr.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putstr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putstr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putstr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putstr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o: ../ft_lftprintf/includes/libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putstr_fd.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putstr_fd.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putstr_fd.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putstr_fd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putstr_fd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_fd.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o: ../ft_lftprintf/includes/libft/ft_putstr_mod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putstr_mod.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putstr_mod.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putstr_mod.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putstr_mod.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_putstr_mod.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_putstr_mod.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_putstr_mod.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.o: ../ft_lftprintf/includes/libft/ft_sort_word_tab.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_sort_word_tab.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_sort_word_tab.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_sort_word_tab.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_sort_word_tab.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_sort_word_tab.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_sort_word_tab.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_sort_word_tab.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.o: ../ft_lftprintf/includes/libft/ft_stdin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_stdin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_stdin.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_stdin.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_stdin.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_stdin.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_stdin.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_stdin.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.o: ../ft_lftprintf/includes/libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcat.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcat.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcat.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcat.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcat.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcat.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.o: ../ft_lftprintf/includes/libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strchr.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strchr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strchr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strchr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strchr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strchr.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.o: ../ft_lftprintf/includes/libft/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strclr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strclr.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strclr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strclr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strclr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strclr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strclr.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o: ../ft_lftprintf/includes/libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcmp.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcmp.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcmp.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcmp.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcmp.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcmp.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o: ../ft_lftprintf/includes/libft/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcpy.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcpy.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcpy.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcpy.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcpy.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpy.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o: ../ft_lftprintf/includes/libft/ft_strcpymap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcpymap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcpymap.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcpymap.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcpymap.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strcpymap.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strcpymap.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strcpymap.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.o: ../ft_lftprintf/includes/libft/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strdel.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strdel.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strdel.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strdel.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strdel.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdel.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.o: ../ft_lftprintf/includes/libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strdup.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strdup.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strdup.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strdup.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strdup.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strdup.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.o: ../ft_lftprintf/includes/libft/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strequ.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strequ.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strequ.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strequ.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strequ.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strequ.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.o: ../ft_lftprintf/includes/libft/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_striter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_striter.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_striter.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_striter.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_striter.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_striter.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striter.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.o: ../ft_lftprintf/includes/libft/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_striteri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_striteri.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_striteri.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_striteri.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_striteri.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_striteri.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_striteri.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o: ../ft_lftprintf/includes/libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strjoin.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strjoin.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strjoin.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strjoin.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strjoin.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strjoin.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o: ../ft_lftprintf/includes/libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strlcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strlcat.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strlcat.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strlcat.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strlcat.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strlcat.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlcat.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.o: ../ft_lftprintf/includes/libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strlen.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strlen.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strlen.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strlen.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strlen.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o: ../ft_lftprintf/includes/libft/ft_strlen_mod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strlen_mod.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strlen_mod.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strlen_mod.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strlen_mod.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strlen_mod.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strlen_mod.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strlen_mod.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.o: ../ft_lftprintf/includes/libft/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strmap.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strmap.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strmap.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strmap.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strmap.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmap.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o: ../ft_lftprintf/includes/libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strmapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strmapi.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strmapi.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strmapi.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strmapi.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strmapi.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strmapi.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.o: ../ft_lftprintf/includes/libft/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strncat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strncat.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strncat.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strncat.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strncat.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strncat.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncat.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o: ../ft_lftprintf/includes/libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strncmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strncmp.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strncmp.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strncmp.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strncmp.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strncmp.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncmp.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o: ../ft_lftprintf/includes/libft/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strncpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strncpy.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strncpy.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strncpy.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strncpy.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strncpy.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strncpy.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o: ../ft_lftprintf/includes/libft/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strnequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strnequ.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strnequ.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strnequ.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strnequ.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strnequ.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnequ.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.o: ../ft_lftprintf/includes/libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strnew.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strnew.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strnew.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strnew.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strnew.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnew.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o: ../ft_lftprintf/includes/libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strnstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strnstr.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strnstr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strnstr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strnstr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strnstr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strnstr.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o: ../ft_lftprintf/includes/libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strrchr.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strrchr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strrchr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strrchr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strrchr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strrchr.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o: ../ft_lftprintf/includes/libft/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strsplit.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strsplit.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strsplit.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strsplit.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strsplit.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsplit.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.o: ../ft_lftprintf/includes/libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strstr.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strstr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strstr.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strstr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strstr.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strstr.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.o: ../ft_lftprintf/includes/libft/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strsub.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strsub.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strsub.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strsub.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strsub.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strsub.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o: ../ft_lftprintf/includes/libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strtrim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strtrim.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strtrim.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strtrim.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_strtrim.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_strtrim.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_strtrim.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o: ../ft_lftprintf/includes/libft/ft_thebigest_word.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_thebigest_word.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_thebigest_word.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_thebigest_word.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_thebigest_word.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_thebigest_word.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_thebigest_word.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_thebigest_word.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.o: ../ft_lftprintf/includes/libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_tolower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_tolower.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_tolower.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_tolower.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_tolower.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_tolower.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_tolower.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.o: ../ft_lftprintf/includes/libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_toupper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_toupper.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_toupper.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_toupper.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/ft_toupper.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/ft_toupper.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/ft_toupper.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.o: ../ft_lftprintf/includes/libft/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/get_next_line.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/get_next_line.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/get_next_line.c > CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/includes/libft/get_next_line.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/includes/libft/get_next_line.c -o CMakeFiles/Core_War.dir/ft_lftprintf/includes/libft/get_next_line.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.o: ../ft_lftprintf/srcs/base_n_p.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/base_n_p.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/base_n_p.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/base_n_p.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/base_n_p.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/base_n_p.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/base_n_p.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/base_n_p.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.o: ../ft_lftprintf/srcs/bonus_color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/bonus_color.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/bonus_color.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/bonus_color.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/bonus_color.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/bonus_color.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/bonus_color.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_color.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.o: ../ft_lftprintf/srcs/bonus_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/bonus_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/bonus_fd.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/bonus_fd.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/bonus_fd.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/bonus_fd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/bonus_fd.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_fd.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.o: ../ft_lftprintf/srcs/bonus_smile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/bonus_smile.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/bonus_smile.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/bonus_smile.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/bonus_smile.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/bonus_smile.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/bonus_smile.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/bonus_smile.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.o: ../ft_lftprintf/srcs/color_option.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/color_option.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/color_option.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/color_option.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/color_option.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/color_option.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/color_option.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/color_option.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.o: ../ft_lftprintf/srcs/format_checker.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/format_checker.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/format_checker.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/format_checker.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/format_checker.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/format_checker.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/format_checker.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.o: ../ft_lftprintf/srcs/format_checker_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/format_checker_one.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/format_checker_one.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/format_checker_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/format_checker_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/format_checker_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/format_checker_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/format_checker_one.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.o: ../ft_lftprintf/srcs/ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/ft_printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/ft_printf.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/ft_printf.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/ft_printf.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/ft_printf.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/ft_printf.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.o: ../ft_lftprintf/srcs/ft_printf_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/ft_printf_one.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/ft_printf_one.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/ft_printf_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/ft_printf_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/ft_printf_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/ft_printf_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/ft_printf_one.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o: ../ft_lftprintf/srcs/print_some_wight_aruc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/print_some_wight_aruc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/print_some_wight_aruc.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/print_some_wight_aruc.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/print_some_wight_aruc.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/print_some_wight_aruc.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/print_some_wight_aruc.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/print_some_wight_aruc.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.o: ../ft_lftprintf/srcs/work_i_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_i_one.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_i_one.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_i_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_i_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_i_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_i_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_one.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.o: ../ft_lftprintf/srcs/work_i_two.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_i_two.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_i_two.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_i_two.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_i_two.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_i_two.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_i_two.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_i_two.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.o: ../ft_lftprintf/srcs/work_uxo_po_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_uxo_po_one.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_uxo_po_one.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_uxo_po_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_uxo_po_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_uxo_po_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_uxo_po_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_one.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.o: ../ft_lftprintf/srcs/work_uxo_po_two.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_uxo_po_two.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_uxo_po_two.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_uxo_po_two.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_uxo_po_two.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_uxo_po_two.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_uxo_po_two.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_po_two.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.o: ../ft_lftprintf/srcs/work_uxo_pt_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_uxo_pt_one.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_uxo_pt_one.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_uxo_pt_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_uxo_pt_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_uxo_pt_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_uxo_pt_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_uxo_pt_one.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.o: ../ft_lftprintf/srcs/work_with_errors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_errors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_errors.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_errors.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_errors.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_errors.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_errors.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_errors.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.o: ../ft_lftprintf/srcs/work_with_f_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_f_one.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_f_one.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_f_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_f_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_f_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_f_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_one.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.o: ../ft_lftprintf/srcs/work_with_f_three.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_f_three.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_f_three.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_f_three.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_f_three.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_f_three.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_f_three.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_three.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.o: ../ft_lftprintf/srcs/work_with_f_two.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_f_two.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_f_two.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_f_two.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_f_two.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_f_two.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_f_two.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_f_two.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.o: ../ft_lftprintf/srcs/work_with_flags.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_flags.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_flags.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_flags.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_flags.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_flags.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_flags.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.o: ../ft_lftprintf/srcs/work_with_floats.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_floats.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_floats.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_floats.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_floats.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_floats.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_floats.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_floats.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.o: ../ft_lftprintf/srcs/work_with_form_x.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_form_x.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_form_x.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_form_x.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_form_x.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_form_x.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_form_x.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_form_x.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o: ../ft_lftprintf/srcs/work_with_format_char_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_format_char_str.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_format_char_str.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_format_char_str.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_format_char_str.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_format_char_str.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_format_char_str.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_format_char_str.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.o: ../ft_lftprintf/srcs/work_with_int.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_int.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_int.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_int.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_int.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_int.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_int.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_int.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.o: ../ft_lftprintf/srcs/work_with_o.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_o.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_o.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_o.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_o.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_o.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_o.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_o.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.o: ../ft_lftprintf/srcs/work_with_p.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_p.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_p.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_p.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_p.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_p.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_p.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_p.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.o: ../ft_lftprintf/srcs/work_with_u.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_u.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_u.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_u.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_u.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_u.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_u.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_u.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o: ../ft_lftprintf/srcs/work_with_uxo_part_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_uxo_part_one.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_uxo_part_one.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_uxo_part_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_uxo_part_one.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_uxo_part_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_uxo_part_one.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_one.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o: ../ft_lftprintf/srcs/work_with_uxo_part_two.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_uxo_part_two.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_uxo_part_two.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_uxo_part_two.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_uxo_part_two.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_uxo_part_two.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_uxo_part_two.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_uxo_part_two.c.s
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.o: ../ft_lftprintf/srcs/work_with_x_big.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_x_big.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_x_big.c
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_x_big.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_x_big.c > CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.i
 
 CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/ft_lftprintf/srcs/work_with_x_big.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/ft_lftprintf/srcs/work_with_x_big.c -o CMakeFiles/Core_War.dir/ft_lftprintf/srcs/work_with_x_big.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.o: ../srcs/assembler/asm_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/asm_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/asm_main.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/asm_main.c > CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/asm_main.c > CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/asm_main.c -o CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/asm_main.c -o CMakeFiles/Core_War.dir/srcs/assembler/asm_main.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.o: ../srcs/assembler/buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/buffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/buffer.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/buffer.c > CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/buffer.c > CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/buffer.c -o CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/buffer.c -o CMakeFiles/Core_War.dir/srcs/assembler/buffer.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/check.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/check.c.o: ../srcs/assembler/check.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/check.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/check.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/check.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/check.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/check.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/check.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/check.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/check.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/check.c > CMakeFiles/Core_War.dir/srcs/assembler/check.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/check.c > CMakeFiles/Core_War.dir/srcs/assembler/check.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/check.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/check.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/check.c -o CMakeFiles/Core_War.dir/srcs/assembler/check.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/check.c -o CMakeFiles/Core_War.dir/srcs/assembler/check.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/classify.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/classify.c.o: ../srcs/assembler/classify.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/classify.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/classify.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/classify.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/classify.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/classify.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/classify.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/classify.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/classify.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/classify.c > CMakeFiles/Core_War.dir/srcs/assembler/classify.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/classify.c > CMakeFiles/Core_War.dir/srcs/assembler/classify.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/classify.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/classify.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/classify.c -o CMakeFiles/Core_War.dir/srcs/assembler/classify.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/classify.c -o CMakeFiles/Core_War.dir/srcs/assembler/classify.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.o: ../srcs/assembler/classify_token.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/classify_token.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/classify_token.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/classify_token.c > CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/classify_token.c > CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/classify_token.c -o CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/classify_token.c -o CMakeFiles/Core_War.dir/srcs/assembler/classify_token.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.o: ../srcs/assembler/collect_pre_print_code.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/collect_pre_print_code.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/collect_pre_print_code.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/collect_pre_print_code.c > CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/collect_pre_print_code.c > CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/collect_pre_print_code.c -o CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/collect_pre_print_code.c -o CMakeFiles/Core_War.dir/srcs/assembler/collect_pre_print_code.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.o: ../srcs/assembler/complex_instructions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/complex_instructions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/complex_instructions.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/complex_instructions.c > CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/complex_instructions.c > CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/complex_instructions.c -o CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/complex_instructions.c -o CMakeFiles/Core_War.dir/srcs/assembler/complex_instructions.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/container.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/container.c.o: ../srcs/assembler/container.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/container.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/container.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/container.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/container.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/container.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/container.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/container.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/container.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/container.c > CMakeFiles/Core_War.dir/srcs/assembler/container.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/container.c > CMakeFiles/Core_War.dir/srcs/assembler/container.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/container.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/container.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/container.c -o CMakeFiles/Core_War.dir/srcs/assembler/container.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/container.c -o CMakeFiles/Core_War.dir/srcs/assembler/container.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.o: ../srcs/assembler/create_file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/create_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/create_file.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/create_file.c > CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/create_file.c > CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/create_file.c -o CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/create_file.c -o CMakeFiles/Core_War.dir/srcs/assembler/create_file.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.o: ../srcs/assembler/display_stuff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/display_stuff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/display_stuff.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/display_stuff.c > CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/display_stuff.c > CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/display_stuff.c -o CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/display_stuff.c -o CMakeFiles/Core_War.dir/srcs/assembler/display_stuff.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.o: ../srcs/assembler/display_token.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/display_token.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/display_token.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/display_token.c > CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/display_token.c > CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/display_token.c -o CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/display_token.c -o CMakeFiles/Core_War.dir/srcs/assembler/display_token.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/distances.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/distances.c.o: ../srcs/assembler/distances.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/distances.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/distances.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/distances.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/distances.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/distances.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/distances.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/distances.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/distances.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/distances.c > CMakeFiles/Core_War.dir/srcs/assembler/distances.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/distances.c > CMakeFiles/Core_War.dir/srcs/assembler/distances.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/distances.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/distances.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/distances.c -o CMakeFiles/Core_War.dir/srcs/assembler/distances.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/distances.c -o CMakeFiles/Core_War.dir/srcs/assembler/distances.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.o: ../srcs/assembler/encode_arguments.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_arguments.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_arguments.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_arguments.c > CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_arguments.c > CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_arguments.c -o CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_arguments.c -o CMakeFiles/Core_War.dir/srcs/assembler/encode_arguments.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.o: ../srcs/assembler/encode_operations.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_operations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_operations.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_operations.c > CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_operations.c > CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_operations.c -o CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_operations.c -o CMakeFiles/Core_War.dir/srcs/assembler/encode_operations.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.o: ../srcs/assembler/encode_strings.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_strings.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_strings.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_strings.c > CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_strings.c > CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_strings.c -o CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_strings.c -o CMakeFiles/Core_War.dir/srcs/assembler/encode_strings.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.o: ../srcs/assembler/encode_type.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_type.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_type.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_type.c > CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_type.c > CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/encode_type.c -o CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/encode_type.c -o CMakeFiles/Core_War.dir/srcs/assembler/encode_type.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/error.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/error.c.o: ../srcs/assembler/error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/error.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/error.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/error.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/error.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/error.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/error.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/error.c > CMakeFiles/Core_War.dir/srcs/assembler/error.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/error.c > CMakeFiles/Core_War.dir/srcs/assembler/error.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/error.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/error.c -o CMakeFiles/Core_War.dir/srcs/assembler/error.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/error.c -o CMakeFiles/Core_War.dir/srcs/assembler/error.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.o: ../srcs/assembler/file_stuff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/file_stuff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/file_stuff.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/file_stuff.c > CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/file_stuff.c > CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/file_stuff.c -o CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/file_stuff.c -o CMakeFiles/Core_War.dir/srcs/assembler/file_stuff.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.o: ../srcs/assembler/flag_check.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/flag_check.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/flag_check.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/flag_check.c > CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/flag_check.c > CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/flag_check.c -o CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/flag_check.c -o CMakeFiles/Core_War.dir/srcs/assembler/flag_check.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.o: ../srcs/assembler/fork_to_read.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/fork_to_read.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/fork_to_read.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/fork_to_read.c > CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/fork_to_read.c > CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/fork_to_read.c -o CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/fork_to_read.c -o CMakeFiles/Core_War.dir/srcs/assembler/fork_to_read.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.o: ../srcs/assembler/ft_binary_read.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/ft_binary_read.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/ft_binary_read.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/ft_binary_read.c > CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/ft_binary_read.c > CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/ft_binary_read.c -o CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/ft_binary_read.c -o CMakeFiles/Core_War.dir/srcs/assembler/ft_binary_read.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.o: ../srcs/assembler/generic_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/generic_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/generic_list.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/generic_list.c > CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/generic_list.c > CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/generic_list.c -o CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/generic_list.c -o CMakeFiles/Core_War.dir/srcs/assembler/generic_list.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.o: ../srcs/assembler/generic_list_part2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/generic_list_part2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/generic_list_part2.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/generic_list_part2.c > CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/generic_list_part2.c > CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/generic_list_part2.c -o CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/generic_list_part2.c -o CMakeFiles/Core_War.dir/srcs/assembler/generic_list_part2.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.o: ../srcs/assembler/is_it_fun.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/is_it_fun.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/is_it_fun.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/is_it_fun.c > CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/is_it_fun.c > CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/is_it_fun.c -o CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/is_it_fun.c -o CMakeFiles/Core_War.dir/srcs/assembler/is_it_fun.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.o: ../srcs/assembler/is_it_good.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/is_it_good.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/is_it_good.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/is_it_good.c > CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/is_it_good.c > CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/is_it_good.c -o CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/is_it_good.c -o CMakeFiles/Core_War.dir/srcs/assembler/is_it_good.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.o: ../srcs/assembler/mallokill.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/mallokill.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/mallokill.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/mallokill.c > CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/mallokill.c > CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/mallokill.c -o CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/mallokill.c -o CMakeFiles/Core_War.dir/srcs/assembler/mallokill.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.o: ../srcs/assembler/measure_size.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/measure_size.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/measure_size.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/measure_size.c > CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/measure_size.c > CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/measure_size.c -o CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/measure_size.c -o CMakeFiles/Core_War.dir/srcs/assembler/measure_size.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.o: ../srcs/assembler/open_octo_file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/open_octo_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/open_octo_file.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/open_octo_file.c > CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/open_octo_file.c > CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/open_octo_file.c -o CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/open_octo_file.c -o CMakeFiles/Core_War.dir/srcs/assembler/open_octo_file.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.o: ../srcs/assembler/print_binary.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/print_binary.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/print_binary.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/print_binary.c > CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/print_binary.c > CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/print_binary.c -o CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/print_binary.c -o CMakeFiles/Core_War.dir/srcs/assembler/print_binary.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.o: ../srcs/assembler/put_name_comment.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/put_name_comment.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/put_name_comment.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/put_name_comment.c > CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/put_name_comment.c > CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/put_name_comment.c -o CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/put_name_comment.c -o CMakeFiles/Core_War.dir/srcs/assembler/put_name_comment.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.o: ../srcs/assembler/read_file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/read_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/read_file.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/read_file.c > CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/read_file.c > CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/read_file.c -o CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/read_file.c -o CMakeFiles/Core_War.dir/srcs/assembler/read_file.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.o: ../srcs/assembler/simple_instrutions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/simple_instrutions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/simple_instrutions.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/simple_instrutions.c > CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/simple_instrutions.c > CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/simple_instrutions.c -o CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/simple_instrutions.c -o CMakeFiles/Core_War.dir/srcs/assembler/simple_instrutions.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.o: ../srcs/assembler/support_fluff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_fluff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_fluff.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_fluff.c > CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_fluff.c > CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_fluff.c -o CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_fluff.c -o CMakeFiles/Core_War.dir/srcs/assembler/support_fluff.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.o: ../srcs/assembler/support_scuff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_scuff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_scuff.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_scuff.c > CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_scuff.c > CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_scuff.c -o CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_scuff.c -o CMakeFiles/Core_War.dir/srcs/assembler/support_scuff.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.o: ../srcs/assembler/support_snuff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_snuff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_snuff.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_snuff.c > CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_snuff.c > CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_snuff.c -o CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_snuff.c -o CMakeFiles/Core_War.dir/srcs/assembler/support_snuff.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.o: ../srcs/assembler/support_stuff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_stuff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_stuff.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_stuff.c > CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_stuff.c > CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/support_stuff.c -o CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/support_stuff.c -o CMakeFiles/Core_War.dir/srcs/assembler/support_stuff.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.o: ../srcs/assembler/take_name.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/take_name.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/take_name.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/take_name.c > CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/take_name.c > CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/take_name.c -o CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/take_name.c -o CMakeFiles/Core_War.dir/srcs/assembler/take_name.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.o: ../srcs/assembler/test_run.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/test_run.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/test_run.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/test_run.c > CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/test_run.c > CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/test_run.c -o CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/test_run.c -o CMakeFiles/Core_War.dir/srcs/assembler/test_run.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/token.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/token.c.o: ../srcs/assembler/token.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/token.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/token.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/token.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/token.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/token.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/token.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/token.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/token.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/token.c > CMakeFiles/Core_War.dir/srcs/assembler/token.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/token.c > CMakeFiles/Core_War.dir/srcs/assembler/token.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/token.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/token.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/token.c -o CMakeFiles/Core_War.dir/srcs/assembler/token.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/token.c -o CMakeFiles/Core_War.dir/srcs/assembler/token.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.o: ../srcs/assembler/token_status.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/token_status.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/token_status.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/token_status.c > CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/token_status.c > CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/token_status.c -o CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/token_status.c -o CMakeFiles/Core_War.dir/srcs/assembler/token_status.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.o: ../srcs/assembler/transcription.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/transcription.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/transcription.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/transcription.c > CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/transcription.c > CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/transcription.c -o CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/transcription.c -o CMakeFiles/Core_War.dir/srcs/assembler/transcription.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/translation.c.o: ../srcs/assembler/translation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/translation.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/translation.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/translation.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/translation.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/translation.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation.c > CMakeFiles/Core_War.dir/srcs/assembler/translation.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation.c > CMakeFiles/Core_War.dir/srcs/assembler/translation.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/translation.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation.c -o CMakeFiles/Core_War.dir/srcs/assembler/translation.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation.c -o CMakeFiles/Core_War.dir/srcs/assembler/translation.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.o: ../srcs/assembler/translation_aggravation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation_aggravation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation_aggravation.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation_aggravation.c > CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation_aggravation.c > CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation_aggravation.c -o CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation_aggravation.c -o CMakeFiles/Core_War.dir/srcs/assembler/translation_aggravation.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.o: ../srcs/assembler/translation_frustration.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation_frustration.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation_frustration.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation_frustration.c > CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation_frustration.c > CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation_frustration.c -o CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation_frustration.c -o CMakeFiles/Core_War.dir/srcs/assembler/translation_frustration.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.o: ../srcs/assembler/translation_vexation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation_vexation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation_vexation.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation_vexation.c > CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation_vexation.c > CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/translation_vexation.c -o CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/translation_vexation.c -o CMakeFiles/Core_War.dir/srcs/assembler/translation_vexation.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.o: ../srcs/assembler/validate_dizasm_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/validate_dizasm_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/validate_dizasm_init.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/validate_dizasm_init.c > CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/validate_dizasm_init.c > CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/validate_dizasm_init.c -o CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/validate_dizasm_init.c -o CMakeFiles/Core_War.dir/srcs/assembler/validate_dizasm_init.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.o: ../srcs/assembler/walk_throw_byte.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/walk_throw_byte.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/walk_throw_byte.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/walk_throw_byte.c > CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/walk_throw_byte.c > CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/walk_throw_byte.c -o CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/walk_throw_byte.c -o CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.s
 
 CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.o: CMakeFiles/Core_War.dir/flags.make
 CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.o: ../srcs/assembler/what_is_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.o -c /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/what_is_it.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.o -c /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/what_is_it.c
 
 CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/what_is_it.c > CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/what_is_it.c > CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.i
 
 CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/check/Core_War/srcs/assembler/what_is_it.c -o CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/d_60Gb/corewar/30.06/buf/Core_War/srcs/assembler/what_is_it.c -o CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.s
 
 # Object files for target Core_War
 Core_War_OBJECTS = \
@@ -2545,7 +2545,7 @@ Core_War: CMakeFiles/Core_War.dir/srcs/assembler/walk_throw_byte.c.o
 Core_War: CMakeFiles/Core_War.dir/srcs/assembler/what_is_it.c.o
 Core_War: CMakeFiles/Core_War.dir/build.make
 Core_War: CMakeFiles/Core_War.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Linking C executable Core_War"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Linking C executable Core_War"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Core_War.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2558,6 +2558,6 @@ CMakeFiles/Core_War.dir/clean:
 .PHONY : CMakeFiles/Core_War.dir/clean
 
 CMakeFiles/Core_War.dir/depend:
-	cd /Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Volumes/d_60Gb/corewar/check/Core_War /Volumes/d_60Gb/corewar/check/Core_War /Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug /Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug /Volumes/d_60Gb/corewar/check/Core_War/cmake-build-debug/CMakeFiles/Core_War.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Volumes/d_60Gb/corewar/30.06/buf/Core_War /Volumes/d_60Gb/corewar/30.06/buf/Core_War /Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug /Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug /Volumes/d_60Gb/corewar/30.06/buf/Core_War/cmake-build-debug/CMakeFiles/Core_War.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Core_War.dir/depend
 
