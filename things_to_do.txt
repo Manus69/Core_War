@@ -35,5 +35,6 @@
 //invalid files memory leaks .cor and .s
 //.cor files as .s
 //check-list
+//42.s
 
 //dont give retards an inch
