@@ -39,5 +39,10 @@ static const char		g_separators[] = {'"', '\n',
 	COMMENT_CHAR, COMMENT_CHAR_2, SEPARATOR_CHAR, 0};
 static const char		g_spaces[] = {' ', '\t', 0};
 static const char		g_comment_chars[] = {COMMENT_CHAR, COMMENT_CHAR_2, 0};
+static const char		*g_error_messages[] = {"The name size is wrong;\n",
+	"The comment size is wrong;\n", "The champ size is wrong;\n",
+	"The argument is of the wrong type;\n",
+	"The arg count is wrong;\n",
+	"The registry number is off;\n", 0};
 
 #endif

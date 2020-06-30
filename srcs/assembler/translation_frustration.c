@@ -23,7 +23,8 @@ t_container *container)
 	translation = encode_string((t_token *)current_token->stuff);
 	last_element = get_last_element(translation);
 	if (container->parameters->comment_size > COMMENT_LENGTH)
-		invoke_error(message, (t_token *)current_token->stuff, NULL, container);
+		// invoke_error(message, (t_token *)current_token->stuff, NULL, container);
+		container->error_status |= E_COMMENT_SIZE;
 	byte_string = get_null_padding(COMMENT_LENGTH -
 			container->parameters->comment_size);
 	translation = concatenate_lists(translation, byte_string, last_element);
@@ -44,7 +45,8 @@ t_container *container)
 	translation = encode_string((t_token *)current_token->stuff);
 	last_element = get_last_element(translation);
 	if (container->parameters->name_size > PROG_NAME_LENGTH)
-		invoke_error(message, (t_token *)current_token->stuff, NULL, container);
+		// invoke_error(message, (t_token *)current_token->stuff, NULL, container);
+		container->error_status |= E_CHAMP_SIZE;
 	byte_string = get_null_padding(PROG_NAME_LENGTH -
 			container->parameters->name_size);
 	translation = concatenate_lists(translation, byte_string, last_element);

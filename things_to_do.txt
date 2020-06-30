@@ -37,4 +37,5 @@
 //check-list
 //42.s
 
+//should i be paranoid about exit() in case of malloc failure?
 //dont give retards an inch

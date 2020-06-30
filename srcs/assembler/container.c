@@ -42,7 +42,8 @@ t_container					*new_container(const char *file_name)
 	container->translated_tokens = NULL;
 	container->current = NULL;
 	container->translation = new_translation();
-	container->status = 0;
+	container->list_status = 0;
+	container->error_status = 0;
 	return (container);
 }
 

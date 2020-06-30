@@ -12,7 +12,7 @@
 
 #include "asm.h"
 
-static void	print_argument(t_token *token)
+static void	print_argument(t_token *token, int fd)
 {
 	char *argumnet_type;
 
@@ -24,7 +24,9 @@ static void	print_argument(t_token *token)
 		argumnet_type = "indirect";
 	else
 		argumnet_type = "not_applicable";
-	ft_printf("argument_type: %s\n", argumnet_type);
+	ft_putstr_fd("argument_type: ", fd);
+	ft_putstr_fd(argumnet_type, fd);
+	ft_putstr_fd("\n", fd);
 }
 
 static void	print_type_helper(char **type, t_token *token)
@@ -39,7 +41,7 @@ static void	print_type_helper(char **type, t_token *token)
 		(*type) = "comma";
 }
 
-static void	print_type(t_token *token)
+static void	print_type(t_token *token, int fd)
 {
 	char *type;
 
@@ -60,23 +62,27 @@ static void	print_type(t_token *token)
 		type = "label";
 	else
 		print_type_helper(&type, token);
-	ft_printf("Token at %p\nString: %s\n", token,
-			token->type == new_line ? "\\n" : token->string);
-	ft_printf("type: %s\n", type);
+	ft_putstr_fd("Token string: ", fd);
+	ft_putstr_fd(token->type == new_line ? "\\n" : token->string, fd);
+	ft_putstr_fd("\ntype: ", fd);
+	ft_putstr_fd(type, fd);
+	ft_putstr_fd("\n", fd);
 }
 
-void		display_token(t_token *token)
+void		display_token(t_token *token, int fd)
 {
 	if (!token)
 	{
-		ft_printf("Null token\n");
-		ft_printf("---------------\n");
+		ft_putstr_fd("Null token\n---------------\n", fd);
 		return ;
 	}
-	print_type(token);
+	print_type(token, fd);
 	if (token->type == argument)
-		print_argument(token);
-	ft_printf("size: %d\n", token->size);
-	ft_printf("distance: %d\n", token->distance);
-	ft_printf("---------------\n");
+		print_argument(token, fd);
+	if (fd == STDOUT_FILENO)
+	{
+		ft_printf("size: %d\n", token->size);
+		ft_printf("distance: %d\n", token->distance);	
+	}
+	ft_putstr_fd("---------------\n", fd);
 }

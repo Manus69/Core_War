@@ -22,7 +22,8 @@ char			*get_registry_encoding(t_token *token, t_container *container)
 	registry_value = ft_atoi(value_substring);
 	free(value_substring);
 	if (registry_value < 0 || registry_value > 16)
-		invoke_error("registry number out of range\n", token, NULL, container);
+		// invoke_error("registry number out of range\n", token, NULL, container);
+		container->error_status |= E_REG_INDEX;
 	registry_encoding = decimal_to_hex_mk2(registry_value, token->size);
 	return (registry_encoding);
 }
