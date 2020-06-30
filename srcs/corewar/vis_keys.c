@@ -36,8 +36,6 @@ void		set_key(t_arena *vm)
 {
 	if (vm->viz->key == ' ')
 		vm->viz->go = !(vm->viz->go);
-	else if (vm->viz->key == 's')
-		vm->viz->sound = !(vm->viz->sound);
 	else if (vm->viz->key == '1')
 		vm->viz->speed += 10;
 	else if (vm->viz->key == '2')
