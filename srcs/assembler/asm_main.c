@@ -55,5 +55,6 @@ int			main(int ac, char **av)
 	arg_count = 1;
 	init_functions(actions, &has_flag);
 	actions[take_name(ac, av, &arg_count, &has_flag)](av[arg_count], &has_flag);
+	free_structure(&has_flag);
 	return (0);
 }

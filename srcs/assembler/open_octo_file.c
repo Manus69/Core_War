@@ -75,7 +75,6 @@ int		validate_binary(t_dsm *src_code, t_flag *has_flag)
 		return (err_output(src_code));
 	free(src_code->input);
 	free(src_code->output);
-	has_flag = free_structure(has_flag);
 	return (SUCCESS);
 }
 
