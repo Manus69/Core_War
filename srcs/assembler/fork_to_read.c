@@ -26,9 +26,16 @@ int		dizasm(char *str, t_flag *has_flag)
 
 	src_code.input = NULL;
 	src_code.current_position = 0;
+	src_code.file_name = NULL;
 	if (!(src_code.file_len = read_my_binary(str, &src_code.input)))
 		return (FAIL);
 	if (!take_new_name(&src_code, str))
 		return (FAIL);
-	return (validate_binary(&src_code, has_flag));
+	if (!validate_binary(&src_code, has_flag))
+	{
+		if (src_code.file_name)
+			free(src_code.file_name);
+		return (FAIL);
+	}
+	return (SUCCESS);
 }

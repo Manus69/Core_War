@@ -68,5 +68,6 @@ int		fill_new_file(t_dsm *src_code, t_flag *has_flag)
 	ft_putstr_fd(src_code->output, fd);
 	close(fd);
 	free(src_code->file_name);
+	src_code->file_name = NULL;
 	return (SUCCESS);
 }
