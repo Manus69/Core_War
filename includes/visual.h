@@ -34,7 +34,7 @@
 # define LIGHT_CYAN				21
 # define WHITE					22
 
-static int			g_color_palette[15] = {
+static const int			g_color_palette[15] = {
 	COLOR_PAIR(WHITE),
 	COLOR_PAIR(GREEN),
 	COLOR_PAIR(YELLOW),

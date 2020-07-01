@@ -26,7 +26,7 @@ int			err_usage(char *str, t_flag *has_flag)
 		ft_putstr_fd("ERROR : INCORRECT FILE_NAME\n", 2);
 	else
 	{
-		ft_putstr("usage :\n\t\t./asm [-a | -n new_file_name] ");
+		ft_putstr("usage :\n\t\t./asm [-a | -v | -n new_file_name] ");
 		ft_putstr("%filename.s% or %filename.cor%\n");
 	}
 	has_flag = free_structure(has_flag);

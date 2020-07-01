@@ -1,22 +1,14 @@
 
 /*questionable*/
 //tab at the end of file instead of \n? both asms work with \t right now; 
-//there is a free(NULL) in encode args
 //
 
 //where are the files supposed to go if one runs the pogramme from a different directory?
-//remove the file that might have been created after the error invocation;
-
-//empty champ name?
-//error messages
-
-//disassmbler crashed on some input
 
 //do i need to check the file size?
 //set the right buffer size
 
 //check included system headers
-//non-ascii characters?
 //malloc return value checks? use mallokill consistently?
 //ft_memchr() memccpy() send off compiler warnings;
 
@@ -35,7 +27,17 @@
 //invalid files memory leaks .cor and .s
 //.cor files as .s
 //check-list
-//42.s
+
+//check arg count
+//giant files?
+//buffer overflow
+
+//-n nonexistant files
+
+
+//display usage?
+
+
 
 //should i be paranoid about exit() in case of malloc failure?
 //dont give retards an inch

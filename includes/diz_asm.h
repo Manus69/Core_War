@@ -55,7 +55,7 @@ typedef struct		s_op
 	int				size_t_dir;
 }					t_op;
 
-static				t_op g_op_tab[17] =\
+static				t_op const g_op_tab[17] =\
 {{0, 0, {0}, 0, 0, 0, 0, 0},
 	{"live", 1, {T_DIR}, 1, 10, "alive", 0, 0},
 	{"ld", 2, {T_DIR | T_IND, T_REG}, 2, 5, "load", 1, 0},

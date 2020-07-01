@@ -30,7 +30,7 @@ t_container					*new_container(const char *file_name)
 
 	file_descriptor = open(file_name, O_RDONLY);
 	if (file_descriptor < 0)
-		invoke_error(FILE_ERROR_MESSAGE, NULL, NULL, NULL);
+		invoke_error(FILE_ERROR_MESSAGE, NULL, file_name, NULL);
 	container = mallokill(sizeof(t_container));
 	container->file_descriptor = file_descriptor;
 	container->file_name = file_name;
