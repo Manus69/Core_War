@@ -37,6 +37,14 @@ void	display_translation_errors(t_container *container)
 	}
 }
 
+void	display_character_error(int error_code,
+		t_buffer *buffer, t_container *container)
+{
+	destroy_buffer(&buffer);
+	ft_putstr_fd(g_character_errors[error_code], STDERR_FILENO);
+	invoke_error(COMPILATION_TERMINATED, NULL, NULL, container);
+}
+
 int		invoke_error(const char *error_message, t_token *token,
 		const char *current_string, t_container *container)
 {

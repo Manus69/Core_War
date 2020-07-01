@@ -61,6 +61,13 @@ enum										e_buffer_status
 	red,
 };
 
+enum										e_char_status
+{
+	C_NASCII = 0,
+	C_NULL = 1,
+	C_OVERFLOW = 2,
+};
+
 enum										e_translation_status
 {
 	E_NAME_SIZE = 1,
@@ -70,6 +77,14 @@ enum										e_translation_status
 	E_ARG_COUNT = 16,
 	E_REG_INDEX = 32,
 	E_MAX = 64,
+};
+
+enum										e_syntax_error_status
+{
+	S_NEW_LINE = 1,
+	S_NAME = 2,
+	S_COMMENT = 4,
+	S_MAX = 8,
 };
 
 enum										e_string_writing_mode
@@ -115,6 +130,7 @@ struct										s_container
 	int										size_of_tokens;
 	const char								*file_name;
 	char									*new_file_name;
+	t_buffer								*buffer;
 	t_generic_list							*tokens;
 	t_generic_list							*current;
 	t_generic_list							*labels;

@@ -12,21 +12,45 @@
 
 #include "asm.h"
 
+static void	display_syntax_errors(short status_code)
+{
+	short		number;
+	const char	**message;
+
+	number = 1;
+	message = g_syntax_errors;
+	while (*message)
+	{
+		if (status_code & number)
+			ft_putstr_fd(*message, STDERR_FILENO);
+		number = number << 1;
+		message ++;
+	}
+}
+
 static void	classification_check(t_container *container, t_token *current_token)
 {
+	short status_code;
+
+	status_code = 0;
 	if (current_token->type != new_line)
-		invoke_error("no new line at the end of file\n", NULL, NULL, container);
+		status_code |= S_NEW_LINE;
 	if ((!(container->list_status >> 1)) & 1)
-		invoke_error("name command is missing\n", NULL, NULL, container);
+		status_code |= S_NAME;
 	if (!(container->list_status & 1))
-		invoke_error("comment command is missing\n", NULL, NULL, container);
+		status_code |= S_COMMENT;
+	if (status_code)
+	{
+		display_syntax_errors(status_code);
+		invoke_error(COMPILATION_TERMINATED, NULL, NULL, container);
+	}
 }
 
 static void	class_helper(t_token **current_token, t_token **previous_token,
 		t_generic_list **current_item, t_container **container)
 {
 	if (!((*current_item)->stuff))
-		invoke_error("current token is bricked!\n previous token:",
+		invoke_error("Current token is bricked!\n previous token:",
 				(*previous_token), NULL, (*container));
 	(*current_token) = (*current_item)->stuff;
 	classify_token((*current_token), (*previous_token));

@@ -65,13 +65,18 @@ int			add_to_buffer(t_buffer *buffer, char c)
 
 void		append_buffer_to_tokens(t_container *container, t_buffer *buffer)
 {
-	t_token	*token;
-	void	*pointer;
+	t_token					*token;
+	void					*pointer;
+	t_generic_list			*new_list_item;
+	static t_generic_list	*last;
 
 	if (buffer->current_content_size == 0)
 		return ;
 	pointer = get_buffer_string(buffer);
 	token = new_token((char *)pointer, 0);
-	container->tokens = add_to_list(container->tokens, token);
+	new_list_item = new_generic_list(token);
+	container->tokens =
+	concatenate_lists(container->tokens, new_list_item, last);
+	last = new_list_item;
 	free(pointer);
 }

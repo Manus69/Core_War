@@ -44,6 +44,8 @@ void			string_to_bytes(char *string, int file_descriptor);
 void			tokens_to_bytes(t_generic_list *tokens, int file_descriptor);
 int				invoke_error(const char *error_message, t_token *token,
 				const char *current_string, t_container *t_container);
+void			display_character_error(int error_code,
+				t_buffer *buffer, t_container *container);
 
 /*
 ** classification
