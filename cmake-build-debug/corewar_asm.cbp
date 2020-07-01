@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="corewar_asm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/gemerald/projects/corewar asm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/gemerald/projects/corewar asm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/gemerald/projects/corewar asm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="corewar_asm">
+				<Option output="/Users/gemerald/projects/corewar asm/cmake-build-debug/corewar_asm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gemerald/projects/corewar asm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes"/>
+					<Add directory="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft"/>
+					<Add directory="/Users/gemerald/projects/corewar asm/includes"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 corewar_asm"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="corewar_asm/fast">
+				<Option output="/Users/gemerald/projects/corewar asm/cmake-build-debug/corewar_asm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gemerald/projects/corewar asm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes"/>
+					<Add directory="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft"/>
+					<Add directory="/Users/gemerald/projects/corewar asm/includes"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 corewar_asm/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gemerald/projects/corewar\ asm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_atoi.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_atoi_base.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_atoi_size_t.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_bzero.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_char_in_string.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_countwords.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_cut_space.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_cutstr.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_get_integer.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_isalnum.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_isalpha.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_isascii.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_isdigit.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_isprint.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_isspace.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_itoa.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_itoa_base.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_itoa_long.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_itoa_mod.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_length.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_lst_free.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_lstadd.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_lstdel.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_lstdelone.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_lstiter.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_lstmap.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_lstnew.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_match.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_memalloc.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_memccpy.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_memchr.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_memcmp.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_memcpy.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_memdel.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_memmove.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_memset.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_new_integer_list.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_numzero.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_pow.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_print_char_arr.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_print_symbol.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putchar.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putchar_fd.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putchar_mod.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putendl.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putendl_fd.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putnbr.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putnbr_fd.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putnbr_mod.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putstr.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putstr_fd.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_putstr_mod.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_sort_word_tab.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_stdin.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strcat.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strchr.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strclr.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strcmp.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strcpy.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strcpymap.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strdel.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strdup.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strequ.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_striter.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_striteri.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strjoin.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strlcat.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strlen.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strlen_mod.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strmap.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strmapi.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strncat.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strncmp.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strncpy.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strnequ.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strnew.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strnstr.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strrchr.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strsplit.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strstr.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strsub.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_strtrim.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_thebigest_word.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_tolower.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/ft_toupper.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/get_next_line.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/libft/libft.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/includes/printf.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/base_n_p.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/bonus_color.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/bonus_fd.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/bonus_smile.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/color_option.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/format_checker.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/format_checker_one.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/ft_printf.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/ft_printf_one.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/print_some_wight_aruc.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_i_one.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_i_two.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_uxo_po_one.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_uxo_po_two.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_uxo_pt_one.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_errors.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_f_one.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_f_three.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_f_two.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_flags.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_floats.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_form_x.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_format_char_str.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_int.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_o.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_p.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_u.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_uxo_part_one.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_uxo_part_two.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/ft_lftprintf/srcs/work_with_x_big.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/asm.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/constants.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/corewar.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/diz_asm.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/error.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/function_prototypes.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/generic_list.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/op.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/operation_table.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/tokens.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/includes/visual.h">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/asm_main.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/buffer.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/check.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/classify.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/classify_token.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/classify_token_subroutines.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/collect_pre_print_code.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/complex_instructions.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/complex_instructions_01.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/container.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/create_file.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/display_stuff.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/display_token.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/distances.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/encode_arguments.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/encode_operations.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/encode_strings.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/encode_type.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/error.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/file_stuff.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/flag_check.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/fork_to_read.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/ft_binary_read.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/generic_list.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/generic_list_part2.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/is_it_fun.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/is_it_good.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/mallokill.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/measure_size.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/open_octo_file.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/print_binary.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/put_name_comment.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/read_file.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/simple_instrutions.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/support_fluff.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/support_scuff.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/support_snuff.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/support_stuff.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/take_name.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/test_run.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/token.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/token_status.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/transcription.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/translation.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/translation_aggravation.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/translation_frustration.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/translation_vexation.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/validate_dizasm_init.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/walk_throw_byte.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/srcs/assembler/what_is_it.c">
+			<Option target="corewar_asm"/>
+		</Unit>
+		<Unit filename="/Users/gemerald/projects/corewar asm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
