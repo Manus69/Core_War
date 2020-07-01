@@ -32,6 +32,8 @@ int		take_name(int ac, char **av, int *argnum, t_flag *check)
 {
 	if (ac < 2)
 		return (ERR_USAGE);
+	else if (!ft_strcmp("-n", av[1]) && ac < 4)
+		return (ERR_USAGE);
 	if (ac > 2 && av[1][0] == '-' && is_flag(av[*argnum], check, argnum, av))
 		*argnum += 1;
 	if (to_translate(av[*argnum]))
