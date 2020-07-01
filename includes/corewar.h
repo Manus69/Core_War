@@ -68,7 +68,6 @@ typedef struct		s_viz
 {
 	WINDOW			*win;
 	WINDOW			*w_info;
-	WINDOW			*w_help;
 	int				x;
 	int				y;
 	int				i;
@@ -81,8 +80,6 @@ typedef struct		s_viz
 	t_data			map[MEM_SIZE];
 	char			aff;
 	t_champ			*aff_champ;
-	int				sound;
-	int				help;
 }					t_viz;
 
 typedef struct		s_arena

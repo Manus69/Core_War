@@ -16,9 +16,9 @@ static void	classification_check(t_container *container, t_token *current_token)
 {
 	if (current_token->type != new_line)
 		invoke_error("no new line at the end of file\n", NULL, NULL, container);
-	if ((!(container->status >> 1)) & 1)
+	if ((!(container->list_status >> 1)) & 1)
 		invoke_error("name command is missing\n", NULL, NULL, container);
-	if (!(container->status & 1))
+	if (!(container->list_status & 1))
 		invoke_error("comment command is missing\n", NULL, NULL, container);
 }
 

@@ -12,14 +12,14 @@
 
 #include "asm.h"
 
-void		display_all_tokens(t_generic_list *tokens)
+void		display_all_tokens(t_generic_list *tokens, int fd)
 {
 	t_generic_list *current;
 
 	current = tokens;
 	while (current != NULL)
 	{
-		display_token((t_token *)current->stuff);
+		display_token((t_token *)current->stuff, fd);
 		current = current->next;
 	}
 }

@@ -23,6 +23,7 @@ typedef struct s_container					t_container;
 typedef struct s_translation				t_translation;
 typedef struct s_buffer						t_buffer;
 typedef short								t_token_list_status;
+typedef short								t_error_status;
 typedef enum e_operation_name				t_op_name;
 
 enum										e_token_type
@@ -58,6 +59,17 @@ enum										e_buffer_status
 {
 	green,
 	red,
+};
+
+enum										e_translation_status
+{
+	E_NAME_SIZE = 1,
+	E_COMMENT_SIZE = 2,
+	E_CHAMP_SIZE = 4,
+	E_ARG_TYPE = 8,
+	E_ARG_COUNT = 16,
+	E_REG_INDEX = 32,
+	E_MAX = 64,
 };
 
 enum										e_string_writing_mode
@@ -109,7 +121,8 @@ struct										s_container
 	t_generic_list							*translated_tokens;
 	t_transcription_parameters				*parameters;
 	t_translation							*translation;
-	t_token_list_status						status;
+	t_token_list_status						list_status;
+	t_error_status							error_status;
 };
 
 struct										s_buffer
