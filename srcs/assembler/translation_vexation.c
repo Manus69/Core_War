@@ -48,8 +48,6 @@ void	compare_arg_counts(t_generic_list *token, t_container *container)
 	operation_name = get_operation_name(token_cast);
 	arg_count = get_arg_count(token);
 	if (g_op_tab[operation_name].arg_count != arg_count)
-		// invoke_error("wrong number of arguments for token\n", token_cast,
-		// NULL, container);
 		container->error_status |= E_ARG_COUNT;
 }
 
@@ -84,8 +82,6 @@ t_token *current_token, t_container *container, t_flag *flag)
 	if (table_value != (table_value | current_token->argument_type))
 	{
 		flag = free_structure(flag);
-		// invoke_error("argument type mismatch\n",
-		// 	previous_operation, NULL, container);
 		container->error_status |= E_ARG_TYPE;
 	}
 }
