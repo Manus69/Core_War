@@ -102,7 +102,8 @@ char			*decimal_to_hex_mk2(int n, int number_of_bytes)
 		return (get_hex_with_padding(n, number_of_bytes));
 	}
 	number = -n;
-	number_string = ft_itoa_base((int)number, 2);
+	// number_string = ft_itoa_base((int)number, 2);
+	number_string = ft_itoa_base_local(number, 2);
 	binary_complement = get_binary_complement(number_string, number_of_bytes);
 	decimal = binary_to_unsigned_decimal(binary_complement);
 	hex_with_padding = get_hex_with_padding(decimal, number_of_bytes);

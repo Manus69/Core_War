@@ -79,9 +79,6 @@ void        here_we_go(char *file_name, t_flag *has_flag)
 {
     t_container *container;
 
-    // char *string = "-2147483648";
-    // int x = why_atol(string);
-
     container = new_container(file_name);
     read_file(container);
     close(container->file_descriptor);
