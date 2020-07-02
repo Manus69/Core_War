@@ -95,13 +95,14 @@ char			*decimal_to_hex_mk2(int n, int number_of_bytes)
 	char			*binary_complement;
 	char			*number_string;
 	char			*hex_with_padding;
+	long 			number;
 
 	if (n >= 0)
 	{
 		return (get_hex_with_padding(n, number_of_bytes));
 	}
-	n = -n;
-	number_string = ft_itoa_base(n, 2);
+	number = -n;
+	number_string = ft_itoa_base((int)number, 2);
 	binary_complement = get_binary_complement(number_string, number_of_bytes);
 	decimal = binary_to_unsigned_decimal(binary_complement);
 	hex_with_padding = get_hex_with_padding(decimal, number_of_bytes);

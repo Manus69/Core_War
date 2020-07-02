@@ -19,6 +19,8 @@ t_generic_list *current_token, t_generic_list **last_element)
 	t_generic_list	*token_translation;
 
 	compare_arg_counts(current_token, container);
+	if (container->error_status)
+		return ;
 	previous_operation = (t_token *)current_token->stuff;
 	token_translation = encode_operation((t_token *)current_token->stuff);
 	container->translation->exec_code =
@@ -63,6 +65,10 @@ t_generic_list	*translate_tokens(t_container *container, t_flag *has_flag)
 	current = container->tokens;
 	while (current)
 	{
+		//
+		// t_token *cast = (t_token *)current->stuff;
+		if (container->error_status & (E_ARG_COUNT | E_ARG_TYPE))
+			break ;
 		if (((t_token *)current->stuff)->type == champ_name)
 			container->translation->champ_name =
 					translate_champ_name(current, container);

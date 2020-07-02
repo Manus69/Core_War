@@ -48,7 +48,10 @@ void	compare_arg_counts(t_generic_list *token, t_container *container)
 	operation_name = get_operation_name(token_cast);
 	arg_count = get_arg_count(token);
 	if (g_op_tab[operation_name].arg_count != arg_count)
+	{
 		container->error_status |= E_ARG_COUNT;
+		// invoke_error(COMPILATION_TERMINATED, NULL, NULL, container);
+	}
 }
 
 int		get_operation_code(t_token *token)
