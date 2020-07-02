@@ -30,7 +30,7 @@
 
 //check arg count
 //giant files?
-//buffer overflow
+//labels
 
 //-n nonexistant files
 

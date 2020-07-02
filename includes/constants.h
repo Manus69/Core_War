@@ -44,7 +44,8 @@ static const char		*g_error_messages[] = {"The name size is wrong;\n",
 	"The comment size is wrong;\n", "The champ size is wrong;\n",
 	"The argument is of the wrong type;\n",
 	"The arg count is wrong;\n",
-	"The registry number is off;\n", 0};
+	"The registry number is off;\n", 
+	"The label is missing;\n", 0};
 static const char		*g_syntax_errors[] = {"No new line at the end of file;\n",
 	"Name command is missing;\n",
 	"Comment command is missing\n", 0};

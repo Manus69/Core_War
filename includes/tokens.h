@@ -76,7 +76,8 @@ enum										e_translation_status
 	E_ARG_TYPE = 8,
 	E_ARG_COUNT = 16,
 	E_REG_INDEX = 32,
-	E_MAX = 64,
+	E_LABEL = 64,
+	E_MAX = 128,
 };
 
 enum										e_syntax_error_status
