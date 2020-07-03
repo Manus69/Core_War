@@ -6,7 +6,7 @@
 /*   By: mnarwhal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 18:08:24 by mnarwhal          #+#    #+#             */
-/*   Updated: 2020/06/27 18:08:31 by mnarwhal         ###   ########.fr       */
+/*   Updated: 2020/07/03 17:46:56 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,6 @@ t_generic_list	*translate_tokens(t_container *container, t_flag *has_flag)
 	current = container->tokens;
 	while (current)
 	{
-		//
-		// t_token *cast = (t_token *)current->stuff;
 		if (container->error_status & (E_ARG_COUNT | E_ARG_TYPE))
 			break ;
 		if (((t_token *)current->stuff)->type == champ_name)
