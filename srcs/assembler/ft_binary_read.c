@@ -92,8 +92,11 @@ unsigned char			*ft_binary_read(int fd, size_t *len)
 		ft_push_back(&list, buf);
 		list_len++;
 	}
-	str = ft_concat(&list, list_len);
-	*len = list_len;
-	ft_list_del(&list);
+	if (list)
+	{
+		str = ft_concat(&list, list_len);
+		*len = list_len;
+		ft_list_del(&list);
+	}
 	return (str);
 }
