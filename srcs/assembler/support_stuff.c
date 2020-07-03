@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 17:44:18 by gemerald          #+#    #+#             */
-/*   Updated: 2020/06/27 17:56:50 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/03 17:34:17 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,14 +95,13 @@ char			*decimal_to_hex_mk2(int n, int number_of_bytes)
 	char			*binary_complement;
 	char			*number_string;
 	char			*hex_with_padding;
-	long 			number;
+	long			number;
 
 	if (n >= 0)
 	{
 		return (get_hex_with_padding(n, number_of_bytes));
 	}
 	number = -n;
-	// number_string = ft_itoa_base((int)number, 2);
 	number_string = ft_itoa_base_local(number, 2);
 	binary_complement = get_binary_complement(number_string, number_of_bytes);
 	decimal = binary_to_unsigned_decimal(binary_complement);
