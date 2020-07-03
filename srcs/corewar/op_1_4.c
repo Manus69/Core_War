@@ -6,7 +6,7 @@
 /*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/01 01:02:58 by selly             #+#    #+#             */
-/*   Updated: 2020/07/01 19:15:44 by selly            ###   ########.fr       */
+/*   Updated: 2020/07/03 17:54:58 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void				live(t_arena *vm, t_slider *s)
 {
 	int32_t			player_id;
-	t_oper		*op;
+	t_oper			*op;
 	t_champ			*champ;
 
 	op = &g_operation_list[s->code - 1];
