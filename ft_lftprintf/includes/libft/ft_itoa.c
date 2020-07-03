@@ -64,9 +64,7 @@ static char			*ft_getarray(char *ar, int n, int chars, int a)
 static char			*ft_max(int c)
 {
 	char	*new;
-	int		i;
 
-	i = 0;
 	if (c == 0)
 	{
 		new = ft_strnew(1);

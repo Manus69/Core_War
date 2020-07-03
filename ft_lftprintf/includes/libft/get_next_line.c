@@ -60,7 +60,6 @@ int				get_next_line(const int fd, char **line)
 	static char		*fd_buffer[FD_NUM];
 	char			*new;
 	int				is_read;
-	int				count;
 
 	if (!line || (fd < 0 || fd > FD_NUM) || (read(fd, fd_buffer[fd], 0) < 0) \
 			|| !(new = (char *)malloc(sizeof(char) * BUFF_SIZE + 1)))
@@ -68,7 +67,6 @@ int				get_next_line(const int fd, char **line)
 	if (fd_buffer[fd])
 		if (get_line(&fd_buffer[fd], line))
 			return (OK);
-	count = 0;
 	ft_bzero(new, BUFF_SIZE + 1);
 	is_read = read_file(fd, new, &fd_buffer[fd], line);
 	free(new);

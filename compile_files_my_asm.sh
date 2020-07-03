@@ -3,7 +3,7 @@
 rm -f "./cor_files_my/*.cor"
 
 for filename in ./champs/*.s; do
-    valgrind ./asm "$filename"
+    ./asm "$filename"
 done
 
 for filename in ./*.cor; do

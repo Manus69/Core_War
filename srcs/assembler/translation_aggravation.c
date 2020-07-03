@@ -15,13 +15,11 @@
 static void		translate_operation(t_container *container,
 t_generic_list *current_token, t_generic_list **last_element)
 {
-	t_token			*previous_operation;
 	t_generic_list	*token_translation;
 
 	compare_arg_counts(current_token, container);
 	if (container->error_status)
 		return ;
-	previous_operation = (t_token *)current_token->stuff;
 	token_translation = encode_operation((t_token *)current_token->stuff);
 	container->translation->exec_code =
 	concatenate_lists(container->translation->exec_code,

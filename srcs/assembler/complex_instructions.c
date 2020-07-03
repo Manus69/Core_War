@@ -15,10 +15,8 @@
 int				write_ind(t_dsm *src_code, t_argum *args, int j)
 {
 	char	*number;
-	t_argum	*test;
 	int		i;
 
-	test = args;
 	if (!(number = take_short_dir(src_code)))
 		return (FAIL);
 	i = -1;

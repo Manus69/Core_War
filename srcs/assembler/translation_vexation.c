@@ -12,23 +12,40 @@
 
 #include "asm.h"
 
-int		get_arg_count(t_generic_list *token)
+void	check_current_arg_type(t_container *container,
+t_token *previous_operation, t_token *current_token, int arg_index)
+{
+	int						arg_count;
+	enum e_operation_name	operation;
+	
+	operation = get_operation_name(previous_operation);
+	arg_count = g_op_tab[operation].arg_count;
+	if (arg_index >= arg_count)
+		return ;
+	if (!(current_token->argument_type &
+		g_op_tab[operation].arg_type[arg_index]))
+		container->error_status |= E_ARG_TYPE;
+}
+
+int		get_arg_count_check_type(t_container *container, t_generic_list *token)
 {
 	t_generic_list	*current_token;
-	t_token			*current_token_cast;
+	t_token			*previous_operation;
 	int				arg_count;
 
 	arg_count = 0;
+	previous_operation = (t_token *)token->stuff;
 	current_token = token->next;
 	while (1)
 	{
 		if (!current_token)
 			return (arg_count);
-		current_token_cast = (t_token *)current_token->stuff;
-		if (current_token_cast->type == comma)
+		if (((t_token *)current_token->stuff)->type == comma)
 			current_token = current_token->next;
-		else if (current_token_cast->type == argument)
+		else if (((t_token *)current_token->stuff)->type == argument)
 		{
+			check_current_arg_type(container, previous_operation,
+			((t_token *)current_token->stuff), arg_count);
 			arg_count++;
 			current_token = current_token->next;
 		}
@@ -46,11 +63,9 @@ void	compare_arg_counts(t_generic_list *token, t_container *container)
 
 	token_cast = (t_token *)token->stuff;
 	operation_name = get_operation_name(token_cast);
-	arg_count = get_arg_count(token);
+	arg_count = get_arg_count_check_type(container, token);
 	if (g_op_tab[operation_name].arg_count != arg_count)
-	{
 		container->error_status |= E_ARG_COUNT;
-	}
 }
 
 int		get_operation_code(t_token *token)

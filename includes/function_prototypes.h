@@ -109,7 +109,6 @@ t_generic_list	*translate_champ_name(t_generic_list *current_token,
 t_generic_list	*translate_champ_comment(t_generic_list *current_token,
 				t_container *container);
 t_generic_list	*concatenate_translation(const t_translation *translation);
-int				get_arg_count(t_generic_list *token);
 void			compare_arg_counts(t_generic_list *token,
 				t_container *container);
 int				get_operation_code(t_token *token);
