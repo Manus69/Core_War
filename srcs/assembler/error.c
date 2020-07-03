@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 16:49:17 by gemerald          #+#    #+#             */
-/*   Updated: 2020/06/27 16:49:54 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/03 17:31:01 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	display_translation_errors(t_container *container)
 			}
 			ft_putstr_fd(g_error_messages[n], STDERR_FILENO);
 		}
-		n ++;
+		n++;
 		power = power << 1;
 	}
 }
@@ -48,7 +48,6 @@ void	display_character_error(int error_code,
 int		invoke_error(const char *error_message, t_token *token,
 		const char *current_string, t_container *container)
 {
-
 	ft_putstr_fd("File name: ", STDERR_FILENO);
 	if (container)
 		ft_putstr_fd(container->file_name, STDERR_FILENO);
