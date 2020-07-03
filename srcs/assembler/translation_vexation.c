@@ -6,7 +6,7 @@
 /*   By: mnarwhal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 16:56:56 by mnarwhal          #+#    #+#             */
-/*   Updated: 2020/06/27 16:57:00 by mnarwhal         ###   ########.fr       */
+/*   Updated: 2020/07/03 17:48:11 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ void	compare_arg_counts(t_generic_list *token, t_container *container)
 	if (g_op_tab[operation_name].arg_count != arg_count)
 	{
 		container->error_status |= E_ARG_COUNT;
-		// invoke_error(COMPILATION_TERMINATED, NULL, NULL, container);
 	}
 }
 
