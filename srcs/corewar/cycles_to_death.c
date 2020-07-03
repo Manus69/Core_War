@@ -12,13 +12,6 @@
 
 #include "corewar.h"
 
-void			print_error(char *error, t_arena *vm)
-{
-	ft_putstr_fd(error, 2);
-	free_arena(&vm);
-	exit(1);
-}
-
 static void		reset_lives_nums(t_arena *vm)
 {
 	int32_t		i;

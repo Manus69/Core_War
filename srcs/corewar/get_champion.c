@@ -90,7 +90,7 @@ t_arena			*get_champion(char *argv, t_arena *vm)
 		print_error(NO_NULL_ERROR, vm);
 	if ((vm->champion->size = get_magic(fd, vm)) < 0 ||
 		vm->champion->size > CHAMP_MAX_SIZE)
-		print_error(SIZE_ERROR, vm);
+		print_err_size(argv, vm);
 	vm->champion->comment = read_str(fd, COMMENT_LENGTH, vm);
 	if (get_magic(fd, vm) != 0)
 		print_error(NO_NULL_ERROR, vm);

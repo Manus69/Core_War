@@ -140,6 +140,7 @@ t_arena				*set_player_id(t_arena *vm);
 
 void				free_arena(t_arena **arena);
 void				print_error(char	*error, t_arena *vm);
+void				print_err_size(char *file, t_arena *vm);
 void				print_mem_status(t_arena *vm);
 
 void				start_war(t_arena *vm);
@@ -196,7 +197,7 @@ void				fork_op(t_arena *vm, t_slider *sl);
 void				show_mem(t_arena *vm);
 void				inroduction(t_champ *ch[4], int count, int nice, int i);
 
-static const t_oper		g_operation_list[16] = {
+static t_oper		g_operation_list[16] = {
 	{
 		.name = "live",
 		.mod = 0,
