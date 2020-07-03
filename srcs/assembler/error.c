@@ -14,9 +14,9 @@
 
 void	display_translation_errors(t_container *container)
 {
-	int		n;
-	short	power;
-	char	*message;
+	int			n;
+	short		power;
+	const char	*message;
 
 	n = 0;
 	power = 1;
