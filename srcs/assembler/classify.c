@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 20:42:25 by gemerald          #+#    #+#             */
-/*   Updated: 2020/06/27 15:20:38 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/03 17:08:49 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static void	display_syntax_errors(short status_code)
 		if (status_code & number)
 			ft_putstr_fd(*message, STDERR_FILENO);
 		number = number << 1;
-		message ++;
+		message++;
 	}
 }
 
