@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 15:23:54 by gemerald          #+#    #+#             */
-/*   Updated: 2020/06/27 15:36:17 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/03 17:10:29 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,10 @@ void		classify_token(t_token *current, t_token *previous)
 		classify_after_operation(current);
 	else if (previous->type == argument)
 		classify_after_argument(current);
-	else if (previous->type == comma &&	check_argument_token(current))
+	else if (previous->type == comma && check_argument_token(current))
 		return ;
 	else if (previous->type == champ_name && is_new_line(current->string))
 		current->type = new_line;
-	else if (previous->type == champ_comment &&	is_new_line(current->string))
+	else if (previous->type == champ_comment && is_new_line(current->string))
 		current->type = new_line;
 }
