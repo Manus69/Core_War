@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 19:34:50 by gemerald          #+#    #+#             */
-/*   Updated: 2020/06/27 19:43:35 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/03 17:57:52 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,8 +150,6 @@ struct										s_buffer
 	enum e_string_writing_mode				mode;
 	enum e_buffer_status					status;
 };
-
-//test
 
 enum										e_operation_name
 {
