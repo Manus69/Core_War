@@ -61,6 +61,13 @@ enum										e_buffer_status
 	red,
 };
 
+enum										e_char_status
+{
+	C_NASCII = 0,
+	C_NULL = 1,
+	C_OVERFLOW = 2,
+};
+
 enum										e_translation_status
 {
 	E_NAME_SIZE = 1,
@@ -69,7 +76,16 @@ enum										e_translation_status
 	E_ARG_TYPE = 8,
 	E_ARG_COUNT = 16,
 	E_REG_INDEX = 32,
-	E_MAX = 64,
+	E_LABEL = 64,
+	E_MAX = 128,
+};
+
+enum										e_syntax_error_status
+{
+	S_NEW_LINE = 1,
+	S_NAME = 2,
+	S_COMMENT = 4,
+	S_MAX = 8,
 };
 
 enum										e_string_writing_mode
@@ -115,6 +131,7 @@ struct										s_container
 	int										size_of_tokens;
 	const char								*file_name;
 	char									*new_file_name;
+	t_buffer								*buffer;
 	t_generic_list							*tokens;
 	t_generic_list							*current;
 	t_generic_list							*labels;
@@ -132,6 +149,29 @@ struct										s_buffer
 	unsigned int							max_content_size;
 	enum e_string_writing_mode				mode;
 	enum e_buffer_status					status;
+};
+
+//test
+
+enum										e_operation_name
+{
+	dummy_operation,
+	live_operation,
+	ld_operation,
+	st_operation,
+	add_operation,
+	sub_operation,
+	and_operation,
+	or_operation,
+	xor_operation,
+	zjmp_operation,
+	ldi_operation,
+	sti_operation,
+	fork_operation,
+	lld_operation,
+	lldi_operation,
+	lfork_operation,
+	aff_operation,
 };
 
 #endif

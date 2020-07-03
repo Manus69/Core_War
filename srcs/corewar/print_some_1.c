@@ -12,6 +12,26 @@
 
 #include "corewar.h"
 
+void			print_err_size(char *file, t_arena *vm)
+{
+	ft_putstr_fd("\n\033[0;31mError: File ", 2);
+	ft_putstr_fd(file, 2);
+	ft_putstr_fd(" has too large a code (", 2);
+	ft_putnbr_fd(vm->champion->size, 2);
+	ft_putstr_fd(" bytes > ", 2);
+	ft_putnbr_fd(CHAMP_MAX_SIZE, 2);
+	ft_putstr_fd(" bytes)\033[0m\n", 2);
+	free_arena(&vm);
+	exit(1);
+}
+
+void			print_error(char *error, t_arena *vm)
+{
+	ft_putstr_fd(error, 2);
+	free_arena(&vm);
+	exit(1);
+}
+
 void		color_output(int color, uint8_t value, int nice)
 {
 	if (nice)
@@ -62,7 +82,7 @@ void		print_mem_status(t_arena *vm)
 			if (vm->nice)
 				ft_printf("{Lgray}%.4p :{eoc} ", i);
 			else
-				ft_printf("%.4p :", i);
+				ft_printf("%.4p : ", i);
 		}
 		color_output(vm->color[i], vm->map[i], vm->nice);
 		if (line == format)

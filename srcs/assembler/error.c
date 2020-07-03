@@ -14,9 +14,9 @@
 
 void	display_translation_errors(t_container *container)
 {
-	int		n;
-	short	power;
-	char	*message;
+	int			n;
+	short		power;
+	const char	*message;
 
 	n = 0;
 	power = 1;
@@ -35,6 +35,14 @@ void	display_translation_errors(t_container *container)
 		n ++;
 		power = power << 1;
 	}
+}
+
+void	display_character_error(int error_code,
+		t_buffer *buffer, t_container *container)
+{
+	destroy_buffer(&buffer);
+	ft_putstr_fd(g_character_errors[error_code], STDERR_FILENO);
+	invoke_error(COMPILATION_TERMINATED, NULL, NULL, container);
 }
 
 int		invoke_error(const char *error_message, t_token *token,

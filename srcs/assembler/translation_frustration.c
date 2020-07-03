@@ -18,12 +18,10 @@ t_container *container)
 	t_generic_list		*translation;
 	t_generic_list		*last_element;
 	t_generic_list		*byte_string;
-	static const char	*message = "champ comment is too long\n";
 
 	translation = encode_string((t_token *)current_token->stuff);
 	last_element = get_last_element(translation);
 	if (container->parameters->comment_size > COMMENT_LENGTH)
-		// invoke_error(message, (t_token *)current_token->stuff, NULL, container);
 		container->error_status |= E_COMMENT_SIZE;
 	byte_string = get_null_padding(COMMENT_LENGTH -
 			container->parameters->comment_size);
@@ -40,12 +38,10 @@ t_container *container)
 	t_generic_list		*translation;
 	t_generic_list		*byte_string;
 	t_generic_list		*last_element;
-	static const char	*message = "champ name is too long\n";
 
 	translation = encode_string((t_token *)current_token->stuff);
 	last_element = get_last_element(translation);
 	if (container->parameters->name_size > PROG_NAME_LENGTH)
-		// invoke_error(message, (t_token *)current_token->stuff, NULL, container);
 		container->error_status |= E_CHAMP_SIZE;
 	byte_string = get_null_padding(PROG_NAME_LENGTH -
 			container->parameters->name_size);

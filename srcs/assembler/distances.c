@@ -34,8 +34,10 @@ int		get_absolute_distance_to_the_label(t_token *token,
 		free(substring);
 		current_token = current_token->next;
 	}
-	return (invoke_error("the label is missing\n",
-				debug_token, NULL, container));
+	container->error_status |= E_LABEL;
+	return (0);
+	// return (invoke_error("the label is missing\n",
+	// 			debug_token, NULL, container));
 }
 
 int		get_distance_to_the_previous_operation(t_token *token,

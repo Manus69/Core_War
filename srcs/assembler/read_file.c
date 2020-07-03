@@ -81,13 +81,13 @@ void		read_file(t_container *container)
 		else if (current_char == '\n' || current_char == SEPARATOR_CHAR)
 			process_separators(container, buffer, current_char);
 		else if (!ft_isascii(current_char))
-			invoke_error("non ascii char\n", NULL, NULL, container);
+			display_character_error(C_NASCII, buffer, container);
 		else if (current_char == '\0')
-			invoke_error("null character", NULL, NULL, container);
+			display_character_error(C_NULL, buffer, container);
 		else
 			add_to_buffer(buffer, current_char);
 		if (buffer->status == red)
-			invoke_error("buffer overflow\n", NULL, NULL, container);
+			display_character_error(C_OVERFLOW, buffer, container);
 	}
 	append_buffer_to_tokens(container, buffer);
 	destroy_buffer(&buffer);

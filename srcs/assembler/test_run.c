@@ -57,18 +57,18 @@ void        translate_and_write_to_file(t_container *container, t_flag *has_flag
     prefix_item = new_generic_list(ft_strdup("00ea83f3"));
     prefix_item = concatenate_lists(prefix_item,
     translate_tokens(container, has_flag), NULL);
-    process_flags(container, has_flag, prefix_item);
     new_file_name = get_new_filename(container, has_flag);
     if (container->error_status)
     {
         clean_up(prefix_item, -1, has_flag, new_file_name);
-        invoke_error("Compilation terminated;\n", NULL, NULL, container);
+        invoke_error(COMPILATION_TERMINATED, NULL, NULL, container);
     }
+    process_flags(container, has_flag, prefix_item);
     file = open(new_file_name, O_RDWR | O_CREAT | O_TRUNC, 0777);
     if (file < 0)
     {
         clean_up(prefix_item, file, has_flag, new_file_name);
-        invoke_error("Open / create failure;\n", NULL, NULL, container);
+        invoke_error(OPEN_CREATE_FAILURE, NULL, NULL, container);
     }
     tokens_to_bytes(prefix_item, file);
     ft_printf("Writing output program to %s\n", new_file_name);
