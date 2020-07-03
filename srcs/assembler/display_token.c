@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 16:17:09 by gemerald          #+#    #+#             */
-/*   Updated: 2020/06/27 16:23:06 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/03 17:15:20 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ void		display_token(t_token *token, int fd)
 	if (fd == STDOUT_FILENO)
 	{
 		ft_printf("size: %d\n", token->size);
-		ft_printf("distance: %d\n", token->distance);	
+		ft_printf("distance: %d\n", token->distance);
 	}
 	ft_putstr_fd("---------------\n", fd);
 }
