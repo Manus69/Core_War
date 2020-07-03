@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ASSEMBLY_DIZ_ASM_H
-# define ASSEMBLY_DIZ_ASM_H
+#ifndef DIZ_ASM_H
+# define DIZ_ASM_H
 # include <stdlib.h>
 
 # define OUTPUT_LEN 10000

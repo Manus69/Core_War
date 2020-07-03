@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   function_prototypes.h                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/03 18:04:28 by gemerald          #+#    #+#             */
+/*   Updated: 2020/07/03 18:26:35 by gemerald         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FUNCTION_PROTOTYPES_H
 # define FUNCTION_PROTOTYPES_H
 # include "generic_list.h"
@@ -43,7 +55,7 @@ void			display_byte_strings(t_generic_list *tokens);
 void			string_to_bytes(char *string, int file_descriptor);
 void			tokens_to_bytes(t_generic_list *tokens, int file_descriptor);
 int				invoke_error(const char *error_message, t_token *token,
-				const char *current_string, t_container *t_container);
+				const char *current_string, t_container *container);
 void			display_character_error(int error_code,
 				t_buffer *buffer, t_container *container);
 
@@ -53,11 +65,11 @@ void			display_character_error(int error_code,
 
 int				is_quotation_mark(char *string);
 int				is_label(char *string);
-int     		is_comment_character(char *string);
-int     		is_operation(char *string);
-int     		is_new_line(char *string);
-int     		is_command(char *string);
-int     		is_command_name(char *string);
+int				is_comment_character(char *string);
+int				is_operation(char *string);
+int				is_new_line(char *string);
+int				is_command(char *string);
+int				is_command_name(char *string);
 int				is_command_comment(char *string);
 int				is_argument_separator(char *string);
 int				is_registry(char *string);
@@ -65,7 +77,6 @@ int				is_direct(char *string);
 int				is_indirect(char *string);
 int				is_string(char *string);
 int				check_argument_token(t_token *token);
-
 void			classify_after_null(t_token *current_token);
 void			classify_after_new_line(t_token *current_token);
 void			classify_after_label(t_token *current_token);
@@ -84,18 +95,16 @@ t_generic_list	*encode_argument(t_generic_list *token,
 t_generic_list	*tokens, t_container *container);
 t_generic_list	*encode_type(t_generic_list *token);
 t_op_name		get_operation_name(t_token *token);
-
 int				get_distance_to_the_label(t_generic_list *token,
-char *label_name, t_generic_list *tokens, t_container *container);
-
+				char *label_name, t_generic_list *tokens,
+				t_container *container);
 void			set_global_distance(t_container *container);
 int				get_distance_to_the_previous_operation(t_token *token,
-t_generic_list *token_list);
-
+				t_generic_list *token_list);
 t_generic_list	*get_next_typed_token(t_generic_list *tokens,
-enum e_token_type type);
+				enum e_token_type type);
 
-void get_transcription_parameters(t_container *container);
+void			get_transcription_parameters(t_container *container);
 
 /*
 ** translation
