@@ -6,7 +6,7 @@
 /*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/01 00:43:03 by selly             #+#    #+#             */
-/*   Updated: 2020/07/01 11:43:42 by selly            ###   ########.fr       */
+/*   Updated: 2020/07/03 17:51:06 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@ int			check_name(char *s1, char *s2)
 	}
 	if (*s1 == *s2)
 		return (1);
-		else
-	return (0);
+	else
+		return (0);
 }
 
 t_arena		*find_num_arg(char *argv, t_arena *vm)
