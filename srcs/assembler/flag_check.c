@@ -104,11 +104,8 @@ int		is_flag(char *test, t_flag *has_flag, int *arg_count, char **av)
 			(*has_flag).change_name = 1;
 			return (SUCCESS);
 		}
-		else
-			return (ERR_READ);
 	}
-	else
-		return (ERR_READ);
+	return (ERR_READ);
 }
 
 t_flag	*free_structure(t_flag *has_flag)
