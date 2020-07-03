@@ -63,10 +63,8 @@ t_generic_list	*translate_tokens(t_container *container, t_flag *has_flag)
 	last_element = NULL;
 	prev_oper = NULL;
 	current = container->tokens;
-	while (current)
+	while (current && !(container->error_status & (E_ARG_COUNT | E_ARG_TYPE)))
 	{
-		if (container->error_status & (E_ARG_COUNT | E_ARG_TYPE))
-			break ;
 		if (((t_token *)current->stuff)->type == champ_name)
 			container->translation->champ_name =
 					translate_champ_name(current, container);
