@@ -42,7 +42,6 @@ ASM_HEADERS_LIST =			\
 	function_prototypes.h	\
 	generic_list.h			\
 	op.h					\
-	operation_table.h		\
 	tokens.h				\
 
 ASM_HEADERS = $(addprefix $(HEADERS_DIRECTORY), $(ASM_HEADERS_LIST))

@@ -24,6 +24,7 @@
 # define BUFFER_OVERFLOW "Buffer overflow;\n"
 # define DIGITS "0123456789"
 # define NUMBER_SYSTEM_BASE 16
+# define NUMBER_OF_OPERATIONS 17
 # define PADDING_SIZE 4
 # define BUFFER_SIZE (COMMENT_LENGTH << 1)
 # define REGISTRY_NAME_SIZE T_REG

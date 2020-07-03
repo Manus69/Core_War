@@ -39,5 +39,5 @@
 
 
 
-//should i be paranoid about exit() in case of malloc failure?
+//Makefile; dependencies and flags
 //dont give retards an inch

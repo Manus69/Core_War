@@ -85,10 +85,6 @@ void        here_we_go(char *file_name, t_flag *has_flag)
     classify_all_tokens(container);
     measure_token_size(container->tokens);
     set_global_distance(container);
-    //
-    // display_all_tokens(container->tokens, 1);
-    // exit(1);
-    //
     get_transcription_parameters(container);
     translate_and_write_to_file(container, has_flag);
     destroy_container(&container);

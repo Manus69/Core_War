@@ -151,4 +151,27 @@ struct										s_buffer
 	enum e_buffer_status					status;
 };
 
+//test
+
+enum										e_operation_name
+{
+	dummy_operation,
+	live_operation,
+	ld_operation,
+	st_operation,
+	add_operation,
+	sub_operation,
+	and_operation,
+	or_operation,
+	xor_operation,
+	zjmp_operation,
+	ldi_operation,
+	sti_operation,
+	fork_operation,
+	lld_operation,
+	lldi_operation,
+	lfork_operation,
+	aff_operation,
+};
+
 #endif
