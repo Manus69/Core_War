@@ -6,7 +6,7 @@
 /*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/07 13:13:06 by selly             #+#    #+#             */
-/*   Updated: 2020/06/07 20:23:00 by selly            ###   ########.fr       */
+/*   Updated: 2020/07/03 17:53:23 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void			print_error(char *error, t_arena *vm)
 	exit(1);
 }
 
-void		color_output(int color, uint8_t value, int nice)
+void			color_output(int color, uint8_t value, int nice)
 {
 	if (nice)
 	{
@@ -51,7 +51,7 @@ void		color_output(int color, uint8_t value, int nice)
 		ft_printf("%.2x ", value);
 }
 
-void		put_color(int *color, int32_t place, t_slider *sl, int32_t s)
+void			put_color(int *color, int32_t place, t_slider *sl, int32_t s)
 {
 	int8_t	i;
 	int32_t	addr;
@@ -66,7 +66,7 @@ void		put_color(int *color, int32_t place, t_slider *sl, int32_t s)
 	}
 }
 
-void		print_mem_status(t_arena *vm)
+void			print_mem_status(t_arena *vm)
 {
 	int		i;
 	int		line;
