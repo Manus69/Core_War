@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 16:27:45 by gemerald          #+#    #+#             */
-/*   Updated: 2020/06/27 16:31:53 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/03 17:29:27 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,6 @@ int		get_absolute_distance_to_the_label(t_token *token,
 	}
 	container->error_status |= E_LABEL;
 	return (0);
-	// return (invoke_error("the label is missing\n",
-	// 			debug_token, NULL, container));
 }
 
 int		get_distance_to_the_previous_operation(t_token *token,
