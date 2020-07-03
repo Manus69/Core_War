@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 19:21:21 by gemerald          #+#    #+#             */
-/*   Updated: 2020/06/27 19:23:00 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/03 17:57:08 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,10 @@ static const char		*g_error_messages[] = {"The name size is wrong;\n",
 	"The comment size is wrong;\n", "The champ size is wrong;\n",
 	"The argument is of the wrong type;\n",
 	"The arg count is wrong;\n",
-	"The registry number is off;\n", 
+	"The registry number is off;\n",
 	"The label is missing;\n", 0};
-static const char		*g_syntax_errors[] = {"No new line at the end of file;\n",
+static const char		*g_syntax_errors[] =\
+{"No new line at the end of file;\n",
 	"Name command is missing;\n",
 	"Comment command is missing\n", 0};
 static const char		*g_character_errors[] = {"Non ascii character;\n",
