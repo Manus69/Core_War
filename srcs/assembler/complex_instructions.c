@@ -27,6 +27,8 @@ int				write_ind(t_dsm *src_code, t_argum *args, int j)
 		src_code->output_position++;
 	}
 	free(number);
+	args++;
+	args--;
 	return (SUCCESS);
 }
 
