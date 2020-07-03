@@ -6,7 +6,7 @@
 /*   By: selly <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/01 16:43:06 by selly             #+#    #+#             */
-/*   Updated: 2020/06/01 16:43:48 by selly            ###   ########.fr       */
+/*   Updated: 2020/07/03 17:52:00 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ t_arena			*get_slider(t_arena *vm)
 t_arena			*ready_to_start(t_arena *vm)
 {
 	int			i;
-	t_champ	*last;
+	t_champ		*last;
 
 	if (vm->print_type == 0)
 		vm->print_type = 1;
