@@ -6,13 +6,13 @@
 #    By: selly <selly@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/25 14:25:01 by selly             #+#    #+#              #
-#    Updated: 2019/10/28 18:19:41 by mnarwhal         ###   ########.fr        #
+#    Updated: 2020/07/04 21:57:51 by gemerald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 C = clang
 NAME = libftprintf.a
-FLAGS = -Wall -Wextra #-Werror
+FLAGS = -Wall -Wextra -Werror
 LIBFT = includes/libft
 DIR_S = srcs
 DIR_O = objs
