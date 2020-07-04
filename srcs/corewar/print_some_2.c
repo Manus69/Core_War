@@ -107,7 +107,7 @@ void			inroduction(t_champ *ch[4], int count, int nice, int i)
 		}
 		else
 		{
-			ft_printf("Player %d: weighing %d by", ch[i]->num, ch[i]->size);
+			ft_printf("* Player %d: weighing %d by", ch[i]->num, ch[i]->size);
 			ft_printf("tes, \"%s\" (\"%s\")!\n", ch[i]->name, ch[i]->comment);
 		}
 		i++;

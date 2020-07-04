@@ -85,11 +85,11 @@ void			start_war(t_arena *vm)
 	if (vm->nice)
 	{
 		ft_printf(":smile_14 {red}Contesant %d", vm->last_alive->num);
-		ft_printf(",{Lblue} %s,{green} has won!{eoc} \n", vm->last_alive->name);
+		ft_printf(",{Lblue} \"%s\",{green} has won!{eoc} \n", vm->last_alive->name);
 	}
 	else
 	{
 		ft_printf("Contesant %d", vm->last_alive->num);
-		ft_printf(", %s, has won!\n", vm->last_alive->name);
+		ft_printf(", \"%s\", has won!\n", vm->last_alive->name);
 	}
 }
