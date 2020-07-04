@@ -6,7 +6,7 @@
 #    By: selly <selly@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/05 18:02:08 by selly             #+#    #+#              #
-#    Updated: 2019/10/27 18:53:01 by selly            ###   ########.fr        #
+#    Updated: 2020/07/04 21:25:25 by gemerald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -106,15 +106,19 @@ SRC =	ft_memset.c				\
 								\
 		get_next_line.c 		\
 
-FLAGS = gcc -c -Wall -Wextra #-Werror
+FLAGS = gcc -c -Wall -Wextra -Werror
 OBJ = $(SRC:.c=.o)
+
+HEADER := libft.h
 
 all: $(NAME)
 
-$(NAME):
-	$(FLAGS) $(SRC) 
+$(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
+
+$(OBJ) : %.o: %.c $(HEADER)
+	$(FLAGS) -o $@ -c $<
 
 clean:
 	/bin/rm -f $(OBJ)
