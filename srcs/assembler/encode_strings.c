@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
 
 int				check_ascii_string(const char *string)
 {

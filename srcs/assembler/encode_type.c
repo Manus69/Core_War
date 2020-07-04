@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
 
 enum e_operation_name	get_operation_name(t_token *token)
 {

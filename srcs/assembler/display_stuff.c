@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
 
 void		display_all_tokens(t_generic_list *tokens, int fd)
 {

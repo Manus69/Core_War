@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+# include "constants.h"
 
 t_generic_list	*encode_operation(t_token *token)
 {

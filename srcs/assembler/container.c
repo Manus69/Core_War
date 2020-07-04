@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
 
 t_transcription_parameters	*new_parameters(void)
 {

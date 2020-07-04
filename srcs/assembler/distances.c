@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+# include "constants.h"
 
 int		get_absolute_distance_to_the_label(t_token *token,
 		char *label_name, t_container *container)

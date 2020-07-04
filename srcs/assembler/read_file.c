@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
+#include "tables.h"
 
 static void	process_comment_char(t_container *container,
 		t_buffer *buffer, char current_char)

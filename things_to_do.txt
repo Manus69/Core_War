@@ -21,14 +21,12 @@
 //scuffed filenames? short, empty?
 //.cor consisting of two champs?
 
-//print errors on the str_err
 
 //label_chars checks LABEL@~!
 //invalid files memory leaks .cor and .s
 //.cor files as .s
 //check-list
 
-//check arg count
 //giant files?
 //labels
 

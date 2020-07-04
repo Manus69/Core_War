@@ -17,7 +17,6 @@
 # include "printf.h"
 # include "diz_asm.h"
 # include "function_prototypes.h"
-# include "constants.h"
 # include "generic_list.h"
 # include "tokens.h"
 # include <fcntl.h>

@@ -1,4 +1,4 @@
 
 for filename in ./invalid/*.s; do
-    ./asm "$filename"
+    valgrind ./asm "$filename"
 done

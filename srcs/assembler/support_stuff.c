@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
 
 int				binary_to_decimal(char *binary_number)
 {

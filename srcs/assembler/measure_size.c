@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
 
 static void	measure_arg_size(t_token *token,
 		enum e_operation_name operation_type)

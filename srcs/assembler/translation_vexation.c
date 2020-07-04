@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
 
 void	check_current_arg_type(t_container *container,
 t_token *previous_operation, t_token *current_token, int arg_index)

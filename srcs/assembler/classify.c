@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
+#include "tables.h"
 
 static void	display_syntax_errors(short status_code)
 {

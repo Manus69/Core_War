@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
+#include "tables.h"
 
 void	display_translation_errors(t_container *container)
 {

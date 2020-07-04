@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
 
 t_generic_list	*translate_champ_comment(t_generic_list *current_token,
 t_container *container)

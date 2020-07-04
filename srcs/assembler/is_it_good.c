@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
+#include "tables.h"
 
 int	is_command(char *string)
 {

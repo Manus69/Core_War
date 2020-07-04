@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
+#include "tables.h"
 
 int	is_quotation_mark(char *string)
 {

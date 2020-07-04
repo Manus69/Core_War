@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
 
 char		*get_new_filename(t_container *container, t_flag *has_flag)
 {

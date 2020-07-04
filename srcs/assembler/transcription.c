@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "asm.h"
+#include "constants.h"
 
 t_generic_list	*get_next_typed_token(t_generic_list *tokens,
 		enum e_token_type type)
