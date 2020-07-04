@@ -6,12 +6,12 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 16:40:17 by gemerald          #+#    #+#             */
-/*   Updated: 2020/06/27 16:40:51 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/04 20:41:35 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
-# include "constants.h"
+#include "constants.h"
 
 t_generic_list	*encode_operation(t_token *token)
 {
