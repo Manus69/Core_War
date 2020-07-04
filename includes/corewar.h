@@ -100,7 +100,7 @@ typedef struct		s_arena
 	int				nice;
 	int				print_type;
 	int				death;
-	t_champ			*last_alive;
+	t_champ			*last;
 	t_champ			*champion;
 	t_champ			*ch[MAX_PLAYERS];
 	t_viz			*viz;

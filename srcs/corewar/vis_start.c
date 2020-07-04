@@ -51,9 +51,9 @@ void				draw_info(t_arena *vm)
 	{
 		mvwprintw(vm->viz->w_info, vm->viz->place += 3,
 				BORDER, "The winner is ");
-		wattron(vm->viz->w_info, g_color_palette[vm->last_alive->num]);
-		wprintw(vm->viz->w_info, "%.36s", vm->last_alive->name);
-		wattroff(vm->viz->w_info, g_color_palette[vm->last_alive->num]);
+		wattron(vm->viz->w_info, g_color_palette[vm->last->num]);
+		wprintw(vm->viz->w_info, "%.36s", vm->last->name);
+		wattroff(vm->viz->w_info, g_color_palette[vm->last->num]);
 	}
 	wattroff(vm->viz->w_info, A_BOLD);
 }

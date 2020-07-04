@@ -28,7 +28,7 @@ void				live(t_arena *vm, t_slider *s)
 		champ = vm->ch[(player_id < 0 ? -player_id : player_id) - 1];
 		champ->last_live = vm->cycles;
 		champ->live++;
-		vm->last_alive = champ;
+		vm->last = champ;
 		if (vm->visual)
 		{
 			vm->viz->map[s->place].wait_live = 50;

@@ -56,7 +56,7 @@ t_arena				*set_player_id(t_arena *vm)
 		}
 		count--;
 	}
-	vm->last_alive = vm->champion;
+	vm->last = vm->champion;
 	return (vm);
 }
 
@@ -91,7 +91,7 @@ t_arena				*init_arena(void)
 	buffer->visual = 0;
 	buffer->print_type = 0;
 	buffer->death = CYCLE_TO_DIE;
-	buffer->last_alive = NULL;
+	buffer->last = NULL;
 	buffer->champion = NULL;
 	buffer->viz = NULL;
 	return (buffer);
