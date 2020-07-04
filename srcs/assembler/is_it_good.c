@@ -16,7 +16,7 @@
 
 int	is_command(char *string)
 {
-	return (is_string_in_array(string, g_command_names));
+	return (is_string_in_array(string, (const char **)g_command_names));
 }
 
 int	is_command_name(char *string)

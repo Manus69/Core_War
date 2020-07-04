@@ -20,8 +20,8 @@ void		bin_op(t_arena *vm, t_slider *sl, int op)
 	int32_t	r_id;
 
 	sl->step += 1;
-	value_1 = read_mem(vm, sl, 1, &g_operation_list[sl->code - 1]);
-	value_2 = read_mem(vm, sl, 2, &g_operation_list[sl->code - 1]);
+	value_1 = read_mem(vm, sl, 1, (t_oper *)&g_operation_list[sl->code - 1]);
+	value_2 = read_mem(vm, sl, 2, (t_oper *)&g_operation_list[sl->code - 1]);
 	value = 0;
 	if (op == 1)
 		value = value_1 & value_2;

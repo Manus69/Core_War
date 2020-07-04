@@ -37,5 +37,5 @@ int	is_argument_separator(char *string)
 
 int	is_operation(char *string)
 {
-	return (is_string_in_array(string, g_operation_names));
+	return (is_string_in_array(string, (const char **)g_operation_names));
 }

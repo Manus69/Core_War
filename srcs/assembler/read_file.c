@@ -14,6 +14,8 @@
 #include "constants.h"
 #include "tables.h"
 
+#define EXTERN static char const *g_operation_names;
+
 static void	process_comment_char(t_container *container,
 		t_buffer *buffer, char current_char)
 {

@@ -34,7 +34,7 @@ void			do_operation(t_oper *op, t_slider *sl, t_arena *vm)
 	int i;
 
 	op = NULL;
-	op = is_op(sl->code) ? &g_operation_list[sl->code - 1] : op;
+	op = is_op(sl->code) ? (t_oper *)&g_operation_list[sl->code - 1] : op;
 	if (op)
 		read_args_size(vm, sl, op);
 	else

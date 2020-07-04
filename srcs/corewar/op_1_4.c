@@ -18,8 +18,8 @@ void				live(t_arena *vm, t_slider *s)
 	t_oper			*op;
 	t_champ			*champ;
 
-	op = &g_operation_list[s->code - 1];
-	player_id = read_mem(vm, s, 1, op);
+	op = (t_oper *)&g_operation_list[s->code - 1];
+	player_id = read_mem(vm, s, 1, (t_oper *)op);
 	vm->lives++;
 	s->last_live = vm->cycles;
 	champ = NULL;
@@ -44,8 +44,8 @@ void				ld(t_arena *vm, t_slider *sl)
 	int				ind;
 
 	sl->step += 1;
-	op = &g_operation_list[sl->code - 1];
-	value = read_mem(vm, sl, 1, op);
+	op = (t_oper *)&g_operation_list[sl->code - 1];
+	value = read_mem(vm, sl, 1, (t_oper *)op);
 	sl->carry = value == 0 ? 1 : 0;
 	ind = read_byte(vm, sl->place, sl->step);
 	sl->r[ind - 1] = value;

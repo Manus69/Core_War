@@ -17,7 +17,7 @@
 static void	display_syntax_errors(short status_code)
 {
 	short		number;
-	const char	**message;
+	const char	*const *message;
 
 	number = 1;
 	message = g_syntax_errors;

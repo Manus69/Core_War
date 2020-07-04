@@ -21,7 +21,7 @@
 
 # define REG_NAME_SIZE		1
 
-static uint8_t	g_arg_code[3] = {
+static uint8_t const	g_arg_code[3] = {
 	T_REG,
 	T_DIR,
 	T_IND
@@ -197,7 +197,7 @@ void				fork_op(t_arena *vm, t_slider *sl);
 void				show_mem(t_arena *vm);
 void				inroduction(t_champ *ch[4], int count, int nice, int i);
 
-static t_oper		g_operation_list[16] = {
+static t_oper	const	g_operation_list[16] = {
 	{
 		.name = "live",
 		.mod = 0,
