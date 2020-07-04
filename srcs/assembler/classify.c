@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 20:42:25 by gemerald          #+#    #+#             */
-/*   Updated: 2020/07/03 17:08:49 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/04 20:40:00 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 
 static void	display_syntax_errors(short status_code)
 {
-	short		number;
-	const char	*const *message;
+	short				number;
+	const char *const	*message;
 
 	number = 1;
 	message = g_syntax_errors;
