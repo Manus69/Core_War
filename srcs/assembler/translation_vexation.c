@@ -6,7 +6,7 @@
 /*   By: mnarwhal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 16:56:56 by mnarwhal          #+#    #+#             */
-/*   Updated: 2020/07/03 17:48:11 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/04 20:44:28 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_token *previous_operation, t_token *current_token, int arg_index)
 {
 	int						arg_count;
 	enum e_operation_name	operation;
-	
+
 	operation = get_operation_name(previous_operation);
 	arg_count = g_op_tab[operation].arg_count;
 	if (arg_index >= arg_count)
