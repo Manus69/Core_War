@@ -35,6 +35,8 @@ static void	classification_check(t_container *container, t_token *current_token)
 	short status_code;
 
 	status_code = 0;
+	if (!current_token)
+		invoke_error(COMPILATION_TERMINATED, NULL, "\nEmpty token list;\n", container);
 	if (current_token->type != new_line)
 		status_code |= S_NEW_LINE;
 	if ((!(container->list_status >> 1)) & 1)
@@ -68,6 +70,7 @@ void		classify_all_tokens(t_container *container)
 	t_generic_list	*current_item;
 
 	previous_token = NULL;
+	current_token = NULL;
 	current_item = container->tokens;
 	while (current_item)
 	{
