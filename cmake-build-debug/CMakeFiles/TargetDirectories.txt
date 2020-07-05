@@ -1,3 +1,0 @@
-/Volumes/d_60Gb/corewar/check/28.06/Core_War/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Volumes/d_60Gb/corewar/check/28.06/Core_War/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Volumes/d_60Gb/corewar/check/28.06/Core_War/cmake-build-debug/CMakeFiles/Core_War.dir
