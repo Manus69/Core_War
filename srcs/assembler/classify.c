@@ -6,7 +6,7 @@
 /*   By: gemerald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 20:42:25 by gemerald          #+#    #+#             */
-/*   Updated: 2020/07/04 20:40:00 by gemerald         ###   ########.fr       */
+/*   Updated: 2020/07/05 14:37:34 by gemerald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ static void	classification_check(t_container *container, t_token *current_token)
 
 	status_code = 0;
 	if (!current_token)
-		invoke_error(COMPILATION_TERMINATED, NULL, "\nEmpty token list;\n", container);
+		invoke_error(COMPILATION_TERMINATED, NULL,
+				"\nEmpty token list;\n", container);
 	if (current_token->type != new_line)
 		status_code |= S_NEW_LINE;
 	if ((!(container->list_status >> 1)) & 1)
