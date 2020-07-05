@@ -22,7 +22,7 @@ char			*get_registry_encoding(t_token *token, t_container *container)
 	value_substring = ft_strsub(token->string, 1, ft_strlen(token->string) - 1);
 	registry_value = ft_atoi(value_substring);
 	free(value_substring);
-	if (registry_value < 1 || registry_value > 16)
+	if (registry_value < 1 || registry_value > REG_NUMBER)
 		container->error_status |= E_REG_INDEX;
 	registry_encoding = decimal_to_hex_mk2(registry_value, token->size);
 	return (registry_encoding);

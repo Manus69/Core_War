@@ -21,6 +21,7 @@ static void	process_comment_char(t_container *container,
 {
 	if (buffer->mode == regular)
 	{
+		append_buffer_to_tokens(container, buffer);
 		current_char = skip_to_char(container->file_descriptor, '\n');
 		add_to_buffer(buffer, current_char);
 		append_buffer_to_tokens(container, buffer);

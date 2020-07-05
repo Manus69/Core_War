@@ -2,7 +2,7 @@ COREWAR_NAME = corewar
 ASM_NAME = asm
 
 CC = gcc
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -g
 
 ASM_LIBRARIES = -lftprintf -L$(FT_PRINTF_DIRECTORY)
 COREWAR_LIBRARIES = -lncurses -lftprintf -L$(FT_PRINTF_DIRECTORY)
